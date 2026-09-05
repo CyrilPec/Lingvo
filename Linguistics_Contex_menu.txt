@@ -1,4 +1,18 @@
-  LINGVO
+NUMBERING RULE
+
+All hierarchical levels use numeric notation only.
+Indentation and leading spaces are not used.
+
+Hierarchy is represented exclusively by the numbering:
+
+1.
+1.1
+1.1.1
+1.1.1.1
+
+Each additional numeric component represents one deeper hierarchical level.
+
+LINGVO
    Language, Sound, Music, Meaning and Structure
   PART I — INTRODUCTION AND CONTEXT
    1. Introduction
@@ -322,200 +336,199 @@
      17.4.3 Instrument
      17.4.4 Electronic Sound
      17.4.5 Acoustic Environment
- PART IV — CROSS-LEVEL DIMENSIONS
+PART IV — CROSS-LEVEL DIMENSIONS
 
-Structural Dimension
-18.1 Grouping
-18.2 Nesting
-18.3 Boundaries
-18.4 Repetition
-18.5 Contrast
-18.6 Proportion
-18.7 Transformation
+18. Structural Dimension
+  18.1 Grouping
+  18.2 Nesting
+  18.3 Boundaries
+  18.4 Repetition
+  18.5 Contrast
+  18.6 Proportion
+  18.7 Transformation
 
-Semantic Dimension
-19.1 Meaning
-19.2 Concepts
-19.3 Reference
-19.4 Lexical Meaning
-19.5 Compositional Meaning
-19.6 Interpretation
-19.7 Semantic Ambiguity
-19.8 Polysemy
+19. Semantic Dimension
+  19.1 Meaning
+  19.2 Concepts
+  19.3 Reference
+  19.4 Lexical Meaning
+  19.5 Compositional Meaning
+  19.6 Interpretation
 
-Pragmatic / Discourse Dimension
-20.1 Speaker Intention
-20.2 Context
-20.3 Information Structure
-20.4 Topic
-20.5 Focus
-20.6 Implication
-20.7 Turn Structure
-20.8 Referential Context
+20. Pragmatic / Discourse Dimension
+  20.1 Speaker Intention
+  20.2 Context
+  20.3 Information Structure
+  20.4 Topic
+  20.5 Focus
+  20.6 Implication
+  20.7 Turn Structure
+  20.8 Referential Context
 
-Prosodic / Intonational Dimension
-21.1 Pitch
-21.2 Pitch Contour
-21.3 Prominence
-21.4 Stress
-21.5 Phrasing
-21.6 Boundary
-21.7 Expressive Contour
+21. Prosodic / Intonational Dimension
+  21.1 Pitch
+  21.2 Pitch Contour
+  21.3 Prominence
+  21.4 Stress
+  21.5 Phrasing
+  21.6 Boundary
+  21.7 Expressive Contour
 
-Rhythmic Dimension
-22.1 Pulse
-22.2 Beat
-22.3 Meter
-22.4 Tempo
-22.5 Duration
-22.6 Syncopation
-22.7 Polyrhythm
-22.8 Rhythmic Density
-22.9 Rhythmic Hierarchy
+22. Rhythmic Dimension
+  22.1 Pulse
+  22.2 Beat
+  22.3 Meter
+  22.4 Tempo
+  22.5 Duration
+  22.6 Syncopation
+  22.7 Polyrhythm
+  22.8 Rhythmic Density
+  22.9 Rhythmic Hierarchy
 
-Temporal Dimension
-23.1 Sequence
-23.2 Duration
-23.3 Timing
-23.4 Interval
-23.5 Synchronization
-23.6 Asynchrony
-23.7 Before / After
-23.8 Simultaneity
-23.9 Acceleration
-23.10 Deceleration
-23.11 Temporal Density
-23.12 Temporal Hierarchy
-23.13 Temporal Deformation
-23.14 Temporal Expectation
-23.15 Temporal Resolution
+23. Temporal Dimension
+  23.1 Sequence
+  23.2 Duration
+  23.3 Timing
+  23.4 Interval
+  23.5 Synchronization
+  23.6 Asynchrony
+  23.7 Before / After
+  23.8 Simultaneity
+  23.9 Acceleration
+  23.10 Deceleration
+  23.11 Temporal Density
+  23.12 Temporal Hierarchy
+  23.13 Temporal Deformation
+  23.14 Temporal Expectation
+  23.15 Temporal Resolution
 
-Dynamic Dimension
-24.1 Intensity
-24.2 Loudness
-24.3 Accent
-24.4 Attack
-24.5 Energy
-24.6 Emphasis
-24.7 Dynamic Contour
+24. Dynamic Dimension
+  24.1 Intensity
+  24.2 Loudness
+  24.3 Accent
+  24.4 Attack
+  24.5 Energy
+  24.6 Emphasis
+  24.7 Dynamic Contour
 
-Timbre / Spectral Dimension
-25.1 Tone Quality
-25.2 Harmonics
-25.3 Spectrum
-25.4 Resonance
-25.5 Articulation
-25.6 Sound Source
-25.7 Sound Color
+25. Timbre / Spectral Dimension
+  25.1 Tone Quality
+  25.2 Harmonics
+  25.3 Spectrum
+  25.4 Resonance
+  25.5 Articulation
+  25.6 Sound Source
+  25.7 Sound Color
 
-Harmonic / Pitch-Organization Dimension
-26.1 Scales
-26.2 Pitch Classes
-26.3 Tonal Centers
-26.4 Chords
-26.5 Harmonic Function
-26.6 Consonance and Dissonance
-26.7 Modulation
-26.8 Voice Leading
+26. Harmonic / Pitch-Organization Dimension
+  26.1 Scales
+  26.2 Pitch Classes
+  26.3 Tonal Centers
+  26.4 Chords
+  26.5 Harmonic Function
+  26.6 Consonance and Dissonance
+  26.7 Modulation
+  26.8 Voice Leading
 
-Melodic Dimension
-27.1 Pitch Sequence
-27.2 Contour
-27.3 Intervals
-27.4 Motive
-27.5 Development
-27.6 Phrase
-27.7 Cadence
+27. Melodic Dimension
+  27.1 Pitch Sequence
+  27.2 Contour
+  27.3 Intervals
+  27.4 Motive
+  27.5 Development
+  27.6 Phrase
+  27.7 Cadence
 
-Rhetorical / Poetic / Stylistic Dimension
-28.1 Repetition
-28.2 Rhyme
-28.3 Parallelism
-28.4 Metaphor
-28.5 Emphasis
-28.6 Figurative Structure
-28.7 Style
+28. Rhetorical / Poetic / Stylistic Dimension
+  28.1 Repetition
+  28.2 Rhyme
+  28.3 Parallelism
+  28.4 Metaphor
+  28.5 Emphasis
+  28.6 Figurative Structure
+  28.7 Style
 
-Narrative / Dramatic Dimension
-29.1 Theme
-29.2 Conflict
-29.3 Tension
-29.4 Release
-29.5 Action
-29.6 Character
-29.7 Emotional Trajectory
-29.8 Transformation
+29. Narrative / Dramatic Dimension
+  29.1 Theme
+  29.2 Conflict
+  29.3 Tension
+  29.4 Release
+  29.5 Action
+  29.6 Character
+  29.7 Emotional Trajectory
+  29.8 Transformation
 
-Social / Cultural Dimension
-30.1 Dialect
-30.2 Register
-30.3 Genre
-30.4 Identity Signals
-30.5 Cultural Conventions
-30.6 Historical Context
+30. Social / Cultural Dimension
+  30.1 Dialect
+  30.2 Register
+  30.3 Genre
+  30.4 Identity Signals
+  30.5 Cultural Conventions
+  30.6 Historical Context
 
-Expectation Dimension
-31.1 Establishment of Expectation
-31.2 Prediction
-31.3 Anticipation
-31.4 Confirmation
-31.5 Delay
-31.6 Deviation
-31.7 Violation
-31.8 Surprise
-31.9 Reinterpretation
-31.10 Expectation Resolution
+31. Expectation Dimension
+  31.1 Establishment of Expectation
+  31.2 Prediction
+  31.3 Anticipation
+  31.4 Confirmation
+  31.5 Delay
+  31.6 Deviation
+  31.7 Violation
+  31.8 Surprise
+  31.9 Reinterpretation
+  31.10 Expectation Resolution
 
-Attention / Salience Dimension
-32.1 Salience
-32.2 Prominence
-32.3 Focus
-32.4 Background
-32.5 Foreground
-32.6 Attention Direction
-32.7 Attention Shift
-32.8 Attention Retention
-32.9 Attention Release
-32.10 Perceptual Weight
+32. Attention / Salience Dimension
+  32.1 Salience
+  32.2 Prominence
+  32.3 Focus
+  32.4 Background
+  32.5 Foreground
+  32.6 Attention Direction
+  32.7 Attention Shift
+  32.8 Attention Retention
+  32.9 Attention Release
+  32.10 Perceptual Weight
 
-Identity / Motif Dimension
-33.1 Identity
-33.2 Similarity
-33.3 Recurrence
-33.4 Motif
-33.5 Theme
-33.6 Variant
-33.7 Transformation
-33.8 Recognition
-33.9 Persistence
-33.10 Recontextualization
-33.11 Motif Development
-33.12 Motif Interaction
+33. Identity / Motif Dimension
+  33.1 Identity
+  33.2 Similarity
+  33.3 Recurrence
+  33.4 Motif
+  33.5 Theme
+  33.6 Variant
+  33.7 Transformation
+  33.8 Recognition
+  33.9 Persistence
+  33.10 Recontextualization
+  33.11 Motif Development
+  33.12 Motif Interaction
 
-Information Dynamics Dimension
-34.1 Information
-34.2 Information Density
-34.3 Information Flow
-34.4 Information Gain
-34.5 Information Loss
-34.6 Revelation
-34.7 Concealment
-34.8 Redundancy
-34.9 Compression
-34.10 Expansion
-34.11 Information Timing
-34.12 Information Hierarchy
+34. Information Dynamics Dimension
+  34.1 Information
+  34.2 Information Density
+  34.3 Information Flow
+  34.4 Information Gain
+  34.5 Information Loss
+  34.6 Revelation
+  34.7 Concealment
+  34.8 Redundancy
+  34.9 Compression
+  34.10 Expansion
+  34.11 Information Timing
+  34.12 Information Hierarchy
 
-Uncertainty / Ambiguity Dimension
-35.1 Structural Ambiguity
-35.2 Semantic Ambiguity
-35.3 Syntactic Ambiguity
-35.4 Prosodic Ambiguity
-35.5 Tonal Ambiguity
-35.6 Referential Ambiguity
-35.7 Interpretive Uncertainty
-35.8 Indeterminacy
-35.9 Resolution of Ambiguity
+35. Uncertainty / Ambiguity Dimension
+  35.1 Structural Ambiguity
+  35.2 Semantic Ambiguity
+  35.3 Syntactic Ambiguity
+  35.4 Prosodic Ambiguity
+  35.5 Tonal Ambiguity
+  35.6 Referential Ambiguity
+  35.7 Interpretive Uncertainty
+  35.8 Indeterminacy
+  35.9 Resolution of Ambiguity
+
 
   PART V — CROSS-LEVEL SYSTEMS
    30. Intonation as a Cross-Level System
@@ -671,90 +684,4 @@ Uncertainty / Ambiguity Dimension
     47.6 Computational Representation
     47.7 Possible Software Implementation
 	
-	XX. Temporal Dimension
-
-XX.1 Sequence
-XX.2 Duration
-XX.3 Timing
-XX.4 Interval
-XX.5 Synchronization
-XX.6 Asynchrony
-XX.7 Before / After
-XX.8 Simultaneity
-XX.9 Acceleration
-XX.10 Deceleration
-XX.11 Temporal Density
-XX.12 Temporal Hierarchy
-XX.13 Temporal Deformation
-XX.14 Temporal Expectation
-XX.15 Temporal Resolution
-
-XX. Expectation Dimension
-
-XX.1 Establishment of Expectation
-XX.2 Prediction
-XX.3 Anticipation
-XX.4 Confirmation
-XX.5 Delay
-XX.6 Deviation
-XX.7 Violation
-XX.8 Surprise
-XX.9 Reinterpretation
-XX.10 Expectation Resolution
-
-XX. Attention / Salience
-
-XX.1 Salience
-XX.2 Prominence
-XX.3 Focus
-XX.4 Background
-XX.5 Foreground
-XX.6 Attention Direction
-XX.7 Attention Shift
-XX.8 Attention Retention
-XX.9 Attention Release
-XX.10 Perceptual Weight
-
-XX. Identity and Motif
-
-XX.1 Identity
-XX.2 Similarity
-XX.3 Recurrence
-XX.4 Motif
-XX.5 Theme
-XX.6 Variant
-XX.7 Transformation
-XX.8 Recognition
-XX.9 Persistence
-XX.10 Recontextualization
-XX.11 Motif Development
-XX.12 Motif Interaction
-
-XX. Information Dynamics
-
-XX.1 Information
-XX.2 Information Density
-XX.3 Information Flow
-XX.4 Information Gain
-XX.5 Information Loss
-XX.6 Revelation
-XX.7 Concealment
-XX.8 Ambiguity
-XX.9 Redundancy
-XX.10 Compression
-XX.11 Expansion
-XX.12 Information Timing
-XX.13 Information Hierarchy
-
-XX. Uncertainty and Ambiguity
-
-XX.1 Structural Ambiguity
-XX.2 Semantic Ambiguity
-XX.3 Syntactic Ambiguity
-XX.4 Prosodic Ambiguity
-XX.5 Tonal Ambiguity
-XX.6 Referential Ambiguity
-XX.7 Interpretive Uncertainty
-XX.8 Indeterminacy
-XX.9 Polysemy
-XX.10 Resolution of Ambiguity
+	
