@@ -1,0 +1,575 @@
+  LINGVO
+   Language, Sound, Music, Meaning and Structure
+  PART I — INTRODUCTION AND CONTEXT
+   1. Introduction
+    1.1 Purpose of Lingvo
+    1.2 The Central Problem
+    1.3 Language, Sound, Music and Meaning
+    1.4 The Object-Based Approach
+    1.5 Lingvo as an Integrative Framework
+   2. Context
+    2.1 Linguistics
+    2.2 Phonetics and Phonology
+    2.3 Prosody and Intonation
+    2.4 Rhetoric and Poetics
+    2.5 Narrative and Dramaturgy
+    2.6 Music and Composition
+    2.7 Sound and Acoustic Realization
+    2.8 Relations Between These Domains
+   3. Basic Principles
+    3.1 Objects
+    3.2 Properties
+    3.3 Functions
+    3.4 Relations
+    3.5 Constraints
+    3.6 Variants
+    3.7 Hierarchy
+    3.8 Dimensions
+    3.9 Top-Down and Bottom-Up Organization
+  PART II — THE CORE MODEL
+   4. Object Model
+    4.1 What Is an Object?
+    4.2 Object Properties
+    4.3 Object Functions
+    4.4 Object Relations
+    4.5 Object Constraints
+    4.6 Object Variants
+    4.7 Object State and Transformation
+   5. Hierarchy Model
+    5.1 Containment
+    5.2 Composition
+    5.3 Dependency
+    5.4 Recursion
+    5.5 Interaction Between Levels
+    5.6 Top-Down Organization
+    5.7 Bottom-Up Realization
+   6. Dimension Model
+    6.1 What Is a Dimension?
+    6.2 Dimensions as Cross-Level Properties
+    6.3 Dimensions as Functions
+    6.4 Dimensions as Relations
+    6.5 Interaction Between Dimensions
+    6.6 Dimension × Level
+   7. The Complete System
+    7.1 World → Dramaturgy → Narrative
+    7.2 Narrative → Form → Section
+    7.3 Section → Phrase → Sentence
+    7.4 Sentence → Word → Syllable
+    7.5 Syllable → Sound → Noise
+    7.6 The Complete Hierarchical Chain
+    7.7 Hierarchy and Dimensions Together
+  PART III — HIERARCHICAL OBJECTS
+   8. Level 0 — World
+    8.1 World Object
+     8.1.1 Properties
+     8.1.2 Functions
+     8.1.3 Relations
+     8.1.4 Constraints
+     8.1.5 Variants
+    8.2 Entities
+     8.2.1 Identity
+     8.2.2 Attributes
+     8.2.3 State
+     8.2.4 Relationships
+    8.3 Environment
+     8.3.1 Space
+     8.3.2 Time
+     8.3.3 Conditions
+     8.3.4 Resources
+    8.4 Rules and Possibilities
+     8.4.1 Physical Rules
+     8.4.2 Social Rules
+     8.4.3 Causal Rules
+     8.4.4 Possible States
+    8.5 Values and Conflicts
+     8.5.1 Values
+     8.5.2 Desires
+     8.5.3 Opposition
+     8.5.4 Fundamental Conflict
+   9. Level 1 — Dramaturgy
+    9.1 Dramaturgical Object
+     9.1.1 Properties
+     9.1.2 Functions
+     9.1.3 Relations
+     9.1.4 Constraints
+     9.1.5 Variants
+    9.2 Action
+     9.2.1 Goal
+     9.2.2 Motivation
+     9.2.3 Obstacle
+     9.2.4 Consequence
+    9.3 Tension
+     9.3.1 Accumulation
+     9.3.2 Escalation
+     9.3.3 Peak
+     9.3.4 Release
+    9.4 Dramaturgical Transformation
+     9.4.1 Beginning
+     9.4.2 Development
+     9.4.3 Turning Point
+     9.4.4 Climax
+     9.4.5 Resolution
+   10. Level 2 — Narrative / Text
+    10.1 Narrative Object
+     10.1.1 Properties
+     10.1.2 Functions
+     10.1.3 Relations
+     10.1.4 Constraints
+     10.1.5 Variants
+    10.2 Events
+     10.2.1 Event
+     10.2.2 Sequence
+     10.2.3 Causality
+     10.2.4 Transformation
+    10.3 Information
+     10.3.1 Selection
+     10.3.2 Distribution
+     10.3.3 Revelation
+     10.3.4 Concealment
+    10.4 Perspective
+     10.4.1 Speaker
+     10.4.2 Narrator
+     10.4.3 Point of View
+     10.4.4 Distance
+    10.5 Narrative Units
+     10.5.1 Chapter
+     10.5.2 Paragraph
+     10.5.3 Scene
+     10.5.4 Dialogue
+   11. Level 3 — Form / Structure
+    11.1 Form Object
+     11.1.1 Properties
+     11.1.2 Functions
+     11.1.3 Relations
+     11.1.4 Constraints
+     11.1.5 Variants
+    11.2 Organization
+     11.2.1 Ordering
+     11.2.2 Grouping
+     11.2.3 Nesting
+     11.2.4 Proportion
+    11.3 Structural Processes
+     11.3.1 Repetition
+     11.3.2 Contrast
+     11.3.3 Development
+     11.3.4 Transition
+     11.3.5 Transformation
+    11.4 Form Variants
+     11.4.1 Linear
+     11.4.2 Cyclic
+     11.4.3 Recursive
+     11.4.4 Contrasting
+     11.4.5 Hybrid
+   12. Level 4 — Section
+    12.1 Section Object
+     12.1.1 Properties
+     12.1.2 Functions
+     12.1.3 Relations
+     12.1.4 Constraints
+     12.1.5 Variants
+    12.2 Section Functions
+     12.2.1 Introduction
+     12.2.2 Development
+     12.2.3 Contrast
+     12.2.4 Transition
+     12.2.5 Climax
+     12.2.6 Resolution
+     12.2.7 Closure
+    12.3 Section Types
+     12.3.1 Verse
+     12.3.2 Chorus
+     12.3.3 Bridge
+     12.3.4 Episode
+     12.3.5 Exposition
+     12.3.6 Development
+     12.3.7 Coda
+   13. Level 5 — Phrase    
+    13.1 Phrase Object
+     13.1.1 Properties
+         13.1.1.1 Length
+         13.1.1.2 Contour
+         13.1.1.3 Rhythm
+         13.1.1.4 Boundary     
+     13.1.2 Functions
+         13.1.2.1 Grouping
+         13.1.2.2 Emphasis
+         13.1.2.3 Progression
+         13.1.2.4 Closure     
+     13.1.3 Relations
+         13.1.3.1 Previous Phrase
+         13.1.3.2 Following Phrase
+         13.1.3.3 Parent Section
+         13.1.3.4 Internal Units     
+     13.1.4 Constraints
+         13.1.4.1 Syntactic
+         13.1.4.2 Semantic
+         13.1.4.3 Prosodic
+         13.1.4.4 Rhythmic     
+     13.1.5 Variants
+         13.1.5.1 Linguistic
+         13.1.5.2 Musical
+         13.1.5.3 Rhetorical
+    13.2 Phrase Structure
+     13.2.1 Beginning
+     13.2.2 Development
+     13.2.3 Peak
+     13.2.4 Ending
+     13.2.5 Boundary
+    13.3 Phrase Functions
+     13.3.1 Grouping
+     13.3.2 Emphasis
+     13.3.3 Progression
+     13.3.4 Question
+     13.3.5 Answer
+     13.3.6 Closure
+    13.4 Phrase Relations
+     13.4.1 Repetition
+     13.4.2 Contrast
+     13.4.3 Continuation
+     13.4.4 Response
+   14. Level 6 — Clause / Sentence / Utterance
+    14.1 Sentence Object
+     14.1.1 Properties
+     14.1.2 Functions
+     14.1.3 Relations
+     14.1.4 Constraints
+     14.1.5 Variants
+    14.2 Clause
+     14.2.1 Predicate
+     14.2.2 Arguments
+     14.2.3 Dependencies
+     14.2.4 Coordination
+     14.2.5 Subordination
+    14.3 Sentence Functions
+     14.3.1 Statement
+     14.3.2 Question
+     14.3.3 Command
+     14.3.4 Exclamation
+     14.3.5 Response
+    14.4 Utterance
+     14.4.1 Speaker Intention
+     14.4.2 Context
+     14.4.3 Information Status
+     14.4.4 Intonational Realization
+   15. Level 7 — Word
+    15.1 Word Object
+     15.1.1 Properties
+     15.1.2 Functions
+     15.1.3 Relations
+     15.1.4 Constraints
+     15.1.5 Variants
+    15.2 Lexical Structure
+     15.2.1 Root
+     15.2.2 Stem
+     15.2.3 Affix
+     15.2.4 Derivation
+     15.2.5 Compounding
+    15.3 Grammatical Properties
+     15.3.1 Inflection
+     15.3.2 Number
+     15.3.3 Case
+     15.3.4 Tense
+     15.3.5 Aspect
+     15.3.6 Person
+    15.4 Word Functions
+     15.4.1 Naming
+     15.4.2 Modification
+     15.4.3 Predication
+     15.4.4 Reference
+   16. Level 8 — Syllable / Prosodic Unit
+    16.1 Syllable Object
+     16.1.1 Properties
+     16.1.2 Functions
+     16.1.3 Relations
+     16.1.4 Constraints
+     16.1.5 Variants
+    16.2 Internal Structure
+     16.2.1 Onset
+     16.2.2 Nucleus
+     16.2.3 Coda
+    16.3 Prosodic Properties
+     16.3.1 Stress
+     16.3.2 Duration
+     16.3.3 Pitch
+     16.3.4 Intensity
+    16.4 Prosodic Functions
+     16.4.1 Prominence
+     16.4.2 Grouping
+     16.4.3 Boundary Marking
+     16.4.4 Rhythmic Organization
+   17. Level 9 — Sound / Signal
+    17.1 Sound Object
+     17.1.1 Properties
+     17.1.2 Functions
+     17.1.3 Relations
+     17.1.4 Constraints
+     17.1.5 Variants
+    17.2 Physical Properties
+     17.2.1 Frequency
+     17.2.2 Duration
+     17.2.3 Amplitude
+     17.2.4 Spectrum
+     17.2.5 Phase
+    17.3 Acoustic / Phonetic Properties
+     17.3.1 Articulation
+     17.3.2 Resonance
+     17.3.3 Formants
+     17.3.4 Harmonics
+     17.3.5 Noise
+    17.4 Sound Realization
+     17.4.1 Voice
+     17.4.2 Speech
+     17.4.3 Instrument
+     17.4.4 Electronic Sound
+     17.4.5 Acoustic Environment
+  PART IV — CROSS-LEVEL DIMENSIONS
+   18. Structural Dimension
+    18.1 Grouping
+    18.2 Nesting
+    18.3 Boundaries
+    18.4 Repetition
+    18.5 Contrast
+    18.6 Proportion
+    18.7 Transformation
+   19. Semantic Dimension
+    19.1 Meaning
+    19.2 Concepts
+    19.3 Reference
+    19.4 Lexical Meaning
+    19.5 Compositional Meaning
+    19.6 Interpretation
+   20. Pragmatic / Discourse Dimension
+    20.1 Speaker Intention
+    20.2 Context
+    20.3 Information Structure
+    20.4 Topic
+    20.5 Focus
+    20.6 Implication
+    20.7 Turn Structure
+   21. Prosodic / Intonational Dimension
+    21.1 Pitch
+    21.2 Pitch Contour
+    21.3 Prominence
+    21.4 Stress
+    21.5 Phrasing
+    21.6 Boundary
+    21.7 Expressive Contour
+   22. Rhythmic / Temporal Dimension
+    22.1 Pulse
+    22.2 Beat
+    22.3 Meter
+    22.4 Tempo
+    22.5 Duration
+    22.6 Syncopation
+    22.7 Polyrhythm
+    22.8 Temporal Density
+   23. Dynamic Dimension
+    23.1 Intensity
+    23.2 Loudness
+    23.3 Accent
+    23.4 Attack
+    23.5 Energy
+    23.6 Emphasis
+    23.7 Dynamic Contour
+   24. Timbre / Spectral Dimension
+    24.1 Tone Quality
+    24.2 Harmonics
+    24.3 Spectrum
+    24.4 Resonance
+    24.5 Articulation
+    24.6 Sound Source
+    24.7 Sound Color
+   25. Harmonic / Pitch-Organization Dimension
+    25.1 Scales
+    25.2 Pitch Classes
+    25.3 Tonal Centers
+    25.4 Chords
+    25.5 Harmonic Function
+    25.6 Consonance and Dissonance
+    25.7 Modulation
+    25.8 Voice Leading
+   26. Melodic Dimension
+    26.1 Pitch Sequence
+    26.2 Contour
+    26.3 Intervals
+    26.4 Motives
+    26.5 Development
+    26.6 Phrase
+    26.7 Cadence
+   27. Rhetorical / Poetic / Stylistic Dimension
+    27.1 Repetition
+    27.2 Rhyme
+    27.3 Parallelism
+    27.4 Metaphor
+    27.5 Emphasis
+    27.6 Figurative Structure
+    27.7 Style
+   28. Narrative / Dramatic Dimension
+    28.1 Theme
+    28.2 Conflict
+    28.3 Tension
+    28.4 Release
+    28.5 Action
+    28.6 Character
+    28.7 Emotional Trajectory
+    28.8 Transformation
+   29. Social / Cultural Dimension
+    29.1 Dialect
+    29.2 Register
+    29.3 Genre
+    29.4 Identity Signals
+    29.5 Cultural Conventions
+    29.6 Historical Context
+  PART V — CROSS-LEVEL SYSTEMS
+   30. Intonation as a Cross-Level System
+    30.1 Sound
+    30.2 Syllable
+    30.3 Word
+    30.4 Phrase
+    30.5 Sentence
+    30.6 Section
+    30.7 Form
+   31. Rhythm as a Cross-Level System
+    31.1 Local Timing
+    31.2 Syllabic Rhythm
+    31.3 Word Rhythm
+    31.4 Phrase Rhythm
+    31.5 Section Rhythm
+    31.6 Form-Level Rhythm
+    31.7 Narrative / Dramatic Rhythm
+   32. Tension and Resolution
+    32.1 Sound-Level Tension
+    32.2 Prosodic Tension
+    32.3 Phrase Tension
+    32.4 Harmonic Tension
+    32.5 Formal Tension
+    32.6 Narrative Tension
+    32.7 Dramaturgical Tension
+   33. Repetition, Contrast and Transformation
+    33.1 Repetition
+    33.2 Variation
+    33.3 Contrast
+    33.4 Development
+    33.5 Transformation
+    33.6 Recurrence Across Levels
+   34. Linguistic–Musical Relations
+    34.1 Speech and Music
+    34.2 Intonation and Melody
+    34.3 Prosody and Rhythm
+    34.4 Stress and Accent
+    34.5 Pitch Organization
+    34.6 Phrase and Musical Phrase
+    34.7 Linguistic and Musical Form
+   35. Sound Production and Realization
+    35.1 Speech Production
+    35.2 Voice
+    35.3 Articulation
+    35.4 Instruments
+    35.5 Timbre
+    35.6 Acoustic Space
+    35.7 Electronic Realization
+   36. Musical Organization
+    36.1 Melody
+    36.2 Harmony
+    36.3 Voice Leading
+    36.4 Counterpoint
+    36.5 Polyphony
+    36.6 Independent Lines
+    36.7 Interaction Between Lines
+  PART VI — COMPOSITION AND APPLICATION
+   37. Composition
+    37.1 Object Selection
+    37.2 Property Design
+    37.3 Functional Design
+    37.4 Relations
+    37.5 Constraints
+    37.6 Variants
+    37.7 Transformation
+   38. Songwriting
+    38.1 Lyrics
+    38.2 Melody
+    38.3 Rhythm
+    38.4 Harmony
+    38.5 Form
+    38.6 Vocal Realization
+    38.7 Interaction of Linguistic and Musical Objects
+   39. Narrative Construction
+    39.1 Worldbuilding
+    39.2 Dramaturgy
+    39.3 Narrative
+    39.4 Character
+    39.5 Scene
+    39.6 Dialogue
+    39.7 Emotional Structure
+   40. Analysis Through the Lingvo Model
+    40.1 Identify the Object
+    40.2 Identify Its Level
+    40.3 Identify Its Properties
+    40.4 Identify Its Functions
+    40.5 Identify Its Relations
+    40.6 Identify Its Constraints
+    40.7 Identify Its Variants
+    40.8 Identify Active Dimensions
+    40.9 Trace Cross-Level Relations
+  PART VII — SYSTEM ARCHITECTURE AND REFERENCE
+   41. Level × Object × Dimension Matrix
+    41.1 Objects by Level
+    41.2 Properties by Level
+    41.3 Functions by Level
+    41.4 Relations by Level
+    41.5 Constraints by Level
+    41.6 Variants by Level
+    41.7 Dimensions by Level
+   42. Hierarchy Lines
+    42.1 Containment
+    42.2 Dependency
+    42.3 Composition
+    42.4 Recursion
+    42.5 Parallelism
+    42.6 Contrast
+    42.7 Transformation
+   43. Object Relations
+    43.1 Contains
+    43.2 Belongs To
+    43.3 Depends On
+    43.4 Modifies
+    43.5 Contrasts With
+    43.6 Repeats
+    43.7 Transforms
+    43.8 Realizes
+   44. Reference Material
+    44.1 Foundations of Linguistics
+    44.2 Lexicon, Parts of Speech and Grammar
+    44.3 Phonology and Prosody
+    44.4 Speech, Phonetics and Rhyme
+    44.5 Intonation, Rhythm and Temporal Structure
+    44.6 Pitch, Melody and Harmony
+    44.7 Advanced Harmony, Voice Leading and Counterpoint
+    44.8 Sound Production, Timbre and Instruments
+    44.9 Composition, Songwriting, Narrative and Worldbuilding
+  PART VIII — EDITORIAL AND DEVELOPMENT PRINCIPLES
+   45. How New Material Is Added
+    45.1 Identify the Object
+    45.2 Identify the Hierarchical Level
+    45.3 Identify Properties
+    45.4 Identify Functions
+    45.5 Identify Relations
+    45.6 Identify Constraints
+    45.7 Identify Variants
+    45.8 Identify Relevant Dimensions
+   46. Rules of the Model
+    46.1 A New Topic Is Not Automatically a New Level
+    46.2 Objects Belong to Levels
+    46.3 Dimensions Can Cross Levels
+    46.4 Functions Can Recur at Different Levels
+    46.5 Properties Can Change by Level
+    46.6 Relations Connect Objects Across Levels
+    46.7 Variants Represent Alternative Realizations
+   47. Future Development
+    47.1 Formal Object Definitions
+    47.2 Object Schemas
+    47.3 Level × Dimension Tables
+    47.4 Cross-Level Transformations
+    47.5 Analytical Notation
+    47.6 Computational Representation
+    47.7 Possible Software Implementation

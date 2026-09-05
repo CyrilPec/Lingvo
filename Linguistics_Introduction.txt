@@ -1,0 +1,198 @@
+# Introduction
+
+## 1. Introduction
+
+Lingvo is a framework for describing language, speech, music, narrative, and related forms of expression as parts of one structured system.
+
+The central idea is to describe the system through **objects, their properties, functions, relations, constraints, and variants**, organized within a hierarchy of increasingly smaller units.
+
+This approach is similar to the way objects are represented in programming languages.
+
+An object is not defined only by its name or position. It has:
+
+* **Properties** — characteristics or state of the object.
+* **Functions** — operations or roles performed by the object.
+* **Relations** — connections to other objects.
+* **Constraints** — conditions that limit or shape its possible behavior.
+* **Variants** — alternative forms or realizations.
+
+For example, a phrase can be treated as an object. It has structural, semantic, syntactic, prosodic, rhythmic and other properties. It performs functions such as grouping, emphasis, progression or closure. It relates to larger sections and smaller words or clauses. It is subject to linguistic and expressive constraints, and it can occur in different variants.
+
+The same principle can be applied at every hierarchical level.
+
+The system therefore does not treat grammar, narrative, music, rhythm, harmony, prosody and sound as completely separate subjects. Instead, they can be understood as different aspects of objects operating at different levels of the same system.
+
+### 1.1 The Object Model
+
+The basic structure is:
+
+**Object → Properties + Functions + Relations + Constraints + Variants**
+
+An object exists within a hierarchical level and can contain or interact with other objects.
+
+For example:
+
+**Phrase**
+
+* has properties;
+* performs functions;
+* has relations to surrounding phrases and larger structures;
+* obeys constraints;
+* has different variants.
+
+The same conceptual model applies to a sentence, word, syllable, sound, section, narrative, dramaturgical structure or world.
+
+### 1.2 Hierarchy
+
+The hierarchy describes **scale and containment**.
+
+The primary direction is:
+
+**World → Dramaturgy → Narrative → Form → Section → Phrase → Sentence → Word → Syllable → Sound**
+
+A larger object contains or organizes smaller objects.
+
+The hierarchy therefore answers:
+
+> **What contains what?**
+
+It does not by itself describe every property or function of an object.
+
+### 1.3 Dimensions
+
+Dimensions operate across the hierarchy.
+
+A dimension is an aspect through which an object can be described or analyzed.
+
+Examples include:
+
+* structural;
+* semantic;
+* pragmatic;
+* prosodic / intonational;
+* rhythmic / temporal;
+* dynamic;
+* timbral / spectral;
+* harmonic;
+* melodic;
+* rhetorical / poetic;
+* narrative / dramatic;
+* social / cultural.
+
+A dimension can therefore operate at several hierarchical levels.
+
+For example, **rhythm** exists at the level of sound and syllable, but also contributes to phrase structure, sections, form and larger organization.
+
+Likewise, **tension** can exist in a sound, phrase, narrative scene, dramaturgical structure or entire world.
+
+Thus:
+
+**Hierarchy describes the object.
+Dimensions describe aspects of the object.**
+
+### 1.4 Top-Down and Bottom-Up
+
+The system can be examined in two complementary directions.
+
+**Top-down:**
+
+World → Dramaturgy → Narrative → Form → Section → Phrase → Sentence → Word → Syllable → Sound
+
+This direction describes how larger intentions and structures are realized through increasingly smaller objects.
+
+**Bottom-up:**
+
+Sound → Syllable → Word → Sentence → Phrase → Section → Form → Narrative → Dramaturgy → World
+
+This direction describes how local realizations accumulate into larger structures.
+
+Neither direction is primary in all cases.
+
+Meaning and intention can propagate downward, while physical and linguistic realization can propagate upward.
+
+---
+
+# 2. Context
+
+## 2.1 Why This Framework
+
+Linguistics, music theory, phonetics, prosody, rhetoric, narrative theory and composition traditionally divide their subjects into specialized areas.
+
+This specialization is useful, but it can also hide relationships between them.
+
+For example:
+
+* linguistic intonation and musical melody both involve pitch movement;
+* linguistic rhythm and musical rhythm both involve temporal organization;
+* stress and musical accent both involve prominence;
+* phrasing exists in speech, poetry and music;
+* repetition and contrast operate in words, phrases, musical sections and narratives;
+* tension and resolution can be observed both in dramatic structure and in musical organization.
+
+Lingvo attempts to describe these relationships without requiring every domain to become a separate hierarchy.
+
+The purpose is therefore not to replace existing linguistic or musical theories, but to provide a **common structural framework in which they can interact**.
+
+## 2.2 From Small Units to Large Structures
+
+At the smallest scale, the system deals with physical sound and its properties.
+
+Sounds combine into syllables and prosodic units.
+
+Syllables and words combine into clauses, sentences and utterances.
+
+These form phrases and larger sections.
+
+Sections participate in larger formal structures.
+
+Forms organize narrative or musical development.
+
+Narrative and dramaturgy organize events, actions, conflicts and transformations.
+
+At the largest scale, these structures exist within a world containing entities, relations, rules, values and possibilities.
+
+This produces the central containment principle:
+
+**Large structures contain smaller structures, while smaller structures provide their concrete realization.**
+
+## 2.3 Music Within the Framework
+
+Music is not required to be a separate top-level branch of the system.
+
+Instead, musical organization can be represented through the same object model and dimensions.
+
+For example:
+
+* pitch can be a property;
+* rhythm can be a property and function;
+* melody can be an organized sequence of pitch events;
+* harmony can describe relations between simultaneous or sequential pitch structures;
+* timbre can describe sound realization;
+* musical form can organize sections;
+* counterpoint can describe relations between independent lines.
+
+Music therefore becomes one important domain of **organization and realization**, particularly at the prosodic, rhythmic, melodic, harmonic and acoustic dimensions.
+
+## 2.4 The Purpose of the Context
+
+The existing linguistic and musical material should be understood as material that can be placed inside this common framework.
+
+The framework provides the architecture.
+
+The individual theories, concepts and techniques provide the content.
+
+Consequently, a new topic does not automatically require a new hierarchical level.
+
+Instead, a new topic should first be asked:
+
+1. **What object or level does it belong to?**
+2. **What properties does it have?**
+3. **What functions does it perform?**
+4. **What relations does it have?**
+5. **What constraints affect it?**
+6. **What variants does it have?**
+7. **Which dimensions describe it?**
+
+This prevents subjects such as grammar, music, narrative, harmony, rhythm and sound design from becoming disconnected parallel systems.
+
+They remain different aspects of one model.

@@ -1,0 +1,297 @@
+  LINGUISTICS — HIERARCHY & DIMENSIONS
+   1. Core Model
+    1.1 Hierarchy and Dimensions
+    1.2 Levels as Containers
+    1.3 Functions and Variants
+    1.4 Top-Down Function and Bottom-Up Realization
+    1.5 World → Sound: The Complete Hierarchy
+---
+  PART I — HIERARCHICAL STRUCTURE
+2. Level 0 — World
+    2.1 World as the Largest Container
+        2.1.1 Setting
+        2.1.2 Environment
+        2.1.3 Spatial Relations
+
+    2.2 Entities and Relations
+        2.2.1 Entities
+        2.2.2 Attributes
+        2.2.3 Relationships
+        2.2.4 Interactions
+
+    2.3 Rules and Possibilities
+        2.3.1 Physical Rules
+        2.3.2 Social Rules
+        2.3.3 Causal Rules
+        2.3.4 Possible States
+
+    2.4 Values and Fundamental Conflicts
+        2.4.1 Values
+        2.4.2 Desires
+        2.4.3 Opposition
+        2.4.4 Fundamental Conflict
+   3. Level 1 — Dramaturgy
+    3.1 Conflict and Goals
+    3.2 Tension and Change
+    3.3 Turning Points
+    3.4 Climax
+    3.5 Resolution
+    3.6 Dramaturgical Variants
+   4. Level 2 — Narrative / Text
+    4.1 Events and Information
+    4.2 Perspective
+    4.3 Discourse
+    4.4 Chapter
+    4.5 Paragraph
+    4.6 Scene
+    4.7 Dialogue
+    4.8 Narrative Variants
+   5. Level 3 — Form / Structure
+    5.1 Large-Scale Organization
+    5.2 Repetition
+    5.3 Contrast
+    5.4 Transition
+    5.5 Movement
+    5.6 Form Variants
+   6. Level 4 — Section
+    6.1 Verse
+    6.2 Chorus
+    6.3 Bridge
+    6.4 Scene
+    6.5 Episode
+    6.6 Exposition
+    6.7 Development
+    6.8 Coda
+    6.9 Section Functions and Variants
+7. Level 5 — Phrase
+
+    7.1 Phrase as a Local Container
+        7.1.1 Internal Units
+        7.1.2 Boundaries
+        7.1.3 Internal Relations
+
+    7.2 Contour
+        7.2.1 Opening
+        7.2.2 Development
+        7.2.3 Peak
+        7.2.4 Release
+
+    7.3 Rhythm
+        7.3.1 Pulse
+        7.3.2 Duration
+        7.3.3 Acceleration
+        7.3.4 Deceleration
+
+    7.4 Syntax
+        7.4.1 Dependency
+        7.4.2 Coordination
+        7.4.3 Subordination
+   8. Level 6 — Clause / Sentence / Utterance
+    8.1 Clause
+    8.2 Sentence
+    8.3 Utterance
+    8.4 Statement
+    8.5 Question
+    8.6 Command
+    8.7 Response
+    8.8 Semantic, Pragmatic and Intonational Functions
+   9. Level 7 — Word
+    9.1 Lexical Unit
+    9.2 Root
+    9.3 Derivation
+    9.4 Compounding
+    9.5 Inflection
+    9.6 Lexical Meaning
+    9.7 Accentuation
+    9.8 Word Variants
+   10. Level 8 — Syllable / Prosodic Unit
+    10.1 Onset
+    10.2 Nucleus
+    10.3 Coda
+    10.4 Stress
+    10.5 Timing
+    10.6 Pitch Movement
+    10.7 Prosodic Variants
+   11. Level 9 — Sound / Signal
+    11.1 Physical Realization
+    11.2 Pitch
+    11.3 Duration
+    11.4 Intensity
+    11.5 Timbre
+    11.6 Spectrum
+    11.7 Articulation
+    11.8 Phonetic and Acoustic Variants
+---
+  PART II — CROSS-LEVEL DIMENSIONS
+   12. Structural Dimension
+    12.1 Grouping
+    12.2 Nesting
+    12.3 Boundaries
+    12.4 Repetition
+    12.5 Contrast
+    12.6 Form
+    12.7 Hierarchical Relations
+   13. Semantic Dimension
+    13.1 Meaning
+    13.2 Concepts
+    13.3 Reference
+    13.4 Lexical Interpretation
+    13.5 Compositional Interpretation
+   14. Pragmatic / Discourse Dimension
+    14.1 Speaker Intention
+    14.2 Information Status
+    14.3 Context
+    14.4 Turn Structure
+    14.5 Implication
+    14.6 Discourse Organization
+   15. Prosodic / Intonational Dimension
+    15.1 Pitch Contour
+    15.2 Prominence
+    15.3 Stress
+    15.4 Phrasing
+    15.5 Boundary Marking
+    15.6 Timing
+    15.7 Expressive Contour
+   16. Rhythmic / Temporal Dimension
+    16.1 Pulse
+    16.2 Beat
+    16.3 Meter
+    16.4 Tempo
+    16.5 Duration
+    16.6 Syncopation
+    16.7 Polyrhythm
+    16.8 Temporal Density
+   17. Dynamic Dimension
+    17.1 Intensity
+    17.2 Loudness
+    17.3 Accent
+    17.4 Attack
+    17.5 Energy
+    17.6 Emphasis
+    17.7 Dynamic Contour
+   18. Timbre / Spectral Dimension
+    18.1 Tone Quality
+    18.2 Overtones
+    18.3 Spectrum
+    18.4 Articulation
+    18.5 Instrument / Sound Source
+    18.6 Sound Color
+   19. Harmonic / Pitch-Organization Dimension
+    19.1 Scales
+    19.2 Tonal Centers
+    19.3 Chords
+    19.4 Harmonic Function
+    19.5 Modulation
+    19.6 Consonance and Dissonance
+    19.7 Voice Leading
+   20. Melodic Dimension
+    20.1 Pitch Sequence
+    20.2 Contour
+    20.3 Motives
+    20.4 Intervals
+    20.5 Phrases
+    20.6 Development
+    20.7 Cadence
+    20.8 Melodic Form
+   21. Rhetorical / Poetic / Stylistic Dimension
+    21.1 Rhyme
+    21.2 Metaphor
+    21.3 Repetition
+    21.4 Parallelism
+    21.5 Emphasis
+    21.6 Aesthetic Organization
+    21.7 Expressive Style
+   22. Narrative / Dramatic Dimension
+    22.1 Theme
+    22.2 Conflict
+    22.3 Tension
+    22.4 Release
+    22.5 Character Action
+    22.6 Scene Function
+    22.7 Emotional Trajectory
+   23. Social / Cultural Dimension
+    23.1 Dialect
+    23.2 Register
+    23.3 Genre
+    23.4 Identity Signals
+    23.5 Cultural Conventions
+    23.6 Historical Context
+---
+  PART III — INTEGRATED SYSTEMS
+   24. Linguistic–Musical Relations
+    24.1 Speech and Music
+    24.2 Intonation as a Bridge
+    24.3 Prosody and Musical Rhythm
+    24.4 Pitch Organization
+    24.5 Melody and Speech Contour
+    24.6 Harmony and Linguistic Structure
+    24.7 Musical Abstraction
+   25. Sound Production and Realization
+    25.1 Speech Production
+    25.2 Articulation
+    25.3 Voice
+    25.4 Instruments
+    25.5 Timbre
+    25.6 Acoustic Realization
+    25.7 Intonational Realization
+   26. Advanced Musical Organization
+    26.1 Harmony
+    26.2 Voice Leading
+    26.3 Counterpoint
+    26.4 Polyphony
+    26.5 Interaction of Independent Lines
+   27. Composition, Songwriting and Narrative
+    27.1 Composition
+    27.2 Songwriting
+    27.3 Narrative Construction
+    27.4 Worldbuilding
+    27.5 Form and Dramaturgy
+    27.6 Meaning and Expression
+---
+  PART IV — SYSTEM ARCHITECTURE
+   28. Functional Layers
+    28.1 Container Function
+    28.2 Realization Function
+    28.3 Constraints
+    28.4 Interfaces Between Levels
+    28.5 Functions Shared Across Levels
+    28.6 Variants Within a Level
+   29. Level × Dimension Matrix
+    29.1 Hierarchy
+    29.2 Container Function
+    29.3 Typical Variants
+    29.4 Active Dimensions
+    29.5 Cross-Level Interaction
+   30. Hierarchy Lines and Organizational Relations
+    30.1 Containment
+    30.2 Dependency
+    30.3 Recursion
+    30.4 Parallelism
+    30.5 Contrast
+    30.6 Transformation
+    30.7 Interaction Between Containers
+   31. Integrated Model
+    31.1 World → Dramaturgy → Narrative → Form
+    31.2 Form → Section → Phrase
+    31.3 Phrase → Sentence → Word
+    31.4 Word → Syllable → Sound
+    31.5 Dimensions Operating Across the Hierarchy
+    31.6 Top-Down and Bottom-Up Interaction
+---
+  PART V — REFERENCE MATERIAL
+   32. Foundations of Linguistics
+   33. Lexicon, Parts of Speech & Grammar
+   34. Phonology and Prosody
+   35. Speech, Phonetics and Rhyme
+   36. Intonation, Rhythm and Temporal Structure
+   37. Pitch, Melody and Harmony
+   38. Advanced Harmony, Voice Leading and Counterpoint
+   39. Sound Production, Timbre and Instruments
+   40. Composition, Songwriting, Narrative and Worldbuilding
+---
+  41. Editorial Principles
+    41.1 Every New Topic Gets a Hierarchy Level
+    41.2 Every New Topic Gets Its Relevant Dimensions
+    41.3 A Topic Is Not Automatically a New Level
+    41.4 Music, Grammar, Narrative and Sound as Interacting Systems
+    41.5 Maintaining the Container–Function–Variant Model
