@@ -573,3 +573,91 @@
     47.5 Analytical Notation
     47.6 Computational Representation
     47.7 Possible Software Implementation
+	
+	XX. Temporal Dimension
+
+XX.1 Sequence
+XX.2 Duration
+XX.3 Timing
+XX.4 Interval
+XX.5 Synchronization
+XX.6 Asynchrony
+XX.7 Before / After
+XX.8 Simultaneity
+XX.9 Acceleration
+XX.10 Deceleration
+XX.11 Temporal Density
+XX.12 Temporal Hierarchy
+XX.13 Temporal Deformation
+XX.14 Temporal Expectation
+XX.15 Temporal Resolution
+
+XX. Expectation Dimension
+
+XX.1 Establishment of Expectation
+XX.2 Prediction
+XX.3 Anticipation
+XX.4 Confirmation
+XX.5 Delay
+XX.6 Deviation
+XX.7 Violation
+XX.8 Surprise
+XX.9 Reinterpretation
+XX.10 Expectation Resolution
+
+XX. Attention / Salience
+
+XX.1 Salience
+XX.2 Prominence
+XX.3 Focus
+XX.4 Background
+XX.5 Foreground
+XX.6 Attention Direction
+XX.7 Attention Shift
+XX.8 Attention Retention
+XX.9 Attention Release
+XX.10 Perceptual Weight
+
+XX. Identity and Motif
+
+XX.1 Identity
+XX.2 Similarity
+XX.3 Recurrence
+XX.4 Motif
+XX.5 Theme
+XX.6 Variant
+XX.7 Transformation
+XX.8 Recognition
+XX.9 Persistence
+XX.10 Recontextualization
+XX.11 Motif Development
+XX.12 Motif Interaction
+
+XX. Information Dynamics
+
+XX.1 Information
+XX.2 Information Density
+XX.3 Information Flow
+XX.4 Information Gain
+XX.5 Information Loss
+XX.6 Revelation
+XX.7 Concealment
+XX.8 Ambiguity
+XX.9 Redundancy
+XX.10 Compression
+XX.11 Expansion
+XX.12 Information Timing
+XX.13 Information Hierarchy
+
+XX. Uncertainty and Ambiguity
+
+XX.1 Structural Ambiguity
+XX.2 Semantic Ambiguity
+XX.3 Syntactic Ambiguity
+XX.4 Prosodic Ambiguity
+XX.5 Tonal Ambiguity
+XX.6 Referential Ambiguity
+XX.7 Interpretive Uncertainty
+XX.8 Indeterminacy
+XX.9 Polysemy
+XX.10 Resolution of Ambiguity
