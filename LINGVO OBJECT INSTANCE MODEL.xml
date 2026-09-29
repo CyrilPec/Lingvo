@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================
+     LINGVO OBJECT INSTANCE MODEL
+     ============================================================
+     This file defines the structure used to create concrete
+     Lingvo Objects from First Universal Object model.xml.
+     The Universal Object Model defines what an Object can be.
+     This file defines how an actual Object is instantiated.
+     ============================================================ -->
+<lingvo-object-instances model="First Universal Object model">
+  <object-template id="universal-object" type="object">
+    <identity>
+      <id/>
+      <type/>
+      <name/>
+      <label/>
+      <description/>
+      <aliases/>
+    </identity>
+    <structure>
+      <part-of/>
+      <contains/>
+      <composed-of/>
+      <boundary/>
+      <position/>
+      <order/>
+    </structure>
+    <properties>
+      <property id="" value="" type=""/>
+    </properties>
+    <dimensions>
+      <dimension ref=""/>
+    </dimensions>
+    <aspects>
+      <aspect ref=""/>
+    </aspects>
+    <functions>
+      <function ref=""/>
+    </functions>
+    <relations>
+      <relation type="" target=""/>
+    </relations>
+    <systems>
+      <system ref=""/>
+    </systems>
+    <context>
+      <context ref=""/>
+    </context>
+    <state>
+      <state ref=""/>
+    </state>
+    <transformations>
+      <transformation ref="" source="" target=""/>
+    </transformations>
+    <scale>
+      <level/>
+    </scale>
+    <representations>
+      <representation type="" ref=""/>
+    </representations>
+    <external-references>
+      <external-reference model="" concept="" identifier="" uri=""/>
+    </external-references>
+    <extensions>
+      <extension type="" ref=""/>
+    </extensions>
+  </object-template>
+</lingvo-object-instances>
