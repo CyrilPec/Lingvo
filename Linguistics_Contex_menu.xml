@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lingvo xmlns:xi="http://www.w3.org/2001/XInclude" id="lingvo" name="Lingvo" version="1.0">
+  <meta>
+    <title>Lingvo Structural Model</title>
+    <description>Language, Sound, Music, Meaning and Structure represented as a hierarchy of inherited objects and cross-level dimensions.</description>
+    <model>Hierarchy × Level × Object × Dimension</model>
+  </meta>
+  <principles>
+    <principle id="object-model">Everything in Lingvo is represented as an object.</principle>
+    <principle id="inheritance">Objects inherit properties, functions, relations, constraints, variants and dimensions from parent objects.</principle>
+    <principle id="hierarchy">Hierarchy defines scale, containment, composition and dependency.</principle>
+    <principle id="level">A level defines a class or scale of objects within the hierarchy.</principle>
+    <principle id="dimension">A dimension describes an aspect that may operate across multiple levels.</principle>
+    <principle id="cross-level">Objects and dimensions may relate across hierarchical levels.</principle>
+    <principle id="variant">Variants specialize an object without requiring a new hierarchical level.</principle>
+    <principle id="transformation">Objects may change state and transform while retaining identity and relations.</principle>
+  </principles>
+
+  <hierarchy id="hierarchy">
+    <level id="level-0" number="0" name="World" object-class="world"/>
+    <level id="level-1" number="1" name="Dramaturgy" object-class="dramaturgy"/>
+    <level id="level-2" number="2" name="Narrative / Text" object-class="narrative"/>
+    <level id="level-3" number="3" name="Form / Structure" object-class="form"/>
+    <level id="level-4" number="4" name="Section" object-class="section"/>
+    <level id="level-5" number="5" name="Phrase" object-class="phrase"/>
+    <level id="level-6" number="6" name="Clause / Sentence / Utterance" object-class="utterance"/>
+    <level id="level-7" number="7" name="Word" object-class="word"/>
+    <level id="level-8" number="8" name="Syllable / Prosodic Unit" object-class="syllable"/>
+    <level id="level-9" number="9" name="Sound / Signal" object-class="sound"/>
+  </hierarchy>
+
+  <object-model id="objects">
+    <object id="object" name="Object">
+      <description>Base object from which all Lingvo objects inherit.</description>
+      <properties>
+        <property id="identity"/>
+        <property id="state"/>
+      </properties>
+      <functions>
+        <function id="exist"/>
+        <function id="change"/>
+        <function id="transform"/>
+      </functions>
+      <relations>
+        <relation type="contains"/>
+        <relation type="belongs-to"/>
+        <relation type="depends-on"/>
+        <relation type="modifies"/>
+        <relation type="contrasts-with"/>
+        <relation type="repeats"/>
+        <relation type="continues"/>
+        <relation type="responds-to"/>
+        <relation type="transforms"/>
+        <relation type="realizes"/>
+        <relation type="interacts-with"/>
+        <relation type="before"/>
+        <relation type="after"/>
+        <relation type="simultaneous"/>
+      </relations>
+      <constraints/>
+      <variants/>
+      <dimensions/>
+    </object>
+
+    <object id="container" name="Container" extends="object">
+      <description>An object that contains other objects.</description>
+      <functions>
+        <function id="group"/>
+        <function id="order"/>
+        <function id="compose"/>
+      </functions>
+      <relations>
+        <relation type="contains"/>
+      </relations>
+    </object>
+
+    <object id="world" name="World" extends="container" level="0">
+      <properties>
+        <property id="environment"/>
+        <property id="time"/>
+        <property id="space"/>
+        <property id="rules"/>
+        <property id="possibilities"/>
+        <property id="values"/>
+        <property id="conflicts"/>
+      </properties>
+    </object>
+
+    <object id="dramaturgy" name="Dramaturgy" extends="container" level="1">
+      <properties>
+        <property id="action"/>
+        <property id="goal"/>
+        <property id="motivation"/>
+        <property id="obstacle"/>
+        <property id="consequence"/>
+        <property id="tension"/>
+        <property id="turning-point"/>
+        <property id="climax"/>
+        <property id="resolution"/>
+      </properties>
+    </object>
+
+    <object id="narrative" name="Narrative / Text" extends="container" level="2">
+      <properties>
+        <property id="events"/>
+        <property id="sequence"/>
+        <property id="causality"/>
+        <property id="information"/>
+        <property id="perspective"/>
+        <property id="speaker"/>
+        <property id="narrator"/>
+        <property id="point-of-view"/>
+      </properties>
+      <variants>
+        <variant id="chapter"/>
+        <variant id="paragraph"/>
+        <variant id="scene"/>
+        <variant id="dialogue"/>
+      </variants>
+    </object>
+
+    <object id="form" name="Form / Structure" extends="container" level="3">
+      <properties>
+        <property id="ordering"/>
+        <property id="grouping"/>
+        <property id="nesting"/>
+        <property id="proportion"/>
+        <property id="repetition"/>
+        <property id="contrast"/>
+        <property id="development"/>
+        <property id="transition"/>
+        <property id="transformation"/>
+      </properties>
+      <variants>
+        <variant id="linear"/>
+        <variant id="cyclic"/>
+        <variant id="recursive"/>
+        <variant id="hybrid"/>
+      </variants>
+    </object>
+
+    <object id="section" name="Section" extends="container" level="4">
+      <functions>
+        <function id="introduction"/>
+        <function id="development"/>
+        <function id="contrast"/>
+        <function id="transition"/>
+        <function id="climax"/>
+        <function id="resolution"/>
+        <function id="closure"/>
+      </functions>
+      <variants>
+        <variant id="verse"/>
+        <variant id="chorus"/>
+        <variant id="bridge"/>
+        <variant id="episode"/>
+        <variant id="exposition"/>
+        <variant id="coda"/>
+      </variants>
+    </object>
+
+    <object id="phrase" name="Phrase" extends="container" level="5">
+      <properties>
+        <property id="beginning"/>
+        <property id="development"/>
+        <property id="peak"/>
+        <property id="ending"/>
+        <property id="boundary"/>
+      </properties>
+      <functions>
+        <function id="grouping"/>
+        <function id="emphasis"/>
+        <function id="progression"/>
+        <function id="question"/>
+        <function id="answer"/>
+        <function id="closure"/>
+      </functions>
+    </object>
+
+    <object id="utterance" name="Clause / Sentence / Utterance" extends="container" level="6">
+      <properties>
+        <property id="predicate"/>
+        <property id="arguments"/>
+        <property id="dependencies"/>
+        <property id="coordination"/>
+        <property id="subordination"/>
+        <property id="speaker-intention"/>
+        <property id="context"/>
+        <property id="information-status"/>
+        <property id="intonational-realization"/>
+      </properties>
+      <variants>
+        <variant id="statement"/>
+        <variant id="question"/>
+        <variant id="command"/>
+        <variant id="exclamation"/>
+        <variant id="response"/>
+      </variants>
+    </object>
+
+    <object id="word" name="Word" extends="object" level="7">
+      <properties>
+        <property id="lexical-structure"/>
+        <property id="root"/>
+        <property id="stem"/>
+        <property id="affix"/>
+        <property id="derivation"/>
+        <property id="compounding"/>
+        <property id="inflection"/>
+        <property id="number"/>
+        <property id="case"/>
+        <property id="tense"/>
+        <property id="aspect"/>
+        <property id="person"/>
+        <property id="reference"/>
+      </properties>
+      <functions>
+        <function id="naming"/>
+        <function id="modification"/>
+        <function id="predication"/>
+        <function id="reference"/>
+      </functions>
+    </object>
+
+    <object id="syllable" name="Syllable / Prosodic Unit" extends="object" level="8">
+      <properties>
+        <property id="onset"/>
+        <property id="nucleus"/>
+        <property id="coda"/>
+        <property id="stress"/>
+        <property id="duration"/>
+        <property id="pitch"/>
+        <property id="intensity"/>
+        <property id="prominence"/>
+        <property id="grouping"/>
+        <property id="boundary"/>
+        <property id="rhythmic-organization"/>
+      </properties>
+    </object>
+
+    <object id="sound" name="Sound / Signal" extends="object" level="9">
+      <properties>
+        <property id="frequency"/>
+        <property id="duration"/>
+        <property id="amplitude"/>
+        <property id="spectrum"/>
+        <property id="phase"/>
+        <property id="articulation"/>
+        <property id="resonance"/>
+        <property id="formants"/>
+        <property id="harmonics"/>
+        <property id="noise"/>
+      </properties>
+      <variants>
+        <variant id="voice"/>
+        <variant id="speech"/>
+        <variant id="instrument"/>
+        <variant id="electronic-sound"/>
+        <variant id="acoustic-environment"/>
+      </variants>
+    </object>
+  </object-model>
+
+  <dimensions id="dimensions">
+    <dimension id="structural" name="Structural">
+      <aspect id="grouping"/><aspect id="nesting"/><aspect id="boundaries"/><aspect id="repetition"/><aspect id="contrast"/><aspect id="proportion"/><aspect id="transformation"/>
+    </dimension>
+    <dimension id="semantic" name="Semantic">
+      <aspect id="meaning"/><aspect id="concepts"/><aspect id="reference"/><aspect id="lexical-meaning"/><aspect id="compositional-meaning"/><aspect id="interpretation"/>
+    </dimension>
+    <dimension id="pragmatic-discourse" name="Pragmatic / Discourse">
+      <aspect id="speaker-intention"/><aspect id="context"/><aspect id="information-structure"/><aspect id="topic"/><aspect id="focus"/><aspect id="implication"/><aspect id="turn-structure"/>
+    </dimension>
+    <dimension id="prosodic-intonational" name="Prosodic / Intonational">
+      <aspect id="pitch"/><aspect id="pitch-contour"/><aspect id="prominence"/><aspect id="stress"/><aspect id="phrasing"/><aspect id="boundary"/><aspect id="expressive-contour"/>
+    </dimension>
+    <dimension id="rhythmic" name="Rhythmic">
+      <aspect id="pulse"/><aspect id="beat"/><aspect id="meter"/><aspect id="tempo"/><aspect id="duration"/><aspect id="syncopation"/><aspect id="polyrhythm"/><aspect id="rhythmic-density"/><aspect id="rhythmic-hierarchy"/>
+    </dimension>
+    <dimension id="temporal" name="Temporal">
+      <aspect id="sequence"/><aspect id="duration"/><aspect id="timing"/><aspect id="interval"/><aspect id="synchronization"/><aspect id="asynchrony"/><aspect id="before-after"/><aspect id="simultaneity"/><aspect id="acceleration"/><aspect id="deceleration"/><aspect id="temporal-density"/><aspect id="temporal-hierarchy"/><aspect id="temporal-deformation"/><aspect id="temporal-expectation"/><aspect id="temporal-resolution"/>
+    </dimension>
+    <dimension id="dynamic" name="Dynamic">
+      <aspect id="intensity"/><aspect id="loudness"/><aspect id="accent"/><aspect id="attack"/><aspect id="energy"/><aspect id="emphasis"/><aspect id="dynamic-contour"/>
+    </dimension>
+    <dimension id="timbre-spectral" name="Timbre / Spectral">
+      <aspect id="tone-quality"/><aspect id="harmonics"/><aspect id="spectrum"/><aspect id="resonance"/><aspect id="articulation"/><aspect id="sound-source"/><aspect id="sound-color"/>
+    </dimension>
+    <dimension id="harmonic-pitch" name="Harmonic / Pitch-Organization">
+      <aspect id="scales"/><aspect id="pitch-classes"/><aspect id="tonal-centers"/><aspect id="chords"/><aspect id="harmonic-function"/><aspect id="consonance-dissonance"/><aspect id="modulation"/><aspect id="voice-leading"/>
+    </dimension>
+    <dimension id="melodic" name="Melodic">
+      <aspect id="pitch-sequence"/><aspect id="contour"/><aspect id="intervals"/><aspect id="motive"/><aspect id="development"/><aspect id="phrase"/><aspect id="cadence"/>
+    </dimension>
+    <dimension id="rhetorical-poetic-stylistic" name="Rhetorical / Poetic / Stylistic">
+      <aspect id="repetition"/><aspect id="rhyme"/><aspect id="parallelism"/><aspect id="metaphor"/><aspect id="emphasis"/><aspect id="figurative-structure"/><aspect id="style"/>
+    </dimension>
+    <dimension id="narrative-dramatic" name="Narrative / Dramatic">
+      <aspect id="theme"/><aspect id="conflict"/><aspect id="tension"/><aspect id="release"/><aspect id="action"/><aspect id="character"/><aspect id="emotional-trajectory"/><aspect id="transformation"/>
+    </dimension>
+    <dimension id="social-cultural" name="Social / Cultural">
+      <aspect id="dialect"/><aspect id="register"/><aspect id="genre"/><aspect id="identity-signals"/><aspect id="cultural-conventions"/><aspect id="historical-context"/>
+    </dimension>
+    <dimension id="expectation" name="Expectation">
+      <aspect id="establishment"/><aspect id="prediction"/><aspect id="anticipation"/><aspect id="confirmation"/><aspect id="delay"/><aspect id="deviation"/><aspect id="violation"/><aspect id="surprise"/><aspect id="reinterpretation"/><aspect id="resolution"/>
+    </dimension>
+    <dimension id="attention-salience" name="Attention / Salience">
+      <aspect id="salience"/><aspect id="prominence"/><aspect id="focus"/><aspect id="background"/><aspect id="foreground"/><aspect id="attention-direction"/><aspect id="attention-shift"/><aspect id="attention-retention"/><aspect id="attention-release"/><aspect id="perceptual-weight"/>
+    </dimension>
+    <dimension id="identity-motif" name="Identity / Motif">
+      <aspect id="identity"/><aspect id="similarity"/><aspect id="recurrence"/><aspect id="motif"/><aspect id="theme"/><aspect id="variant"/><aspect id="transformation"/><aspect id="recognition"/><aspect id="persistence"/><aspect id="recontextualization"/><aspect id="motif-development"/><aspect id="motif-interaction"/>
+    </dimension>
+    <dimension id="information-dynamics" name="Information Dynamics">
+      <aspect id="information"/><aspect id="information-density"/><aspect id="information-flow"/><aspect id="information-gain"/><aspect id="information-loss"/><aspect id="revelation"/><aspect id="concealment"/><aspect id="redundancy"/><aspect id="compression"/><aspect id="expansion"/><aspect id="information-timing"/><aspect id="information-hierarchy"/>
+    </dimension>
+    <dimension id="uncertainty-ambiguity" name="Uncertainty / Ambiguity">
+      <aspect id="structural-ambiguity"/><aspect id="semantic-ambiguity"/><aspect id="syntactic-ambiguity"/><aspect id="prosodic-ambiguity"/><aspect id="tonal-ambiguity"/><aspect id="referential-ambiguity"/><aspect id="interpretive-uncertainty"/><aspect id="indeterminacy"/><aspect id="resolution"/>
+    </dimension>
+  </dimensions>
+
+  <cross-level-systems>
+    <system id="intonation" name="Intonation">
+      <applies-to ref="sound"/>
+      <applies-to ref="syllable"/>
+      <applies-to ref="word"/>
+      <applies-to ref="phrase"/>
+      <applies-to ref="utterance"/>
+      <applies-to ref="section"/>
+      <applies-to ref="form"/>
+    </system>
+    <system id="rhythm" name="Rhythm">
+      <applies-to ref="sound"/>
+      <applies-to ref="syllable"/>
+      <applies-to ref="word"/>
+      <applies-to ref="phrase"/>
+      <applies-to ref="section"/>
+      <applies-to ref="form"/>
+      <applies-to ref="narrative"/>
+      <applies-to ref="dramaturgy"/>
+    </system>
+    <system id="tension-resolution" name="Tension and Resolution">
+      <applies-to ref="sound"/>
+      <applies-to ref="syllable"/>
+      <applies-to ref="phrase"/>
+      <applies-to ref="utterance"/>
+      <applies-to ref="form"/>
+      <applies-to ref="narrative"/>
+      <applies-to ref="dramaturgy"/>
+    </system>
+    <system id="repetition-contrast-transformation" name="Repetition, Contrast and Transformation">
+      <applies-to ref="object"/>
+      <applies-to ref="phrase"/>
+      <applies-to ref="section"/>
+      <applies-to ref="form"/>
+      <applies-to ref="narrative"/>
+      <applies-to ref="dramaturgy"/>
+    </system>
+    <system id="linguistic-musical" name="Linguistic–Musical Relations">
+      <relation type="speech-and-music"/>
+      <relation type="intonation-and-melody"/>
+      <relation type="prosody-and-rhythm"/>
+      <relation type="stress-and-accent"/>
+      <relation type="pitch-organization"/>
+      <relation type="phrase-and-musical-phrase"/>
+      <relation type="linguistic-and-musical-form"/>
+    </system>
+  </cross-level-systems>
+
+  <inheritance>
+    <rule child="container" parent="object"/>
+    <rule child="world" parent="container"/>
+    <rule child="dramaturgy" parent="container"/>
+    <rule child="narrative" parent="container"/>
+    <rule child="form" parent="container"/>
+    <rule child="section" parent="container"/>
+    <rule child="phrase" parent="container"/>
+    <rule child="utterance" parent="container"/>
+    <rule child="word" parent="object"/>
+    <rule child="syllable" parent="object"/>
+    <rule child="sound" parent="object"/>
+  </inheritance>
+
+  <includes>
+    <!-- Future modules are included here with XInclude. -->
+    <!--
+    <xi:include href="objects/world.xml"/>
+    <xi:include href="objects/language.xml"/>
+    <xi:include href="objects/music.xml"/>
+    <xi:include href="dimensions/prosody.xml"/>
+    <xi:include href="dimensions/rhythm.xml"/>
+    -->
+  </includes>
+</lingvo>
