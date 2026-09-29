@@ -14,6 +14,22 @@
        Dimensions, aspects and systems are objects too.
        The hierarchy is therefore a graph of objects and relations,
        not a separate type of entity.
+    
+                             Object
+                           │
+          ┌────────────────┼────────────────┐
+          ↓                ↓                ↓
+      Container         Dimension         System
+          │                │                │
+          ↓                ↓                ↓
+      Text objects       Aspects          Members
+          │
+          ↓
+   contains / part-of
+          │
+          ↓
+       Objects
+
        ============================================================ -->
   <meta>
     <title>Lingvo Unified Object Model</title>
