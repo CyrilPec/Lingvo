@@ -6,186 +6,242 @@
     version="2.0">
   <!-- ============================================================
        LINGVO
-       Unified Object / Inheritance / Relation Model
-       Everything is an object.
-       Objects may inherit from other objects.
-       Objects may contain other objects.
-       Objects may participate in dimensions and systems.
-       Dimensions, aspects and systems are objects too.
-       The hierarchy is therefore a graph of objects and relations,
-       not a separate type of entity.
-    
-                             Object
-                           │
-          ┌────────────────┼────────────────┐
-          ↓                ↓                ↓
-      Container         Dimension         System
-          │                │                │
-          ↓                ↓                ↓
-      Text objects       Aspects          Members
-          │
-          ↓
-   contains / part-of
-          │
-          ↓
-       Objects
-
+       Unified Object Graph
+       Fundamental rule:
+           Everything is an Object.
+       Objects are connected by different kinds of relations.
+           is-a            = inheritance / type
+           contains       = composition
+           part-of        = inverse composition
+           has-aspect      = analytical aspect
+           participates-in = system participation
+           relates-to      = general relation
+       IMPORTANT:
+           The structural sequence
+               Text
+                 -> Section
+                 -> Phrase
+                 -> Utterance
+                 -> Word
+                 -> Syllable
+                 -> Sound
+           is NOT an inheritance hierarchy.
+       It is a composition hierarchy.
+       Inheritance answers:
+           "What kind of object is this?"
+       Composition answers:
+           "What is this object made of / containing?"
+       Aspect answers:
+           "From which dimension can this object be described?"
+       System participation answers:
+           "Which cross-object process does this object participate in?"
+       ============================================================ -->
+  <!-- ============================================================
+       META
        ============================================================ -->
   <meta>
-    <title>Lingvo Unified Object Model</title>
+    <title>Lingvo Unified Object Graph</title>
     <description>
       Language, Sound, Music, Meaning and Structure represented as
-      a unified graph of inherited objects, relations, aspects and systems.
+      a unified graph of objects, inheritance, composition,
+      aspects, relations and cross-object systems.
     </description>
     <model>
-      Object × Inheritance × Relation × Aspect × System
+      Object × Inheritance × Composition × Aspect × Relation × System
     </model>
-    <version-history>
-      <previous-model>
-        Hierarchy × Level × Object × Dimension
-      </previous-model>
-      <current-model>
-        Object × Inheritance × Relation × Aspect × System
-      </current-model>
-    </version-history>
+    <version>
+      2.0
+    </version>
   </meta>
   <!-- ============================================================
-       PRINCIPLES
+       FUNDAMENTAL PRINCIPLES
        ============================================================ -->
   <principles>
     <principle id="object-model">
       Everything in Lingvo is represented as an object.
     </principle>
-    <principle id="unified-model">
-      Hierarchy, dimensions, aspects, systems and linguistic entities
-      are all represented within the same object model.
+    <principle id="identity">
+      Every object has an identity independent of its current state,
+      position, relation or interpretation.
     </principle>
     <principle id="inheritance">
-      Objects inherit properties, functions, relations, constraints,
-      variants, aspects and systems from parent objects.
+      Inheritance expresses an "is-a" relationship.
+      A child object type inherits characteristics from its parent type.
     </principle>
     <principle id="composition">
-      Objects may contain, compose, realize or depend on other objects.
-    </principle>
-    <principle id="relation">
-      Structural and cross-level organization is represented through
-      explicit relations between objects.
-    </principle>
-    <principle id="scale">
-      Scale describes the relative structural position of an object.
-      Scale is metadata, not a separate ontological entity.
+      Composition expresses a "contains" or "part-of" relationship.
+      Composition does not imply inheritance.
     </principle>
     <principle id="aspect">
-      An aspect describes a reusable property-space that may occur
-      across multiple objects and scales.
+      An aspect describes an object from a particular analytical dimension.
     </principle>
     <principle id="dimension">
       A dimension is an object that groups related aspects.
-      Dimensions may be inherited, composed and applied across objects.
+      Dimensions may apply to objects at different structural scales.
     </principle>
     <principle id="system">
-      A system is an object representing a coherent process or relation
-      operating across multiple objects.
+      A system is an object representing an organized process or
+      relation operating across multiple objects.
+    </principle>
+    <principle id="relation">
+      Relations connect objects without requiring inheritance.
+    </principle>
+    <principle id="scale">
+      Scale describes structural granularity.
+      Scale does not define inheritance.
     </principle>
     <principle id="variant">
-      Variants specialize an object without requiring a new structural level.
+      A variant specializes an object without necessarily creating
+      a new structural type or scale.
     </principle>
     <principle id="transformation">
       Objects may change state or transform while retaining identity
       and relations.
     </principle>
-    <principle id="cross-level">
-      Any object may relate to another object regardless of scale.
+    <principle id="cross-scale">
+      Objects may relate to other objects at any scale.
     </principle>
   </principles>
   <!-- ============================================================
        RELATION TYPES
        ============================================================ -->
   <relation-types>
-    <relation-type id="is-a">
-      Inheritance / specialization relation.
+    <!-- TYPE / INHERITANCE -->
+    <relation-type
+        id="is-a"
+        category="type">
+      Child object type is a specialization of the parent object type.
     </relation-type>
-    <relation-type id="contains">
+    <!-- COMPOSITION -->
+    <relation-type
+        id="contains"
+        inverse="part-of"
+        category="composition">
       Object contains another object.
     </relation-type>
-    <relation-type id="part-of">
+    <relation-type
+        id="part-of"
+        inverse="contains"
+        category="composition">
       Object is a structural part of another object.
     </relation-type>
-    <relation-type id="composed-of">
+    <relation-type
+        id="composed-of"
+        inverse="part-of"
+        category="composition">
       Object is composed of other objects.
     </relation-type>
-    <relation-type id="belongs-to">
-      Object belongs to another object.
+    <!-- ORGANIZATION -->
+    <relation-type
+        id="belongs-to"
+        category="structural">
+      Object belongs to another object or context.
     </relation-type>
-    <relation-type id="depends-on">
+    <relation-type
+        id="depends-on"
+        category="dependency">
       Object depends on another object.
     </relation-type>
-    <relation-type id="modifies">
-      Object modifies another object.
+    <!-- TRANSFORMATION -->
+    <relation-type
+        id="transforms"
+        category="process">
+      Object transforms another object or changes into another state.
     </relation-type>
-    <relation-type id="contrasts-with">
-      Object contrasts with another object.
-    </relation-type>
-    <relation-type id="repeats">
-      Object repeats another object or pattern.
-    </relation-type>
-    <relation-type id="continues">
-      Object continues another object.
-    </relation-type>
-    <relation-type id="responds-to">
-      Object responds to another object.
-    </relation-type>
-    <relation-type id="transforms">
-      Object transforms into or transforms another object.
-    </relation-type>
-    <relation-type id="realizes">
+    <relation-type
+        id="realizes"
+        category="realization">
       Object realizes another object, function or structure.
     </relation-type>
-    <relation-type id="interacts-with">
-      Object interacts with another object.
+    <!-- INTERACTION -->
+    <relation-type
+        id="modifies"
+        category="interaction">
+      Object modifies another object.
     </relation-type>
-    <relation-type id="before">
-      Temporal precedence.
+    <relation-type
+        id="contrasts-with"
+        category="interaction">
+      Objects are structurally or perceptually contrasted.
     </relation-type>
-    <relation-type id="after">
-      Temporal succession.
+    <relation-type
+        id="repeats"
+        category="interaction">
+      Object repeats another object or pattern.
     </relation-type>
-    <relation-type id="simultaneous">
-      Temporal simultaneity.
+    <relation-type
+        id="continues"
+        category="interaction">
+      Object continues another object or process.
     </relation-type>
-    <relation-type id="has-aspect">
+    <relation-type
+        id="responds-to"
+        category="interaction">
+      Object responds to another object.
+    </relation-type>
+    <relation-type
+        id="interacts-with"
+        category="interaction">
+      General interaction between objects.
+    </relation-type>
+    <!-- TEMPORAL -->
+    <relation-type
+        id="before"
+        category="temporal">
+      Object precedes another object.
+    </relation-type>
+    <relation-type
+        id="after"
+        category="temporal">
+      Object follows another object.
+    </relation-type>
+    <relation-type
+        id="simultaneous"
+        category="temporal">
+      Objects occur simultaneously.
+    </relation-type>
+    <!-- ASPECT -->
+    <relation-type
+        id="has-aspect"
+        category="analytical">
       Object participates in an aspect.
     </relation-type>
-    <relation-type id="has-dimension">
+    <relation-type
+        id="has-dimension"
+        category="analytical">
       Object participates in a dimension.
     </relation-type>
-    <relation-type id="member-of">
+    <!-- SYSTEM -->
+    <relation-type
+        id="participates-in"
+        category="system">
+      Object participates in a cross-object system.
+    </relation-type>
+    <relation-type
+        id="member-of"
+        category="system">
       Object is a member of a system.
     </relation-type>
   </relation-types>
   <!-- ============================================================
-       OBJECT MODEL
-       Everything below is an object.
+       OBJECT TYPE DEFINITIONS
+       These are TYPES, not individual linguistic occurrences.
+       Every type ultimately inherits from Object.
        ============================================================ -->
-  <objects>
+  <types>
     <!-- ==========================================================
-         ROOT
+         UNIVERSAL OBJECT
          ========================================================== -->
-    <object
+    <type
         id="object"
-        name="Object"
-        kind="root"
-        scale="0">
+        name="Object">
       <description>
-        Universal base object from which all Lingvo objects inherit.
+        Universal object type from which every Lingvo object inherits.
       </description>
-      <identity>
-        <property id="identity"/>
-        <property id="state"/>
-      </identity>
       <properties>
         <property id="identity"/>
         <property id="state"/>
+        <property id="existence"/>
       </properties>
       <functions>
         <function id="exist"/>
@@ -196,7 +252,6 @@
         <relation type="is-a"/>
         <relation type="contains"/>
         <relation type="part-of"/>
-        <relation type="composed-of"/>
         <relation type="belongs-to"/>
         <relation type="depends-on"/>
         <relation type="modifies"/>
@@ -212,24 +267,18 @@
         <relation type="simultaneous"/>
         <relation type="has-aspect"/>
         <relation type="has-dimension"/>
-        <relation type="member-of"/>
+        <relation type="participates-in"/>
       </relations>
-      <constraints/>
-      <variants/>
-      <aspects/>
-      <dimensions/>
-      <systems/>
-    </object>
+    </type>
     <!-- ==========================================================
-         STRUCTURAL OBJECT TYPES
+         CONTAINER
          ========================================================== -->
-    <object
+    <type
         id="container"
         name="Container"
-        extends="object"
-        kind="structural">
+        extends="object">
       <description>
-        An object that may contain, order and compose other objects.
+        An object capable of containing or composing other objects.
       </description>
       <functions>
         <function id="group"/>
@@ -240,72 +289,79 @@
         <relation type="contains"/>
         <relation type="composed-of"/>
       </relations>
-    </object>
-    <object
+    </type>
+    <!-- ==========================================================
+         LINGUISTIC OBJECT
+         ========================================================== -->
+    <type
+        id="linguistic-object"
+        name="Linguistic Object"
+        extends="object">
+      <description>
+        Object participating in linguistic structure or meaning.
+      </description>
+    </type>
+    <!-- ==========================================================
+         PERCEPTUAL / ACOUSTIC OBJECT
+         ========================================================== -->
+    <type
+        id="signal-object"
+        name="Signal Object"
+        extends="object">
+      <description>
+        Object representing an acoustic, perceptual or signal-level entity.
+      </description>
+    </type>
+    <!-- ==========================================================
+         DIMENSION
+         ========================================================== -->
+    <type
         id="dimension"
         name="Dimension"
-        extends="object"
-        kind="dimension">
+        extends="object">
       <description>
-        A reusable aspect-space operating across objects and scales.
+        Analytical dimension containing reusable aspects.
       </description>
-      <functions>
-        <function id="organize-aspects"/>
-        <function id="apply"/>
-        <function id="inherit"/>
-      </functions>
       <relations>
         <relation type="contains"/>
         <relation type="has-aspect"/>
-        <relation type="has-dimension"/>
       </relations>
-    </object>
-    <object
+    </type>
+    <!-- ==========================================================
+         ASPECT
+         ========================================================== -->
+    <type
         id="aspect"
         name="Aspect"
-        extends="object"
-        kind="aspect">
+        extends="object">
       <description>
-        A reusable characteristic, property-space or analytical aspect.
+        Reusable analytical characteristic of an object.
       </description>
-      <relations>
-        <relation type="belongs-to"/>
-        <relation type="has-dimension"/>
-      </relations>
-    </object>
-    <object
+    </type>
+    <!-- ==========================================================
+         SYSTEM
+         ========================================================== -->
+    <type
         id="system"
         name="System"
-        extends="object"
-        kind="system">
+        extends="object">
       <description>
-        A coherent process, organization or cross-object system.
+        Cross-object process, organization or relational system.
       </description>
       <functions>
         <function id="operate"/>
         <function id="coordinate"/>
         <function id="transform"/>
       </functions>
-      <relations>
-        <relation type="contains"/>
-        <relation type="member-of"/>
-        <relation type="interacts-with"/>
-        <relation type="transforms"/>
-      </relations>
-    </object>
+    </type>
     <!-- ==========================================================
-         WORLD
-         Scale 0
+         STRUCTURAL / CONTENT OBJECT TYPES
          ========================================================== -->
-    <object
+    <type
         id="world"
         name="World"
         extends="container"
         scale="0">
-      <description>
-        Environment in which linguistic, musical, dramatic and
-        perceptual objects exist.
-      </description>
       <properties>
         <property id="environment"/>
         <property id="time"/>
@@ -315,29 +371,8 @@
         <property id="values"/>
         <property id="conflicts"/>
       </properties>
-      <relations>
-        <relation type="contains">
-          <target ref="dramaturgy"/>
-        </relation>
-        <relation type="contains">
-          <target ref="narrative"/>
-        </relation>
-        <relation type="contains">
-          <target ref="form"/>
-        </relation>
-      </relations>
-      <dimensions>
-        <dimension ref="temporal"/>
-        <dimension ref="social-cultural"/>
-        <dimension ref="identity-motif"/>
-        <dimension ref="expectation"/>
-      </dimensions>
-    </object>
-    <!-- ==========================================================
-         DRAMATURGY
-         Scale 1
-         ========================================================== -->
-    <object
+    </type>
+    <type
         id="dramaturgy"
         name="Dramaturgy"
         extends="container"
@@ -353,27 +388,8 @@
         <property id="climax"/>
         <property id="resolution"/>
       </properties>
-      <relations>
-        <relation type="contains">
-          <target ref="narrative"/>
-        </relation>
-        <relation type="depends-on">
-          <target ref="world"/>
-        </relation>
-      </relations>
-      <dimensions>
-        <dimension ref="narrative-dramatic"/>
-        <dimension ref="expectation"/>
-        <dimension ref="temporal"/>
-        <dimension ref="information-dynamics"/>
-        <dimension ref="attention-salience"/>
-      </dimensions>
-    </object>
-    <!-- ==========================================================
-         NARRATIVE / TEXT
-         Scale 2
-         ========================================================== -->
-    <object
+    </type>
+    <type
         id="narrative"
         name="Narrative / Text"
         extends="container"
@@ -394,32 +410,8 @@
         <variant id="scene"/>
         <variant id="dialogue"/>
       </variants>
-      <relations>
-        <relation type="contains">
-          <target ref="form"/>
-        </relation>
-        <relation type="contains">
-          <target ref="section"/>
-        </relation>
-        <relation type="depends-on">
-          <target ref="dramaturgy"/>
-        </relation>
-      </relations>
-      <dimensions>
-        <dimension ref="semantic"/>
-        <dimension ref="pragmatic-discourse"/>
-        <dimension ref="narrative-dramatic"/>
-        <dimension ref="rhetorical-poetic-stylistic"/>
-        <dimension ref="information-dynamics"/>
-        <dimension ref="expectation"/>
-        <dimension ref="uncertainty-ambiguity"/>
-      </dimensions>
-    </object>
-    <!-- ==========================================================
-         FORM / STRUCTURE
-         Scale 3
-         ========================================================== -->
-    <object
+    </type>
+    <type
         id="form"
         name="Form / Structure"
         extends="container"
@@ -441,29 +433,8 @@
         <variant id="recursive"/>
         <variant id="hybrid"/>
       </variants>
-      <relations>
-        <relation type="contains">
-          <target ref="section"/>
-        </relation>
-        <relation type="depends-on">
-          <target ref="narrative"/>
-        </relation>
-      </relations>
-      <dimensions>
-        <dimension ref="structural"/>
-        <dimension ref="temporal"/>
-        <dimension ref="rhythmic"/>
-        <dimension ref="melodic"/>
-        <dimension ref="harmonic-pitch"/>
-        <dimension ref="expectation"/>
-        <dimension ref="identity-motif"/>
-      </dimensions>
-    </object>
-    <!-- ==========================================================
-         SECTION
-         Scale 4
-         ========================================================== -->
-    <object
+    </type>
+    <type
         id="section"
         name="Section"
         extends="container"
@@ -485,29 +456,8 @@
         <variant id="exposition"/>
         <variant id="coda"/>
       </variants>
-      <relations>
-        <relation type="contains">
-          <target ref="phrase"/>
-        </relation>
-        <relation type="depends-on">
-          <target ref="form"/>
-        </relation>
-      </relations>
-      <dimensions>
-        <dimension ref="structural"/>
-        <dimension ref="rhythmic"/>
-        <dimension ref="temporal"/>
-        <dimension ref="melodic"/>
-        <dimension ref="rhetorical-poetic-stylistic"/>
-        <dimension ref="narrative-dramatic"/>
-        <dimension ref="identity-motif"/>
-      </dimensions>
-    </object>
-    <!-- ==========================================================
-         PHRASE
-         Scale 5
-         ========================================================== -->
-    <object
+    </type>
+    <type
         id="phrase"
         name="Phrase"
         extends="container"
@@ -527,35 +477,8 @@
         <function id="answer"/>
         <function id="closure"/>
       </functions>
-      <relations>
-        <relation type="contains">
-          <target ref="utterance"/>
-        </relation>
-        <relation type="contains">
-          <target ref="word"/>
-        </relation>
-        <relation type="depends-on">
-          <target ref="section"/>
-        </relation>
-      </relations>
-      <dimensions>
-        <dimension ref="structural"/>
-        <dimension ref="semantic"/>
-        <dimension ref="pragmatic-discourse"/>
-        <dimension ref="prosodic-intonational"/>
-        <dimension ref="rhythmic"/>
-        <dimension ref="temporal"/>
-        <dimension ref="melodic"/>
-        <dimension ref="rhetorical-poetic-stylistic"/>
-        <dimension ref="expectation"/>
-        <dimension ref="attention-salience"/>
-      </dimensions>
-    </object>
-    <!-- ==========================================================
-         CLAUSE / SENTENCE / UTTERANCE
-         Scale 6
-         ========================================================== -->
-    <object
+    </type>
+    <type
         id="utterance"
         name="Clause / Sentence / Utterance"
         extends="container"
@@ -578,38 +501,11 @@
         <variant id="exclamation"/>
         <variant id="response"/>
       </variants>
-      <relations>
-        <relation type="contains">
-          <target ref="word"/>
-        </relation>
-        <relation type="depends-on">
-          <target ref="phrase"/>
-        </relation>
-        <relation type="responds-to"/>
-        <relation type="before"/>
-        <relation type="after"/>
-        <relation type="simultaneous"/>
-      </relations>
-      <dimensions>
-        <dimension ref="semantic"/>
-        <dimension ref="pragmatic-discourse"/>
-        <dimension ref="prosodic-intonational"/>
-        <dimension ref="temporal"/>
-        <dimension ref="rhetorical-poetic-stylistic"/>
-        <dimension ref="information-dynamics"/>
-        <dimension ref="uncertainty-ambiguity"/>
-        <dimension ref="expectation"/>
-        <dimension ref="attention-salience"/>
-      </dimensions>
-    </object>
-    <!-- ==========================================================
-         WORD
-         Scale 7
-         ========================================================== -->
-    <object
+    </type>
+    <type
         id="word"
         name="Word"
-        extends="object"
+        extends="linguistic-object"
         scale="7">
       <properties>
         <property id="lexical-structure"/>
@@ -632,41 +528,11 @@
         <function id="predication"/>
         <function id="reference"/>
       </functions>
-      <relations>
-        <relation type="contains">
-          <target ref="syllable"/>
-        </relation>
-        <relation type="part-of">
-          <target ref="utterance"/>
-        </relation>
-        <relation type="depends-on">
-          <target ref="utterance"/>
-        </relation>
-        <relation type="modifies"/>
-        <relation type="refers-to"/>
-      </relations>
-      <dimensions>
-        <dimension ref="semantic"/>
-        <dimension ref="structural"/>
-        <dimension ref="pragmatic-discourse"/>
-        <dimension ref="prosodic-intonational"/>
-        <dimension ref="rhythmic"/>
-        <dimension ref="temporal"/>
-        <dimension ref="rhetorical-poetic-stylistic"/>
-        <dimension ref="social-cultural"/>
-        <dimension ref="identity-motif"/>
-        <dimension ref="information-dynamics"/>
-        <dimension ref="uncertainty-ambiguity"/>
-      </dimensions>
-    </object>
-    <!-- ==========================================================
-         SYLLABLE / PROSODIC UNIT
-         Scale 8
-         ========================================================== -->
-    <object
+    </type>
+    <type
         id="syllable"
         name="Syllable / Prosodic Unit"
-        extends="object"
+        extends="linguistic-object"
         scale="8">
       <properties>
         <property id="onset"/>
@@ -681,35 +547,11 @@
         <property id="boundary"/>
         <property id="rhythmic-organization"/>
       </properties>
-      <relations>
-        <relation type="contains">
-          <target ref="sound"/>
-        </relation>
-        <relation type="part-of">
-          <target ref="word"/>
-        </relation>
-        <relation type="depends-on">
-          <target ref="word"/>
-        </relation>
-      </relations>
-      <dimensions>
-        <dimension ref="prosodic-intonational"/>
-        <dimension ref="rhythmic"/>
-        <dimension ref="temporal"/>
-        <dimension ref="dynamic"/>
-        <dimension ref="timbre-spectral"/>
-        <dimension ref="melodic"/>
-        <dimension ref="attention-salience"/>
-      </dimensions>
-    </object>
-    <!-- ==========================================================
-         SOUND / SIGNAL
-         Scale 9
-         ========================================================== -->
-    <object
+    </type>
+    <type
         id="sound"
         name="Sound / Signal"
-        extends="object"
+        extends="signal-object"
         scale="9">
       <properties>
         <property id="frequency"/>
@@ -730,461 +572,509 @@
         <variant id="electronic-sound"/>
         <variant id="acoustic-environment"/>
       </variants>
-      <relations>
-        <relation type="part-of">
-          <target ref="syllable"/>
-        </relation>
-        <relation type="realizes">
-          <target ref="utterance"/>
-        </relation>
-        <relation type="interacts-with"/>
-        <relation type="before"/>
-        <relation type="after"/>
-        <relation type="simultaneous"/>
-      </relations>
-      <dimensions>
-        <dimension ref="prosodic-intonational"/>
-        <dimension ref="rhythmic"/>
-        <dimension ref="temporal"/>
-        <dimension ref="dynamic"/>
-        <dimension ref="timbre-spectral"/>
-        <dimension ref="harmonic-pitch"/>
-        <dimension ref="melodic"/>
-        <dimension ref="attention-salience"/>
-      </dimensions>
-    </object>
-    <!-- ==========================================================
-         DIMENSION OBJECTS
-         ========================================================== -->
-    <object
+    </type>
+  </types>
+  <!-- ============================================================
+       INHERITANCE
+       ONLY "IS-A" RELATIONSHIPS ARE DEFINED HERE.
+       Notice what is NOT here:
+           word -> syllable
+           syllable -> sound
+           phrase -> utterance
+       Those are composition relationships and are defined below.
+       ============================================================ -->
+  <inheritance>
+    <!-- Universal -->
+    <is-a child="container" parent="object"/>
+    <is-a child="linguistic-object" parent="object"/>
+    <is-a child="signal-object" parent="object"/>
+    <is-a child="dimension" parent="object"/>
+    <is-a child="aspect" parent="object"/>
+    <is-a child="system" parent="object"/>
+    <!-- Structural -->
+    <is-a child="world" parent="container"/>
+    <is-a child="dramaturgy" parent="container"/>
+    <is-a child="narrative" parent="container"/>
+    <is-a child="form" parent="container"/>
+    <is-a child="section" parent="container"/>
+    <is-a child="phrase" parent="container"/>
+    <is-a child="utterance" parent="container"/>
+    <!-- Linguistic -->
+    <is-a child="word" parent="linguistic-object"/>
+    <is-a child="syllable" parent="linguistic-object"/>
+    <!-- Signal -->
+    <is-a child="sound" parent="signal-object"/>
+  </inheritance>
+  <!-- ============================================================
+       COMPOSITION
+       THIS IS WHERE STRUCTURAL NESTING IS DEFINED.
+       It means:
+           World contains Dramaturgy
+           Dramaturgy contains Narrative
+           Narrative contains Form
+           Form contains Section
+           Section contains Phrase
+           Phrase contains Utterance
+           Utterance contains Word
+           Word contains Syllable
+           Syllable contains Sound
+       NONE OF THESE MEAN "IS-A".
+       ============================================================ -->
+  <composition>
+    <contains
+        parent="world"
+        child="dramaturgy"/>
+    <contains
+        parent="dramaturgy"
+        child="narrative"/>
+    <contains
+        parent="narrative"
+        child="form"/>
+    <contains
+        parent="form"
+        child="section"/>
+    <contains
+        parent="section"
+        child="phrase"/>
+    <contains
+        parent="phrase"
+        child="utterance"/>
+    <contains
+        parent="utterance"
+        child="word"/>
+    <contains
+        parent="word"
+        child="syllable"/>
+    <contains
+        parent="syllable"
+        child="sound"/>
+  </composition>
+  <!-- ============================================================
+       OBJECT RELATIONS
+       Additional relations between objects.
+       ============================================================ -->
+  <relations>
+    <!-- Narrative / structural -->
+    <relation
+        subject="dramaturgy"
+        type="depends-on"
+        object="world"/>
+    <relation
+        subject="narrative"
+        type="depends-on"
+        object="dramaturgy"/>
+    <relation
+        subject="form"
+        type="depends-on"
+        object="narrative"/>
+    <relation
+        subject="section"
+        type="depends-on"
+        object="form"/>
+    <relation
+        subject="phrase"
+        type="depends-on"
+        object="section"/>
+    <relation
+        subject="utterance"
+        type="depends-on"
+        object="phrase"/>
+    <relation
+        subject="word"
+        type="depends-on"
+        object="utterance"/>
+    <relation
+        subject="syllable"
+        type="depends-on"
+        object="word"/>
+    <relation
+        subject="sound"
+        type="realizes"
+        object="syllable"/>
+  </relations>
+  <!-- ============================================================
+       DIMENSIONS
+       Dimensions are OBJECT TYPES.
+       They are no longer a separate ontological universe.
+       A dimension contains aspects.
+       Objects later connect to dimensions using has-dimension.
+       ============================================================ -->
+  <dimensions>
+    <dimension
         id="structural"
-        name="Structural"
-        extends="dimension">
+        name="Structural">
       <aspects>
-        <aspect ref="grouping"/>
-        <aspect ref="nesting"/>
-        <aspect ref="boundaries"/>
-        <aspect ref="repetition"/>
-        <aspect ref="contrast"/>
-        <aspect ref="proportion"/>
-        <aspect ref="transformation"/>
+        <aspect id="grouping"/>
+        <aspect id="nesting"/>
+        <aspect id="boundaries"/>
+        <aspect id="repetition"/>
+        <aspect id="contrast"/>
+        <aspect id="proportion"/>
+        <aspect id="transformation"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="semantic"
-        name="Semantic"
-        extends="dimension">
+        name="Semantic">
       <aspects>
-        <aspect ref="meaning"/>
-        <aspect ref="concepts"/>
-        <aspect ref="reference"/>
-        <aspect ref="lexical-meaning"/>
-        <aspect ref="compositional-meaning"/>
-        <aspect ref="interpretation"/>
+        <aspect id="meaning"/>
+        <aspect id="concepts"/>
+        <aspect id="reference"/>
+        <aspect id="lexical-meaning"/>
+        <aspect id="compositional-meaning"/>
+        <aspect id="interpretation"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="pragmatic-discourse"
-        name="Pragmatic / Discourse"
-        extends="dimension">
+        name="Pragmatic / Discourse">
       <aspects>
-        <aspect ref="speaker-intention"/>
-        <aspect ref="context"/>
-        <aspect ref="information-structure"/>
-        <aspect ref="topic"/>
-        <aspect ref="focus"/>
-        <aspect ref="implication"/>
-        <aspect ref="turn-structure"/>
+        <aspect id="speaker-intention"/>
+        <aspect id="context"/>
+        <aspect id="information-structure"/>
+        <aspect id="topic"/>
+        <aspect id="focus"/>
+        <aspect id="implication"/>
+        <aspect id="turn-structure"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="prosodic-intonational"
-        name="Prosodic / Intonational"
-        extends="dimension">
+        name="Prosodic / Intonational">
       <aspects>
-        <aspect ref="pitch"/>
-        <aspect ref="pitch-contour"/>
-        <aspect ref="prominence"/>
-        <aspect ref="stress"/>
-        <aspect ref="phrasing"/>
-        <aspect ref="boundary"/>
-        <aspect ref="expressive-contour"/>
+        <aspect id="pitch"/>
+        <aspect id="pitch-contour"/>
+        <aspect id="prominence"/>
+        <aspect id="stress"/>
+        <aspect id="phrasing"/>
+        <aspect id="boundary"/>
+        <aspect id="expressive-contour"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="rhythmic"
-        name="Rhythmic"
-        extends="dimension">
+        name="Rhythmic">
       <aspects>
-        <aspect ref="pulse"/>
-        <aspect ref="beat"/>
-        <aspect ref="meter"/>
-        <aspect ref="tempo"/>
-        <aspect ref="duration"/>
-        <aspect ref="syncopation"/>
-        <aspect ref="polyrhythm"/>
-        <aspect ref="rhythmic-density"/>
-        <aspect ref="rhythmic-hierarchy"/>
+        <aspect id="pulse"/>
+        <aspect id="beat"/>
+        <aspect id="meter"/>
+        <aspect id="tempo"/>
+        <aspect id="duration"/>
+        <aspect id="syncopation"/>
+        <aspect id="polyrhythm"/>
+        <aspect id="rhythmic-density"/>
+        <aspect id="rhythmic-hierarchy"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="temporal"
-        name="Temporal"
-        extends="dimension">
+        name="Temporal">
       <aspects>
-        <aspect ref="sequence"/>
-        <aspect ref="duration"/>
-        <aspect ref="timing"/>
-        <aspect ref="interval"/>
-        <aspect ref="synchronization"/>
-        <aspect ref="asynchrony"/>
-        <aspect ref="before-after"/>
-        <aspect ref="simultaneity"/>
-        <aspect ref="acceleration"/>
-        <aspect ref="deceleration"/>
-        <aspect ref="temporal-density"/>
-        <aspect ref="temporal-hierarchy"/>
-        <aspect ref="temporal-deformation"/>
-        <aspect ref="temporal-expectation"/>
-        <aspect ref="temporal-resolution"/>
+        <aspect id="sequence"/>
+        <aspect id="duration"/>
+        <aspect id="timing"/>
+        <aspect id="interval"/>
+        <aspect id="synchronization"/>
+        <aspect id="asynchrony"/>
+        <aspect id="before-after"/>
+        <aspect id="simultaneity"/>
+        <aspect id="acceleration"/>
+        <aspect id="deceleration"/>
+        <aspect id="temporal-density"/>
+        <aspect id="temporal-hierarchy"/>
+        <aspect id="temporal-deformation"/>
+        <aspect id="temporal-expectation"/>
+        <aspect id="temporal-resolution"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="dynamic"
-        name="Dynamic"
-        extends="dimension">
+        name="Dynamic">
       <aspects>
-        <aspect ref="intensity"/>
-        <aspect ref="loudness"/>
-        <aspect ref="accent"/>
-        <aspect ref="attack"/>
-        <aspect ref="energy"/>
-        <aspect ref="emphasis"/>
-        <aspect ref="dynamic-contour"/>
+        <aspect id="intensity"/>
+        <aspect id="loudness"/>
+        <aspect id="accent"/>
+        <aspect id="attack"/>
+        <aspect id="energy"/>
+        <aspect id="emphasis"/>
+        <aspect id="dynamic-contour"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="timbre-spectral"
-        name="Timbre / Spectral"
-        extends="dimension">
+        name="Timbre / Spectral">
       <aspects>
-        <aspect ref="tone-quality"/>
-        <aspect ref="harmonics"/>
-        <aspect ref="spectrum"/>
-        <aspect ref="resonance"/>
-        <aspect ref="articulation"/>
-        <aspect ref="sound-source"/>
-        <aspect ref="sound-color"/>
+        <aspect id="tone-quality"/>
+        <aspect id="harmonics"/>
+        <aspect id="spectrum"/>
+        <aspect id="resonance"/>
+        <aspect id="articulation"/>
+        <aspect id="sound-source"/>
+        <aspect id="sound-color"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="harmonic-pitch"
-        name="Harmonic / Pitch-Organization"
-        extends="dimension">
+        name="Harmonic / Pitch-Organization">
       <aspects>
-        <aspect ref="scales"/>
-        <aspect ref="pitch-classes"/>
-        <aspect ref="tonal-centers"/>
-        <aspect ref="chords"/>
-        <aspect ref="harmonic-function"/>
-        <aspect ref="consonance-dissonance"/>
-        <aspect ref="modulation"/>
-        <aspect ref="voice-leading"/>
+        <aspect id="scales"/>
+        <aspect id="pitch-classes"/>
+        <aspect id="tonal-centers"/>
+        <aspect id="chords"/>
+        <aspect id="harmonic-function"/>
+        <aspect id="consonance-dissonance"/>
+        <aspect id="modulation"/>
+        <aspect id="voice-leading"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="melodic"
-        name="Melodic"
-        extends="dimension">
+        name="Melodic">
       <aspects>
-        <aspect ref="pitch-sequence"/>
-        <aspect ref="contour"/>
-        <aspect ref="intervals"/>
-        <aspect ref="motive"/>
-        <aspect ref="development"/>
-        <aspect ref="phrase"/>
-        <aspect ref="cadence"/>
+        <aspect id="pitch-sequence"/>
+        <aspect id="contour"/>
+        <aspect id="intervals"/>
+        <aspect id="motive"/>
+        <aspect id="development"/>
+        <aspect id="phrase"/>
+        <aspect id="cadence"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="rhetorical-poetic-stylistic"
-        name="Rhetorical / Poetic / Stylistic"
-        extends="dimension">
+        name="Rhetorical / Poetic / Stylistic">
       <aspects>
-        <aspect ref="repetition"/>
-        <aspect ref="rhyme"/>
-        <aspect ref="parallelism"/>
-        <aspect ref="metaphor"/>
-        <aspect ref="emphasis"/>
-        <aspect ref="figurative-structure"/>
-        <aspect ref="style"/>
+        <aspect id="repetition"/>
+        <aspect id="rhyme"/>
+        <aspect id="parallelism"/>
+        <aspect id="metaphor"/>
+        <aspect id="emphasis"/>
+        <aspect id="figurative-structure"/>
+        <aspect id="style"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="narrative-dramatic"
-        name="Narrative / Dramatic"
-        extends="dimension">
+        name="Narrative / Dramatic">
       <aspects>
-        <aspect ref="theme"/>
-        <aspect ref="conflict"/>
-        <aspect ref="tension"/>
-        <aspect ref="release"/>
-        <aspect ref="action"/>
-        <aspect ref="character"/>
-        <aspect ref="emotional-trajectory"/>
-        <aspect ref="transformation"/>
+        <aspect id="theme"/>
+        <aspect id="conflict"/>
+        <aspect id="tension"/>
+        <aspect id="release"/>
+        <aspect id="action"/>
+        <aspect id="character"/>
+        <aspect id="emotional-trajectory"/>
+        <aspect id="transformation"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="social-cultural"
-        name="Social / Cultural"
-        extends="dimension">
+        name="Social / Cultural">
       <aspects>
-        <aspect ref="dialect"/>
-        <aspect ref="register"/>
-        <aspect ref="genre"/>
-        <aspect ref="identity-signals"/>
-        <aspect ref="cultural-conventions"/>
-        <aspect ref="historical-context"/>
+        <aspect id="dialect"/>
+        <aspect id="register"/>
+        <aspect id="genre"/>
+        <aspect id="identity-signals"/>
+        <aspect id="cultural-conventions"/>
+        <aspect id="historical-context"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="expectation"
-        name="Expectation"
-        extends="dimension">
+        name="Expectation">
       <aspects>
-        <aspect ref="establishment"/>
-        <aspect ref="prediction"/>
-        <aspect ref="anticipation"/>
-        <aspect ref="confirmation"/>
-        <aspect ref="delay"/>
-        <aspect ref="deviation"/>
-        <aspect ref="violation"/>
-        <aspect ref="surprise"/>
-        <aspect ref="reinterpretation"/>
-        <aspect ref="resolution"/>
+        <aspect id="establishment"/>
+        <aspect id="prediction"/>
+        <aspect id="anticipation"/>
+        <aspect id="confirmation"/>
+        <aspect id="delay"/>
+        <aspect id="deviation"/>
+        <aspect id="violation"/>
+        <aspect id="surprise"/>
+        <aspect id="reinterpretation"/>
+        <aspect id="resolution"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="attention-salience"
-        name="Attention / Salience"
-        extends="dimension">
+        name="Attention / Salience">
       <aspects>
-        <aspect ref="salience"/>
-        <aspect ref="prominence"/>
-        <aspect ref="focus"/>
-        <aspect ref="background"/>
-        <aspect ref="foreground"/>
-        <aspect ref="attention-direction"/>
-        <aspect ref="attention-shift"/>
-        <aspect ref="attention-retention"/>
-        <aspect ref="attention-release"/>
-        <aspect ref="perceptual-weight"/>
+        <aspect id="salience"/>
+        <aspect id="prominence"/>
+        <aspect id="focus"/>
+        <aspect id="background"/>
+        <aspect id="foreground"/>
+        <aspect id="attention-direction"/>
+        <aspect id="attention-shift"/>
+        <aspect id="attention-retention"/>
+        <aspect id="attention-release"/>
+        <aspect id="perceptual-weight"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="identity-motif"
-        name="Identity / Motif"
-        extends="dimension">
+        name="Identity / Motif">
       <aspects>
-        <aspect ref="identity"/>
-        <aspect ref="similarity"/>
-        <aspect ref="recurrence"/>
-        <aspect ref="motif"/>
-        <aspect ref="theme"/>
-        <aspect ref="variant"/>
-        <aspect ref="transformation"/>
-        <aspect ref="recognition"/>
-        <aspect ref="persistence"/>
-        <aspect ref="recontextualization"/>
-        <aspect ref="motif-development"/>
-        <aspect ref="motif-interaction"/>
+        <aspect id="identity"/>
+        <aspect id="similarity"/>
+        <aspect id="recurrence"/>
+        <aspect id="motif"/>
+        <aspect id="theme"/>
+        <aspect id="variant"/>
+        <aspect id="transformation"/>
+        <aspect id="recognition"/>
+        <aspect id="persistence"/>
+        <aspect id="recontextualization"/>
+        <aspect id="motif-development"/>
+        <aspect id="motif-interaction"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="information-dynamics"
-        name="Information Dynamics"
-        extends="dimension">
+        name="Information Dynamics">
       <aspects>
-        <aspect ref="information"/>
-        <aspect ref="information-density"/>
-        <aspect ref="information-flow"/>
-        <aspect ref="information-gain"/>
-        <aspect ref="information-loss"/>
-        <aspect ref="revelation"/>
-        <aspect ref="concealment"/>
-        <aspect ref="redundancy"/>
-        <aspect ref="compression"/>
-        <aspect ref="expansion"/>
-        <aspect ref="information-timing"/>
-        <aspect ref="information-hierarchy"/>
+        <aspect id="information"/>
+        <aspect id="information-density"/>
+        <aspect id="information-flow"/>
+        <aspect id="information-gain"/>
+        <aspect id="information-loss"/>
+        <aspect id="revelation"/>
+        <aspect id="concealment"/>
+        <aspect id="redundancy"/>
+        <aspect id="compression"/>
+        <aspect id="expansion"/>
+        <aspect id="information-timing"/>
+        <aspect id="information-hierarchy"/>
       </aspects>
-    </object>
-    <object
+    </dimension>
+    <dimension
         id="uncertainty-ambiguity"
-        name="Uncertainty / Ambiguity"
-        extends="dimension">
+        name="Uncertainty / Ambiguity">
       <aspects>
-        <aspect ref="structural-ambiguity"/>
-        <aspect ref="semantic-ambiguity"/>
-        <aspect ref="syntactic-ambiguity"/>
-        <aspect ref="prosodic-ambiguity"/>
-        <aspect ref="tonal-ambiguity"/>
-        <aspect ref="referential-ambiguity"/>
-        <aspect ref="interpretive-uncertainty"/>
-        <aspect ref="indeterminacy"/>
-        <aspect ref="resolution"/>
+        <aspect id="structural-ambiguity"/>
+        <aspect id="semantic-ambiguity"/>
+        <aspect id="syntactic-ambiguity"/>
+        <aspect id="prosodic-ambiguity"/>
+        <aspect id="tonal-ambiguity"/>
+        <aspect id="referential-ambiguity"/>
+        <aspect id="interpretive-uncertainty"/>
+        <aspect id="indeterminacy"/>
+        <aspect id="resolution"/>
       </aspects>
+    </dimension>
+  </dimensions>
+  <!-- ============================================================
+       OBJECT -> DIMENSION CONNECTIONS
+       These are NOT inheritance.
+       They mean:
+           "This object can be described through this dimension."
+       The same dimension may apply at many scales.
+       ============================================================ -->
+  <object-dimensions>
+    <object id="world">
+      <has-dimension ref="temporal"/>
+      <has-dimension ref="social-cultural"/>
+      <has-dimension ref="identity-motif"/>
+      <has-dimension ref="expectation"/>
     </object>
-    <!-- ==========================================================
-         ASPECT OBJECTS
-         All aspects are objects.
-         ========================================================== -->
-    <aspect id="grouping" name="Grouping"/>
-    <aspect id="nesting" name="Nesting"/>
-    <aspect id="boundaries" name="Boundaries"/>
-    <aspect id="repetition" name="Repetition"/>
-    <aspect id="contrast" name="Contrast"/>
-    <aspect id="proportion" name="Proportion"/>
-    <aspect id="transformation" name="Transformation"/>
-    <aspect id="meaning" name="Meaning"/>
-    <aspect id="concepts" name="Concepts"/>
-    <aspect id="reference" name="Reference"/>
-    <aspect id="lexical-meaning" name="Lexical Meaning"/>
-    <aspect id="compositional-meaning" name="Compositional Meaning"/>
-    <aspect id="interpretation" name="Interpretation"/>
-    <aspect id="speaker-intention" name="Speaker Intention"/>
-    <aspect id="context" name="Context"/>
-    <aspect id="information-structure" name="Information Structure"/>
-    <aspect id="topic" name="Topic"/>
-    <aspect id="focus" name="Focus"/>
-    <aspect id="implication" name="Implication"/>
-    <aspect id="turn-structure" name="Turn Structure"/>
-    <aspect id="pitch" name="Pitch"/>
-    <aspect id="pitch-contour" name="Pitch Contour"/>
-    <aspect id="prominence" name="Prominence"/>
-    <aspect id="stress" name="Stress"/>
-    <aspect id="phrasing" name="Phrasing"/>
-    <aspect id="boundary" name="Boundary"/>
-    <aspect id="expressive-contour" name="Expressive Contour"/>
-    <aspect id="pulse" name="Pulse"/>
-    <aspect id="beat" name="Beat"/>
-    <aspect id="meter" name="Meter"/>
-    <aspect id="tempo" name="Tempo"/>
-    <aspect id="duration" name="Duration"/>
-    <aspect id="syncopation" name="Syncopation"/>
-    <aspect id="polyrhythm" name="Polyrhythm"/>
-    <aspect id="rhythmic-density" name="Rhythmic Density"/>
-    <aspect id="rhythmic-hierarchy" name="Rhythmic Hierarchy"/>
-    <aspect id="sequence" name="Sequence"/>
-    <aspect id="timing" name="Timing"/>
-    <aspect id="interval" name="Interval"/>
-    <aspect id="synchronization" name="Synchronization"/>
-    <aspect id="asynchrony" name="Asynchrony"/>
-    <aspect id="before-after" name="Before / After"/>
-    <aspect id="simultaneity" name="Simultaneity"/>
-    <aspect id="acceleration" name="Acceleration"/>
-    <aspect id="deceleration" name="Deceleration"/>
-    <aspect id="temporal-density" name="Temporal Density"/>
-    <aspect id="temporal-hierarchy" name="Temporal Hierarchy"/>
-    <aspect id="temporal-deformation" name="Temporal Deformation"/>
-    <aspect id="temporal-expectation" name="Temporal Expectation"/>
-    <aspect id="temporal-resolution" name="Temporal Resolution"/>
-    <aspect id="intensity" name="Intensity"/>
-    <aspect id="loudness" name="Loudness"/>
-    <aspect id="accent" name="Accent"/>
-    <aspect id="attack" name="Attack"/>
-    <aspect id="energy" name="Energy"/>
-    <aspect id="emphasis" name="Emphasis"/>
-    <aspect id="dynamic-contour" name="Dynamic Contour"/>
-    <aspect id="tone-quality" name="Tone Quality"/>
-    <aspect id="harmonics" name="Harmonics"/>
-    <aspect id="spectrum" name="Spectrum"/>
-    <aspect id="resonance" name="Resonance"/>
-    <aspect id="articulation" name="Articulation"/>
-    <aspect id="sound-source" name="Sound Source"/>
-    <aspect id="sound-color" name="Sound Color"/>
-    <aspect id="scales" name="Scales"/>
-    <aspect id="pitch-classes" name="Pitch Classes"/>
-    <aspect id="tonal-centers" name="Tonal Centers"/>
-    <aspect id="chords" name="Chords"/>
-    <aspect id="harmonic-function" name="Harmonic Function"/>
-    <aspect id="consonance-dissonance" name="Consonance / Dissonance"/>
-    <aspect id="modulation" name="Modulation"/>
-    <aspect id="voice-leading" name="Voice Leading"/>
-    <aspect id="pitch-sequence" name="Pitch Sequence"/>
-    <aspect id="contour" name="Contour"/>
-    <aspect id="intervals" name="Intervals"/>
-    <aspect id="motive" name="Motive"/>
-    <aspect id="development" name="Development"/>
-    <aspect id="cadence" name="Cadence"/>
-    <aspect id="rhyme" name="Rhyme"/>
-    <aspect id="parallelism" name="Parallelism"/>
-    <aspect id="metaphor" name="Metaphor"/>
-    <aspect id="figurative-structure" name="Figurative Structure"/>
-    <aspect id="style" name="Style"/>
-    <aspect id="theme" name="Theme"/>
-    <aspect id="conflict" name="Conflict"/>
-    <aspect id="tension" name="Tension"/>
-    <aspect id="release" name="Release"/>
-    <aspect id="action" name="Action"/>
-    <aspect id="character" name="Character"/>
-    <aspect id="emotional-trajectory" name="Emotional Trajectory"/>
-    <aspect id="dialect" name="Dialect"/>
-    <aspect id="register" name="Register"/>
-    <aspect id="genre" name="Genre"/>
-    <aspect id="identity-signals" name="Identity Signals"/>
-    <aspect id="cultural-conventions" name="Cultural Conventions"/>
-    <aspect id="historical-context" name="Historical Context"/>
-    <aspect id="establishment" name="Establishment"/>
-    <aspect id="prediction" name="Prediction"/>
-    <aspect id="anticipation" name="Anticipation"/>
-    <aspect id="confirmation" name="Confirmation"/>
-    <aspect id="delay" name="Delay"/>
-    <aspect id="deviation" name="Deviation"/>
-    <aspect id="violation" name="Violation"/>
-    <aspect id="surprise" name="Surprise"/>
-    <aspect id="reinterpretation" name="Reinterpretation"/>
-    <aspect id="salience" name="Salience"/>
-    <aspect id="background" name="Background"/>
-    <aspect id="foreground" name="Foreground"/>
-    <aspect id="attention-direction" name="Attention Direction"/>
-    <aspect id="attention-shift" name="Attention Shift"/>
-    <aspect id="attention-retention" name="Attention Retention"/>
-    <aspect id="attention-release" name="Attention Release"/>
-    <aspect id="perceptual-weight" name="Perceptual Weight"/>
-    <aspect id="similarity" name="Similarity"/>
-    <aspect id="recurrence" name="Recurrence"/>
-    <aspect id="recognition" name="Recognition"/>
-    <aspect id="persistence" name="Persistence"/>
-    <aspect id="recontextualization" name="Recontextualization"/>
-    <aspect id="motif-development" name="Motif Development"/>
-    <aspect id="motif-interaction" name="Motif Interaction"/>
-    <aspect id="information" name="Information"/>
-    <aspect id="information-density" name="Information Density"/>
-    <aspect id="information-flow" name="Information Flow"/>
-    <aspect id="information-gain" name="Information Gain"/>
-    <aspect id="information-loss" name="Information Loss"/>
-    <aspect id="revelation" name="Revelation"/>
-    <aspect id="concealment" name="Concealment"/>
-    <aspect id="redundancy" name="Redundancy"/>
-    <aspect id="compression" name="Compression"/>
-    <aspect id="expansion" name="Expansion"/>
-    <aspect id="information-timing" name="Information Timing"/>
-    <aspect id="information-hierarchy" name="Information Hierarchy"/>
-    <aspect id="structural-ambiguity" name="Structural Ambiguity"/>
-    <aspect id="semantic-ambiguity" name="Semantic Ambiguity"/>
-    <aspect id="syntactic-ambiguity" name="Syntactic Ambiguity"/>
-    <aspect id="prosodic-ambiguity" name="Prosodic Ambiguity"/>
-    <aspect id="tonal-ambiguity" name="Tonal Ambiguity"/>
-    <aspect id="referential-ambiguity" name="Referential Ambiguity"/>
-    <aspect id="interpretive-uncertainty" name="Interpretive Uncertainty"/>
-    <aspect id="indeterminacy" name="Indeterminacy"/>
-    <!-- ==========================================================
-         CROSS-OBJECT SYSTEMS
-         Systems are objects, not a separate ontology.
-         ========================================================== -->
-    <object
+    <object id="dramaturgy">
+      <has-dimension ref="narrative-dramatic"/>
+      <has-dimension ref="expectation"/>
+      <has-dimension ref="temporal"/>
+      <has-dimension ref="information-dynamics"/>
+      <has-dimension ref="attention-salience"/>
+    </object>
+    <object id="narrative">
+      <has-dimension ref="semantic"/>
+      <has-dimension ref="pragmatic-discourse"/>
+      <has-dimension ref="narrative-dramatic"/>
+      <has-dimension ref="rhetorical-poetic-stylistic"/>
+      <has-dimension ref="information-dynamics"/>
+      <has-dimension ref="expectation"/>
+      <has-dimension ref="uncertainty-ambiguity"/>
+    </object>
+    <object id="form">
+      <has-dimension ref="structural"/>
+      <has-dimension ref="temporal"/>
+      <has-dimension ref="rhythmic"/>
+      <has-dimension ref="melodic"/>
+      <has-dimension ref="harmonic-pitch"/>
+      <has-dimension ref="expectation"/>
+      <has-dimension ref="identity-motif"/>
+    </object>
+    <object id="section">
+      <has-dimension ref="structural"/>
+      <has-dimension ref="rhythmic"/>
+      <has-dimension ref="temporal"/>
+      <has-dimension ref="melodic"/>
+      <has-dimension ref="rhetorical-poetic-stylistic"/>
+      <has-dimension ref="narrative-dramatic"/>
+      <has-dimension ref="identity-motif"/>
+    </object>
+    <object id="phrase">
+      <has-dimension ref="structural"/>
+      <has-dimension ref="semantic"/>
+      <has-dimension ref="pragmatic-discourse"/>
+      <has-dimension ref="prosodic-intonational"/>
+      <has-dimension ref="rhythmic"/>
+      <has-dimension ref="temporal"/>
+      <has-dimension ref="melodic"/>
+      <has-dimension ref="rhetorical-poetic-stylistic"/>
+      <has-dimension ref="expectation"/>
+      <has-dimension ref="attention-salience"/>
+    </object>
+    <object id="utterance">
+      <has-dimension ref="semantic"/>
+      <has-dimension ref="pragmatic-discourse"/>
+      <has-dimension ref="prosodic-intonational"/>
+      <has-dimension ref="temporal"/>
+      <has-dimension ref="rhetorical-poetic-stylistic"/>
+      <has-dimension ref="information-dynamics"/>
+      <has-dimension ref="uncertainty-ambiguity"/>
+      <has-dimension ref="expectation"/>
+      <has-dimension ref="attention-salience"/>
+    </object>
+    <object id="word">
+      <has-dimension ref="semantic"/>
+      <has-dimension ref="structural"/>
+      <has-dimension ref="pragmatic-discourse"/>
+      <has-dimension ref="prosodic-intonational"/>
+      <has-dimension ref="rhythmic"/>
+      <has-dimension ref="temporal"/>
+      <has-dimension ref="rhetorical-poetic-stylistic"/>
+      <has-dimension ref="social-cultural"/>
+      <has-dimension ref="identity-motif"/>
+      <has-dimension ref="information-dynamics"/>
+      <has-dimension ref="uncertainty-ambiguity"/>
+    </object>
+    <object id="syllable">
+      <has-dimension ref="prosodic-intonational"/>
+      <has-dimension ref="rhythmic"/>
+      <has-dimension ref="temporal"/>
+      <has-dimension ref="dynamic"/>
+      <has-dimension ref="timbre-spectral"/>
+      <has-dimension ref="melodic"/>
+      <has-dimension ref="attention-salience"/>
+    </object>
+    <object id="sound">
+      <has-dimension ref="prosodic-intonational"/>
+      <has-dimension ref="rhythmic"/>
+      <has-dimension ref="temporal"/>
+      <has-dimension ref="dynamic"/>
+      <has-dimension ref="timbre-spectral"/>
+      <has-dimension ref="harmonic-pitch"/>
+      <has-dimension ref="melodic"/>
+      <has-dimension ref="attention-salience"/>
+    </object>
+  </object-dimensions>
+  <!-- ============================================================
+       CROSS-OBJECT SYSTEMS
+       Systems are objects.
+       They do NOT create another hierarchy.
+       They connect existing objects.
+       ============================================================ -->
+  <systems>
+    <system
         id="intonation"
         name="Intonation"
         extends="system">
@@ -1202,8 +1092,8 @@
         <dimension ref="temporal"/>
         <dimension ref="dynamic"/>
       </dimensions>
-    </object>
-    <object
+    </system>
+    <system
         id="rhythm"
         name="Rhythm"
         extends="system">
@@ -1222,8 +1112,8 @@
         <dimension ref="temporal"/>
         <dimension ref="dynamic"/>
       </dimensions>
-    </object>
-    <object
+    </system>
+    <system
         id="tension-resolution"
         name="Tension and Resolution"
         extends="system">
@@ -1242,8 +1132,8 @@
         <dimension ref="attention-salience"/>
         <dimension ref="information-dynamics"/>
       </dimensions>
-    </object>
-    <object
+    </system>
+    <system
         id="repetition-contrast-transformation"
         name="Repetition, Contrast and Transformation"
         extends="system">
@@ -1260,8 +1150,8 @@
         <dimension ref="identity-motif"/>
         <dimension ref="expectation"/>
       </dimensions>
-    </object>
-    <object
+    </system>
+    <system
         id="linguistic-musical"
         name="Linguistic–Musical Relations"
         extends="system">
@@ -1282,88 +1172,301 @@
         <member ref="phrase"/>
         <member ref="form"/>
       </members>
-    </object>
-  </objects>
+    </system>
+  </systems>
   <!-- ============================================================
-       DERIVED STRUCTURAL GRAPH
-       These are not separate "levels".
-       They are normal object relations.
-       Inheritance answers:
-         "What kind of object is this?"
-       contains / part-of answers:
-         "Where does this object belong?"
-       scale answers:
-         "At what structural granularity?"
-       dimension answers:
-         "Which aspect-space does it participate in?"
+       ASPECT DEFINITIONS
+       Aspects are objects.
+       They are intentionally reusable.
+       The same aspect may belong to several dimensions.
        ============================================================ -->
-  <graph>
-    <edge from="world" to="dramaturgy" relation="contains"/>
-    <edge from="dramaturgy" to="narrative" relation="contains"/>
-    <edge from="narrative" to="form" relation="contains"/>
-    <edge from="form" to="section" relation="contains"/>
-    <edge from="section" to="phrase" relation="contains"/>
-    <edge from="phrase" to="utterance" relation="contains"/>
-    <edge from="utterance" to="word" relation="contains"/>
-    <edge from="word" to="syllable" relation="contains"/>
-    <edge from="syllable" to="sound" relation="contains"/>
-  </graph>
+  <aspects>
+    <aspect id="grouping"/>
+    <aspect id="nesting"/>
+    <aspect id="boundaries"/>
+    <aspect id="repetition"/>
+    <aspect id="contrast"/>
+    <aspect id="proportion"/>
+    <aspect id="transformation"/>
+    <aspect id="meaning"/>
+    <aspect id="concepts"/>
+    <aspect id="reference"/>
+    <aspect id="lexical-meaning"/>
+    <aspect id="compositional-meaning"/>
+    <aspect id="interpretation"/>
+    <aspect id="speaker-intention"/>
+    <aspect id="context"/>
+    <aspect id="information-structure"/>
+    <aspect id="topic"/>
+    <aspect id="focus"/>
+    <aspect id="implication"/>
+    <aspect id="turn-structure"/>
+    <aspect id="pitch"/>
+    <aspect id="pitch-contour"/>
+    <aspect id="prominence"/>
+    <aspect id="stress"/>
+    <aspect id="phrasing"/>
+    <aspect id="boundary"/>
+    <aspect id="expressive-contour"/>
+    <aspect id="pulse"/>
+    <aspect id="beat"/>
+    <aspect id="meter"/>
+    <aspect id="tempo"/>
+    <aspect id="duration"/>
+    <aspect id="syncopation"/>
+    <aspect id="polyrhythm"/>
+    <aspect id="rhythmic-density"/>
+    <aspect id="rhythmic-hierarchy"/>
+    <aspect id="sequence"/>
+    <aspect id="timing"/>
+    <aspect id="interval"/>
+    <aspect id="synchronization"/>
+    <aspect id="asynchrony"/>
+    <aspect id="before-after"/>
+    <aspect id="simultaneity"/>
+    <aspect id="acceleration"/>
+    <aspect id="deceleration"/>
+    <aspect id="temporal-density"/>
+    <aspect id="temporal-hierarchy"/>
+    <aspect id="temporal-deformation"/>
+    <aspect id="temporal-expectation"/>
+    <aspect id="temporal-resolution"/>
+    <aspect id="intensity"/>
+    <aspect id="loudness"/>
+    <aspect id="accent"/>
+    <aspect id="attack"/>
+    <aspect id="energy"/>
+    <aspect id="emphasis"/>
+    <aspect id="dynamic-contour"/>
+    <aspect id="tone-quality"/>
+    <aspect id="harmonics"/>
+    <aspect id="spectrum"/>
+    <aspect id="resonance"/>
+    <aspect id="articulation"/>
+    <aspect id="sound-source"/>
+    <aspect id="sound-color"/>
+    <aspect id="scales"/>
+    <aspect id="pitch-classes"/>
+    <aspect id="tonal-centers"/>
+    <aspect id="chords"/>
+    <aspect id="harmonic-function"/>
+    <aspect id="consonance-dissonance"/>
+    <aspect id="modulation"/>
+    <aspect id="voice-leading"/>
+    <aspect id="pitch-sequence"/>
+    <aspect id="contour"/>
+    <aspect id="intervals"/>
+    <aspect id="motive"/>
+    <aspect id="development"/>
+    <aspect id="cadence"/>
+    <aspect id="rhyme"/>
+    <aspect id="parallelism"/>
+    <aspect id="metaphor"/>
+    <aspect id="figurative-structure"/>
+    <aspect id="style"/>
+    <aspect id="theme"/>
+    <aspect id="conflict"/>
+    <aspect id="tension"/>
+    <aspect id="release"/>
+    <aspect id="action"/>
+    <aspect id="character"/>
+    <aspect id="emotional-trajectory"/>
+    <aspect id="dialect"/>
+    <aspect id="register"/>
+    <aspect id="genre"/>
+    <aspect id="identity-signals"/>
+    <aspect id="cultural-conventions"/>
+    <aspect id="historical-context"/>
+    <aspect id="establishment"/>
+    <aspect id="prediction"/>
+    <aspect id="anticipation"/>
+    <aspect id="confirmation"/>
+    <aspect id="delay"/>
+    <aspect id="deviation"/>
+    <aspect id="violation"/>
+    <aspect id="surprise"/>
+    <aspect id="reinterpretation"/>
+    <aspect id="salience"/>
+    <aspect id="background"/>
+    <aspect id="foreground"/>
+    <aspect id="attention-direction"/>
+    <aspect id="attention-shift"/>
+    <aspect id="attention-retention"/>
+    <aspect id="attention-release"/>
+    <aspect id="perceptual-weight"/>
+    <aspect id="identity"/>
+    <aspect id="similarity"/>
+    <aspect id="recurrence"/>
+    <aspect id="motif"/>
+    <aspect id="recognition"/>
+    <aspect id="persistence"/>
+    <aspect id="recontextualization"/>
+    <aspect id="motif-development"/>
+    <aspect id="motif-interaction"/>
+    <aspect id="information"/>
+    <aspect id="information-density"/>
+    <aspect id="information-flow"/>
+    <aspect id="information-gain"/>
+    <aspect id="information-loss"/>
+    <aspect id="revelation"/>
+    <aspect id="concealment"/>
+    <aspect id="redundancy"/>
+    <aspect id="compression"/>
+    <aspect id="expansion"/>
+    <aspect id="information-timing"/>
+    <aspect id="information-hierarchy"/>
+    <aspect id="structural-ambiguity"/>
+    <aspect id="semantic-ambiguity"/>
+    <aspect id="syntactic-ambiguity"/>
+    <aspect id="prosodic-ambiguity"/>
+    <aspect id="tonal-ambiguity"/>
+    <aspect id="referential-ambiguity"/>
+    <aspect id="interpretive-uncertainty"/>
+    <aspect id="indeterminacy"/>
+    <aspect id="resolution"/>
+  </aspects>
   <!-- ============================================================
-       INHERITANCE GRAPH
-       Only true "is-a" relations are listed here.
-       Containment is deliberately NOT inheritance.
+       SCALE
+       Scale is retained because it is useful metadata.
+       It is NOT a type hierarchy.
+       The numbers describe granularity only.
        ============================================================ -->
-  <inheritance>
-    <edge child="container" parent="object"/>
-    <edge child="dimension" parent="object"/>
-    <edge child="aspect" parent="object"/>
-    <edge child="system" parent="object"/>
-    <edge child="world" parent="container"/>
-    <edge child="dramaturgy" parent="container"/>
-    <edge child="narrative" parent="container"/>
-    <edge child="form" parent="container"/>
-    <edge child="section" parent="container"/>
-    <edge child="phrase" parent="container"/>
-    <edge child="utterance" parent="container"/>
-    <edge child="word" parent="object"/>
-    <edge child="syllable" parent="object"/>
-    <edge child="sound" parent="object"/>
-    <edge child="structural" parent="dimension"/>
-    <edge child="semantic" parent="dimension"/>
-    <edge child="pragmatic-discourse" parent="dimension"/>
-    <edge child="prosodic-intonational" parent="dimension"/>
-    <edge child="rhythmic" parent="dimension"/>
-    <edge child="temporal" parent="dimension"/>
-    <edge child="dynamic" parent="dimension"/>
-    <edge child="timbre-spectral" parent="dimension"/>
-    <edge child="harmonic-pitch" parent="dimension"/>
-    <edge child="melodic" parent="dimension"/>
-    <edge child="rhetorical-poetic-stylistic" parent="dimension"/>
-    <edge child="narrative-dramatic" parent="dimension"/>
-    <edge child="social-cultural" parent="dimension"/>
-    <edge child="expectation" parent="dimension"/>
-    <edge child="attention-salience" parent="dimension"/>
-    <edge child="identity-motif" parent="dimension"/>
-    <edge child="information-dynamics" parent="dimension"/>
-    <edge child="uncertainty-ambiguity" parent="dimension"/>
-    <edge child="intonation" parent="system"/>
-    <edge child="rhythm" parent="system"/>
-    <edge child="tension-resolution" parent="system"/>
-    <edge child="repetition-contrast-transformation" parent="system"/>
-    <edge child="linguistic-musical" parent="system"/>
-  </inheritance>
+  <scale>
+    <scale-definition
+        id="0"
+        object="world"
+        name="World"
+        description="Broadest contextual scale"/>
+    <scale-definition
+        id="1"
+        object="dramaturgy"
+        name="Dramaturgy"/>
+    <scale-definition
+        id="2"
+        object="narrative"
+        name="Narrative / Text"/>
+    <scale-definition
+        id="3"
+        object="form"
+        name="Form / Structure"/>
+    <scale-definition
+        id="4"
+        object="section"
+        name="Section"/>
+    <scale-definition
+        id="5"
+        object="phrase"
+        name="Phrase"/>
+    <scale-definition
+        id="6"
+        object="utterance"
+        name="Clause / Sentence / Utterance"/>
+    <scale-definition
+        id="7"
+        object="word"
+        name="Word"/>
+    <scale-definition
+        id="8"
+        object="syllable"
+        name="Syllable / Prosodic Unit"/>
+    <scale-definition
+        id="9"
+        object="sound"
+        name="Sound / Signal"/>
+  </scale>
+  <!-- ============================================================
+       UI / CONTEXT MENU
+       The context menu is now a VIEW over the object graph.
+       It does not define the ontology.
+       This is important: the ontology can later be used by other
+       interfaces without changing the underlying model.
+       ============================================================ -->
+  <context-menu>
+    <!-- Universal actions -->
+    <menu
+        id="object"
+        label="Object">
+      <action id="create"/>
+      <action id="inspect"/>
+      <action id="edit-properties"/>
+      <action id="change-state"/>
+      <action id="transform"/>
+      <action id="duplicate"/>
+      <action id="delete"/>
+    </menu>
+    <!-- Structural actions -->
+    <menu
+        id="structure"
+        label="Structure">
+      <action id="contains"/>
+      <action id="add-child"/>
+      <action id="remove-child"/>
+      <action id="show-parent"/>
+      <action id="show-children"/>
+      <action id="show-parts"/>
+    </menu>
+    <!-- Type actions -->
+    <menu
+        id="type"
+        label="Type">
+      <action id="show-type"/>
+      <action id="show-parent-type"/>
+      <action id="show-subtypes"/>
+      <action id="change-variant"/>
+    </menu>
+    <!-- Aspect actions -->
+    <menu
+        id="aspects"
+        label="Aspects">
+      <action id="show-dimensions"/>
+      <action id="show-aspects"/>
+      <action id="add-aspect"/>
+      <action id="remove-aspect"/>
+    </menu>
+    <!-- Relations -->
+    <menu
+        id="relations"
+        label="Relations">
+      <action id="show-relations"/>
+      <action id="add-relation"/>
+      <action id="remove-relation"/>
+      <action id="show-dependencies"/>
+      <action id="show-transformations"/>
+    </menu>
+    <!-- Systems -->
+    <menu
+        id="systems"
+        label="Systems">
+      <action id="show-systems"/>
+      <action id="join-system"/>
+      <action id="leave-system"/>
+      <action id="show-system-members"/>
+    </menu>
+    <!-- Scale -->
+    <menu
+        id="scale"
+        label="Scale">
+      <action id="show-scale"/>
+      <action id="show-nearby-scales"/>
+      <action id="navigate-up-scale"/>
+      <action id="navigate-down-scale"/>
+    </menu>
+  </context-menu>
   <!-- ============================================================
        FUTURE MODULES
        ============================================================ -->
   <includes>
     <!--
-      <xi:include href="objects/world.xml"/>
-      <xi:include href="objects/language.xml"/>
-      <xi:include href="objects/music.xml"/>
-      <xi:include href="dimensions/prosody.xml"/>
-      <xi:include href="dimensions/rhythm.xml"/>
-      <xi:include href="systems/intonation.xml"/>
-      <xi:include href="systems/rhythm.xml"/>
+      Objects:
+        <xi:include href="objects/world.xml"/>
+        <xi:include href="objects/language.xml"/>
+        <xi:include href="objects/music.xml"/>
+      Dimensions:
+        <xi:include href="dimensions/prosody.xml"/>
+        <xi:include href="dimensions/rhythm.xml"/>
+      Systems:
+        <xi:include href="systems/intonation.xml"/>
+        <xi:include href="systems/rhythm.xml"/>
     -->
   </includes>
 </lingvo>
