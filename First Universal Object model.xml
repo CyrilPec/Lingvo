@@ -1686,4 +1686,79 @@
         id="object-model"
         accepts="type property aspect function relation dimension system"/>
   </extensions>
+    <!-- ============================================================
+     EXTERNAL MODEL INTEGRATION
+     ============================================================
+     The Lingvo Object Model is the primary model.
+     External standards and vocabularies may describe, annotate,
+     specialize or enrich Lingvo Objects.
+
+     External models do not become part of the Lingvo inheritance
+     hierarchy. A mapping is a relationship between concepts.
+
+     One Lingvo Object may therefore have several external views.
+     ============================================================ -->
+
+<external-models>
+  <model id="ontolex" name="OntoLex-Lemon" type="lexical-model">
+    <description>Model for representing lexical information and lexical entries.</description>
+    <namespace>http://www.w3.org/ns/lemon/ontolex#</namespace>
+  </model>
+  <model id="ud" name="Universal Dependencies" type="linguistic-annotation-model">
+    <description>Framework for morphological and syntactic annotation.</description>
+    <namespace>https://universaldependencies.org/</namespace>
+  </model>
+  <model id="laf" name="Linguistic Annotation Framework" type="annotation-model">
+    <description>Framework for representing linguistic annotations.</description>
+    <standard>ISO 24612</standard>
+  </model>
+  <model id="maf" name="Morpho-Syntactic Annotation Framework" type="morphology-model">
+    <description>Framework for word-level morphological and morphosyntactic annotation.</description>
+    <standard>ISO 24611</standard>
+  </model>
+  <model id="synaf" name="Syntactic Annotation Framework" type="syntax-model">
+    <description>Framework for syntactic annotation and structure.</description>
+    <standard>ISO 24615</standard>
+  </model>
+  <model id="semaf" name="Semantic Annotation Framework" type="semantic-model">
+    <description>Framework for semantic annotation.</description>
+    <standard>ISO 24617</standard>
+  </model>
+</external-models>
+
+<!-- ============================================================
+     EXTERNAL CONCEPT MAPPINGS
+     ============================================================
+     A mapping says that a Lingvo Object Type corresponds to,
+     is described by, or can be represented using an external
+     concept.
+
+     A mapping does NOT mean that the two concepts are identical.
+     ============================================================ -->
+
+<external-mappings>
+  <mapping object-type="word" model="ud" concept="word"/>
+  <mapping object-type="word" model="maf" concept="word"/>
+  <mapping object-type="word" model="ontolex" concept="LexicalEntry"/>
+  <mapping object-type="syllable" model="laf" concept="linguistic-unit"/>
+  <mapping object-type="utterance" model="synaf" concept="syntactic-structure"/>
+  <mapping object-type="utterance" model="laf" concept="linguistic-annotation"/>
+  <mapping object-type="sound" model="laf" concept="phonetic-or-acoustic-annotation"/>
+  <mapping object-type="narrative" model="semaf" concept="semantic-structure"/>
+</external-mappings>
+
+<!-- ============================================================
+     EXTERNAL REFERENCES
+     ============================================================
+     Individual Objects may reference concrete entities,
+     annotations or concepts in an external model.
+
+     The external reference supplements the Lingvo Object.
+     It does not replace the Object.
+     ============================================================ -->
+
+<external-reference-template id="external-reference">
+  <external-reference model="" concept="" identifier="" uri=""/>
+</external-reference-template>
+
 </lingvo>
