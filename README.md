@@ -36,7 +36,17 @@ Cat.xml  = actual object
           │                  │                  │
           └──────────────────┼──────────────────┘
                              ↓
-                      OBJECT LIBRARY
+                      OBJECT LIBRARY                             
+                             │
+                             ↓
+                            AI
+                    ┌────────┼────────┐
+                    ↓        ↓        ↓
+                  create   analyze   transform
+                    ↓        ↓        ↓
+                 objects  relations  blueprints
+                    └────────┼────────┘
+                             ↓                  
                              │
           ┌──────────────────┼──────────────────┐                  
           │                  │                  │
@@ -47,6 +57,7 @@ Cat.xml  = actual object
           │                  │                  │
           └──── contains ───►│                  │
                              └──── contains ───►│
+                        OBJECT LIBRARY
                           │
                           ↓
                      BLUEPRINTS
