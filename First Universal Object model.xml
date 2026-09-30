@@ -10,28 +10,34 @@
        Everything in Lingvo is an Object.
         "What should a complete knowledge object contain?"
        An Object can have:
-         Identity
-         Type
-         Structure
-         Constraints
-         Properties
-         Dimensions
-         Aspects
-         Functions
-         Relations
-         Systems
-         Context
-         State
-         Transformations
-         Scale
-         Representation
-         Extensions
-        Theories
-        Transformations
-        Components
-        Definition
-        Meaning
-        References
+         ├── Identity
+        ├── Type
+        ├── Definition
+        ├── Meaning
+        ├── Terminology
+        ├── Structure
+        ├── Components
+        ├── Properties
+        ├── Dimensions
+        ├── Aspects
+        ├── Functions
+        ├── Relations
+        ├── Systems
+        ├── Context
+        ├── State
+        ├── Constraints
+        ├── Transformations
+        ├── Scale
+        ├── Representation
+        ├── Extensions
+        ├── Theories
+        ├── Variants
+        ├── History
+        ├── Applications
+        ├── Examples
+        ├── References
+        ├── Media
+        └── Related Objects
        IMPORTANT
        These are independent dimensions of the same Object.
        They are NOT one inheritance hierarchy.
