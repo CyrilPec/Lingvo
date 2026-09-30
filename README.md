@@ -1,11 +1,6 @@
-First Universal Object model.xml
-        = ontology / capabilities
-
-LINGVO OBJECT INSTANCE MODEL.xml
-        = schema / construction rules
-
-Cat.xml
-        = actual object
+First Universal Object model.xml  = ontology / capabilities
+LINGVO OBJECT INSTANCE MODEL.xml  = schema / construction rules
+Cat.xml  = actual object
 
                     UNIVERSAL OBJECT MODEL
                              │
@@ -15,25 +10,27 @@ Cat.xml
           ▼                  ▼                  ▼
       Word Model        Syllable Model      Sound Model
           │                  │                  │
+          └── allows → Syllable Model           │
           │                  │                  │
           ▼                  ▼                  ▼
      Word Instances     Syllable Instances   Sound Instances
           │                  │                  │
-          └──── contains ────►│                  │
-                             └──── contains ────►│
-
-MODEL LEVEL
-
-Word Model
-   │
-   └── allows → Syllable Model
+          └── contains → Syllable Instance      │
+          │                  │                  │
+          └──── contains ───►│                  │
+                             └──── contains ───►│
 
 
-INSTANCE LEVEL
+1. Universal Object
+2. Universal Object Model
 
-Word Instance
-   │
-   └── contains → Syllable Instance
+MODELING
+3. Object Models
+4. Object Types
 
+REALIZATION
+5. Object Instances
 
-instances contain instances, while models define what containment is allowed and how the contained object can vary.
+COMPOSITION
+6. Relations between Instances
+7. Systems composed of Instances
