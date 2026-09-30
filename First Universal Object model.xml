@@ -135,6 +135,23 @@
         </property>
       </structure>
       <!-- --------------------------------------------------------
+           CONSTRAINTS
+           -------------------------------------------------------- -->
+        <constraints>
+    <relation id="constrained-by">
+        Object is constrained by another object, rule or condition.
+    </relation>
+    <relation id="constrains">
+        Object constrains another object.
+    </relation>
+    <property id="constraint">
+        Constraint applied to the object.
+    </property>
+    <property id="validity">
+        Conditions under which the object is valid.
+    </property>
+</constraints>
+      <!-- --------------------------------------------------------
            PROPERTIES
            -------------------------------------------------------- -->
       <properties>
