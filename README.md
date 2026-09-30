@@ -2,6 +2,25 @@ First Universal Object model.xml  = ontology / capabilities
 LINGVO OBJECT INSTANCE MODEL.xml  = schema / construction rules
 Cat.xml  = actual object
 
+              Theme of search "Melodic Phrase"
+                             │
+                             ↓
+                      FIND SOURCES
+                             │
+             ┌───────────────┼───────────────┐
+             ↓               ↓               ↓
+          Wikipedia       Papers          YouTube
+             │               │               │
+             └───────────────┼───────────────┘
+                             ↓
+                        AI ANALYSIS
+                             │
+             ┌───────────────┼───────────────┐
+             ↓               ↓               ↓
+          concepts       relations        theories
+             │               │               │
+             └───────────────┼───────────────┘
+                             ↓
                     UNIVERSAL OBJECT MODEL
                              │
               defines Model / Instance / Variation
