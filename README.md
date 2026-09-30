@@ -12,20 +12,12 @@ Cat.xml  = actual object
           Wikipedia       Papers          YouTube
              │               │               │
              └───────────────┼───────────────┘
-                             ↓
-                        AI ANALYSIS
-                             │
-             ┌───────────────┼───────────────┐
-             ↓               ↓               ↓
-          concepts       relations        theories
-             │               │               │
-             └───────────────┼───────────────┘
-                             ↓
+                             ↓                       
                     UNIVERSAL OBJECT MODEL
                              │
               defines Model / Instance / Variation
-                              │
-                              ↓
+                             │
+                             ↓
                      OBJECT INVENTORY
                              │
           ┌──────────────────┼──────────────────┐
@@ -38,16 +30,7 @@ Cat.xml  = actual object
                              ↓
                       OBJECT LIBRARY                             
                              │
-                             ↓
-                            AI
-                    ┌────────┼────────┐
-                    ↓        ↓        ↓
-                  create   analyze   transform
-                    ↓        ↓        ↓
-                 objects  relations  blueprints
-                    └────────┼────────┘
-                             ↓                  
-                             │
+                             ↓                          
           ┌──────────────────┼──────────────────┐                  
           │                  │                  │
           ▼                  ▼                  ▼
@@ -57,7 +40,6 @@ Cat.xml  = actual object
           │                  │                  │
           └──── contains ───►│                  │
                              └──── contains ───►│
-                        OBJECT LIBRARY
                           │
                           ↓
                      BLUEPRINTS
