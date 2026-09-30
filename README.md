@@ -5,12 +5,21 @@ Cat.xml  = actual object
                     UNIVERSAL OBJECT MODEL
                              │
               defines Model / Instance / Variation
+                              │
+                              ↓
+                     OBJECT INVENTORY
                              │
           ┌──────────────────┼──────────────────┐
           ▼                  ▼                  ▼
       Word Model        Syllable Model      Sound Model
           │                  │                  │
           └── allows → Syllable Model           │
+          │                  │                  │
+          └──────────────────┼──────────────────┘
+                             ↓
+                      OBJECT LIBRARY
+                             │
+          ┌──────────────────┼──────────────────┐                  
           │                  │                  │
           ▼                  ▼                  ▼
      Word Instances     Syllable Instances   Sound Instances
@@ -19,7 +28,13 @@ Cat.xml  = actual object
           │                  │                  │
           └──── contains ───►│                  │
                              └──── contains ───►│
-
+                          │
+                          ↓
+                     BLUEPRINTS
+                          │
+             ┌────────────┼────────────┐
+             ↓            ↓            ↓
+           HTML          PDF          DOCX
 
 1. Universal Object
 2. Universal Object Model
