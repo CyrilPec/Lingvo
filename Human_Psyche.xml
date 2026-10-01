@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<human-psyche
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    id="human-psyche-001"
+    name="Human Psyche"
+    instance-of="Psyche"
+    is-a="Object">
+
+  <identity>
+    <name>Human Psyche</name>
+    <description>
+      The functional organization of mental processes and structures
+      associated with the human organism.
+    </description>
+  </identity>
+
+  <type>
+    <instance-of ref="psyche"/>
+    <is-a ref="object"/>
+  </type>
+
+  <structure>
+    <part-of ref="human-001"/>
+    <realized-by ref="human-brain-001"/>
+  </structure>
+
+  <properties>
+    <property id="integration" name="Integration"/>
+    <property id="plasticity" name="Plasticity"/>
+    <property id="individuality" name="Individuality"/>
+    <property id="adaptability" name="Adaptability"/>
+  </properties>
+
+  <dimensions>
+    <has-dimension ref="temporal"/>
+    <has-dimension ref="information-dynamics"/>
+    <has-dimension ref="attention-salience"/>
+    <has-dimension ref="expectation"/>
+    <has-dimension ref="identity-motif"/>
+    <has-dimension ref="semantic"/>
+    <has-dimension ref="social-cultural"/>
+  </dimensions>
+
+  <functions>
+    <has-function ref="perceive"/>
+    <has-function ref="remember"/>
+    <has-function ref="interpret"/>
+    <has-function ref="predict"/>
+    <has-function ref="evaluate"/>
+    <has-function ref="decide"/>
+    <has-function ref="imagine"/>
+    <has-function ref="communicate"/>
+    <has-function ref="act"/>
+  </functions>
+
+  <relations>
+    <depends-on ref="human-brain-001"/>
+    <influences ref="behavior"/>
+    <responds-to ref="environment"/>
+    <represents ref="world"/>
+  </relations>
+
+  <systems>
+    <member-of-system ref="human-nervous-system"/>
+    <member-of-system ref="human-cognitive-system"/>
+  </systems>
+
+  <context>
+    <exists-in ref="human-001"/>
+    <exists-in ref="human-brain-001"/>
+    <exists-in ref="human-body-001"/>
+    <exists-in ref="human-environment"/>
+  </context>
+
+  <state>
+    <has-state ref="current-mental-state"/>
+  </state>
+
+  <transformations>
+    <transforms ref="experience"/>
+    <transforms ref="perception"/>
+    <transforms ref="memory"/>
+    <transforms ref="internal-models"/>
+  </transformations>
+
+  <scale>
+    <level>psyche</level>
+    <part-of-scale ref="human"/>
+  </scale>
+
+  <representation>
+    <representation-type>conceptual</representation-type>
+    <representation-type>functional</representation-type>
+  </representation>
+
+  <theories>
+    <theory ref="jungian-model-001"/>
+  </theories>
+
+  <extensions>
+    <extension id="psychological-models"/>
+    <extension id="neuroscience-models"/>
+    <extension id="cognitive-models"/>
+  </extensions>
+
+</human-psyche>
