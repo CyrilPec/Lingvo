@@ -50,7 +50,7 @@ Cat.xml  = actual object
 
 1. Universal Object
 2. Universal Object Models
-3. Object Types
+3. Object Types / Specialization
 4. Object Class
 5. Object Instances
 6. Relations between Instances
