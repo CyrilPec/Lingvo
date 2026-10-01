@@ -1,176 +1,373 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-    Lingvo - Expanded Jungian Model
-    Purpose:
-    Formal representation of Jungian analytical psychology
-    using the Lingvo Universal Object Model vocabulary.
-    Important:
-    This model represents concepts within Jungian theory.
-    It does not assert that every theoretical construct is
-    an empirically established psychological mechanism.
--->
 <theory
     id="jungian-model-001"
     name="Jungian Model"
     instance-of="PsychologicalTheory"
     is-a="Theory">
+    <!-- =========================================================
+         IDENTITY
+         ========================================================= -->
     <identity>
         <name>Jungian Model of the Psyche</name>
-        <theorist ref="carl-jung"/>
+        <label>Jungian Analytical Psychology</label>
+        <aliases>
+            <alias>Analytical Psychology</alias>
+            <alias>Jungian Psychology</alias>
+            <alias>Analytical Model of the Psyche</alias>
+        </aliases>
         <description>
-            A theoretical model of the psyche associated with Carl Jung.
-            The model describes consciousness, the personal unconscious,
-            the collective unconscious, archetypes, psychic functions,
-            psychological orientations, complexes, symbolic processes,
-            psychological transformation and individuation.
+            A theoretical model of the human psyche associated with
+            Carl Gustav Jung. The model describes consciousness,
+            the personal unconscious, the collective unconscious,
+            archetypal patterns, psychic functions, psychological
+            orientations, complexes, symbolic processes, projection,
+            compensation, individuation and relationships between
+            conscious and unconscious psychological contents.
+            The objects and processes represented here are constructs
+            within Jungian analytical psychology. Their presence in
+            this model does not by itself assert that each construct
+            constitutes an independently established empirical mechanism.
         </description>
     </identity>
+    <!-- =========================================================
+         TYPE
+         ========================================================= -->
     <type>
         <instance-of ref="psychological-theory"/>
         <is-a ref="theory"/>
     </type>
-    <context>
-        <models ref="human-psyche-001"/>
-    </context>
+    <!-- =========================================================
+         STRUCTURE
+         ========================================================= -->
     <structure>
+        <contains ref="jung-psyche-001"/>
         <contains ref="jung-consciousness-001"/>
         <contains ref="jung-personal-unconscious-001"/>
         <contains ref="jung-collective-unconscious-001"/>
         <contains ref="jung-archetypes-001"/>
         <contains ref="jung-psychic-functions-001"/>
         <contains ref="jung-orientations-001"/>
-        <contains ref="jung-psychic-processes-001"/>
-        <contains ref="jung-symbolic-processes-001"/>
+        <contains ref="jung-complex-system-001"/>
+        <contains ref="jung-symbolic-system-001"/>
+        <contains ref="jung-psychic-dynamics-001"/>
         <contains ref="jung-individuation-001"/>
     </structure>
-    <components>
-        <component ref="jung-consciousness-001"/>
-        <component ref="jung-personal-unconscious-001"/>
-        <component ref="jung-collective-unconscious-001"/>
-        <component ref="jung-archetypes-001"/>
-        <component ref="jung-psychic-functions-001"/>
-        <component ref="jung-orientations-001"/>
-        <component ref="jung-psychic-processes-001"/>
-        <component ref="jung-symbolic-processes-001"/>
-        <component ref="jung-individuation-001"/>
-    </components>
+    <!-- =========================================================
+         PROPERTIES
+         ========================================================= -->
+    <properties>
+        <property id="conscious-unconscious-differentiation"/>
+        <property id="psychic-integration"/>
+        <property id="psychic-differentiation"/>
+        <property id="symbolic-capacity"/>
+        <property id="archetypal-organization"/>
+        <property id="compensatory-dynamics"/>
+        <property id="developmental-orientation"/>
+    </properties>
+    <!-- =========================================================
+         DIMENSIONS
+         ========================================================= -->
+    <dimensions>
+        <has-dimension ref="temporal"/>
+        <has-dimension ref="information-dynamics"/>
+        <has-dimension ref="attention-salience"/>
+        <has-dimension ref="expectation"/>
+        <has-dimension ref="identity-motif"/>
+        <has-dimension ref="semantic"/>
+        <has-dimension ref="social-cultural"/>
+    </dimensions>
+    <!-- =========================================================
+         FUNCTIONS
+         ========================================================= -->
+    <functions>
+        <has-function ref="model-psyche"/>
+        <has-function ref="differentiate-consciousness"/>
+        <has-function ref="model-unconscious-content"/>
+        <has-function ref="model-archetypal-patterns"/>
+        <has-function ref="model-psychic-dynamics"/>
+        <has-function ref="model-psychological-development"/>
+        <has-function ref="organize-symbolic-experience"/>
+        <has-function ref="describe-individuation"/>
+    </functions>
+    <!-- =========================================================
+         RELATIONS
+         ========================================================= -->
     <relations>
         <models ref="human-psyche-001"/>
         <describes ref="human-psyche-001"/>
-        <contains ref="jung-consciousness-001"/>
-        <contains ref="jung-personal-unconscious-001"/>
-        <contains ref="jung-collective-unconscious-001"/>
-        <contains ref="jung-archetypes-001"/>
-        <contains ref="jung-psychic-functions-001"/>
-        <contains ref="jung-orientations-001"/>
-        <contains ref="jung-psychic-processes-001"/>
-        <contains ref="jung-symbolic-processes-001"/>
-        <contains ref="jung-individuation-001"/>
+        <relates-to ref="psychology"/>
+        <relates-to ref="analytical-psychology"/>
     </relations>
-    <!-- ========================================================= -->
-    <!-- CONSCIOUSNESS                                              -->
-    <!-- ========================================================= -->
+    <!-- =========================================================
+         SYSTEMS
+         ========================================================= -->
+    <systems>
+        <member-of-system ref="psychological-models"/>
+        <contributes-to ref="human-psyche-model"/>
+    </systems>
+    <!-- =========================================================
+         CONTEXT
+         ========================================================= -->
+    <context>
+        <exists-in ref="psychology"/>
+        <context>
+            theoretical-model
+        </context>
+    </context>
+    <!-- =========================================================
+         SCALE
+         ========================================================= -->
+    <scale>
+        <level>psyche</level>
+        <part-of-scale ref="human"/>
+    </scale>
+    <!-- =========================================================
+         REPRESENTATION
+         ========================================================= -->
+    <representation>
+        <representation-type>conceptual</representation-type>
+        <representation-type>functional</representation-type>
+        <representation-type>structural</representation-type>
+        <representation-type>dynamic</representation-type>
+    </representation>
+    <!-- =========================================================
+         THEORIST / HISTORY
+         ========================================================= -->
+    <theories>
+        <theory ref="carl-jung"/>
+    </theories>
+    <!-- =========================================================
+         EXTENSIONS
+         ========================================================= -->
+    <extensions>
+        <extension id="psychological-models"/>
+        <extension id="personality-models"/>
+        <extension id="symbolic-models"/>
+        <extension id="depth-psychology"/>
+    </extensions>
+    <!-- =========================================================
+         OBJECTS
+         ========================================================= -->
     <objects>
+        <!-- =====================================================
+             PSYCHE
+             ===================================================== -->
+        <object
+            id="jung-psyche-001"
+            name="Jungian Psyche"
+            instance-of="Psyche"
+            is-a="Object">
+            <identity>
+                <name>Jungian Psyche</name>
+                <description>
+                    The total psychological field represented by the
+                    Jungian model, including conscious and unconscious
+                    processes and structures.
+                </description>
+            </identity>
+            <type>
+                <instance-of ref="psyche"/>
+                <is-a ref="object"/>
+            </type>
+            <structure>
+                <contains ref="jung-consciousness-001"/>
+                <contains ref="jung-personal-unconscious-001"/>
+                <contains ref="jung-collective-unconscious-001"/>
+                <contains ref="jung-archetypes-001"/>
+                <contains ref="jung-psychic-functions-001"/>
+                <contains ref="jung-orientations-001"/>
+                <contains ref="jung-complex-system-001"/>
+                <contains ref="jung-symbolic-system-001"/>
+                <contains ref="jung-psychic-dynamics-001"/>
+                <contains ref="jung-individuation-001"/>
+            </structure>
+            <properties>
+                <property id="consciousness"/>
+                <property id="unconsciousness"/>
+                <property id="integration"/>
+                <property id="differentiation"/>
+                <property id="symbolic-capacity"/>
+            </properties>
+            <dimensions>
+                <has-dimension ref="information-dynamics"/>
+                <has-dimension ref="attention-salience"/>
+                <has-dimension ref="identity-motif"/>
+                <has-dimension ref="semantic"/>
+                <has-dimension ref="temporal"/>
+            </dimensions>
+            <functions>
+                <has-function ref="organize-psychic-experience"/>
+                <has-function ref="integrate-psychic-content"/>
+                <has-function ref="differentiate-psychic-content"/>
+                <has-function ref="adapt"/>
+                <has-function ref="generate-symbolic-experience"/>
+            </functions>
+            <relations>
+                <part-of ref="human-psyche-001"/>
+                <contains ref="jung-consciousness-001"/>
+                <contains ref="jung-personal-unconscious-001"/>
+                <contains ref="jung-collective-unconscious-001"/>
+                <influences ref="behavior"/>
+                <responds-to ref="environment"/>
+            </relations>
+            <systems>
+                <member-of-system ref="human-cognitive-system"/>
+                <member-of-system ref="human-psyche-system"/>
+            </systems>
+            <context>
+                <exists-in ref="human-001"/>
+                <exists-in ref="human-body-001"/>
+                <exists-in ref="human-environment"/>
+            </context>
+            <state>
+                <has-state ref="jung-current-psychic-state-001"/>
+            </state>
+            <transformations>
+                <transforms ref="experience"/>
+                <transforms ref="memory"/>
+                <transforms ref="perception"/>
+                <transforms ref="internal-models"/>
+            </transformations>
+            <representation>
+                <representation-type>conceptual</representation-type>
+                <representation-type>functional</representation-type>
+                <representation-type>dynamic</representation-type>
+            </representation>
+        </object>
+        <!-- =====================================================
+             CONSCIOUSNESS
+             ===================================================== -->
         <object
             id="jung-consciousness-001"
             name="Consciousness"
-            instance-of="PsycheComponent">
+            instance-of="PsychicStructure"
+            is-a="Object">
             <identity>
+                <name>Consciousness</name>
                 <description>
                     The field of psychic contents that are currently
-                    available to awareness and capable of being related
-                    to the conscious standpoint of the individual.
+                    available to awareness and related to the conscious
+                    standpoint of the individual.
                 </description>
             </identity>
+            <type>
+                <instance-of ref="psychic-structure"/>
+                <is-a ref="object"/>
+            </type>
             <structure>
                 <contains ref="jung-ego-001"/>
                 <contains ref="jung-conscious-content-001"/>
                 <contains ref="jung-attention-001"/>
             </structure>
-            <components>
-                <component ref="jung-ego-001"/>
-                <component ref="jung-conscious-content-001"/>
-                <component ref="jung-attention-001"/>
-            </components>
             <properties>
-                <property id="degree-of-awareness"/>
+                <property id="awareness"/>
                 <property id="clarity"/>
                 <property id="selectivity"/>
-                <property id="stability"/>
-                <property id="attentional-focus"/>
+                <property id="attention"/>
+                <property id="intentionality"/>
             </properties>
+            <dimensions>
+                <has-dimension ref="attention-salience"/>
+                <has-dimension ref="information-dynamics"/>
+                <has-dimension ref="semantic"/>
+            </dimensions>
             <functions>
                 <has-function ref="make-content-conscious"/>
-                <has-function ref="differentiate-experience"/>
-                <has-function ref="organize-experience"/>
+                <has-function ref="organize-conscious-experience"/>
                 <has-function ref="orient-attention"/>
                 <has-function ref="support-intentional-action"/>
+                <has-function ref="differentiate-experience"/>
             </functions>
             <relations>
                 <contains ref="jung-ego-001"/>
+                <influences ref="jung-conscious-content-001"/>
                 <interacts-with ref="jung-personal-unconscious-001"/>
                 <interacts-with ref="jung-collective-unconscious-001"/>
-                <mediates ref="jung-psychic-processes-001"/>
+                <responds-to ref="jung-psychic-dynamics-001"/>
             </relations>
+            <state>
+                <has-state ref="jung-conscious-state-001"/>
+            </state>
         </object>
+        <!-- =====================================================
+             EGO
+             ===================================================== -->
         <object
             id="jung-ego-001"
             name="Ego"
-            instance-of="PsycheComponent">
+            instance-of="PsychicStructure"
+            is-a="Object">
             <identity>
+                <name>Ego</name>
+                <aliases>
+                    <alias>Conscious Ego</alias>
+                    <alias>Ego Complex</alias>
+                </aliases>
                 <description>
                     The center of the field of consciousness and the
                     organizing reference point through which conscious
                     identity, continuity, attention and intentional
-                    experience are structured.
+                    experience are represented in Jungian psychology.
                 </description>
             </identity>
+            <type>
+                <instance-of ref="psychic-structure"/>
+                <is-a ref="object"/>
+            </type>
             <structure>
                 <part-of ref="jung-consciousness-001"/>
             </structure>
             <properties>
                 <property id="identity-continuity"/>
                 <property id="self-reference"/>
-                <property id="attention-control"/>
                 <property id="intentionality"/>
-                <property id="psychological-boundary"/>
+                <property id="attention-control"/>
                 <property id="conscious-attitude"/>
+                <property id="psychological-boundary"/>
             </properties>
+            <dimensions>
+                <has-dimension ref="identity-motif"/>
+                <has-dimension ref="attention-salience"/>
+                <has-dimension ref="semantic"/>
+                <has-dimension ref="social-cultural"/>
+            </dimensions>
             <functions>
                 <has-function ref="maintain-conscious-identity"/>
                 <has-function ref="organize-conscious-experience"/>
                 <has-function ref="orient-attention"/>
-                <has-function ref="differentiate-self-from-environment"/>
+                <has-function ref="interpret"/>
+                <has-function ref="evaluate"/>
+                <has-function ref="decide"/>
                 <has-function ref="mediate-conscious-action"/>
-                <has-function ref="interpret-experience"/>
-                <has-function ref="integrate-conscious-content"/>
             </functions>
             <relations>
                 <part-of ref="jung-consciousness-001"/>
-                <interacts-with ref="jung-complexes-001"/>
+                <relates-to ref="jung-self-001"/>
                 <interacts-with ref="jung-shadow-001"/>
                 <interacts-with ref="jung-persona-001"/>
-                <relates-to ref="jung-self-001"/>
-                <may-experience ref="jung-symbol-001"/>
-                <may-experience ref="jung-dream-001"/>
+                <interacts-with ref="jung-complex-system-001"/>
+                <responds-to ref="jung-symbolic-system-001"/>
+                <influences ref="behavior"/>
             </relations>
             <state>
-                <has-state ref="conscious"/>
-                <has-state ref="focused"/>
-                <has-state ref="decentered"/>
-                <has-state ref="expanded"/>
-                <has-state ref="integrating"/>
+                <has-state ref="jung-conscious-state-001"/>
             </state>
+            <transformations>
+                <transforms ref="experience"/>
+                <transforms ref="perception"/>
+                <transforms ref="memory"/>
+            </transformations>
         </object>
         <object
             id="jung-conscious-content-001"
             name="Conscious Content"
-            instance-of="PsychicContent">
+            instance-of="PsychicContent"
+            is-a="Object">
             <identity>
                 <description>
-                    A psychic representation, perception, thought, feeling,
-                    memory or other content that is presently available
-                    to consciousness.
+                    A perception, thought, feeling, memory, image,
+                    representation or other psychic content currently
+                    available to consciousness.
                 </description>
             </identity>
             <functions>
@@ -178,15 +375,20 @@
                 <has-function ref="support-reflection"/>
                 <has-function ref="support-intentional-action"/>
             </functions>
+            <relations>
+                <part-of ref="jung-consciousness-001"/>
+                <relates-to ref="jung-ego-001"/>
+            </relations>
         </object>
         <object
             id="jung-attention-001"
-            name="Attention"
-            instance-of="PsychicFunction">
+            name="Psychic Attention"
+            instance-of="Function"
+            is-a="Object">
             <identity>
                 <description>
                     Selective allocation of conscious awareness toward
-                    particular contents, objects or processes.
+                    particular psychic contents, objects or processes.
                 </description>
             </identity>
             <functions>
@@ -194,40 +396,44 @@
                 <has-function ref="prioritize-content"/>
                 <has-function ref="maintain-conscious-focus"/>
             </functions>
+            <dimensions>
+                <has-dimension ref="attention-salience"/>
+            </dimensions>
         </object>
-        <!-- ===================================================== -->
-        <!-- PERSONAL UNCONSCIOUS                                   -->
-        <!-- ===================================================== -->
+        <!-- =====================================================
+             PERSONAL UNCONSCIOUS
+             ===================================================== -->
         <object
             id="jung-personal-unconscious-001"
             name="Personal Unconscious"
-            instance-of="PsycheComponent">
+            instance-of="PsychicStructure"
+            is-a="Object">
             <identity>
                 <description>
-                    The domain of psychic contents associated with the
-                    individual's personal history that are not currently
-                    conscious, including forgotten, repressed or
-                    insufficiently differentiated material and complexes.
+                    The theoretical domain of personally acquired psychic
+                    contents that are not currently conscious, including
+                    forgotten, repressed or insufficiently differentiated
+                    material and complexes.
                 </description>
             </identity>
             <structure>
-                <contains ref="jung-complexes-001"/>
+                <contains ref="jung-complex-system-001"/>
                 <contains ref="personal-experiences-001"/>
                 <contains ref="personal-memories-001"/>
                 <contains ref="jung-repressed-content-001"/>
             </structure>
-            <components>
-                <component ref="jung-complexes-001"/>
-                <component ref="personal-experiences-001"/>
-                <component ref="personal-memories-001"/>
-                <component ref="jung-repressed-content-001"/>
-            </components>
             <properties>
-                <property id="accessibility-to-consciousness"/>
+                <property id="accessibility"/>
                 <property id="affective-charge"/>
                 <property id="association-density"/>
                 <property id="activation-potential"/>
             </properties>
+            <dimensions>
+                <has-dimension ref="memory"/>
+                <has-dimension ref="information-dynamics"/>
+                <has-dimension ref="attention-salience"/>
+                <has-dimension ref="semantic"/>
+            </dimensions>
             <functions>
                 <has-function ref="store-personal-content"/>
                 <has-function ref="organize-personal-associations"/>
@@ -236,124 +442,20 @@
             </functions>
             <relations>
                 <interacts-with ref="jung-consciousness-001"/>
-                <contains ref="jung-complexes-001"/>
+                <contains ref="jung-complex-system-001"/>
                 <contains ref="personal-experiences-001"/>
                 <contains ref="personal-memories-001"/>
                 <contains ref="jung-repressed-content-001"/>
             </relations>
-        </object>
-        <object
-            id="jung-complexes-001"
-            name="Complexes"
-            instance-of="PsycheComponent">
-            <identity>
-                <description>
-                    Organized clusters of emotionally charged psychic
-                    contents associated around a particular theme,
-                    relationship, experience or concern.
-                </description>
-            </identity>
-            <structure>
-                <contains ref="jung-complex-001"/>
-            </structure>
-            <properties>
-                <property id="emotional-charge"/>
-                <property id="activation-potential"/>
-                <property id="associative-coherence"/>
-                <property id="salience"/>
-                <property id="trigger-sensitivity"/>
-            </properties>
-            <functions>
-                <has-function ref="organize-associated-content"/>
-                <has-function ref="bias-attention"/>
-                <has-function ref="bias-interpretation"/>
-                <has-function ref="activate-affect"/>
-                <has-function ref="influence-behavior"/>
-            </functions>
-        </object>
-        <object
-            id="jung-complex-001"
-            name="Complex"
-            instance-of="PsychicStructure">
-            <identity>
-                <description>
-                    A psychologically organized cluster of emotionally
-                    charged memories, representations, expectations,
-                    perceptions and behavioral tendencies.
-                </description>
-            </identity>
-            <structure>
-                <contains ref="jung-complex-memory-001"/>
-                <contains ref="jung-complex-representation-001"/>
-                <contains ref="jung-complex-expectation-001"/>
-            </structure>
-            <properties>
-                <property id="affective-charge"/>
-                <property id="activation-threshold"/>
-                <property id="salience"/>
-                <property id="coherence"/>
-                <property id="associative-strength"/>
-                <property id="behavioral-influence"/>
-            </properties>
-            <functions>
-                <has-function ref="organize-experience"/>
-                <has-function ref="bias-perception"/>
-                <has-function ref="bias-interpretation"/>
-                <has-function ref="activate-affect"/>
-                <has-function ref="influence-behavior"/>
-                <has-function ref="generate-associations"/>
-            </functions>
             <state>
-                <has-state ref="inactive"/>
-                <has-state ref="activated"/>
-                <has-state ref="dominant"/>
-                <has-state ref="integrating"/>
-                <has-state ref="integrated"/>
+                <has-state ref="jung-unconscious-state-001"/>
             </state>
-            <relations>
-                <part-of ref="jung-complexes-001"/>
-                <interacts-with ref="jung-ego-001"/>
-                <may-influence ref="jung-consciousness-001"/>
-                <may-be-activated-by ref="jung-trigger-001"/>
-            </relations>
-        </object>
-        <object
-            id="jung-complex-memory-001"
-            name="Complex Memory"
-            instance-of="PsychicContent">
-            <identity>
-                <description>
-                    A memory associated with the thematic and affective
-                    organization of a psychological complex.
-                </description>
-            </identity>
-        </object>
-        <object
-            id="jung-complex-representation-001"
-            name="Complex Representation"
-            instance-of="PsychicContent">
-            <identity>
-                <description>
-                    A representation, image, belief or association
-                    organized around the theme of a complex.
-                </description>
-            </identity>
-        </object>
-        <object
-            id="jung-complex-expectation-001"
-            name="Complex Expectation"
-            instance-of="PsychicContent">
-            <identity>
-                <description>
-                    An expectation or anticipatory pattern associated
-                    with a psychological complex.
-                </description>
-            </identity>
         </object>
         <object
             id="personal-experiences-001"
             name="Personal Experiences"
-            instance-of="PsycheComponent">
+            instance-of="PsychicContent"
+            is-a="Object">
             <identity>
                 <description>
                     Experiences belonging to the individual's personal
@@ -366,15 +468,19 @@
                 <has-function ref="form-associations"/>
                 <has-function ref="shape-personal-meaning"/>
             </functions>
+            <relations>
+                <part-of ref="jung-personal-unconscious-001"/>
+            </relations>
         </object>
         <object
             id="personal-memories-001"
             name="Personal Memories"
-            instance-of="PsycheComponent">
+            instance-of="PsychicContent"
+            is-a="Object">
             <identity>
                 <description>
-                    Stored or reconstructable representations of
-                    personally experienced events and information.
+                    Representations associated with personally experienced
+                    events, information and situations.
                 </description>
             </identity>
             <functions>
@@ -382,74 +488,97 @@
                 <has-function ref="support-association"/>
                 <has-function ref="influence-present-experience"/>
             </functions>
+            <dimensions>
+                <has-dimension ref="temporal"/>
+                <has-dimension ref="memory"/>
+            </dimensions>
+            <relations>
+                <part-of ref="jung-personal-unconscious-001"/>
+            </relations>
         </object>
         <object
             id="jung-repressed-content-001"
             name="Repressed Content"
-            instance-of="PsychicContent">
+            instance-of="PsychicContent"
+            is-a="Object">
             <identity>
                 <description>
-                    Personal psychic content that is excluded or
-                    insufficiently available to conscious awareness
-                    according to the theoretical model.
+                    Personal psychic material represented within Jungian
+                    theory as excluded or insufficiently accessible to
+                    ordinary conscious awareness.
                 </description>
             </identity>
+            <properties>
+                <property id="low-conscious-accessibility"/>
+                <property id="affective-charge"/>
+                <property id="activation-potential"/>
+            </properties>
             <functions>
                 <has-function ref="remain-outside-conscious-awareness"/>
                 <has-function ref="influence-conscious-experience"/>
                 <has-function ref="appear-symbolically"/>
             </functions>
+            <relations>
+                <part-of ref="jung-personal-unconscious-001"/>
+                <may-influence ref="jung-consciousness-001"/>
+            </relations>
         </object>
-        <!-- ===================================================== -->
-        <!-- COLLECTIVE UNCONSCIOUS                                 -->
-        <!-- ===================================================== -->
+        <!-- =====================================================
+             COLLECTIVE UNCONSCIOUS
+             ===================================================== -->
         <object
             id="jung-collective-unconscious-001"
             name="Collective Unconscious"
-            instance-of="PsycheComponent">
+            instance-of="PsychicStructure"
+            is-a="Object">
             <identity>
                 <description>
-                    A theoretical layer of the psyche containing
-                    archetypal structures and potentials that Jung
-                    regarded as not derived solely from individual
-                    personal experience.
+                    A theoretical layer of the Jungian psyche associated
+                    with archetypal patterns and potentials that are not
+                    understood as being derived solely from an individual's
+                    personal history.
                 </description>
             </identity>
             <structure>
                 <contains ref="jung-archetypes-001"/>
             </structure>
-            <components>
-                <component ref="jung-archetypes-001"/>
-            </components>
             <properties>
-                <property id="archetypal-structure"/>
+                <property id="archetypal-organization"/>
                 <property id="symbolic-potential"/>
                 <property id="transpersonal-character"/>
             </properties>
+            <dimensions>
+                <has-dimension ref="semantic"/>
+                <has-dimension ref="social-cultural"/>
+                <has-dimension ref="identity-motif"/>
+            </dimensions>
             <functions>
                 <has-function ref="provide-archetypal-patterns"/>
                 <has-function ref="organize-symbolic-experience"/>
-                <has-function ref="structure-imagery"/>
+                <has-function ref="structure-imagination"/>
                 <has-function ref="provide-compensatory-patterns"/>
             </functions>
             <relations>
                 <contains ref="jung-archetypes-001"/>
-                <influences ref="jung-symbolic-processes-001"/>
+                <influences ref="jung-symbolic-system-001"/>
                 <interacts-with ref="jung-consciousness-001"/>
             </relations>
+            <state>
+                <has-state ref="jung-unconscious-state-001"/>
+            </state>
         </object>
-        <!-- ===================================================== -->
-        <!-- ARCHETYPES                                              -->
-        <!-- ===================================================== -->
+        <!-- =====================================================
+             ARCHETYPES
+             ===================================================== -->
         <object
             id="jung-archetypes-001"
             name="Archetypes"
-            instance-of="PsycheComponent">
+            instance-of="System"
+            is-a="Object">
             <identity>
                 <description>
-                    A family of recurring structural patterns within
-                    Jungian theory that organize psychic experience,
-                    symbolic imagery, affect and behavior.
+                    The system of archetypal patterns represented within
+                    Jungian analytical psychology.
                 </description>
             </identity>
             <structure>
@@ -468,33 +597,24 @@
                 <contains ref="jung-wise-old-woman-001"/>
                 <contains ref="jung-great-mother-001"/>
             </structure>
-            <components>
-                <component ref="jung-archetype-001"/>
-                <component ref="jung-self-001"/>
-                <component ref="jung-persona-001"/>
-                <component ref="jung-shadow-001"/>
-                <component ref="jung-anima-001"/>
-                <component ref="jung-animus-001"/>
-                <component ref="jung-hero-001"/>
-                <component ref="jung-child-001"/>
-                <component ref="jung-mother-001"/>
-                <component ref="jung-father-001"/>
-                <component ref="jung-trickster-001"/>
-                <component ref="jung-wise-old-man-001"/>
-                <component ref="jung-wise-old-woman-001"/>
-                <component ref="jung-great-mother-001"/>
-            </components>
             <functions>
                 <has-function ref="organize-symbolic-experience"/>
                 <has-function ref="structure-imagination"/>
                 <has-function ref="organize-affect"/>
                 <has-function ref="generate-symbolic-patterns"/>
             </functions>
+            <systems>
+                <member-of-system ref="jungian-psyche-system"/>
+            </systems>
+            <relations>
+                <part-of ref="jung-collective-unconscious-001"/>
+            </relations>
         </object>
         <object
             id="jung-archetype-001"
             name="Archetype"
-            instance-of="PsychicStructure">
+            instance-of="PsychicStructure"
+            is-a="Object">
             <identity>
                 <description>
                     A recurring structural pattern in Jungian theory
@@ -505,57 +625,82 @@
             <properties>
                 <property id="symbolic-potential"/>
                 <property id="affective-potential"/>
-                <property id="behavioral-pattern"/>
                 <property id="image-potential"/>
                 <property id="activation-potential"/>
             </properties>
+            <dimensions>
+                <has-dimension ref="semantic"/>
+                <has-dimension ref="identity-motif"/>
+                <has-dimension ref="social-cultural"/>
+            </dimensions>
             <functions>
                 <has-function ref="organize-symbolic-experience"/>
                 <has-function ref="structure-imagination"/>
                 <has-function ref="organize-affect"/>
                 <has-function ref="generate-symbolic-images"/>
-                <has-function ref="shape-meaning"/>
             </functions>
             <relations>
-                <manifests-through ref="jung-symbol-001"/>
-                <may-appear-in ref="jung-dream-001"/>
-                <may-influence ref="jung-complex-001"/>
+                <part-of ref="jung-archetypes-001"/>
+                <represents ref="archetypal-pattern"/>
+                <influences ref="jung-symbolic-system-001"/>
             </relations>
         </object>
+        <!-- =====================================================
+             SELF
+             ===================================================== -->
         <object
             id="jung-self-001"
             name="Self"
-            instance-of="Archetype">
+            instance-of="Archetype"
+            is-a="Object">
             <identity>
                 <description>
                     The archetypal representation of psychic totality
-                    and the organizing principle of the psyche as a whole
+                    and a central organizing principle of the psyche
                     within Jungian analytical psychology.
                 </description>
             </identity>
+            <properties>
+                <property id="psychic-totality"/>
+                <property id="wholeness"/>
+                <property id="integration-potential"/>
+            </properties>
             <functions>
                 <has-function ref="organize-psychic-totality"/>
                 <has-function ref="orient-integration"/>
-                <has-function ref="mediate-psychic-wholeness"/>
                 <has-function ref="support-individuation"/>
             </functions>
             <relations>
                 <relates-to ref="jung-ego-001"/>
-                <organizes ref="jung-psyche-totality-001"/>
-                <participates-in ref="jung-individuation-001"/>
+                <influences ref="jung-individuation-001"/>
+                <represents ref="jung-psyche-001"/>
             </relations>
         </object>
+        <!-- =====================================================
+             PERSONA
+             ===================================================== -->
         <object
             id="jung-persona-001"
             name="Persona"
-            instance-of="Archetype">
+            instance-of="Archetype"
+            is-a="Object">
             <identity>
                 <description>
                     A psychological structure associated with the social
-                    role, presentation and adaptation of the individual
-                    to social expectations and situations.
+                    role, social presentation and adaptation of the
+                    individual to interpersonal and cultural expectations.
                 </description>
             </identity>
+            <properties>
+                <property id="social-role"/>
+                <property id="social-presentation"/>
+                <property id="adaptation"/>
+                <property id="social-boundary"/>
+            </properties>
+            <dimensions>
+                <has-dimension ref="social-cultural"/>
+                <has-dimension ref="identity-motif"/>
+            </dimensions>
             <functions>
                 <has-function ref="mediate-social-adaptation"/>
                 <has-function ref="present-social-identity"/>
@@ -564,21 +709,31 @@
             </functions>
             <relations>
                 <relates-to ref="jung-ego-001"/>
-                <mediates ref="jung-social-world-001"/>
-                <may-conflict-with ref="jung-shadow-001"/>
+                <relates-to ref="jung-social-world-001"/>
+                <contrasts-with ref="jung-shadow-001"/>
             </relations>
         </object>
+        <!-- =====================================================
+             SHADOW
+             ===================================================== -->
         <object
             id="jung-shadow-001"
             name="Shadow"
-            instance-of="Archetype">
+            instance-of="Archetype"
+            is-a="Object">
             <identity>
                 <description>
-                    A Jungian archetypal structure associated with
-                    aspects of personality that are insufficiently
-                    recognized, accepted or integrated by consciousness.
+                    A Jungian archetypal concept associated with aspects
+                    of personality that are insufficiently recognized,
+                    accepted or integrated by consciousness.
                 </description>
             </identity>
+            <properties>
+                <property id="unrecognized-content"/>
+                <property id="affective-charge"/>
+                <property id="projection-potential"/>
+                <property id="integration-potential"/>
+            </properties>
             <functions>
                 <has-function ref="contain-unintegrated-content"/>
                 <has-function ref="challenge-conscious-attitude"/>
@@ -587,22 +742,35 @@
             </functions>
             <relations>
                 <relates-to ref="jung-ego-001"/>
-                <compensates ref="jung-consciousness-001"/>
-                <interacts-with ref="jung-persona-001"/>
-                <participates-in ref="jung-individuation-001"/>
+                <contrasts-with ref="jung-persona-001"/>
+                <influences ref="jung-projection-001"/>
+                <influences ref="jung-individuation-001"/>
             </relations>
+            <state>
+                <has-state ref="jung-unconscious-state-001"/>
+                <has-state ref="jung-integrating-state-001"/>
+            </state>
         </object>
+        <!-- =====================================================
+             ANIMA
+             ===================================================== -->
         <object
             id="jung-anima-001"
             name="Anima"
-            instance-of="Archetype">
+            instance-of="Archetype"
+            is-a="Object">
             <identity>
                 <description>
                     A Jungian archetypal concept concerning an unconscious
-                    psychic figure associated historically in Jung's model
-                    with the inner feminine image in a man's psyche.
+                    psychic figure historically described by Jung as an
+                    inner feminine image in a man's psyche.
                 </description>
             </identity>
+            <properties>
+                <property id="symbolic-image"/>
+                <property id="affective-potential"/>
+                <property id="relatedness"/>
+            </properties>
             <functions>
                 <has-function ref="mediate-unconscious-relatedness"/>
                 <has-function ref="organize-symbolic-affect"/>
@@ -610,22 +778,30 @@
             </functions>
             <relations>
                 <relates-to ref="jung-ego-001"/>
+                <influences ref="jung-symbolic-system-001"/>
                 <participates-in ref="jung-individuation-001"/>
-                <may-manifest-through ref="jung-symbol-001"/>
-                <may-manifest-through ref="jung-dream-001"/>
             </relations>
         </object>
+        <!-- =====================================================
+             ANIMUS
+             ===================================================== -->
         <object
             id="jung-animus-001"
             name="Animus"
-            instance-of="Archetype">
+            instance-of="Archetype"
+            is-a="Object">
             <identity>
                 <description>
                     A Jungian archetypal concept concerning an unconscious
-                    psychic figure associated historically in Jung's model
-                    with the inner masculine image in a woman's psyche.
+                    psychic figure historically described by Jung as an
+                    inner masculine image in a woman's psyche.
                 </description>
             </identity>
+            <properties>
+                <property id="symbolic-image"/>
+                <property id="conceptual-potential"/>
+                <property id="relatedness"/>
+            </properties>
             <functions>
                 <has-function ref="mediate-unconscious-relatedness"/>
                 <has-function ref="organize-symbolic-meaning"/>
@@ -633,20 +809,23 @@
             </functions>
             <relations>
                 <relates-to ref="jung-ego-001"/>
+                <influences ref="jung-symbolic-system-001"/>
                 <participates-in ref="jung-individuation-001"/>
-                <may-manifest-through ref="jung-symbol-001"/>
-                <may-manifest-through ref="jung-dream-001"/>
             </relations>
         </object>
+        <!-- =====================================================
+             ADDITIONAL ARCHETYPAL PATTERNS
+             ===================================================== -->
         <object
             id="jung-hero-001"
             name="Hero"
-            instance-of="Archetype">
+            instance-of="Archetype"
+            is-a="Object">
             <identity>
                 <description>
                     An archetypal pattern associated with overcoming
-                    obstacles, differentiation, initiative and the
-                    development of conscious agency.
+                    obstacles, differentiation, initiative and conscious
+                    agency in symbolic narratives.
                 </description>
             </identity>
             <functions>
@@ -658,12 +837,12 @@
         <object
             id="jung-child-001"
             name="Child"
-            instance-of="Archetype">
+            instance-of="Archetype"
+            is-a="Object">
             <identity>
                 <description>
-                    An archetypal pattern associated in Jungian
-                    interpretation with potentiality, development,
-                    renewal and emergent psychological wholeness.
+                    An archetypal symbolic pattern associated with
+                    potentiality, renewal, emergence and development.
                 </description>
             </identity>
             <functions>
@@ -675,12 +854,13 @@
         <object
             id="jung-mother-001"
             name="Mother"
-            instance-of="Archetype">
+            instance-of="Archetype"
+            is-a="Object">
             <identity>
                 <description>
-                    An archetypal pattern associated with maternal
-                    containment, nourishment, origin, dependency,
-                    protection and transformation.
+                    An archetypal symbolic pattern associated with
+                    maternal containment, nourishment, origin,
+                    protection and dependency.
                 </description>
             </identity>
             <functions>
@@ -692,11 +872,12 @@
         <object
             id="jung-father-001"
             name="Father"
-            instance-of="Archetype">
+            instance-of="Archetype"
+            is-a="Object">
             <identity>
                 <description>
-                    An archetypal pattern associated with authority,
-                    order, law, structure, guidance and transmission.
+                    An archetypal symbolic pattern associated with
+                    authority, order, law, structure and guidance.
                 </description>
             </identity>
             <functions>
@@ -708,12 +889,13 @@
         <object
             id="jung-trickster-001"
             name="Trickster"
-            instance-of="Archetype">
+            instance-of="Archetype"
+            is-a="Object">
             <identity>
                 <description>
-                    An archetypal pattern associated with contradiction,
-                    disruption, ambiguity, transformation and the
-                    destabilization of established psychological patterns.
+                    An archetypal symbolic pattern associated with
+                    contradiction, disruption, ambiguity, transformation
+                    and destabilization of established patterns.
                 </description>
             </identity>
             <functions>
@@ -725,7 +907,8 @@
         <object
             id="jung-wise-old-man-001"
             name="Wise Old Man"
-            instance-of="Archetype">
+            instance-of="Archetype"
+            is-a="Object">
             <identity>
                 <description>
                     An archetypal symbolic pattern associated with
@@ -741,7 +924,8 @@
         <object
             id="jung-wise-old-woman-001"
             name="Wise Old Woman"
-            instance-of="Archetype">
+            instance-of="Archetype"
+            is-a="Object">
             <identity>
                 <description>
                     An archetypal symbolic pattern associated with
@@ -757,12 +941,13 @@
         <object
             id="jung-great-mother-001"
             name="Great Mother"
-            instance-of="Archetype">
+            instance-of="Archetype"
+            is-a="Object">
             <identity>
                 <description>
                     An archetypal pattern associated with origin,
                     containment, nourishment, fertility, protection
-                    and potentially overwhelming dependence.
+                    and potentially overwhelming dependency.
                 </description>
             </identity>
             <functions>
@@ -771,13 +956,14 @@
                 <has-function ref="represent-generativity"/>
             </functions>
         </object>
-        <!-- ===================================================== -->
-        <!-- PSYCHIC FUNCTIONS                                      -->
-        <!-- ===================================================== -->
+        <!-- =====================================================
+             PSYCHIC FUNCTIONS
+             ===================================================== -->
         <object
             id="jung-psychic-functions-001"
             name="Psychic Functions"
-            instance-of="PsycheComponent">
+            instance-of="System"
+            is-a="Object">
             <identity>
                 <description>
                     The four principal psychological functions described
@@ -791,144 +977,152 @@
                 <contains ref="jung-sensation-001"/>
                 <contains ref="jung-intuition-001"/>
             </structure>
-            <components>
-                <component ref="jung-thinking-001"/>
-                <component ref="jung-feeling-001"/>
-                <component ref="jung-sensation-001"/>
-                <component ref="jung-intuition-001"/>
-            </components>
             <relations>
-                <part-of ref="jung-psyche-totality-001"/>
-                <interacts-with ref="jung-ego-001"/>
+                <part-of ref="jung-psyche-001"/>
+                <influences ref="jung-ego-001"/>
             </relations>
         </object>
         <object
             id="jung-thinking-001"
             name="Thinking"
-            instance-of="PsychicFunction">
+            instance-of="Function"
+            is-a="Object">
             <identity>
                 <description>
-                    A psychological function concerned with conceptual
-                    differentiation, classification, logical relations
-                    and judgment through ideas.
+                    A Jungian psychological function concerned with
+                    conceptual differentiation, classification,
+                    logical relations and judgment through ideas.
                 </description>
             </identity>
+            <properties>
+                <property id="conceptualization"/>
+                <property id="logical-coherence"/>
+                <property id="differentiation"/>
+            </properties>
             <functions>
                 <has-function ref="conceptualize"/>
                 <has-function ref="differentiate"/>
                 <has-function ref="classify"/>
                 <has-function ref="judge"/>
-                <has-function ref="identify-relations"/>
             </functions>
-            <properties>
-                <property id="conceptual-clarity"/>
-                <property id="logical-coherence"/>
-                <property id="differentiation"/>
-            </properties>
+            <relations>
+                <part-of ref="jung-psychic-functions-001"/>
+                <contrasts-with ref="jung-feeling-001"/>
+            </relations>
         </object>
         <object
             id="jung-feeling-001"
             name="Feeling"
-            instance-of="PsychicFunction">
+            instance-of="Function"
+            is-a="Object">
             <identity>
                 <description>
-                    A psychological function concerned with valuation,
-                    significance, preference and the determination of
-                    whether something is experienced as desirable,
-                    undesirable, acceptable or unacceptable.
+                    A Jungian psychological function concerned with
+                    valuation, significance, preference and appraisal
+                    of psychological value.
                 </description>
             </identity>
-            <functions>
-                <has-function ref="evaluate-value"/>
-                <has-function ref="assign-significance"/>
-                <has-function ref="establish-preference"/>
-                <has-function ref="evaluate-relationship"/>
-            </functions>
             <properties>
                 <property id="value-orientation"/>
                 <property id="affective-significance"/>
                 <property id="preference"/>
             </properties>
+            <functions>
+                <has-function ref="evaluate-value"/>
+                <has-function ref="assign-significance"/>
+                <has-function ref="establish-preference"/>
+            </functions>
+            <relations>
+                <part-of ref="jung-psychic-functions-001"/>
+                <contrasts-with ref="jung-thinking-001"/>
+            </relations>
         </object>
         <object
             id="jung-sensation-001"
             name="Sensation"
-            instance-of="PsychicFunction">
+            instance-of="Function"
+            is-a="Object">
             <identity>
                 <description>
-                    A psychological function concerned with perception
-                    of concrete actuality and the qualities of what is
-                    directly experienced.
+                    A Jungian psychological function concerned with
+                    perception of concrete actuality and qualities
+                    of directly experienced situations.
                 </description>
             </identity>
-            <functions>
-                <has-function ref="register-concrete-experience"/>
-                <has-function ref="detect-sensory-properties"/>
-                <has-function ref="orient-to-present-reality"/>
-            </functions>
             <properties>
                 <property id="concreteness"/>
                 <property id="sensory-specificity"/>
                 <property id="present-orientation"/>
             </properties>
+            <functions>
+                <has-function ref="register-concrete-experience"/>
+                <has-function ref="detect-sensory-properties"/>
+                <has-function ref="orient-to-present-reality"/>
+            </functions>
+            <relations>
+                <part-of ref="jung-psychic-functions-001"/>
+                <contrasts-with ref="jung-intuition-001"/>
+            </relations>
         </object>
         <object
             id="jung-intuition-001"
             name="Intuition"
-            instance-of="PsychicFunction">
+            instance-of="Function"
+            is-a="Object">
             <identity>
                 <description>
-                    A psychological function concerned with perception
-                    of possibilities, implicit relationships, emerging
-                    patterns and meanings not necessarily derived from
-                    direct sensory observation.
+                    A Jungian psychological function concerned with
+                    perception of possibilities, implicit relationships,
+                    emerging patterns and meanings not necessarily
+                    derived from direct sensory observation.
                 </description>
             </identity>
+            <properties>
+                <property id="possibility-orientation"/>
+                <property id="pattern-sensitivity"/>
+                <property id="implicit-perception"/>
+            </properties>
             <functions>
                 <has-function ref="detect-possibility"/>
                 <has-function ref="detect-pattern"/>
                 <has-function ref="generate-hypothesis"/>
                 <has-function ref="anticipate-development"/>
             </functions>
-            <properties>
-                <property id="possibility-orientation"/>
-                <property id="pattern-sensitivity"/>
-                <property id="implicit-perception"/>
-            </properties>
+            <relations>
+                <part-of ref="jung-psychic-functions-001"/>
+                <contrasts-with ref="jung-sensation-001"/>
+            </relations>
         </object>
-        <!-- ===================================================== -->
-        <!-- ORIENTATIONS                                           -->
-        <!-- ===================================================== -->
+        <!-- =====================================================
+             ORIENTATIONS
+             ===================================================== -->
         <object
             id="jung-orientations-001"
             name="Psychological Orientations"
-            instance-of="PsycheComponent">
+            instance-of="System"
+            is-a="Object">
             <identity>
                 <description>
                     The Jungian distinction between introversion and
-                    extraversion as orientations of psychic energy and
-                    attention.
+                    extraversion as orientations of psychic energy,
+                    attention and valuation.
                 </description>
             </identity>
             <structure>
                 <contains ref="jung-introversion-001"/>
                 <contains ref="jung-extraversion-001"/>
             </structure>
-            <components>
-                <component ref="jung-introversion-001"/>
-                <component ref="jung-extraversion-001"/>
-            </components>
         </object>
         <object
             id="jung-introversion-001"
             name="Introversion"
-            instance-of="PsychologicalOrientation">
+            instance-of="Orientation"
+            is-a="Object">
             <identity>
                 <description>
                     An orientation in which psychic attention and
                     valuation are primarily directed toward subjective
-                    experience and the individual's inner psychological
-                    world.
+                    experience and the inner psychological world.
                 </description>
             </identity>
             <functions>
@@ -936,11 +1130,16 @@
                 <has-function ref="prioritize-subjective-reference"/>
                 <has-function ref="differentiate-inner-experience"/>
             </functions>
+            <relations>
+                <part-of ref="jung-orientations-001"/>
+                <contrasts-with ref="jung-extraversion-001"/>
+            </relations>
         </object>
         <object
             id="jung-extraversion-001"
             name="Extraversion"
-            instance-of="PsychologicalOrientation">
+            instance-of="Orientation"
+            is-a="Object">
             <identity>
                 <description>
                     An orientation in which psychic attention and
@@ -953,206 +1152,163 @@
                 <has-function ref="prioritize-object-reference"/>
                 <has-function ref="adapt-to-external-context"/>
             </functions>
+            <relations>
+                <part-of ref="jung-orientations-001"/>
+                <contrasts-with ref="jung-introversion-001"/>
+            </relations>
         </object>
-        <!-- ===================================================== -->
-        <!-- PSYCHIC PROCESSES                                      -->
-        <!-- ===================================================== -->
+        <!-- =====================================================
+             COMPLEX SYSTEM
+             ===================================================== -->
         <object
-            id="jung-psychic-processes-001"
-            name="Psychic Processes"
-            instance-of="PsycheComponent">
+            id="jung-complex-system-001"
+            name="Complex System"
+            instance-of="System"
+            is-a="Object">
             <identity>
                 <description>
-                    Processes through which conscious and unconscious
-                    contents interact, influence one another, become
-                    activated, transformed or integrated.
+                    A system of emotionally charged associations and
+                    psychologically related contents organized around
+                    recurring personal themes.
                 </description>
             </identity>
             <structure>
-                <contains ref="jung-projection-001"/>
-                <contains ref="jung-compensation-001"/>
-                <contains ref="jung-identification-001"/>
-                <contains ref="jung-differentiation-001"/>
-                <contains ref="jung-integration-001"/>
-                <contains ref="jung-symbolization-001"/>
-                <contains ref="jung-activation-001"/>
-                <contains ref="jung-constellation-001"/>
+                <contains ref="jung-complex-001"/>
             </structure>
-            <components>
-                <component ref="jung-projection-001"/>
-                <component ref="jung-compensation-001"/>
-                <component ref="jung-identification-001"/>
-                <component ref="jung-differentiation-001"/>
-                <component ref="jung-integration-001"/>
-                <component ref="jung-symbolization-001"/>
-                <component ref="jung-activation-001"/>
-                <component ref="jung-constellation-001"/>
-            </components>
+            <properties>
+                <property id="affective-charge"/>
+                <property id="activation-potential"/>
+                <property id="associative-coherence"/>
+                <property id="salience"/>
+            </properties>
+            <functions>
+                <has-function ref="organize-associated-content"/>
+                <has-function ref="bias-attention"/>
+                <has-function ref="bias-interpretation"/>
+                <has-function ref="activate-affect"/>
+                <has-function ref="influence-behavior"/>
+            </functions>
+            <relations>
+                <part-of ref="jung-personal-unconscious-001"/>
+                <influences ref="jung-consciousness-001"/>
+                <interacts-with ref="jung-ego-001"/>
+            </relations>
         </object>
         <object
-            id="jung-projection-001"
-            name="Projection"
-            instance-of="PsychicProcess">
+            id="jung-complex-001"
+            name="Complex"
+            instance-of="PsychicStructure"
+            is-a="Object">
             <identity>
                 <description>
-                    A psychological process in which psychic contents
-                    associated with the subject are experienced as
-                    belonging to another person, object or situation.
+                    An organized cluster of emotionally charged memories,
+                    representations, expectations, perceptions and
+                    behavioral tendencies associated around a psychological
+                    theme.
                 </description>
             </identity>
             <structure>
-                <contains ref="jung-projecting-content-001"/>
-                <contains ref="jung-projection-target-001"/>
+                <contains ref="jung-complex-memory-001"/>
+                <contains ref="jung-complex-representation-001"/>
+                <contains ref="jung-complex-expectation-001"/>
             </structure>
+            <properties>
+                <property id="affective-charge"/>
+                <property id="activation-threshold"/>
+                <property id="salience"/>
+                <property id="associative-strength"/>
+                <property id="behavioral-influence"/>
+            </properties>
+            <dimensions>
+                <has-dimension ref="attention-salience"/>
+                <has-dimension ref="memory"/>
+                <has-dimension ref="expectation"/>
+                <has-dimension ref="semantic"/>
+            </dimensions>
             <functions>
-                <has-function ref="externalize-psychic-content"/>
-                <has-function ref="attribute-content-to-object"/>
-                <has-function ref="organize-perception"/>
-                <has-function ref="shape-interpretation"/>
+                <has-function ref="organize-experience"/>
+                <has-function ref="bias-perception"/>
+                <has-function ref="bias-interpretation"/>
+                <has-function ref="activate-affect"/>
+                <has-function ref="influence-behavior"/>
+                <has-function ref="generate-associations"/>
             </functions>
             <relations>
-                <acts-on ref="jung-ego-001"/>
-                <may-involve ref="jung-shadow-001"/>
-                <may-involve ref="jung-complex-001"/>
+                <part-of ref="jung-complex-system-001"/>
+                <influences ref="jung-ego-001"/>
+                <responds-to ref="jung-trigger-001"/>
+            </relations>
+            <state>
+                <has-state ref="jung-latent-state-001"/>
+                <has-state ref="jung-activated-state-001"/>
+                <has-state ref="jung-dominant-state-001"/>
+                <has-state ref="jung-integrating-state-001"/>
+                <has-state ref="jung-integrated-state-001"/>
+            </state>
+            <transformations>
+                <transforms ref="jung-activation-transformation-001"/>
+                <transforms ref="jung-integration-transformation-001"/>
+            </transformations>
+        </object>
+        <object
+            id="jung-complex-memory-001"
+            name="Complex Memory"
+            instance-of="PsychicContent"
+            is-a="Object">
+            <identity>
+                <description>
+                    A memory associated with the thematic and affective
+                    organization of a psychological complex.
+                </description>
+            </identity>
+            <relations>
+                <part-of ref="jung-complex-001"/>
+                <relates-to ref="personal-memories-001"/>
             </relations>
         </object>
         <object
-            id="jung-compensation-001"
-            name="Compensation"
-            instance-of="PsychicProcess">
+            id="jung-complex-representation-001"
+            name="Complex Representation"
+            instance-of="PsychicContent"
+            is-a="Object">
             <identity>
                 <description>
-                    A theoretical process in which unconscious activity
-                    tends to complement, balance or compensate for the
-                    one-sidedness of conscious attitudes.
+                    A representation, image, belief or association
+                    organized around the theme of a complex.
                 </description>
             </identity>
-            <functions>
-                <has-function ref="balance-conscious-attitude"/>
-                <has-function ref="introduce-unconscious-content"/>
-                <has-function ref="reduce-psychic-one-sidedness"/>
-                <has-function ref="support-psychic-regulation"/>
-            </functions>
             <relations>
-                <acts-on ref="jung-consciousness-001"/>
-                <involves ref="jung-unconscious-content-001"/>
+                <part-of ref="jung-complex-001"/>
             </relations>
         </object>
         <object
-            id="jung-identification-001"
-            name="Identification"
-            instance-of="PsychicProcess">
+            id="jung-complex-expectation-001"
+            name="Complex Expectation"
+            instance-of="PsychicContent"
+            is-a="Object">
             <identity>
                 <description>
-                    A psychological process in which the ego or another
-                    psychic structure becomes strongly aligned with a
-                    role, image, group, object or psychic content.
+                    An expectation or anticipatory pattern associated
+                    with a psychological complex.
                 </description>
             </identity>
-            <functions>
-                <has-function ref="form-psychological-alignment"/>
-                <has-function ref="adopt-psychic-pattern"/>
-                <has-function ref="organize-identity"/>
-            </functions>
+            <relations>
+                <part-of ref="jung-complex-001"/>
+            </relations>
         </object>
+        <!-- =====================================================
+             SYMBOLIC SYSTEM
+             ===================================================== -->
         <object
-            id="jung-differentiation-001"
-            name="Differentiation"
-            instance-of="PsychicProcess">
+            id="jung-symbolic-system-001"
+            name="Symbolic System"
+            instance-of="System"
+            is-a="Object">
             <identity>
                 <description>
-                    A process through which previously undifferentiated
-                    psychological contents, functions or structures become
-                    more distinct and consciously recognizable.
-                </description>
-            </identity>
-            <functions>
-                <has-function ref="separate-psychic-contents"/>
-                <has-function ref="increase-conscious-distinction"/>
-                <has-function ref="develop-function-differentiation"/>
-            </functions>
-        </object>
-        <object
-            id="jung-integration-001"
-            name="Integration"
-            instance-of="PsychicProcess">
-            <identity>
-                <description>
-                    A process through which differentiated psychic
-                    contents become related within a more coherent
-                    psychological organization.
-                </description>
-            </identity>
-            <functions>
-                <has-function ref="relate-psychic-contents"/>
-                <has-function ref="reduce-fragmentation"/>
-                <has-function ref="increase-psychic-coherence"/>
-                <has-function ref="support-individuation"/>
-            </functions>
-        </object>
-        <object
-            id="jung-symbolization-001"
-            name="Symbolization"
-            instance-of="PsychicProcess">
-            <identity>
-                <description>
-                    A process through which psychological experience
-                    becomes represented through symbolic images,
-                    narratives, metaphors or other symbolic forms.
-                </description>
-            </identity>
-            <functions>
-                <has-function ref="represent-psychic-content"/>
-                <has-function ref="mediate-conscious-unconscious"/>
-                <has-function ref="generate-symbolic-form"/>
-                <has-function ref="organize-meaning"/>
-            </functions>
-        </object>
-        <object
-            id="jung-activation-001"
-            name="Psychic Activation"
-            instance-of="PsychicProcess">
-            <identity>
-                <description>
-                    A process through which a previously latent psychic
-                    structure or content becomes psychologically active
-                    and capable of influencing experience.
-                </description>
-            </identity>
-            <functions>
-                <has-function ref="activate-psychic-content"/>
-                <has-function ref="increase-affective-salience"/>
-                <has-function ref="bring-content-into-psychological-relation"/>
-            </functions>
-        </object>
-        <object
-            id="jung-constellation-001"
-            name="Constellation"
-            instance-of="PsychicProcess">
-            <identity>
-                <description>
-                    A Jungian term for the activation of a particular
-                    psychic complex or configuration in response to a
-                    situation, stimulus or psychological condition.
-                </description>
-            </identity>
-            <functions>
-                <has-function ref="activate-complex"/>
-                <has-function ref="organize-affective-response"/>
-                <has-function ref="bias-conscious-experience"/>
-            </functions>
-        </object>
-        <!-- ===================================================== -->
-        <!-- SYMBOLIC PROCESSES                                     -->
-        <!-- ===================================================== -->
-        <object
-            id="jung-symbolic-processes-001"
-            name="Symbolic Processes"
-            instance-of="PsycheComponent">
-            <identity>
-                <description>
-                    Psychological processes involving symbolic images,
-                    dreams, myths, fantasies and active imagination.
+                    A system of symbolic experiences and representations
+                    through which psychological contents may be expressed
+                    or related to consciousness.
                 </description>
             </identity>
             <structure>
@@ -1162,28 +1318,26 @@
                 <contains ref="jung-fantasy-001"/>
                 <contains ref="jung-active-imagination-001"/>
             </structure>
-            <components>
-                <component ref="jung-symbol-001"/>
-                <component ref="jung-dream-001"/>
-                <component ref="jung-myth-001"/>
-                <component ref="jung-fantasy-001"/>
-                <component ref="jung-active-imagination-001"/>
-            </components>
             <functions>
-                <has-function ref="represent-unconscious-content"/>
+                <has-function ref="represent-psychic-content"/>
                 <has-function ref="mediate-conscious-unconscious"/>
                 <has-function ref="organize-symbolic-meaning"/>
             </functions>
+            <relations>
+                <part-of ref="jung-psyche-001"/>
+                <influenced-by ref="jung-archetypes-001"/>
+            </relations>
         </object>
         <object
             id="jung-symbol-001"
             name="Symbol"
-            instance-of="SymbolicObject">
+            instance-of="SymbolicObject"
+            is-a="Object">
             <identity>
                 <description>
-                    A symbolic representation that expresses psychological
-                    meaning not exhausted by its immediately apparent
-                    literal or conceptual interpretation.
+                    A symbolic representation whose psychological meaning
+                    is not exhausted by its immediately apparent literal
+                    or conceptual interpretation.
                 </description>
             </identity>
             <properties>
@@ -1192,6 +1346,11 @@
                 <property id="associative-depth"/>
                 <property id="affective-salience"/>
             </properties>
+            <dimensions>
+                <has-dimension ref="semantic"/>
+                <has-dimension ref="identity-motif"/>
+                <has-dimension ref="social-cultural"/>
+            </dimensions>
             <functions>
                 <has-function ref="represent-psychic-content"/>
                 <has-function ref="mediate-conscious-unconscious"/>
@@ -1199,17 +1358,17 @@
                 <has-function ref="organize-meaning"/>
             </functions>
             <relations>
-                <may-express ref="jung-archetype-001"/>
-                <may-express ref="jung-complex-001"/>
-                <may-appear-in ref="jung-dream-001"/>
-                <may-appear-in ref="jung-myth-001"/>
-                <may-appear-in ref="jung-fantasy-001"/>
+                <part-of ref="jung-symbolic-system-001"/>
+                <represents ref="jung-unconscious-content-001"/>
+                <may-represent ref="jung-archetype-001"/>
+                <may-represent ref="jung-complex-001"/>
             </relations>
         </object>
         <object
             id="jung-dream-001"
             name="Dream"
-            instance-of="SymbolicExperience">
+            instance-of="SymbolicExperience"
+            is-a="Object">
             <identity>
                 <description>
                     A symbolic psychological experience occurring during
@@ -1226,6 +1385,11 @@
                 <property id="narrative-structure"/>
                 <property id="symbolic-density"/>
             </properties>
+            <dimensions>
+                <has-dimension ref="semantic"/>
+                <has-dimension ref="attention-salience"/>
+                <has-dimension ref="identity-motif"/>
+            </dimensions>
             <functions>
                 <has-function ref="express-psychic-content"/>
                 <has-function ref="organize-symbolic-experience"/>
@@ -1233,33 +1397,43 @@
                 <has-function ref="generate-associations"/>
             </functions>
             <relations>
-                <may-express ref="jung-unconscious-content-001"/>
-                <may-express ref="jung-archetype-001"/>
-                <may-express ref="jung-complex-001"/>
-                <experienced-by ref="jung-ego-001"/>
+                <part-of ref="jung-symbolic-system-001"/>
+                <represents ref="jung-unconscious-content-001"/>
+                <responds-to ref="jung-psychic-dynamics-001"/>
             </relations>
         </object>
         <object
             id="jung-myth-001"
             name="Myth"
-            instance-of="SymbolicStructure">
+            instance-of="SymbolicStructure"
+            is-a="Object">
             <identity>
                 <description>
                     A culturally transmitted symbolic narrative that can
-                    express recurring archetypal themes and patterns of
-                    psychological meaning.
+                    express recurring archetypal themes and psychological
+                    meanings.
                 </description>
             </identity>
+            <properties>
+                <property id="narrative-structure"/>
+                <property id="cultural-context"/>
+                <property id="symbolic-density"/>
+            </properties>
             <functions>
                 <has-function ref="organize-symbolic-narrative"/>
                 <has-function ref="transmit-archetypal-imagery"/>
                 <has-function ref="provide-cultural-symbolic-form"/>
             </functions>
+            <relations>
+                <part-of ref="jung-symbolic-system-001"/>
+                <represents ref="jung-archetypes-001"/>
+            </relations>
         </object>
         <object
             id="jung-fantasy-001"
             name="Fantasy"
-            instance-of="SymbolicExperience">
+            instance-of="SymbolicExperience"
+            is-a="Object">
             <identity>
                 <description>
                     An imaginative psychic experience involving internally
@@ -1272,17 +1446,22 @@
                 <has-function ref="express-psychic-content"/>
                 <has-function ref="generate-symbolic-associations"/>
             </functions>
+            <relations>
+                <part-of ref="jung-symbolic-system-001"/>
+                <represents ref="jung-unconscious-content-001"/>
+            </relations>
         </object>
         <object
             id="jung-active-imagination-001"
             name="Active Imagination"
-            instance-of="PsychicProcess">
+            instance-of="PsychicProcess"
+            is-a="Object">
             <identity>
                 <description>
                     A Jungian method of engaging consciously with
-                    spontaneously emerging images, fantasies and other
-                    unconscious material while maintaining a relationship
-                    with conscious awareness.
+                    spontaneously emerging images, fantasies and
+                    unconscious material while maintaining conscious
+                    psychological observation.
                 </description>
             </identity>
             <functions>
@@ -1292,18 +1471,219 @@
                 <has-function ref="support-integration"/>
             </functions>
             <relations>
-                <acts-on ref="jung-symbolic-processes-001"/>
+                <part-of ref="jung-symbolic-system-001"/>
                 <relates-to ref="jung-ego-001"/>
                 <supports ref="jung-individuation-001"/>
             </relations>
         </object>
-        <!-- ===================================================== -->
-        <!-- INDIVIDUATION                                          -->
-        <!-- ===================================================== -->
+        <!-- =====================================================
+             PSYCHIC DYNAMICS
+             ===================================================== -->
+        <object
+            id="jung-psychic-dynamics-001"
+            name="Psychic Dynamics"
+            instance-of="System"
+            is-a="Object">
+            <identity>
+                <description>
+                    The dynamic relationships and processes through which
+                    conscious and unconscious psychological contents
+                    influence, compensate, conflict, activate and transform
+                    one another.
+                </description>
+            </identity>
+            <structure>
+                <contains ref="jung-projection-001"/>
+                <contains ref="jung-compensation-001"/>
+                <contains ref="jung-identification-001"/>
+                <contains ref="jung-differentiation-001"/>
+                <contains ref="jung-integration-001"/>
+                <contains ref="jung-activation-001"/>
+                <contains ref="jung-constellation-001"/>
+            </structure>
+            <functions>
+                <has-function ref="regulate-psychic-dynamics"/>
+                <has-function ref="activate-psychic-content"/>
+                <has-function ref="transform-psychic-content"/>
+            </functions>
+            <relations>
+                <part-of ref="jung-psyche-001"/>
+                <influences ref="jung-consciousness-001"/>
+                <influences ref="jung-personal-unconscious-001"/>
+                <influences ref="jung-symbolic-system-001"/>
+            </relations>
+        </object>
+        <object
+            id="jung-projection-001"
+            name="Projection"
+            instance-of="PsychicProcess"
+            is-a="Object">
+            <identity>
+                <description>
+                    A psychological process in which psychic contents
+                    associated with the subject are experienced as
+                    belonging to another person, object or situation.
+                </description>
+            </identity>
+            <properties>
+                <property id="projecting-content"/>
+                <property id="projection-target"/>
+                <property id="projection-intensity"/>
+            </properties>
+            <functions>
+                <has-function ref="externalize-psychic-content"/>
+                <has-function ref="attribute-content-to-object"/>
+                <has-function ref="shape-interpretation"/>
+            </functions>
+            <relations>
+                <part-of ref="jung-psychic-dynamics-001"/>
+                <may-involve ref="jung-shadow-001"/>
+                <may-involve ref="jung-complex-001"/>
+                <acts-on ref="jung-ego-001"/>
+            </relations>
+        </object>
+        <object
+            id="jung-compensation-001"
+            name="Compensation"
+            instance-of="PsychicProcess"
+            is-a="Object">
+            <identity>
+                <description>
+                    A theoretical process in which unconscious activity
+                    complements or compensates for one-sidedness in a
+                    conscious psychological attitude.
+                </description>
+            </identity>
+            <functions>
+                <has-function ref="balance-conscious-attitude"/>
+                <has-function ref="introduce-unconscious-content"/>
+                <has-function ref="reduce-psychic-one-sidedness"/>
+                <has-function ref="support-psychic-regulation"/>
+            </functions>
+            <relations>
+                <part-of ref="jung-psychic-dynamics-001"/>
+                <acts-on ref="jung-consciousness-001"/>
+                <involves ref="jung-unconscious-content-001"/>
+            </relations>
+        </object>
+        <object
+            id="jung-identification-001"
+            name="Identification"
+            instance-of="PsychicProcess"
+            is-a="Object">
+            <identity>
+                <description>
+                    A psychological process in which the ego or another
+                    psychic structure becomes strongly aligned with a
+                    role, image, group, object or psychic content.
+                </description>
+            </identity>
+            <functions>
+                <has-function ref="form-psychological-alignment"/>
+                <has-function ref="adopt-psychic-pattern"/>
+                <has-function ref="organize-identity"/>
+            </functions>
+            <relations>
+                <part-of ref="jung-psychic-dynamics-001"/>
+                <acts-on ref="jung-ego-001"/>
+            </relations>
+        </object>
+        <object
+            id="jung-differentiation-001"
+            name="Differentiation"
+            instance-of="PsychicProcess"
+            is-a="Object">
+            <identity>
+                <description>
+                    A process through which previously undifferentiated
+                    psychological contents, functions or structures become
+                    more distinct and recognizable.
+                </description>
+            </identity>
+            <functions>
+                <has-function ref="separate-psychic-contents"/>
+                <has-function ref="increase-conscious-distinction"/>
+                <has-function ref="develop-function-differentiation"/>
+            </functions>
+            <relations>
+                <part-of ref="jung-psychic-dynamics-001"/>
+                <supports ref="jung-individuation-001"/>
+            </relations>
+        </object>
+        <object
+            id="jung-integration-001"
+            name="Integration"
+            instance-of="PsychicProcess"
+            is-a="Object">
+            <identity>
+                <description>
+                    A process through which differentiated psychic
+                    contents become related within a more coherent
+                    psychological organization.
+                </description>
+            </identity>
+            <functions>
+                <has-function ref="relate-psychic-contents"/>
+                <has-function ref="reduce-fragmentation"/>
+                <has-function ref="increase-psychic-coherence"/>
+                <has-function ref="support-individuation"/>
+            </functions>
+            <relations>
+                <part-of ref="jung-psychic-dynamics-001"/>
+                <supports ref="jung-individuation-001"/>
+            </relations>
+        </object>
+        <object
+            id="jung-activation-001"
+            name="Psychic Activation"
+            instance-of="PsychicProcess"
+            is-a="Object">
+            <identity>
+                <description>
+                    A process through which a previously latent psychic
+                    structure or content becomes psychologically active.
+                </description>
+            </identity>
+            <functions>
+                <has-function ref="activate-psychic-content"/>
+                <has-function ref="increase-affective-salience"/>
+                <has-function ref="bring-content-into-psychological-relation"/>
+            </functions>
+            <relations>
+                <part-of ref="jung-psychic-dynamics-001"/>
+                <responds-to ref="jung-trigger-001"/>
+            </relations>
+        </object>
+        <object
+            id="jung-constellation-001"
+            name="Constellation"
+            instance-of="PsychicProcess"
+            is-a="Object">
+            <identity>
+                <description>
+                    A Jungian term for the activation of a particular
+                    psychic complex or configuration in response to a
+                    situation, stimulus or psychological condition.
+                </description>
+            </identity>
+            <functions>
+                <has-function ref="activate-complex"/>
+                <has-function ref="organize-affective-response"/>
+                <has-function ref="bias-conscious-experience"/>
+            </functions>
+            <relations>
+                <part-of ref="jung-psychic-dynamics-001"/>
+                <activates ref="jung-complex-001"/>
+            </relations>
+        </object>
+        <!-- =====================================================
+             INDIVIDUATION
+             ===================================================== -->
         <object
             id="jung-individuation-001"
             name="Individuation"
-            instance-of="PsychicProcess">
+            instance-of="PsychicProcess"
+            is-a="Object">
             <identity>
                 <description>
                     A developmental process in Jungian psychology through
@@ -1313,11 +1693,20 @@
                 </description>
             </identity>
             <structure>
-                <contains ref="jung-differentiation-001"/>
-                <contains ref="jung-integration-001"/>
                 <contains ref="jung-shadow-integration-001"/>
-                <contains ref="jung-self-relation-001"/>
+                <contains ref="jung-ego-self-relation-001"/>
             </structure>
+            <properties>
+                <property id="differentiation"/>
+                <property id="integration"/>
+                <property id="ego-self-relation"/>
+                <property id="psychic-wholeness"/>
+            </properties>
+            <dimensions>
+                <has-dimension ref="temporal"/>
+                <has-dimension ref="identity-motif"/>
+                <has-dimension ref="information-dynamics"/>
+            </dimensions>
             <functions>
                 <has-function ref="differentiate-psychic-structures"/>
                 <has-function ref="integrate-unconscious-content"/>
@@ -1330,24 +1719,26 @@
                 <involves ref="jung-self-001"/>
                 <involves ref="jung-shadow-001"/>
                 <involves ref="jung-persona-001"/>
-                <involves ref="jung-symbolic-processes-001"/>
+                <involves ref="jung-symbolic-system-001"/>
             </relations>
             <state>
-                <has-state ref="ongoing"/>
-                <has-state ref="developing"/>
-                <has-state ref="integrating"/>
+                <has-state ref="jung-developmental-state-001"/>
             </state>
+            <transformations>
+                <transforms ref="jung-differentiation-transformation-001"/>
+                <transforms ref="jung-integration-transformation-001"/>
+            </transformations>
         </object>
         <object
             id="jung-shadow-integration-001"
             name="Shadow Integration"
-            instance-of="PsychicProcess">
+            instance-of="PsychicProcess"
+            is-a="Object">
             <identity>
                 <description>
                     A process of becoming consciously related to aspects
-                    of personality represented by the Shadow and potentially
-                    incorporating previously unrecognized contents into
-                    conscious psychological understanding.
+                    of personality represented by the Shadow and establishing
+                    a more differentiated relationship with them.
                 </description>
             </identity>
             <functions>
@@ -1362,54 +1753,38 @@
             </relations>
         </object>
         <object
-            id="jung-self-relation-001"
+            id="jung-ego-self-relation-001"
             name="Ego-Self Relationship"
-            instance-of="PsychicRelationship">
+            instance-of="Relation"
+            is-a="Object">
             <identity>
                 <description>
                     The psychological relationship between the conscious
                     ego and the archetypal Self within Jungian theory.
                 </description>
             </identity>
+            <properties>
+                <property id="source" value="jung-ego-001"/>
+                <property id="target" value="jung-self-001"/>
+                <property id="relation-type" value="ego-self-relation"/>
+            </properties>
             <relations>
-                <relates ref="jung-ego-001"/>
-                <relates ref="jung-self-001"/>
+                <relates-to ref="jung-ego-001"/>
+                <relates-to ref="jung-self-001"/>
                 <participates-in ref="jung-individuation-001"/>
             </relations>
         </object>
-        <!-- ===================================================== -->
-        <!-- SUPPORTING PSYCHIC OBJECTS                              -->
-        <!-- ===================================================== -->
-        <object
-            id="jung-psyche-totality-001"
-            name="Psychic Totality"
-            instance-of="PsycheComponent">
-            <identity>
-                <description>
-                    The conceptual totality of conscious and unconscious
-                    psychic structures and processes represented within
-                    the Jungian model.
-                </description>
-            </identity>
-            <structure>
-                <contains ref="jung-consciousness-001"/>
-                <contains ref="jung-personal-unconscious-001"/>
-                <contains ref="jung-collective-unconscious-001"/>
-                <contains ref="jung-archetypes-001"/>
-                <contains ref="jung-psychic-functions-001"/>
-            </structure>
-            <functions>
-                <has-function ref="provide-model-of-psychic-wholeness"/>
-                <has-function ref="organize-psychic-relations"/>
-            </functions>
-        </object>
+        <!-- =====================================================
+             SUPPORTING OBJECTS
+             ===================================================== -->
         <object
             id="jung-unconscious-content-001"
             name="Unconscious Content"
-            instance-of="PsychicContent">
+            instance-of="PsychicContent"
+            is-a="Object">
             <identity>
                 <description>
-                    Psychic content that is not currently within
+                    Psychic content that is not currently within ordinary
                     conscious awareness in the Jungian model.
                 </description>
             </identity>
@@ -1418,11 +1793,17 @@
                 <has-function ref="appear-symbolically"/>
                 <has-function ref="participate-in-compensation"/>
             </functions>
+            <relations>
+                <relates-to ref="jung-personal-unconscious-001"/>
+                <relates-to ref="jung-collective-unconscious-001"/>
+                <may-be-represented-by ref="jung-symbol-001"/>
+            </relations>
         </object>
         <object
             id="jung-trigger-001"
             name="Psychological Trigger"
-            instance-of="PsychicEvent">
+            instance-of="Object"
+            is-a="PsychicEvent">
             <identity>
                 <description>
                     An event, perception, association, memory or situation
@@ -1434,33 +1815,16 @@
                 <has-function ref="activate-psychic-structure"/>
                 <has-function ref="activate-affective-response"/>
             </functions>
-        </object>
-        <object
-            id="jung-projecting-content-001"
-            name="Projecting Content"
-            instance-of="PsychicContent">
-            <identity>
-                <description>
-                    Psychic material participating in a projection process.
-                </description>
-            </identity>
-        </object>
-        <object
-            id="jung-projection-target-001"
-            name="Projection Target"
-            instance-of="Object">
-            <identity>
-                <description>
-                    A person, object, situation or representation onto
-                    which projected psychic content is experienced as
-                    belonging.
-                </description>
-            </identity>
+            <relations>
+                <activates ref="jung-complex-001"/>
+                <activates ref="jung-activation-001"/>
+            </relations>
         </object>
         <object
             id="jung-social-world-001"
             name="Social World"
-            instance-of="Context">
+            instance-of="Context"
+            is-a="Object">
             <identity>
                 <description>
                     The interpersonal, cultural and social environment
@@ -1468,942 +1832,367 @@
                     establishes relationships.
                 </description>
             </identity>
+            <dimensions>
+                <has-dimension ref="social-cultural"/>
+            </dimensions>
+            <relations>
+                <influences ref="jung-persona-001"/>
+                <influences ref="jung-ego-001"/>
+            </relations>
         </object>
     </objects>
-    <!-- ========================================================= -->
-    <!-- RELATIONAL VOCABULARY                                     -->
-    <!-- ========================================================= -->
-    <relations-model>
-        <relation-type id="contains">
-            <description>
-                Indicates structural inclusion of one object or component
-                within another.
-            </description>
-        </relation-type>
-        <relation-type id="part-of">
-            <description>
-                Indicates structural membership in a larger system.
-            </description>
-        </relation-type>
-        <relation-type id="influences">
-            <description>
-                Indicates that one psychological structure or process
-                may affect another.
-            </description>
-        </relation-type>
-        <relation-type id="activates">
-            <description>
-                Indicates activation of a psychic structure or process.
-            </description>
-        </relation-type>
-        <relation-type id="compensates">
-            <description>
-                Indicates a complementary or balancing relationship
-                between psychic attitudes or contents.
-            </description>
-        </relation-type>
-        <relation-type id="mediates">
-            <description>
-                Indicates that one structure functions as an intermediary
-                between other structures or domains.
-            </description>
-        </relation-type>
-        <relation-type id="expresses">
-            <description>
-                Indicates symbolic or psychological expression of content.
-            </description>
-        </relation-type>
-        <relation-type id="manifests-through">
-            <description>
-                Indicates manifestation through a symbolic or experiential
-                form.
-            </description>
-        </relation-type>
-        <relation-type id="integrates">
-            <description>
-                Indicates incorporation of differentiated contents into
-                a more coherent psychological organization.
-            </description>
-        </relation-type>
-        <relation-type id="projects">
-            <description>
-                Indicates external attribution of psychic content.
-            </description>
-        </relation-type>
-        <relation-type id="symbolizes">
-            <description>
-                Indicates representation of psychological content by
-                symbolic form.
-            </description>
-        </relation-type>
-        <relation-type id="constellates">
-            <description>
-                Indicates activation of a complex or psychic configuration.
-            </description>
-        </relation-type>
-        <relation-type id="opposes">
-            <description>
-                Indicates psychological tension or opposition between
-                differentiated contents or attitudes.
-            </description>
-        </relation-type>
-        <relation-type id="complements">
-            <description>
-                Indicates a complementary relationship between psychic
-                structures or attitudes.
-            </description>
-        </relation-type>
-        <relation-type id="transforms">
-            <description>
-                Indicates psychological change from one organization,
-                state or configuration to another.
-            </description>
-        </relation-type>
-    </relations-model>
-    <!-- ========================================================= -->
-    <!-- STATES                                                      -->
-    <!-- ========================================================= -->
+    <!-- =========================================================
+         STATES
+         ========================================================= -->
     <states>
         <state
-            id="inactive"
-            name="Inactive">
-            <description>
-                A psychic structure is not currently strongly activated.
-            </description>
+            id="jung-conscious-state-001"
+            name="Conscious State"
+            instance-of="State"
+            is-a="Object">
+            <identity>
+                <description>
+                    A state in which psychic content is available to
+                    conscious awareness.
+                </description>
+            </identity>
         </state>
         <state
-            id="activated"
-            name="Activated">
-            <description>
-                A psychic structure is currently psychologically active.
-            </description>
+            id="jung-unconscious-state-001"
+            name="Unconscious State"
+            instance-of="State"
+            is-a="Object">
+            <identity>
+                <description>
+                    A state in which psychic content is not currently
+                    available to ordinary conscious awareness.
+                </description>
+            </identity>
         </state>
         <state
-            id="dominant"
-            name="Dominant">
-            <description>
-                A psychic structure has become especially influential
-                within current psychological experience.
-            </description>
+            id="jung-latent-state-001"
+            name="Latent"
+            instance-of="State"
+            is-a="Object">
+            <identity>
+                <description>
+                    A relatively inactive psychological configuration
+                    capable of becoming activated.
+                </description>
+            </identity>
         </state>
         <state
-            id="integrating"
-            name="Integrating">
-            <description>
-                A psychic structure or content is participating in a
-                process of conscious psychological integration.
-            </description>
+            id="jung-activated-state-001"
+            name="Activated"
+            instance-of="State"
+            is-a="Object">
+            <identity>
+                <description>
+                    A psychological configuration that is currently active
+                    and influencing experience.
+                </description>
+            </identity>
         </state>
         <state
-            id="integrated"
-            name="Integrated">
-            <description>
-                A psychic content or structure has become more coherently
-                related to conscious psychological organization.
-            </description>
+            id="jung-dominant-state-001"
+            name="Dominant"
+            instance-of="State"
+            is-a="Object">
+            <identity>
+                <description>
+                    A psychological configuration with unusually strong
+                    influence over current experience.
+                </description>
+            </identity>
         </state>
         <state
-            id="conscious"
-            name="Conscious">
-            <description>
-                Available to conscious awareness.
-            </description>
+            id="jung-integrating-state-001"
+            name="Integrating"
+            instance-of="State"
+            is-a="Object">
+            <identity>
+                <description>
+                    A state in which psychological contents are becoming
+                    related to conscious organization.
+                </description>
+            </identity>
         </state>
         <state
-            id="focused"
-            name="Focused">
-            <description>
-                Subject to concentrated conscious attention.
-            </description>
+            id="jung-integrated-state-001"
+            name="Integrated"
+            instance-of="State"
+            is-a="Object">
+            <identity>
+                <description>
+                    A state in which a psychological content or structure
+                    has become more coherently related to the psyche.
+                </description>
+            </identity>
         </state>
         <state
-            id="decentered"
-            name="Decentered">
-            <description>
-                Not occupying the ordinary central position of conscious
-                ego awareness.
-            </description>
+            id="jung-developmental-state-001"
+            name="Developmental"
+            instance-of="State"
+            is-a="Object">
+            <identity>
+                <description>
+                    A state associated with an ongoing developmental
+                    psychological process.
+                </description>
+            </identity>
         </state>
         <state
-            id="expanded"
-            name="Expanded">
-            <description>
-                Experientially expanded beyond an ordinary narrow
-                conscious focus.
-            </description>
-        </state>
-        <state
-            id="ongoing"
-            name="Ongoing">
-            <description>
-                A developmental or psychological process is continuing.
-            </description>
-        </state>
-        <state
-            id="developing"
-            name="Developing">
-            <description>
-                A psychological structure or relationship is undergoing
-                development or differentiation.
-            </description>
+            id="jung-current-psychic-state-001"
+            name="Current Psychic State"
+            instance-of="State"
+            is-a="Object">
+            <identity>
+                <description>
+                    The current configuration of conscious and unconscious
+                    psychological contents represented by the model.
+                </description>
+            </identity>
         </state>
     </states>
-    <!-- ========================================================= -->
-    <!-- TRANSFORMATIONS                                            -->
-    <!-- ========================================================= -->
+    <!-- =========================================================
+         TRANSFORMATIONS
+         ========================================================= -->
     <transformations>
         <transformation
-            id="jung-activate-complex-transformation-001"
-            name="Activate Complex">
-            <input ref="inactive"/>
-            <output ref="activated"/>
-            <process ref="jung-activation-001"/>
-            <cause ref="jung-trigger-001"/>
+            id="jung-activation-transformation-001"
+            name="Psychic Activation"
+            instance-of="Transformation"
+            is-a="Object">
+            <identity>
+                <description>
+                    Transformation from a latent psychic configuration
+                    to an activated configuration.
+                </description>
+            </identity>
+            <properties>
+                <property id="input" value="jung-latent-state-001"/>
+                <property id="output" value="jung-activated-state-001"/>
+                <property id="process" value="jung-activation-001"/>
+                <property id="cause" value="jung-trigger-001"/>
+            </properties>
+            <relations>
+                <realizes ref="jung-activation-001"/>
+            </relations>
         </transformation>
         <transformation
-            id="jung-complex-dominance-transformation-001"
-            name="Complex Becomes Dominant">
-            <input ref="activated"/>
-            <output ref="dominant"/>
-            <process ref="jung-constellation-001"/>
+            id="jung-differentiation-transformation-001"
+            name="Psychic Differentiation"
+            instance-of="Transformation"
+            is-a="Object">
+            <identity>
+                <description>
+                    Transformation through which previously undifferentiated
+                    psychological contents become more distinct and
+                    consciously recognizable.
+                </description>
+            </identity>
+            <properties>
+                <property id="process" value="jung-differentiation-001"/>
+                <property id="cause" value="psychological-development"/>
+            </properties>
+            <relations>
+                <realizes ref="jung-differentiation-001"/>
+            </relations>
         </transformation>
         <transformation
-            id="jung-complex-integration-transformation-001"
-            name="Complex Integration">
-            <input ref="dominant"/>
-            <output ref="integrating"/>
-            <process ref="jung-integration-001"/>
-        </transformation>
-        <transformation
-            id="jung-integration-completion-transformation-001"
-            name="Integration Completion">
-            <input ref="integrating"/>
-            <output ref="integrated"/>
-            <process ref="jung-integration-001"/>
-        </transformation>
-        <transformation
-            id="jung-unconscious-to-conscious-transformation-001"
-            name="Unconscious Content Becomes Conscious">
-            <input ref="jung-unconscious-content-001"/>
-            <output ref="jung-conscious-content-001"/>
-            <process ref="jung-differentiation-001"/>
-        </transformation>
-        <transformation
-            id="jung-symbolization-transformation-001"
-            name="Psychic Content Becomes Symbolic Form">
-            <input ref="jung-unconscious-content-001"/>
-            <output ref="jung-symbol-001"/>
-            <process ref="jung-symbolization-001"/>
-        </transformation>
-        <transformation
-            id="jung-individuation-transformation-001"
-            name="Individuation">
-            <input ref="jung-psyche-totality-001"/>
-            <output ref="jung-psyche-totality-001"/>
-            <process ref="jung-individuation-001"/>
+            id="jung-integration-transformation-001"
+            name="Psychic Integration"
+            instance-of="Transformation"
+            is-a="Object">
+            <identity>
+                <description>
+                    Transformation through which differentiated
+                    psychological contents become more coherently
+                    related within the psyche.
+                </description>
+            </identity>
+            <properties>
+                <property id="process" value="jung-integration-001"/>
+                <property id="cause" value="psychological-development"/>
+            </properties>
+            <relations>
+                <realizes ref="jung-integration-001"/>
+            </relations>
         </transformation>
     </transformations>
-    <!-- ========================================================= -->
-    <!-- FUNCTION VOCABULARY                                       -->
-    <!-- ========================================================= -->
-    <functions-model>
-        <function id="make-content-conscious">
-            <description>
-                Bring psychic content into conscious awareness.
-            </description>
-        </function>
-        <function id="organize-conscious-experience">
-            <description>
-                Organize contents available to consciousness.
-            </description>
-        </function>
-        <function id="orient-attention">
-            <description>
-                Direct conscious attention toward selected content.
-            </description>
-        </function>
-        <function id="maintain-conscious-identity">
-            <description>
-                Maintain continuity of conscious self-reference.
-            </description>
-        </function>
-        <function id="differentiate-self-from-environment">
-            <description>
-                Distinguish the conscious subject from surrounding objects
-                and situations.
-            </description>
-        </function>
-        <function id="mediate-conscious-action">
-            <description>
-                Coordinate conscious intention with action.
-            </description>
-        </function>
-        <function id="interpret-experience">
-            <description>
-                Organize experience into meaningful conscious interpretation.
-            </description>
-        </function>
-        <function id="integrate-conscious-content">
-            <description>
-                Relate newly conscious contents to existing conscious
-                psychological organization.
-            </description>
-        </function>
-        <function id="store-personal-content">
-            <description>
-                Preserve personally derived psychic contents.
-            </description>
-        </function>
-        <function id="organize-personal-associations">
-            <description>
-                Organize associations derived from personal experience.
-            </description>
-        </function>
-        <function id="influence-conscious-experience">
-            <description>
-                Affect current conscious perception, interpretation or
-                emotional experience.
-            </description>
-        </function>
-        <function id="provide-unconscious-compensation">
-            <description>
-                Provide material that theoretically compensates for
-                limitations or one-sidedness in conscious attitude.
-            </description>
-        </function>
-        <function id="organize-associated-content">
-            <description>
-                Organize psychologically related contents around a theme.
-            </description>
-        </function>
-        <function id="bias-attention">
-            <description>
-                Increase the likelihood that attention is directed
-                toward particular contents.
-            </description>
-        </function>
-        <function id="bias-interpretation">
-            <description>
-                Influence interpretation of experience according to
-                an activated psychological pattern.
-            </description>
-        </function>
-        <function id="activate-affect">
-            <description>
-                Generate or intensify affective response associated
-                with psychological content.
-            </description>
-        </function>
-        <function id="influence-behavior">
-            <description>
-                Influence behavioral tendencies and responses.
-            </description>
-        </function>
-        <function id="generate-associations">
-            <description>
-                Produce associative connections between psychological
-                contents.
-            </description>
-        </function>
-        <function id="conceptualize">
-            <description>
-                Form concepts and conceptual relations.
-            </description>
-        </function>
-        <function id="differentiate">
-            <description>
-                Establish conceptual distinctions.
-            </description>
-        </function>
-        <function id="classify">
-            <description>
-                Organize contents into conceptual categories.
-            </description>
-        </function>
-        <function id="judge">
-            <description>
-                Evaluate contents through conceptual judgment.
-            </description>
-        </function>
-        <function id="identify-relations">
-            <description>
-                Identify logical or conceptual relationships.
-            </description>
-        </function>
-        <function id="evaluate-value">
-            <description>
-                Determine psychological value or significance.
-            </description>
-        </function>
-        <function id="assign-significance">
-            <description>
-                Attribute significance to experience or objects.
-            </description>
-        </function>
-        <function id="establish-preference">
-            <description>
-                Establish psychological preference.
-            </description>
-        </function>
-        <function id="evaluate-relationship">
-            <description>
-                Evaluate the significance of relationships.
-            </description>
-        </function>
-        <function id="register-concrete-experience">
-            <description>
-                Register qualities of concrete experience.
-            </description>
-        </function>
-        <function id="detect-sensory-properties">
-            <description>
-                Detect properties of directly perceived experience.
-            </description>
-        </function>
-        <function id="orient-to-present-reality">
-            <description>
-                Direct attention toward immediate concrete conditions.
-            </description>
-        </function>
-        <function id="detect-possibility">
-            <description>
-                Perceive potential or possible developments.
-            </description>
-        </function>
-        <function id="detect-pattern">
-            <description>
-                Detect implicit or emerging patterns.
-            </description>
-        </function>
-        <function id="generate-hypothesis">
-            <description>
-                Generate possible explanations or interpretations.
-            </description>
-        </function>
-        <function id="anticipate-development">
-            <description>
-                Perceive possible future developments.
-            </description>
-        </function>
-        <function id="orient-attention-inward">
-            <description>
-                Direct psychic attention toward subjective experience.
-            </description>
-        </function>
-        <function id="prioritize-subjective-reference">
-            <description>
-                Give primary reference to the subjective psychological
-                standpoint.
-            </description>
-        </function>
-        <function id="differentiate-inner-experience">
-            <description>
-                Differentiate internal psychological experience.
-            </description>
-        </function>
-        <function id="orient-attention-outward">
-            <description>
-                Direct psychic attention toward external objects
-                and situations.
-            </description>
-        </function>
-        <function id="prioritize-object-reference">
-            <description>
-                Give primary reference to external objects or situations.
-            </description>
-        </function>
-        <function id="adapt-to-external-context">
-            <description>
-                Coordinate psychological activity with external conditions.
-            </description>
-        </function>
-        <function id="externalize-psychic-content">
-            <description>
-                Attribute internal psychological content to an external
-                object or person.
-            </description>
-        </function>
-        <function id="attribute-content-to-object">
-            <description>
-                Experience psychological content as belonging to an object.
-            </description>
-        </function>
-        <function id="organize-perception">
-            <description>
-                Organize perception according to psychological content.
-            </description>
-        </function>
-        <function id="shape-interpretation">
-            <description>
-                Influence interpretation of perceived situations.
-            </description>
-        </function>
-        <function id="balance-conscious-attitude">
-            <description>
-                Complement a one-sided conscious attitude.
-            </description>
-        </function>
-        <function id="introduce-unconscious-content">
-            <description>
-                Bring previously unconscious material into psychological
-                relationship with consciousness.
-            </description>
-        </function>
-        <function id="reduce-psychic-one-sidedness">
-            <description>
-                Reduce excessive one-sidedness in psychological orientation.
-            </description>
-        </function>
-        <function id="support-psychic-regulation">
-            <description>
-                Support psychological balance and regulation.
-            </description>
-        </function>
-        <function id="form-psychological-alignment">
-            <description>
-                Establish psychological alignment with a role,
-                object or psychic pattern.
-            </description>
-        </function>
-        <function id="adopt-psychic-pattern">
-            <description>
-                Adopt characteristics of an external or internal pattern.
-            </description>
-        </function>
-        <function id="organize-identity">
-            <description>
-                Contribute to organization of psychological identity.
-            </description>
-        </function>
-        <function id="separate-psychic-contents">
-            <description>
-                Establish distinctions between psychic contents.
-            </description>
-        </function>
-        <function id="increase-conscious-distinction">
-            <description>
-                Increase the differentiation of conscious psychological
-                representations.
-            </description>
-        </function>
-        <function id="develop-function-differentiation">
-            <description>
-                Increase differentiation among psychological functions.
-            </description>
-        </function>
-        <function id="relate-psychic-contents">
-            <description>
-                Establish relationships among previously differentiated
-                psychological contents.
-            </description>
-        </function>
-        <function id="reduce-fragmentation">
-            <description>
-                Reduce separation between psychological contents.
-            </description>
-        </function>
-        <function id="increase-psychic-coherence">
-            <description>
-                Increase coherence among psychic structures.
-            </description>
-        </function>
-        <function id="represent-psychic-content">
-            <description>
-                Represent psychological content in symbolic or conceptual form.
-            </description>
-        </function>
-        <function id="mediate-conscious-unconscious">
-            <description>
-                Establish symbolic or psychological relation between
-                conscious and unconscious contents.
-            </description>
-        </function>
-        <function id="generate-symbolic-form">
-            <description>
-                Transform psychological material into symbolic representation.
-            </description>
-        </function>
-        <function id="organize-meaning">
-            <description>
-                Organize psychological meaning around symbolic content.
-            </description>
-        </function>
-        <function id="activate-psychic-content">
-            <description>
-                Increase psychological activity of latent content.
-            </description>
-        </function>
-        <function id="increase-affective-salience">
-            <description>
-                Increase affective significance of psychic content.
-            </description>
-        </function>
-        <function id="bring-content-into-psychological-relation">
-            <description>
-                Establish active psychological relation between content
-                and the current psychic situation.
-            </description>
-        </function>
-        <function id="activate-complex">
-            <description>
-                Activate a psychologically organized complex.
-            </description>
-        </function>
-        <function id="organize-affective-response">
-            <description>
-                Organize affective response around activated content.
-            </description>
-        </function>
-        <function id="provide-archetypal-patterns">
-            <description>
-                Provide archetypal patterns within the theoretical model.
-            </description>
-        </function>
-        <function id="organize-symbolic-experience">
-            <description>
-                Organize symbolic psychological experience.
-            </description>
-        </function>
-        <function id="structure-imagination">
-            <description>
-                Organize imaginative imagery and narratives.
-            </description>
-        </function>
-        <function id="organize-affect">
-            <description>
-                Organize affective experience.
-            </description>
-        </function>
-        <function id="generate-symbolic-patterns">
-            <description>
-                Generate recurring symbolic configurations.
-            </description>
-        </function>
-        <function id="generate-symbolic-images">
-            <description>
-                Generate or organize symbolic imagery.
-            </description>
-        </function>
-        <function id="shape-meaning">
-            <description>
-                Influence the meaning attributed to psychological experience.
-            </description>
-        </function>
-        <function id="organize-psychic-totality">
-            <description>
-                Represent or organize the psyche as a psychological whole.
-            </description>
-        </function>
-        <function id="orient-integration">
-            <description>
-                Orient psychological development toward greater integration.
-            </description>
-        </function>
-        <function id="mediate-psychic-wholeness">
-            <description>
-                Relate differentiated psychic structures within an image
-                of psychological totality.
-            </description>
-        </function>
-        <function id="support-individuation">
-            <description>
-                Support the theoretical developmental process of individuation.
-            </description>
-        </function>
-        <function id="mediate-social-adaptation">
-            <description>
-                Mediate adaptation between individual psychology and
-                social expectations.
-            </description>
-        </function>
-        <function id="present-social-identity">
-            <description>
-                Present a socially recognizable psychological identity.
-            </description>
-        </function>
-        <function id="coordinate-social-role">
-            <description>
-                Organize behavior according to social role.
-            </description>
-        </function>
-        <function id="protect-psychological-boundary">
-            <description>
-                Provide a social interface between individual and environment.
-            </description>
-        </function>
-        <function id="contain-unintegrated-content">
-            <description>
-                Represent or contain psychological material not integrated
-                into conscious identity.
-            </description>
-        </function>
-        <function id="challenge-conscious-attitude">
-            <description>
-                Introduce psychological material that challenges a
-                one-sided conscious attitude.
-            </description>
-        </function>
-        <function id="provide-compensatory-content">
-            <description>
-                Provide material that complements conscious orientation.
-            </description>
-        </function>
-        <function id="mediate-unconscious-relatedness">
-            <description>
-                Mediate relationship between conscious identity and
-                unconscious symbolic material.
-            </description>
-        </function>
-        <function id="organize-symbolic-affect">
-            <description>
-                Organize affective symbolic experience.
-            </description>
-        </function>
-        <function id="mediate-inner-relationship">
-            <description>
-                Mediate relationship with an internal symbolic figure
-                or psychological content.
-            </description>
-        </function>
-        <function id="organize-symbolic-meaning">
-            <description>
-                Organize meaning through symbolic structures.
-            </description>
-        </function>
-        <function id="support-differentiation">
-            <description>
-                Symbolically support differentiation and development
-                of conscious agency.
-            </description>
-        </function>
-        <function id="support-agency">
-            <description>
-                Symbolically organize initiative and agency.
-            </description>
-        </function>
-        <function id="organize-transformation-narrative">
-            <description>
-                Organize symbolic narratives of overcoming and transformation.
-            </description>
-        </function>
-        <function id="represent-potentiality">
-            <description>
-                Represent psychological potential and emergence.
-            </description>
-        </function>
-        <function id="represent-renewal">
-            <description>
-                Represent renewal or psychological beginning.
-            </description>
-        </function>
-        <function id="organize-developmental-imagery">
-            <description>
-                Organize imagery associated with development.
-            </description>
-        </function>
-        <function id="organize-maternal-symbolism">
-            <description>
-                Organize symbolic themes associated with motherhood.
-            </description>
-        </function>
-        <function id="represent-containment">
-            <description>
-                Represent psychological containment.
-            </description>
-        </function>
-        <function id="represent-nurturance">
-            <description>
-                Represent nourishment, care or support.
-            </description>
-        </function>
-        <function id="organize-authority-symbolism">
-            <description>
-                Organize symbolic themes associated with authority and order.
-            </description>
-        </function>
-        <function id="represent-structure">
-            <description>
-                Represent psychological structure and order.
-            </description>
-        </function>
-        <function id="represent-guidance">
-            <description>
-                Represent psychological guidance and orientation.
-            </description>
-        </function>
-        <function id="disrupt-fixed-patterns">
-            <description>
-                Disrupt established psychological patterns.
-            </description>
-        </function>
-        <function id="expose-contradiction">
-            <description>
-                Expose contradiction or ambiguity in an existing pattern.
-            </description>
-        </function>
-        <function id="support-transformation">
-            <description>
-                Support psychological transformation.
-            </description>
-        </function>
-        <function id="represent-insight">
-            <description>
-                Represent insight or psychological understanding.
-            </description>
-        </function>
-        <function id="represent-wisdom">
-            <description>
-                Represent symbolic wisdom.
-            </description>
-        </function>
-        <function id="represent-intuition">
-            <description>
-                Represent intuitive psychological knowledge.
-            </description>
-        </function>
-        <function id="organize-origin-symbolism">
-            <description>
-                Organize symbolic representations of origin and generation.
-            </description>
-        </function>
-        <function id="represent-generativity">
-            <description>
-                Represent generative and creative psychological themes.
-            </description>
-        </function>
-        <function id="express-psychic-content">
-            <description>
-                Express psychological content through symbolic or experiential
-                form.
-            </description>
-        </function>
-        <function id="provide-compensatory-imagery">
-            <description>
-                Provide imagery that theoretically compensates for conscious
-                psychological attitudes.
-            </description>
-        </function>
-        <function id="organize-symbolic-narrative">
-            <description>
-                Organize psychological themes into symbolic narrative.
-            </description>
-        </function>
-        <function id="transmit-archetypal-imagery">
-            <description>
-                Transmit recurring archetypal imagery through narrative.
-            </description>
-        </function>
-        <function id="provide-cultural-symbolic-form">
-            <description>
-                Give psychological themes culturally recognizable symbolic form.
-            </description>
-        </function>
-        <function id="generate-imagery">
-            <description>
-                Generate internally experienced imagery.
-            </description>
-        </function>
-        <function id="explore-possibility">
-            <description>
-                Explore psychological possibilities through imagination.
-            </description>
-        </function>
-        <function id="generate-symbolic-associations">
-            <description>
-                Generate associations around symbolic imagery.
-            </description>
-        </function>
-        <function id="engage-unconscious-imagery">
-            <description>
-                Engage consciously with spontaneously emerging psychological
-                imagery.
-            </description>
-        </function>
-        <function id="maintain-conscious-observation">
-            <description>
-                Maintain a conscious observing standpoint during imaginative
-                engagement.
-            </description>
-        </function>
-        <function id="develop-symbolic-dialogue">
-            <description>
-                Develop an active relationship between consciousness and
-                symbolic imagery.
-            </description>
-        </function>
-        <function id="differentiate-psychic-structures">
-            <description>
-                Differentiate psychological structures and contents.
-            </description>
-        </function>
-        <function id="integrate-unconscious-content">
-            <description>
-                Establish conscious relationship with previously unconscious
-                psychological contents.
-            </description>
-        </function>
-        <function id="develop-ego-self-relation">
-            <description>
-                Develop the relationship between ego and Self.
-            </description>
-        </function>
-        <function id="increase-psychic-integration">
-            <description>
-                Increase integration among differentiated psychological
-                structures.
-            </description>
-        </function>
-        <function id="support-development-of-wholeness">
-            <description>
-                Support development toward greater psychological wholeness
-                within the Jungian model.
-            </description>
-        </function>
-        <function id="recognize-unconscious-content">
-            <description>
-                Recognize previously unrecognized psychological contents.
-            </description>
-        </function>
-        <function id="differentiate-shadow-content">
-            <description>
-                Distinguish Shadow-related contents from conscious identity.
-            </description>
-        </function>
-        <function id="integrate-shadow-content">
-            <description>
-                Establish a more conscious relationship with Shadow-related
-                psychological contents.
-            </description>
-        </function>
-        <function id="provide-model-of-psychic-wholeness">
-            <description>
-                Represent the psyche as a total psychological system.
-            </description>
-        </function>
-        <function id="organize-psychic-relations">
-            <description>
-                Organize relationships among psychic components.
-            </description>
-        </function>
-        <function id="appear-symbolically">
-            <description>
-                Appear through symbolic images or experiences.
-            </description>
-        </function>
-        <function id="participate-in-compensation">
-            <description>
-                Participate in compensatory psychological dynamics.
-            </description>
-        </function>
-        <function id="activate-psychic-structure">
-            <description>
-                Activate a psychological structure.
-            </description>
-        </function>
-        <function id="activate-affective-response">
-            <description>
-                Activate an affective psychological response.
-            </description>
-        </function>
-    </functions-model>
+    <!-- =========================================================
+         RELATED FUNCTIONS
+         These are referenced using the Universal Object Model's
+         has-function relation.
+         ========================================================= -->
+    <function-references>
+        <function ref="model-psyche"/>
+        <function ref="differentiate-consciousness"/>
+        <function ref="model-unconscious-content"/>
+        <function ref="model-archetypal-patterns"/>
+        <function ref="model-psychic-dynamics"/>
+        <function ref="model-psychological-development"/>
+        <function ref="organize-symbolic-experience"/>
+        <function ref="describe-individuation"/>
+        <function ref="make-content-conscious"/>
+        <function ref="organize-conscious-experience"/>
+        <function ref="orient-attention"/>
+        <function ref="support-intentional-action"/>
+        <function ref="differentiate-experience"/>
+        <function ref="maintain-conscious-identity"/>
+        <function ref="mediate-conscious-action"/>
+        <function ref="store-personal-content"/>
+        <function ref="organize-personal-associations"/>
+        <function ref="influence-conscious-experience"/>
+        <function ref="provide-unconscious-compensation"/>
+        <function ref="provide-archetypal-patterns"/>
+        <function ref="structure-imagination"/>
+        <function ref="provide-compensatory-patterns"/>
+        <function ref="organize-symbolic-experience"/>
+        <function ref="organize-affect"/>
+        <function ref="generate-symbolic-patterns"/>
+        <function ref="organize-psychic-totality"/>
+        <function ref="orient-integration"/>
+        <function ref="support-individuation"/>
+        <function ref="mediate-social-adaptation"/>
+        <function ref="present-social-identity"/>
+        <function ref="coordinate-social-role"/>
+        <function ref="protect-psychological-boundary"/>
+        <function ref="contain-unintegrated-content"/>
+        <function ref="challenge-conscious-attitude"/>
+        <function ref="provide-compensatory-content"/>
+        <function ref="mediate-unconscious-relatedness"/>
+        <function ref="organize-symbolic-affect"/>
+        <function ref="mediate-inner-relationship"/>
+        <function ref="organize-symbolic-meaning"/>
+        <function ref="conceptualize"/>
+        <function ref="differentiate"/>
+        <function ref="classify"/>
+        <function ref="judge"/>
+        <function ref="evaluate-value"/>
+        <function ref="assign-significance"/>
+        <function ref="establish-preference"/>
+        <function ref="register-concrete-experience"/>
+        <function ref="detect-sensory-properties"/>
+        <function ref="orient-to-present-reality"/>
+        <function ref="detect-possibility"/>
+        <function ref="detect-pattern"/>
+        <function ref="generate-hypothesis"/>
+        <function ref="anticipate-development"/>
+        <function ref="orient-attention-inward"/>
+        <function ref="prioritize-subjective-reference"/>
+        <function ref="differentiate-inner-experience"/>
+        <function ref="orient-attention-outward"/>
+        <function ref="prioritize-object-reference"/>
+        <function ref="adapt-to-external-context"/>
+        <function ref="organize-associated-content"/>
+        <function ref="bias-attention"/>
+        <function ref="bias-interpretation"/>
+        <function ref="activate-affect"/>
+        <function ref="influence-behavior"/>
+        <function ref="generate-associations"/>
+        <function ref="externalize-psychic-content"/>
+        <function ref="attribute-content-to-object"/>
+        <function ref="shape-interpretation"/>
+        <function ref="balance-conscious-attitude"/>
+        <function ref="introduce-unconscious-content"/>
+        <function ref="reduce-psychic-one-sidedness"/>
+        <function ref="support-psychic-regulation"/>
+        <function ref="form-psychological-alignment"/>
+        <function ref="adopt-psychic-pattern"/>
+        <function ref="organize-identity"/>
+        <function ref="separate-psychic-contents"/>
+        <function ref="increase-conscious-distinction"/>
+        <function ref="develop-function-differentiation"/>
+        <function ref="relate-psychic-contents"/>
+        <function ref="reduce-fragmentation"/>
+        <function ref="increase-psychic-coherence"/>
+        <function ref="activate-psychic-content"/>
+        <function ref="increase-affective-salience"/>
+        <function ref="bring-content-into-psychological-relation"/>
+        <function ref="activate-complex"/>
+        <function ref="organize-affective-response"/>
+        <function ref="bias-conscious-experience"/>
+        <function ref="represent-psychic-content"/>
+        <function ref="mediate-conscious-unconscious"/>
+        <function ref="generate-symbolic-associations"/>
+        <function ref="express-psychic-content"/>
+        <function ref="provide-compensatory-imagery"/>
+        <function ref="organize-symbolic-narrative"/>
+        <function ref="transmit-archetypal-imagery"/>
+        <function ref="provide-cultural-symbolic-form"/>
+        <function ref="generate-imagery"/>
+        <function ref="explore-possibility"/>
+        <function ref="engage-unconscious-imagery"/>
+        <function ref="maintain-conscious-observation"/>
+        <function ref="develop-symbolic-dialogue"/>
+        <function ref="regulate-psychic-dynamics"/>
+        <function ref="transform-psychic-content"/>
+        <function ref="recognize-unconscious-content"/>
+        <function ref="differentiate-shadow-content"/>
+        <function ref="integrate-shadow-content"/>
+        <function ref="differentiate-psychic-structures"/>
+        <function ref="integrate-unconscious-content"/>
+        <function ref="develop-ego-self-relation"/>
+        <function ref="increase-psychic-integration"/>
+        <function ref="support-development-of-wholeness"/>
+    </function-references>
+    <!-- =========================================================
+         RELATION REFERENCES
+         ========================================================= -->
+    <relation-references>
+        <relation ref="contains"/>
+        <relation ref="part-of"/>
+        <relation ref="composed-of"/>
+        <relation ref="member-of"/>
+        <relation ref="relates-to"/>
+        <relation ref="depends-on"/>
+        <relation ref="modifies"/>
+        <relation ref="influences"/>
+        <relation ref="contrasts-with"/>
+        <relation ref="responds-to"/>
+        <relation ref="references"/>
+        <relation ref="represents"/>
+        <relation ref="participates-in"/>
+        <relation ref="contributes-to"/>
+        <relation ref="exists-in"/>
+        <relation ref="has-state"/>
+        <relation ref="changes-state"/>
+        <relation ref="transforms"/>
+        <relation ref="realizes"/>
+    </relation-references>
+    <!-- =========================================================
+         MODEL NOTES
+         ========================================================= -->
+    <notes>
+        <note id="jung-model-note-001">
+            Archetypes are represented as theoretical psychic structures
+            rather than as concrete physical objects.
+        </note>
+        <note id="jung-model-note-002">
+            The distinction between personal and collective unconscious
+            belongs to the conceptual architecture of Jungian theory.
+        </note>
+        <note id="jung-model-note-003">
+            Thinking, Feeling, Sensation and Intuition are represented
+            as functions rather than anatomical structures.
+        </note>
+        <note id="jung-model-note-004">
+            Introversion and Extraversion are represented as orientations
+            rather than fixed personality objects.
+        </note>
+        <note id="jung-model-note-005">
+            Projection, Compensation, Differentiation and Integration
+            are represented as psychic processes.
+        </note>
+        <note id="jung-model-note-006">
+            Individuation is represented as a developmental transformation
+            involving relationships among multiple psychic structures.
+        </note>
+        <note id="jung-model-note-007">
+            Dreams, symbols, myths, fantasies and active imagination are
+            represented as symbolic objects or processes connecting
+            psychological contents and representations.
+        </note>
+    </notes>
 </theory>
