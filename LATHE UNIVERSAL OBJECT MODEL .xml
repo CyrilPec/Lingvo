@@ -1,0 +1,1261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<lingvo
+    id="lingvo"
+    name="Lingvo"
+    version="3.0"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- ============================================================
+       LATHE UNIVERSAL OBJECT MODEL
+       Based on the First Universal Object Model
+       ============================================================ -->
+
+  <mechanical-objects>
+
+    <!-- ==========================================================
+         LATHE
+         ========================================================== -->
+
+    <object-type
+        id="lathe"
+        name="Lathe"
+        extends="container">
+
+      <description>
+        A machine tool that rotates a workpiece about an axis of
+        rotation while a cutting tool is positioned relative to
+        the workpiece to perform machining operations.
+      </description>
+
+      <identity>
+        <id>lathe</id>
+        <name>Lathe</name>
+        <label>Lathe Machine</label>
+        <description>
+          Machine tool for turning, facing, boring, threading,
+          drilling and related machining operations.
+        </description>
+        <aliases>
+          <alias>engine lathe</alias>
+          <alias>centre lathe</alias>
+          <alias>turning lathe</alias>
+          <alias>turning machine</alias>
+        </aliases>
+      </identity>
+
+      <type>
+        <instance-of ref="mechanical-machine"/>
+        <is-a ref="machine-tool"/>
+      </type>
+
+      <!-- --------------------------------------------------------
+           STRUCTURE
+           -------------------------------------------------------- -->
+
+      <structure>
+
+        <contains ref="lathe-bed"/>
+        <contains ref="lathe-headstock"/>
+        <contains ref="lathe-spindle-system"/>
+        <contains ref="lathe-chuck"/>
+        <contains ref="lathe-tailstock"/>
+        <contains ref="lathe-carriage"/>
+        <contains ref="lathe-cross-slide"/>
+        <contains ref="lathe-tool-post"/>
+        <contains ref="lathe-lead-screw"/>
+        <contains ref="lathe-feed-shaft"/>
+        <contains ref="lathe-drive-system"/>
+        <contains ref="lathe-control-system"/>
+        <contains ref="lathe-coolant-system"/>
+        <contains ref="lathe-guard-system"/>
+
+        <composed-of>
+          <component ref="lathe-bed"/>
+          <component ref="lathe-headstock"/>
+          <component ref="lathe-spindle-system"/>
+          <component ref="lathe-chuck"/>
+          <component ref="lathe-tailstock"/>
+          <component ref="lathe-carriage"/>
+          <component ref="lathe-cross-slide"/>
+          <component ref="lathe-tool-post"/>
+          <component ref="lathe-drive-system"/>
+          <component ref="lathe-control-system"/>
+        </composed-of>
+
+        <boundary>
+          <boundary-type>physical-machine-boundary</boundary-type>
+        </boundary>
+
+      </structure>
+
+      <!-- --------------------------------------------------------
+           PROPERTIES
+           -------------------------------------------------------- -->
+
+      <properties>
+
+        <property
+            id="machine-type"
+            value="engine-lathe"/>
+
+        <property
+            id="machine-axis"
+            value="horizontal"/>
+
+        <property
+            id="primary-process"
+            value="turning"/>
+
+        <property
+            id="workpiece-rotation"
+            value="continuous"/>
+
+        <property
+            id="tool-motion"
+            value="controlled-linear-motion"/>
+
+        <property
+            id="drive-type"
+            value="motor-driven"/>
+
+        <property
+            id="control-type"
+            value="manual"/>
+
+        <property
+            id="coordinate-system"
+            value="lathe-x-z"/>
+
+      </properties>
+
+      <!-- --------------------------------------------------------
+           DIMENSIONS
+           -------------------------------------------------------- -->
+
+      <dimensions>
+
+        <dimension ref="structural"/>
+        <dimension ref="spatial"/>
+        <dimension ref="mechanical"/>
+        <dimension ref="kinematic"/>
+        <dimension ref="dynamic"/>
+        <dimension ref="temporal"/>
+        <dimension ref="material"/>
+        <dimension ref="operational"/>
+        <dimension ref="safety"/>
+
+      </dimensions>
+
+      <!-- --------------------------------------------------------
+           FUNCTIONS
+           -------------------------------------------------------- -->
+
+      <functions>
+
+        <has-function ref="workpiece-rotation"/>
+        <has-function ref="material-removal"/>
+        <has-function ref="turning"/>
+        <has-function ref="facing"/>
+        <has-function ref="boring"/>
+        <has-function ref="threading"/>
+        <has-function ref="drilling"/>
+        <has-function ref="parting"/>
+        <has-function ref="knurling"/>
+        <has-function ref="tool-positioning"/>
+        <has-function ref="feed-control"/>
+        <has-function ref="speed-control"/>
+
+      </functions>
+
+      <!-- --------------------------------------------------------
+           SYSTEMS
+           -------------------------------------------------------- -->
+
+      <systems>
+
+        <participates-in ref="lathe-drive-system"/>
+        <participates-in ref="lathe-cutting-system"/>
+        <participates-in ref="lathe-feed-system"/>
+        <participates-in ref="lathe-control-system"/>
+        <participates-in ref="lathe-safety-system"/>
+
+      </systems>
+
+      <!-- --------------------------------------------------------
+           STATE
+           -------------------------------------------------------- -->
+
+      <state>
+
+        <has-state ref="lathe-stopped"/>
+        <has-state ref="lathe-running"/>
+        <has-state ref="lathe-loading"/>
+        <has-state ref="lathe-machining"/>
+        <has-state ref="lathe-emergency-stop"/>
+
+      </state>
+
+      <!-- --------------------------------------------------------
+           TRANSFORMATIONS
+           -------------------------------------------------------- -->
+
+      <transformations>
+
+        <transforms ref="rotational-energy-to-machining-process"/>
+        <transforms ref="workpiece-stock-to-machined-part"/>
+
+      </transformations>
+
+      <!-- --------------------------------------------------------
+           REPRESENTATION
+           -------------------------------------------------------- -->
+
+      <representation>
+
+        <represented-by ref="lathe-assembly"/>
+        <represented-by ref="lathe-kinematic-model"/>
+        <represented-by ref="lathe-spatial-model"/>
+
+      </representation>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         LATHE BED
+         ========================================================== -->
+
+    <object-type
+        id="lathe-bed"
+        name="Lathe Bed"
+        extends="object">
+
+      <description>
+        Structural foundation of the lathe supporting the
+        headstock, carriage and tailstock.
+      </description>
+
+      <type>
+        <instance-of ref="structural-component"/>
+      </type>
+
+      <structure>
+        <part-of ref="lathe"/>
+        <supports ref="lathe-headstock"/>
+        <supports ref="lathe-carriage"/>
+        <supports ref="lathe-tailstock"/>
+      </structure>
+
+      <properties>
+        <property id="material" value="cast-iron"/>
+        <property id="function" value="structural-support"/>
+        <property id="guide-type" value="precision-bedways"/>
+      </properties>
+
+      <functions>
+        <has-function ref="support"/>
+        <has-function ref="alignment"/>
+        <has-function ref="guidance"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         HEADSTOCK
+         ========================================================== -->
+
+    <object-type
+        id="lathe-headstock"
+        name="Lathe Headstock"
+        extends="container">
+
+      <description>
+        Assembly containing the spindle and mechanisms responsible
+        for rotating the workpiece.
+      </description>
+
+      <type>
+        <instance-of ref="machine-component"/>
+      </type>
+
+      <structure>
+        <part-of ref="lathe"/>
+
+        <contains ref="lathe-spindle"/>
+        <contains ref="lathe-spindle-bearings"/>
+        <contains ref="lathe-speed-mechanism"/>
+        <contains ref="lathe-chuck-mount"/>
+      </structure>
+
+      <properties>
+        <property id="role" value="workpiece-drive"/>
+        <property id="position" value="fixed"/>
+      </properties>
+
+      <functions>
+        <has-function ref="support"/>
+        <has-function ref="drive"/>
+        <has-function ref="rotation"/>
+        <has-function ref="speed-selection"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         SPINDLE
+         ========================================================== -->
+
+    <object-type
+        id="lathe-spindle"
+        name="Lathe Spindle"
+        extends="object">
+
+      <description>
+        Rotating shaft transmitting torque from the drive system
+        to the workholding device and workpiece.
+      </description>
+
+      <type>
+        <instance-of ref="rotating-machine-element"/>
+      </type>
+
+      <structure>
+        <part-of ref="lathe-spindle-system"/>
+        <connected-to ref="lathe-chuck"/>
+        <supported-by ref="lathe-spindle-bearings"/>
+      </structure>
+
+      <properties>
+        <property id="axis" value="z"/>
+        <property id="rotation" value="continuous"/>
+        <property id="power-transmission" value="torque"/>
+        <property id="interface" value="workholding-interface"/>
+      </properties>
+
+      <dimensions>
+        <dimension ref="rotational"/>
+        <dimension ref="kinematic"/>
+        <dimension ref="dynamic"/>
+      </dimensions>
+
+      <functions>
+        <has-function ref="rotation"/>
+        <has-function ref="torque-transmission"/>
+        <has-function ref="workpiece-drive"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         SPINDLE SYSTEM
+         ========================================================== -->
+
+    <object-type
+        id="lathe-spindle-system"
+        name="Lathe Spindle System"
+        extends="container">
+
+      <description>
+        Complete rotating system consisting of spindle,
+        bearings, drive interface and workholding interface.
+      </description>
+
+      <structure>
+        <part-of ref="lathe"/>
+
+        <contains ref="lathe-spindle"/>
+        <contains ref="lathe-spindle-bearings"/>
+        <contains ref="lathe-chuck"/>
+      </structure>
+
+      <functions>
+        <has-function ref="rotation"/>
+        <has-function ref="torque-transmission"/>
+        <has-function ref="workholding"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         CHUCK
+         ========================================================== -->
+
+    <object-type
+        id="lathe-chuck"
+        name="Lathe Chuck"
+        extends="object">
+
+      <description>
+        Workholding device attached to the spindle for securing
+        and rotating the workpiece.
+      </description>
+
+      <type>
+        <instance-of ref="workholding-device"/>
+      </type>
+
+      <structure>
+        <part-of ref="lathe-spindle-system"/>
+        <holds ref="workpiece"/>
+      </structure>
+
+      <properties>
+        <property id="type" value="three-jaw"/>
+        <property id="mounting" value="spindle-mounted"/>
+        <property id="operation" value="mechanical-clamping"/>
+      </properties>
+
+      <functions>
+        <has-function ref="workholding"/>
+        <has-function ref="clamping"/>
+        <has-function ref="rotation-transfer"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         TAILSTOCK
+         ========================================================== -->
+
+    <object-type
+        id="lathe-tailstock"
+        name="Lathe Tailstock"
+        extends="container">
+
+      <description>
+        Adjustable support assembly located opposite the
+        headstock for supporting long workpieces and holding
+        axial tools.
+      </description>
+
+      <structure>
+        <part-of ref="lathe"/>
+        <contains ref="lathe-quill"/>
+        <contains ref="lathe-tailstock-center"/>
+      </structure>
+
+      <properties>
+        <property id="position" value="adjustable"/>
+        <property id="axis" value="z"/>
+      </properties>
+
+      <functions>
+        <has-function ref="workpiece-support"/>
+        <has-function ref="tool-support"/>
+        <has-function ref="axial-positioning"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         CARRIAGE
+         ========================================================== -->
+
+    <object-type
+        id="lathe-carriage"
+        name="Lathe Carriage"
+        extends="container">
+
+      <description>
+        Assembly that moves the cutting tool longitudinally
+        along the bed.
+      </description>
+
+      <structure>
+        <part-of ref="lathe"/>
+
+        <contains ref="lathe-apron"/>
+        <contains ref="lathe-cross-slide"/>
+        <contains ref="lathe-compound-rest"/>
+        <contains ref="lathe-tool-post"/>
+      </structure>
+
+      <properties>
+        <property id="primary-axis" value="z"/>
+        <property id="motion" value="linear"/>
+        <property id="guidance" value="bedways"/>
+      </properties>
+
+      <functions>
+        <has-function ref="longitudinal-feed"/>
+        <has-function ref="tool-positioning"/>
+        <has-function ref="cutting-depth-control"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         CROSS SLIDE
+         ========================================================== -->
+
+    <object-type
+        id="lathe-cross-slide"
+        name="Lathe Cross Slide"
+        extends="object">
+
+      <description>
+        Slide providing transverse movement of the cutting tool
+        relative to the workpiece axis.
+      </description>
+
+      <structure>
+        <part-of ref="lathe-carriage"/>
+        <supports ref="lathe-compound-rest"/>
+      </structure>
+
+      <properties>
+        <property id="axis" value="x"/>
+        <property id="motion" value="linear"/>
+      </properties>
+
+      <functions>
+        <has-function ref="transverse-feed"/>
+        <has-function ref="diameter-control"/>
+        <has-function ref="cutting-depth-control"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         COMPOUND REST
+         ========================================================== -->
+
+    <object-type
+        id="lathe-compound-rest"
+        name="Lathe Compound Rest"
+        extends="object">
+
+      <description>
+        Adjustable angular slide used for tool positioning,
+        taper turning and fine manual feed.
+      </description>
+
+      <structure>
+        <part-of ref="lathe-carriage"/>
+        <supports ref="lathe-tool-post"/>
+      </structure>
+
+      <properties>
+        <property id="motion" value="angular-linear"/>
+        <property id="purpose" value="tool-positioning"/>
+      </properties>
+
+      <functions>
+        <has-function ref="angular-tool-positioning"/>
+        <has-function ref="taper-turning"/>
+        <has-function ref="fine-feed"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         TOOL POST
+         ========================================================== -->
+
+    <object-type
+        id="lathe-tool-post"
+        name="Lathe Tool Post"
+        extends="object">
+
+      <description>
+        Device for securing the cutting tool in a defined
+        position and orientation.
+      </description>
+
+      <structure>
+        <part-of ref="lathe-carriage"/>
+        <holds ref="cutting-tool"/>
+      </structure>
+
+      <properties>
+        <property id="tool-interface" value="clamping"/>
+        <property id="orientation" value="adjustable"/>
+      </properties>
+
+      <functions>
+        <has-function ref="tool-holding"/>
+        <has-function ref="tool-positioning"/>
+        <has-function ref="tool-alignment"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         LEAD SCREW
+         ========================================================== -->
+
+    <object-type
+        id="lathe-lead-screw"
+        name="Lathe Lead Screw"
+        extends="object">
+
+      <description>
+        Precision threaded shaft used to drive the carriage,
+        particularly during threading operations.
+      </description>
+
+      <structure>
+        <part-of ref="lathe"/>
+
+        <drives ref="lathe-carriage"/>
+        <connected-to ref="lathe-drive-system"/>
+      </structure>
+
+      <properties>
+        <property id="axis" value="z"/>
+        <property id="motion" value="rotary-to-linear"/>
+        <property id="purpose" value="threading-feed"/>
+      </properties>
+
+      <functions>
+        <has-function ref="feed-transmission"/>
+        <has-function ref="threading-feed"/>
+        <has-function ref="motion-conversion"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         FEED SHAFT
+         ========================================================== -->
+
+    <object-type
+        id="lathe-feed-shaft"
+        name="Lathe Feed Shaft"
+        extends="object">
+
+      <description>
+        Shaft transmitting controlled rotational motion to the
+        automatic feed mechanism.
+      </description>
+
+      <structure>
+        <part-of ref="lathe"/>
+        <drives ref="lathe-carriage"/>
+      </structure>
+
+      <properties>
+        <property id="purpose" value="automatic-feed"/>
+        <property id="motion" value="rotary"/>
+      </properties>
+
+      <functions>
+        <has-function ref="feed-transmission"/>
+        <has-function ref="automatic-feed"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         DRIVE SYSTEM
+         ========================================================== -->
+
+    <object-type
+        id="lathe-drive-system"
+        name="Lathe Drive System"
+        extends="container">
+
+      <description>
+        System providing mechanical energy to rotate the spindle
+        and drive associated mechanisms.
+      </description>
+
+      <structure>
+        <part-of ref="lathe"/>
+
+        <contains ref="lathe-motor"/>
+        <contains ref="lathe-transmission"/>
+        <contains ref="lathe-spindle-drive"/>
+      </structure>
+
+      <properties>
+        <property id="energy-input" value="electrical"/>
+        <property id="energy-output" value="mechanical"/>
+      </properties>
+
+      <functions>
+        <has-function ref="energy-conversion"/>
+        <has-function ref="speed-control"/>
+        <has-function ref="torque-transmission"/>
+        <has-function ref="spindle-drive"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         MOTOR
+         ========================================================== -->
+
+    <object-type
+        id="lathe-motor"
+        name="Lathe Motor"
+        extends="object">
+
+      <description>
+        Electric motor supplying rotational mechanical power
+        to the lathe drive system.
+      </description>
+
+      <structure>
+        <part-of ref="lathe-drive-system"/>
+        <drives ref="lathe-transmission"/>
+      </structure>
+
+      <properties>
+        <property id="energy-input" value="electrical"/>
+        <property id="energy-output" value="rotational-mechanical"/>
+        <property id="control" value="variable"/>
+      </properties>
+
+      <functions>
+        <has-function ref="motor-drive"/>
+        <has-function ref="energy-conversion"/>
+        <has-function ref="speed-generation"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         TRANSMISSION
+         ========================================================== -->
+
+    <object-type
+        id="lathe-transmission"
+        name="Lathe Transmission"
+        extends="container">
+
+      <description>
+        Mechanical transmission controlling the relationship
+        between motor speed and spindle speed.
+      </description>
+
+      <structure>
+        <part-of ref="lathe-drive-system"/>
+        <drives ref="lathe-spindle"/>
+      </structure>
+
+      <properties>
+        <property id="transmission-type" value="variable"/>
+        <property id="purpose" value="speed-torque-conversion"/>
+      </properties>
+
+      <functions>
+        <has-function ref="speed-reduction"/>
+        <has-function ref="torque-multiplication"/>
+        <has-function ref="speed-selection"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         CONTROL SYSTEM
+         ========================================================== -->
+
+    <object-type
+        id="lathe-control-system"
+        name="Lathe Control System"
+        extends="container">
+
+      <description>
+        System through which the operator controls spindle,
+        feed, direction and machine state.
+      </description>
+
+      <structure>
+        <part-of ref="lathe"/>
+
+        <contains ref="spindle-control"/>
+        <contains ref="feed-control"/>
+        <contains ref="direction-control"/>
+        <contains ref="emergency-stop"/>
+      </structure>
+
+      <functions>
+        <has-function ref="machine-control"/>
+        <has-function ref="speed-control"/>
+        <has-function ref="feed-control"/>
+        <has-function ref="direction-control"/>
+        <has-function ref="emergency-shutdown"/>
+      </functions>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         WORKPIECE
+         ========================================================== -->
+
+    <object-type
+        id="workpiece"
+        name="Workpiece"
+        extends="object">
+
+      <description>
+        Material held and rotated by the lathe for machining.
+      </description>
+
+      <type>
+        <instance-of ref="machining-workpiece"/>
+      </type>
+
+      <structure>
+        <held-by ref="lathe-chuck"/>
+        <supported-by ref="lathe-tailstock"/>
+        <machined-by ref="cutting-tool"/>
+      </structure>
+
+      <properties>
+        <property id="material"/>
+        <property id="initial-geometry"/>
+        <property id="final-geometry"/>
+        <property id="diameter"/>
+        <property id="length"/>
+      </properties>
+
+      <state>
+        <has-state ref="raw-stock"/>
+        <has-state ref="mounted"/>
+        <has-state ref="rotating"/>
+        <has-state ref="machining"/>
+        <has-state ref="finished"/>
+      </state>
+
+      <transformations>
+        <transforms ref="machining"/>
+      </transformations>
+
+    </object-type>
+
+
+    <!-- ==========================================================
+         CUTTING TOOL
+         ========================================================== -->
+
+    <object-type
+        id="cutting-tool"
+        name="Cutting Tool"
+        extends="object">
+
+      <description>
+        Tool that removes material from the rotating workpiece.
+      </description>
+
+      <type>
+        <instance-of ref="machining-tool"/>
+      </type>
+
+      <structure>
+        <held-by ref="lathe-tool-post"/>
+        <acts-on ref="workpiece"/>
+      </structure>
+
+      <properties>
+        <property id="tool-type" value="turning-tool"/>
+        <property id="cutting-material"/>
+        <property id="tool-geometry"/>
+        <property id="rake-angle"/>
+        <property id="clearance-angle"/>
+      </properties>
+
+      <functions>
+        <has-function ref="material-removal"/>
+        <has-function ref="cutting"/>
+        <has-function ref="chip-formation"/>
+      </functions>
+
+    </object-type>
+
+  </mechanical-objects>
+
+
+  <!-- ============================================================
+       LATHE FUNCTIONS
+       ============================================================ -->
+
+  <functions>
+
+    <function id="workpiece-rotation" name="Workpiece Rotation"/>
+    <function id="material-removal" name="Material Removal"/>
+    <function id="turning" name="Turning"/>
+    <function id="facing" name="Facing"/>
+    <function id="boring" name="Boring"/>
+    <function id="threading" name="Threading"/>
+    <function id="drilling" name="Drilling"/>
+    <function id="parting" name="Parting"/>
+    <function id="knurling" name="Knurling"/>
+
+    <function id="support" name="Support"/>
+    <function id="alignment" name="Alignment"/>
+    <function id="guidance" name="Guidance"/>
+
+    <function id="drive" name="Drive"/>
+    <function id="rotation" name="Rotation"/>
+    <function id="torque-transmission" name="Torque Transmission"/>
+    <function id="workpiece-drive" name="Workpiece Drive"/>
+
+    <function id="workholding" name="Workholding"/>
+    <function id="clamping" name="Clamping"/>
+    <function id="rotation-transfer" name="Rotation Transfer"/>
+
+    <function id="longitudinal-feed" name="Longitudinal Feed"/>
+    <function id="transverse-feed" name="Transverse Feed"/>
+    <function id="diameter-control" name="Diameter Control"/>
+    <function id="cutting-depth-control" name="Cutting Depth Control"/>
+
+    <function id="tool-positioning" name="Tool Positioning"/>
+    <function id="tool-holding" name="Tool Holding"/>
+    <function id="tool-alignment" name="Tool Alignment"/>
+
+    <function id="feed-transmission" name="Feed Transmission"/>
+    <function id="threading-feed" name="Threading Feed"/>
+    <function id="motion-conversion" name="Motion Conversion"/>
+    <function id="automatic-feed" name="Automatic Feed"/>
+
+    <function id="energy-conversion" name="Energy Conversion"/>
+    <function id="speed-control" name="Speed Control"/>
+    <function id="spindle-drive" name="Spindle Drive"/>
+
+    <function id="motor-drive" name="Motor Drive"/>
+    <function id="speed-generation" name="Speed Generation"/>
+
+    <function id="speed-reduction" name="Speed Reduction"/>
+    <function id="torque-multiplication" name="Torque Multiplication"/>
+    <function id="speed-selection" name="Speed Selection"/>
+
+    <function id="machine-control" name="Machine Control"/>
+    <function id="feed-control" name="Feed Control"/>
+    <function id="direction-control" name="Direction Control"/>
+    <function id="emergency-shutdown" name="Emergency Shutdown"/>
+
+    <function id="angular-tool-positioning"
+              name="Angular Tool Positioning"/>
+
+    <function id="taper-turning"
+              name="Taper Turning"/>
+
+    <function id="fine-feed"
+              name="Fine Feed"/>
+
+    <function id="workpiece-support"
+              name="Workpiece Support"/>
+
+    <function id="tool-support"
+              name="Tool Support"/>
+
+    <function id="axial-positioning"
+              name="Axial Positioning"/>
+
+    <function id="chip-formation"
+              name="Chip Formation"/>
+
+  </functions>
+
+
+  <!-- ============================================================
+       LATHE RELATIONS
+       ============================================================ -->
+
+  <relations>
+
+    <relation
+        id="supports"
+        category="structural">
+      Object provides structural support to another object.
+    </relation>
+
+    <relation
+        id="holds"
+        category="functional">
+      Object physically holds another object.
+    </relation>
+
+    <relation
+        id="drives"
+        category="mechanical">
+      Object transmits mechanical motion or power to another object.
+    </relation>
+
+    <relation
+        id="connected-to"
+        category="mechanical">
+      Object is mechanically connected to another object.
+    </relation>
+
+    <relation
+        id="supported-by"
+        category="structural">
+      Object receives structural support from another object.
+    </relation>
+
+    <relation
+        id="acts-on"
+        category="process">
+      Object performs an operation upon another object.
+    </relation>
+
+    <relation
+        id="machined-by"
+        category="manufacturing">
+      Object is modified by a machining tool.
+    </relation>
+
+  </relations>
+
+
+  <!-- ============================================================
+       LATHE STATES
+       ============================================================ -->
+
+  <states>
+
+    <state
+        id="lathe-stopped"
+        name="Stopped">
+      Spindle and powered motion are stopped.
+    </state>
+
+    <state
+        id="lathe-running"
+        name="Running">
+      The machine is powered and the spindle is rotating.
+    </state>
+
+    <state
+        id="lathe-loading"
+        name="Loading">
+      Workpiece or tooling is being mounted or removed.
+    </state>
+
+    <state
+        id="lathe-machining"
+        name="Machining">
+      Material is actively being removed from the workpiece.
+    </state>
+
+    <state
+        id="lathe-emergency-stop"
+        name="Emergency Stop">
+      Machine operation has been interrupted by the safety system.
+    </state>
+
+    <state
+        id="raw-stock"
+        name="Raw Stock">
+      Workpiece before machining.
+    </state>
+
+    <state
+        id="mounted"
+        name="Mounted">
+      Workpiece is secured in the workholding system.
+    </state>
+
+    <state
+        id="rotating"
+        name="Rotating">
+      Workpiece is rotating about its machining axis.
+    </state>
+
+    <state
+        id="machining"
+        name="Machining">
+      Workpiece is undergoing material removal.
+    </state>
+
+    <state
+        id="finished"
+        name="Finished">
+      Workpiece has reached the intended machining state.
+    </state>
+
+  </states>
+
+
+  <!-- ============================================================
+       LATHE DIMENSIONS
+       ============================================================ -->
+
+  <dimensions>
+
+    <dimension
+        id="spatial"
+        name="Spatial">
+      <aspect ref="position"/>
+      <aspect ref="orientation"/>
+      <aspect ref="axis"/>
+      <aspect ref="distance"/>
+      <aspect ref="diameter"/>
+      <aspect ref="length"/>
+    </dimension>
+
+    <dimension
+        id="mechanical"
+        name="Mechanical">
+      <aspect ref="force"/>
+      <aspect ref="torque"/>
+      <aspect ref="load"/>
+      <aspect ref="friction"/>
+      <aspect ref="stiffness"/>
+      <aspect ref="alignment"/>
+    </dimension>
+
+    <dimension
+        id="kinematic"
+        name="Kinematic">
+      <aspect ref="rotation"/>
+      <aspect ref="translation"/>
+      <aspect ref="velocity"/>
+      <aspect ref="acceleration"/>
+      <aspect ref="feed"/>
+    </dimension>
+
+    <dimension
+        id="operational"
+        name="Operational">
+      <aspect ref="speed"/>
+      <aspect ref="feed-rate"/>
+      <aspect ref="depth-of-cut"/>
+      <aspect ref="cutting-condition"/>
+      <aspect ref="machining-operation"/>
+    </dimension>
+
+    <dimension
+        id="safety"
+        name="Safety">
+      <aspect ref="guarding"/>
+      <aspect ref="emergency-stop"/>
+      <aspect ref="interlock"/>
+      <aspect ref="operator-safety"/>
+    </dimension>
+
+  </dimensions>
+
+
+  <!-- ============================================================
+       LATHE SYSTEMS
+       ============================================================ -->
+
+  <systems>
+
+    <system
+        id="lathe-drive-system"
+        name="Lathe Drive System"/>
+
+    <system
+        id="lathe-cutting-system"
+        name="Lathe Cutting System"/>
+
+    <system
+        id="lathe-feed-system"
+        name="Lathe Feed System"/>
+
+    <system
+        id="lathe-control-system"
+        name="Lathe Control System"/>
+
+    <system
+        id="lathe-safety-system"
+        name="Lathe Safety System"/>
+
+  </systems>
+
+
+  <!-- ============================================================
+       LATHE REPRESENTATIONS
+       ============================================================ -->
+
+  <representations>
+
+    <representation
+        id="lathe-assembly"
+        name="Lathe Assembly"
+        type="physical"/>
+
+    <representation
+        id="lathe-kinematic-model"
+        name="Lathe Kinematic Model"
+        type="kinematic"/>
+
+    <representation
+        id="lathe-spatial-model"
+        name="Lathe Spatial Model"
+        type="geometric"/>
+
+  </representations>
+
+
+  <!-- ============================================================
+       LATHE RELATION GRAPH
+       ============================================================ -->
+
+  <object-relations>
+
+    <relation
+        source="lathe-motor"
+        type="drives"
+        target="lathe-transmission"/>
+
+    <relation
+        source="lathe-transmission"
+        type="drives"
+        target="lathe-spindle"/>
+
+    <relation
+        source="lathe-spindle"
+        type="connected-to"
+        target="lathe-chuck"/>
+
+    <relation
+        source="lathe-chuck"
+        type="holds"
+        target="workpiece"/>
+
+    <relation
+        source="lathe-workpiece"
+        type="machined-by"
+        target="cutting-tool"/>
+
+    <relation
+        source="cutting-tool"
+        type="held-by"
+        target="lathe-tool-post"/>
+
+    <relation
+        source="lathe-tool-post"
+        type="part-of"
+        target="lathe-carriage"/>
+
+    <relation
+        source="lathe-carriage"
+        type="supported-by"
+        target="lathe-bed"/>
+
+    <relation
+        source="lathe-tailstock"
+        type="supported-by"
+        target="lathe-bed"/>
+
+    <relation
+        source="lathe-lead-screw"
+        type="drives"
+        target="lathe-carriage"/>
+
+  </object-relations>
+
+</lingvo>
