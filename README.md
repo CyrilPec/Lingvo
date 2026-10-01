@@ -49,15 +49,9 @@ Cat.xml  = actual object
            HTML          PDF          DOCX
 
 1. Universal Object
-2. Universal Object Model
-
-MODELING
-3. Object Models
-4. Object Types
-
-REALIZATION
+2. Universal Object Models
+3. Object Types
+4. Object Class
 5. Object Instances
-
-COMPOSITION
 6. Relations between Instances
 7. Systems composed of Instances
