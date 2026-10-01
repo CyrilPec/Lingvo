@@ -15,7 +15,7 @@ Cat.xml  = actual object
                              ↓                       
                     UNIVERSAL OBJECT MODEL
                              │
-              defines Model / Instance / Variation
+              Defines Model /Specialization / Instance / Variation
                              │
                              ↓
                      OBJECT INVENTORY
