@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theory
+    id="jungian-model-001"
+    name="Jungian Model"
+    instance-of="PsychologicalTheory"
+    is-a="Theory">
+
+  <identity>
+    <name>Jungian Model of the Psyche</name>
+    <theorist ref="carl-jung"/>
+    <description>
+      A theoretical model of the psyche associated with Carl Jung,
+      including consciousness, the personal unconscious,
+      the collective unconscious and archetypes.
+    </description>
+  </identity>
+
+  <type>
+    <instance-of ref="psychological-theory"/>
+    <is-a ref="theory"/>
+  </type>
+
+  <context>
+    <models ref="human-psyche-001"/>
+  </context>
+
+  <structure>
+    <contains ref="jung-consciousness-001"/>
+    <contains ref="jung-personal-unconscious-001"/>
+    <contains ref="jung-collective-unconscious-001"/>
+  </structure>
+
+  <components>
+    <component ref="jung-consciousness-001"/>
+    <component ref="jung-personal-unconscious-001"/>
+    <component ref="jung-collective-unconscious-001"/>
+  </components>
+
+  <relations>
+    <models ref="human-psyche-001"/>
+    <describes ref="human-psyche-001"/>
+  </relations>
+
+  <objects>
+
+    <object
+        id="jung-consciousness-001"
+        name="Consciousness"
+        instance-of="PsycheComponent">
+
+      <structure>
+        <contains ref="jung-ego-001"/>
+      </structure>
+
+      <components>
+        <component ref="jung-ego-001"/>
+      </components>
+
+    </object>
+
+    <object
+        id="jung-ego-001"
+        name="Ego"
+        instance-of="PsycheComponent">
+
+      <relations>
+        <part-of ref="jung-consciousness-001"/>
+      </relations>
+
+    </object>
+
+    <object
+        id="jung-personal-unconscious-001"
+        name="Personal Unconscious"
+        instance-of="PsycheComponent">
+
+      <structure>
+        <contains ref="jung-complexes-001"/>
+        <contains ref="personal-experiences-001"/>
+        <contains ref="personal-memories-001"/>
+      </structure>
+
+      <components>
+        <component ref="jung-complexes-001"/>
+        <component ref="personal-experiences-001"/>
+        <component ref="personal-memories-001"/>
+      </components>
+
+    </object>
+
+    <object
+        id="jung-complexes-001"
+        name="Complexes"
+        instance-of="PsycheComponent"/>
+
+    <object
+        id="personal-experiences-001"
+        name="Personal Experiences"
+        instance-of="PsycheComponent"/>
+
+    <object
+        id="personal-memories-001"
+        name="Personal Memories"
+        instance-of="PsycheComponent"/>
+
+    <object
+        id="jung-collective-unconscious-001"
+        name="Collective Unconscious"
+        instance-of="PsycheComponent">
+
+      <structure>
+        <contains ref="jung-archetypes-001"/>
+      </structure>
+
+      <components>
+        <component ref="jung-archetypes-001"/>
+      </components>
+
+    </object>
+
+    <object
+        id="jung-archetypes-001"
+        name="Archetypes"
+        instance-of="PsycheComponent">
+
+      <structure>
+        <contains ref="jung-self-001"/>
+        <contains ref="jung-persona-001"/>
+        <contains ref="jung-shadow-001"/>
+        <contains ref="jung-anima-001"/>
+        <contains ref="jung-animus-001"/>
+      </structure>
+
+      <components>
+        <component ref="jung-self-001"/>
+        <component ref="jung-persona-001"/>
+        <component ref="jung-shadow-001"/>
+        <component ref="jung-anima-001"/>
+        <component ref="jung-animus-001"/>
+      </components>
+
+    </object>
+
+    <object
+        id="jung-self-001"
+        name="Self"
+        instance-of="Archetype"/>
+
+    <object
+        id="jung-persona-001"
+        name="Persona"
+        instance-of="Archetype"/>
+
+    <object
+        id="jung-shadow-001"
+        name="Shadow"
+        instance-of="Archetype"/>
+
+    <object
+        id="jung-anima-001"
+        name="Anima"
+        instance-of="Archetype"/>
+
+    <object
+        id="jung-animus-001"
+        name="Animus"
+        instance-of="Archetype"/>
+
+  </objects>
+
+</theory>
