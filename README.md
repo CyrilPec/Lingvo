@@ -1,50 +1,17 @@
 First Universal Object model.xml  = ontology / capabilities
-LINGVO OBJECT INSTANCE MODEL.xml  = schema / construction rules
-Cat.xml  = actual object
+LINGVO OBJECT MODEL.xml  = schema / construction rules
+Cat.xml  = actual object instance.
 
 1.Theme of search "Melodic Phrase"
-1.1 FIND SOURCES
-                             │
-             ┌───────────────┼───────────────┐
-             ↓               ↓               ↓
-          Wikipedia       Papers          YouTube
-             │               │               │
-             └───────────────┼───────────────┘
-                             ↓                       
-                    UNIVERSAL OBJECT MODEL
-                             │
-              Defines Model /Specialization / Instance / Variation
-                             │
-                             ↓
-                     OBJECT INVENTORY
-                             │
-          ┌──────────────────┼──────────────────┐
-          ▼                  ▼                  ▼
-      Word Model        Syllable Model      Sound Model
-          │                  │                  │
-          └── allows → Syllable Model           │
-          │                  │                  │
-          └──────────────────┼──────────────────┘
-                             ↓
-                      OBJECT LIBRARY                             
-                             │
-                             ↓                          
-          ┌──────────────────┼──────────────────┐                  
-          │                  │                  │
-          ▼                  ▼                  ▼
+1.1 FIND SOURCES (Wikipedia, Papers, YouTube)
+2. UNIVERSAL OBJECT MODEL
+   Defines Model /Specialization / Instance / Variation
+3. OBJECT INVENTORY (Word Model, Syllable Model, Sound Model)
+          └── allows → Syllable Model 
+4. OBJECT LIBRARY                             
      Word Instances     Syllable Instances   Sound Instances
-          │                  │                  │
-          └── contains → Syllable Instance      │
-          │                  │                  │
-          └──── contains ───►│                  │
-                             └──── contains ───►│
-                          │
-                          ↓
-                     BLUEPRINTS
-                          │
-             ┌────────────┼────────────┐
-             ↓            ↓            ↓
-           HTML          PDF          DOCX
+          └── contains → Syllable Instance
+5. BLUEPRINTS( HTML          PDF          DOCX)
 
 1. Universal Object
 2. Universal Object Models
