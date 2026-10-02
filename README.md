@@ -2,10 +2,8 @@ First Universal Object model.xml  = ontology / capabilities
 LINGVO OBJECT INSTANCE MODEL.xml  = schema / construction rules
 Cat.xml  = actual object
 
-              Theme of search "Melodic Phrase"
-                             │
-                             ↓
-                      FIND SOURCES
+1.Theme of search "Melodic Phrase"
+1.1 FIND SOURCES
                              │
              ┌───────────────┼───────────────┐
              ↓               ↓               ↓
