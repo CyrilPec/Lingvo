@@ -1,0 +1,2411 @@
+Algebra.
+metadata:
+  category: Mathematics
+  level: Beginner
+  language: en
+  
+description: "Algebra is a branch of mathematics that uses symbols (like letters) and numbers to find unknown values and understand relationships between quantities."
+
+applications:
+  - "Physics calculations (motion, force)"
+  - "Finance (interest, profit, loss)"
+  - "Engineering and computer science"
+  - "Everyday problem solving"
+
+topics:
+  - Abstract Algebra
+  - Boolean Algebra
+  - Discrete Algebra
+    - Linear Equations
+    - Quadratic Equations
+    - Polynomials
+    - Inequalities
+    - Systems of Equations
+  - Lie Algebra
+
+concepts:
+  - variable: "A symbol (like x or y) representing an unknown value"
+  - constant: "A fixed number"
+  - coefficient: "A number multiplied by a variable (e.g., 2 in 2x)"
+  - expression: "A combination of numbers, variables, and operations"
+  - equation: "A statement that two expressions are equal"
+
+examples:
+  - expression: "x + 5 = 12"
+    solution: "x = 7"
+  - expression: "2x = 10"
+    solution: "x = 5"
+    
+attributes:
+  - name: Commutative Property
+    description: Changing the order doesn’t change the result.
+    examples:
+      - "a + b = b + a"
+      - "a × b = b × a"
+
+  - name: Associative Property
+    description: Changing the grouping doesn’t change the result.
+    examples:
+      - "(a + b) + c = a + (b + c)"
+      - "(a × b) × c = a × (b × c)"
+
+  - name: Distributive Property
+    description: Multiplication distributes over addition or subtraction.
+    examples:
+      - "a(b + c) = ab + ac"
+
+  - name: Identity Property
+    description: Special numbers that do not change a value.
+    examples:
+      - "a + 0 = a"
+      - "a × 1 = a"
+
+  - name: Inverse Property
+    description: Every number has an opposite that cancels it out.
+    examples:
+      - "a + (−a) = 0"
+      - "a × (1/a) = 1 (a ≠ 0)"
+
+  - name: Equality Property
+    description: If two expressions are equal, the same operation can be applied to both.
+    examples:
+      - "If a = b, then a + c = b + c"
+  
+methods:
+  - name: Substitution Method
+    description: You replace a variable with its value or another expression.
+    example: "If x = 3, then in 2x + 1 → 2(3) + 1 = 7"
+
+  - name: Elimination Method
+    description: Used mostly with systems of equations. You add or subtract equations to eliminate one variable.
+
+  - name: Balancing Method
+    description: Whatever you do to one side of an equation, you do to the other to keep it equal.
+    example: "x + 5 = 10 → subtract 5 from both sides → x = 5"
+
+  - name: Factoring Method
+    description: You break expressions into simpler parts (factors).
+    example: "x² + 5x = x(x + 5)"
+
+  - name: Expansion Method
+    description: Opposite of factoring—multiply out brackets.
+    example: "(x + 2)(x + 3) = x² + 5x + 6"
+
+  - name: Graphical Method
+    description: You draw graphs to find solutions (where lines or curves intersect).
+
+  - name: Trial and Error
+    description: You test possible values until you find the correct one.
+Numerical objects.
+Variables & Constants.
+Operations with numerical objects.
+Logic
+Arithmetic
+Order of arithmetic operations.
+	Simplification of a number.
+	Change ratio/factor.
+	Prentices (Group/separate the simplest first).
+	Exponent /Logarithm.
+	Multiplication / Division (from left to right).
+	Addition / Subtraction (from left to right).
+Operation properties
+Cumulative property.
+This law simply states that with addition and multiplication of numbers, you can change the order of the numbers in the problem and it will not affect the answer.
+For any real numbers a and b,
+For addition:
+a+b = b+a
+For multiplication:
+Ab = ba
+Associative property.
+This law simply states that with addition and multiplication of numbers, you can change the grouping of the numbers in the problem and it will not affect the answer.
+For any real numbers a, b and c,
+Addition:
+a+(b+c)=(a+b)+c
+Multiplication:
+a(bc)=(ab)c
+Distributive property.
+When dealing with the distributive law, just remember to multiply everything on the inside of the parentheses by the number on the outside of the parentheses.
+For any real numbers a, b and c
+a(b+c)=ab+ac
+(b+c)a=ba+ca
+Identity property.
+The identity element for addition is 0. Any number added to 0 gives you the original number.
+a+0=a
+The identity element for multiplication is 1. Any number multiplied by 1 gives the original number.
+a∗1=a
+Inverse property.
+The additive inverse is the opposite of the number. Any number plus its additive inverse equals 0.
+a+(−a)=0
+The multiplicative inverse is the reciprocal of the number. Any nonzero number multiplied by its reciprocal equals 1.
+a∗1/a=1
+Compare
+Inequalities.
+ 
+Let x, y, z be real numbers
+Addition / Subtraction property
+Addition	X<Y, then X+Z<Y+Z
+Subtraction	X>Y, then X+Z>Y+Z
+
+Multiplication /Division property
+X<Y and Z>0	X*Z<Y*Z
+X<Y and Z<0	X*Z>Y*Z
+X<Y and Z>0	x/z<y/z
+X<Y and Z<0	x/z>y/z
+X>Y and Z<0	x/z<y/z
+X<Y and Z<0	x/z>y/z
+
+Transitive property
+X<Y and Y<Z	X<Z
+
+Comparison property
+X=Y+Z and z>0	X>Y
+
+Example
+27>4x+3	36>3x+6
+27(-3)>4x+3(-3)	36(-6)>3x(-6)
+24>4x	30>3x
+24(/4)>x(/4)	30(/3)>3x(/3)
+6>x	10>x
+
+
+Letters.
+Words.
+Sentences.
+Numbers.
+Irrational Numbers - All numbers which cannot be written as whole.
+π (Pi) - The ratio of a circle's circumference to its diameter.
+e - Euler's number, the base of the natural logarithm.
+Infinity.
+Golden ratio (φ) - A special irrational number related to proportions in art and nature.
+Rational Numbers
+All numbers which can be written as fractions.
+Real Numbers 
+ The set of Rational Numbers with the set of Irrational Numbers adjoined, denoted by R.
+Binary Numbers.
+Bit.
+Binary Logic.
+Buffer. Not changed value
+And.
+Not.
+Or.
+Nor.
+Xor.
+Bit operations.
+Set bit 3 to 1. Name of byte |=(1<<3);
+Set bit 3 to 0. Name of byte &=~(1<<3);
+Set bit 2 & 3 to 1. By logic mask and set. PortA |=(1<<2) | (1<<3);
+Bit logic.
+Byte is 8 bits.
+Address “&num” stores address of data. 
+Pointer “*num” points to the data in address.
+Natural Numbers - Common counting numbers (0…9).
+Prime Number - A natural number greater than 1 which has only 1 and itself as factors.
+Composite Number - A natural number greater than 1 which has more factors than 1 and itself.
+Whole Numbers - The set of Natural Numbers with the number 0 adjoined.
+Integers - Whole Numbers with their opposites (negative numbers) adjoined.
+Floats.
+Degrees, minutes, seconds.
+Fractions.
+Compare Fraction <=>.
+Addition / Subtraction.
+ Find the least common denominator.
+ Write both original fractions as equivalent fractions with the least common denominator.
+ Add (or subtract) the numerators.
+ Write the result with the denominator.
+1/3+3/7=(1*7)/(3*7)+(3*3)/(7*3)=7/21+9/21=16/21
+
+
+ 
+
+Multiplication
+Multiply the numerator by the numerator.
+Multiply the denominator by the denominator.
+For all real numbers a, b, c, d, (b≠0, d≠0).
+a/b*c/d=ac/bd  
+
+1/5*5/6=(1*5)/(4*6)=5/24
+Division
+To divide by a fraction, multiply by its reciprocal.
+For all real numbers a, b, c, d (b≠0, c≠0, d≠0).
+a/b÷c/d=a/b*d/c=ad/bc
+
+3/4÷5/7=3/4*7/5=(3*7)/(4*5)=21/20
+Mixed numbers
+Mixed numbers can be written as an improper fraction and an improper fraction can be written as a mixed number.
+7 2/5=7/1+2/5=(7*5)/(1*5)+2/5=35/5+2/5=37/5
+
+11/7=11÷7=1 4/7
+A fraction is in lowest terms when the numerator and denominator have no common factor other than 1.  To write a fraction in lowest terms, divide the numerator and denominator by the greatest common factor.
+45/75=(45÷15)/(75÷15)=3/5
+
+Change ratio
+5min/1*60sec/1min=300s
+Simplifying complex fractions.
+(3√2-5)/(√2-1)+(√24-√300  )/√( 3 )
+((7/3)/28)/9=7/3:28/9=7/3*9/28=3/4  
+(4/9-2/3)/(( 5)/3+1/9)=(4/9-2/3)/(5/3+1/9)*9/9=(4-6)/(15+1)=-2/16=-1/8
+
+ (2/3-5/4)/(3/5+1/3)=(2/3-5/4)/(3/5+1/3)*(3*4*5)/(3*4*5)=(40-75)/(36+20)=-35/56=-5/8
+(2^(-1.6)*4^4.8)/8^(2/3) =(〖(2〗^(-1.6)*2^4.8*2^4.8))/〖∛8〗^2 =2^8/4=2^8/2^2 =(2*2*2*2*2*2)=64    
+
+Percent.
+The use of percentages is a way of expressing ratios in terms of whole numbers. A ratio or fraction is converted to a percentage by multiplying by 100 and appending a "percentage sign" %.
+A percent can always be written as a decimal, and a decimal can be written as a percent, by moving the decimal point two places to the right like this
+0.15=15%
+В одном 50кг куске металла 10% меди в другом 100кг куске металла 25% меди. Сколь добавить в первый кусок меди второго металла, чтобы концентрация меди была 15%?
+Ratio numbers.
+Exponent (n^x) numbers.
+Exponent properties.
+Prime Factorization.
+The prime factors of a positive integer are the prime numbers that divide that integer exactly. The process of finding these numbers is called integer factorization, or prime factorization. 
+The fundamental theorem of arithmetic says that every positive integer has a unique prime factorization.
+72 ÷ 2 = 36
+36 ÷ 2 = 18
+18 ÷ 2 = 9
+9 ÷ 3 = 3
+3 ÷ 3 = 1
+72 = 2 x 2 x 2 x 3 x 3 = 23 x 32
+Least Common Multiple.
+The least common multiple of two integers a and b is the smallest positive integer that is divisible by both a and b. It is usually denoted by
+lcm(a,b)
+If either a or b is 0,
+lcm(a,b)=0
+A general example to help you recognize patterns and spot the information you're looking for
+Number	Multiples of Each Number
+3	3, 6, 9, 12, 15, 18, 21, 24, 27, 30
+5	5, 10, 15, 20, 25, 30
+The first common multiple of both 3 and 5 is 15.
+Greatest Common Divisor.
+The greatest common divisor (gcd), of two or more non-zero integers, is the largest positive integer that divides the numbers without a remainder.
+A general example to help you recognize patterns and spot the information you're looking for
+Find gcd (8, 24):
+Since the factors of 8 are: 1, 2, 4, 8
+and the factors of 24 are: 1, 2, 3, 4, 6, 8, and 12.
+gcd(8,24)=8
+Formulas of exponents.
+Bases (positive real numbers): x, y
+Powers (rational numbers): n, m
+x^m x^n=x^(m+n)
+x^m/x^n =x^(m-n)
+(xy)^m=x^m y^m
+(x/y)^m=x^m/y^m 
+(x^m )^n=x^(m*n)
+x^0=1,x≠0
+x^1=1
+x^(-m)=1/x^m 
+(〖x/1) 〗^(-m)=(1/x)^m
+x^(m/n)=√(n&x^m )
+Compare the power of numbers
+Compare equal bases
+Compare equal powers
+Compare negative bases
+Compare negative powers
+Compare mixed numbers
+
+2^15,4^10,〖10〗^5-line from lowest to hightest (answer: 2^15<〖10〗^5<4^10 )
+
+4^10/〖10〗^5 =4^(2*5)/〖10〗^5 =〖16〗^5/〖10〗^5   
+
+2^15/〖10〗^5 =2^(5*3)/〖10〗^5 =8^5/〖10〗^5 
+
+
+Simplification
+x^5*x^3=x^(5+3)=x^8
+x^5/x^3 =x^(5-3)=x^2
+(X^3 )^4=x^(3*4)=x^12
+(1/4)^(-2)=(4/1)^2=16/1
+Multiplication / Division
+((3^5*5^4 ))/〖15〗^3 =((3^4*3)*5^4)/〖15〗^3 =(〖15〗^4*3)/〖15〗^3 =((〖15〗^3*15)*3)/〖15〗^3 =15*3=45
+
+
+
+(2^(-1,6)⋅4^4,8)/8^(2/3) =(2^(-1,6) 2^4,8 2^4,8)/∛(8^2 )=2^(4,8+4,8-1,6)/4=256/4=64
+Factoring  (is equation simplification) operations..
+Factoring or Product Formulas.
+x^2-5^2=x^2-25=(x-5)*(x+5)
+x^2-25=(x-5)*(x+5)
+x^2+x^3=x^2 (1+x)
+x^2-y^2=(x+y)(x-y)
+x^3-y^3=(x-y)(x^2+xy+y^2 )
+x^3+y^3=(x+y)(x^2-xy+y^2 )
+x^4-y^4=(x^2-y^2 )(x^2+y^2 )
+x^5-y^5=(x-y)(x^4+x^3 y+x^2 y^2+xy^3+y^4 )
+x^5+y^5=(x+y)(x^4-x^3 y+x^2 y^2-xy^3+y^4 )
+(x+y)^n=1^n C0^n+1^n C1x^(n-1) y+1^n C2x^(n-2) y+⋯+1^n Cn-1xy^(n-1)+1^n Cny^n
+where 1^n Ck=n!/k!(n-k)!  are the binominal coefficients.
+If n is odd,then
+x^n+y^n=(x+y)(x^(n-1)-x^(n-2) y+x^((n-3) ) y^2-…-xy^(n-2)+y^(n-1)
+If n is even,then 
+x^2-y^2=(x-y)(x^(n-1)+x^(n-2) y+x^(n-3) y^2+⋯+xy^(n-2)+y^(n-1)
+x^n+y^n=(x+y)(x^(n-1)-x^(n-2) y+x^(n-3) y^2-…+xy^((n-2) )-y^(n-1)
+
+(x+y+z)^2=x^2+y^2+z^2+2xy+2xz+2yz
+(x+y+z+⋯+u+v)^2=x^2+y^2+z^2+⋯+u^2+v^2+
++2(xy+xz+yz+⋯+yu+yv+⋯+uv)
+Addition/Subtraction
+5x^2+4x^3=0
+x^2 (5+4x)=0
+x=0;4x+5=0
+x=0;x=-4/5
+Factorial (!).
+•  Standard Factorial
+Standard Factorial (n!) – The product of all positive integers up to a given number 𝑛.
+n! = n × (n - 1) × (n - 2) × ... × 1
+•  Double Factorial
+	Double Factorial (n!!) – The product of all integers of the same parity (odd or even) up to n.
+n!! = n × (n - 2) × (n - 4) × ... × 1 (if n is odd)
+n!! = n × (n - 2) × (n - 4) × ... × 2 (if n is even)
+Example: 7!!=7×5×3×1=105
+•  Subfactorial (Derangement)
+Subfactorial (!n) or Derangement – The number of ways to arrange 𝑛 objects such that no object appears in its original position.
+!n = n! × Σ ( (-1)^k / k! ), k = 0 to n
+•  Multifactorial
+Multifactorial (n!ᵏ) – Generalization where kk indicates the step size in multiplication.
+n!ᵏ = n × (n - k) × (n - 2k) × ...
+Gamma Function (Generalized Factorial)
+Gamma Function (Γ(𝑛)) – A continuous extension of the factorial function, useful for non-integer values:
+Γ(n) = (n - 1)!
+
+Radicals.
+Types of Radicals
+Squire Root 
+0^2=0
+1^2=1
+2^2=4
+3^2=9
+4^2=16
+5^2=25
+6^2=36
+7^2=49
+8^2=64
+9^2=81
+√1600=	16  00	
+	  4    0	4^2=16; 0^2=0
+		00 cross last two digits
+√4225=	42  25	6^2=36; 5^2=25
+	  6    5	36 is not more than 42; 
+		
+√841=	8  41	
+	2    1	21 or 29
+	2    9	Take in between 25^2=2*(2+1) and 5^2=625; 841>625, so ans.29
+
+Squire Root with degree
+Cubic Root 
+Radical with degree
+
+Formulas
+Product Rule: √(n&a)√(n&b)=√(n&ab)  ; √(n&x)√(m&y)=√(nm&x^m 〖  y〗^n ) 
+Quotient Rule: √(n&a)/√(n&b)=√(n&a/b)=√(n&a/c)  ,b≠0
+Power Rule: √(n&√(m&a))=√(mn&a) ; ∛(〖-5〗^3 )=-5 ; √(2&〖-5〗^2 )=|5|=5
+Compare Root <>=
+√(2&5)  ; ∛11
+5^(1/2);〖11〗^(1/3)     (LCM (2,3)=6
+(5^3 )^(1/6)  ;(〖11〗^2 )^(1/6)
+125>121
+Simplifying Radicals with
+Using Newton-Raphson to find decimal value of the squire Root:
+For √25:
+Start with an initial guess, say x0=5.
+Apply the iterative formula: f=1/2(x+25/x)
+Repeat until x stabilizes near 5. Find the minimum of this formula (to do so, use Calculus, Find minimum of the function).
+Or  √a=(x^2+a)/2x; √66=(〖(8〗^2+66))/(2*8)=8.125
+ Addition / Subtraction
+Only if roots are the same
+a√x+b√x=a+b√x  ; √(n&a+b)≠√(n&a)+√(n&b)
+a√x±b√x=a√x±b√(x )  ;√(n&a^n+b^n )≠a+b
+
+
+6√12-12√3+√100=
+6√4 √3-12√3+10=
+6*2√3-12√3+10=
+12√3-12√3+10=10
+(3√2-5)/(√2-1)+(√24-√300)/√3=
+
+ Multiplication
+√50=√25*√2
+√9=√(3*3)=3
+∛24=3√(2*2*2*5)=2∛3
+∜48=∜(2*2*2*2*3)=2∜3
+√50x=√25x*√2x
+
+Division
+√(18/48∕2/2)=√(9/24)
+√((18x^7)/(48x^3 ))∕√(2/2)=√((9x^7)/(24x^3 ))
+√(x^a/x^b )=√(x^(a-b) )
+((2√((2))+1))/(√2+1)=3-√2  
+Radical factoring
+a^(m/n)=√(n&a)=(√(n&a))^m       		    =√(5&32)
+〖=32〗^(1/5)
+=(16×2)^(1/5)
+〖=(4*4*2)〗^(1/5)
+=(2*2*2*2*2)^(1/5)
+=(2^5 )^(1/5)
+=2^(5⁄5)
+=2
+
+	((√(6&27))-∜100)*(√(6&27)+∜100)
+Rationalize is take away root from denominator.
+
+8/√3=8/√3*√3/√3=(8√3)/√9=(8√3)/3
+
+5/√x=5/√x  √x/√x=(5√x)/x
+ Variables and Exponents
+	√50=√25*√2=5√2
+	∛128/∛2=∛(64×2)/∛2=(4∛2)/∛2=4
+	√(2&x^5 )=√(2&x*x*x*x*x)=x√(2&x*x*x)=x*x√(2&x)=x^2 √(2&x)
+As it’s square root you have to take two X’s out to take one.
+
+√(2&x^7 )= x^3 √(2&x^1 )   
+As 7/2=3%1 remainder is 1.
+
+√(2&x^8 y^9 z^12 )= x^4 y^4 z^6 √(2&y^1 )
+
+√(2&〖50x〗^3 y^18 )=5x^1 y^9 √(〖2x〗^1 )  As √50=√25*√2=5√2
+
+	∛16=∛8*∛2=2∛2 as ∛8=2
+
+∛(z^14 )=z^4 ∛(z^2 ) as 14/3=4 remainder is 2
+
+∛(x^5 y^9 z^14 )=x^1 y^3 z^4 ∛(x^2 z^2 )
+
+
+Compound interest formulas
+ 
+Logarithm (log).
+Positive real numbers: x, y, a, c, k,
+Natural number: n
+Definition of Logarithm
+y=log_a⁡〖x if and only if x=a^y,a<0,a≠1.〗
+log_a⁡1=0
+log_a⁡a=1
+log_a⁡0={█(-∞ if a>1@+∞ if a<1)┤
+log_a⁡〖(xy)〗=log_a⁡x+log_a⁡y
+log_a⁡〖x/y=log_a⁡x-log_a⁡y 〗
+log_a⁡〖x^n=n log_a⁡x 〗
+log_a⁡√(n&x)=1/n log_a⁡x
+log_a⁡x=log_c⁡x/log_c⁡a =log_c⁡x  log_a⁡c*c,   c>0,c≠1
+log_a⁡c=1/log_c⁡a 
+x=a^log_a⁡x 
+Logarithm to base 10
+log_10⁡x=log⁡x
+Natural Logarithm
+log_e⁡〖x=ln⁡x,〗  
+where e=lim┬(k→∞)⁡〖1+(1/k)^k=2.718281828…〗    
+log⁡x=1/ln⁡10 *ln⁡〖x=0.434294 ln⁡x 〗  
+ln⁡〖x=1/log⁡e *log⁡〖x=2.302585 log⁡x 〗 〗
+ 
+Unreal Numbers.
+Imaginary Number.
+i=√(-1)
+Complex numbers.
+Transcendental Numbers
+Transcendental numbers are not roots of any non-zero polynomial equation with rational coefficients. Examples: 𝜋.
+Infinitesimals & Infinite Numbers 
+Infinitesimals & Infinite Numbers used in non-standard analysis, including infinitely small and infinitely large numbers. Example: 𝜖 (infinitesimal), 𝜔 (infinite ordinal),
+Set of objects.
+Collections of objects.
+Set of numbers (numbers are not in order).
+Set Types.
+Finite Set: 
+A set with a limited number of elements. For example, A={1,2,3}.
+Infinite Set: 
+A set with an unlimited number of elements. For example, the set of all integers Z.
+Empty Set:
+ A set that contains no elements, denoted by ∅ or {}.
+Subset:
+ A set A is a subset of a set B if all elements of A are also in B. Notation: A⊆B.
+Universal Set:
+ The set that contains all possible elements in a particular context, usually denoted by U.
+Power Set:
+ The set of all subsets of a set A, including the empty set and A itself. If A={1,2}, the power set P(A)={∅,{1},{2},{1,2}}.
+Countable Set:
+ A set that can be put into one-to-one correspondence with the natural numbers, meaning it can be "counted." For example, the set of rational numbers Q.
+Uncountable Set: 
+A set that cannot be put into one-to-one correspondence with the natural numbers, such as the set of real numbers R.
+Disjoint Sets:
+ Two sets that have no elements in common. 
+For example, A={1,2} and B={3,4} are disjoint.
+Overlapping Sets:
+ Sets that have some elements in common. For example, A = {1,2,3} and B={2,3,4} overlap at 2 and 3.
+
+Set Properties.
+Central Tendency:
+	Mean: The average of the data set.
+	Median: The middle value when data is ordered.
+	Mode: The most frequently occurring value(s).
+Dispersion (Spread):
+	Range: The difference between the maximum and minimum values.
+	Variance: The average of the squared differences from the mean, indicating how much the values vary.
+	Standard Deviation: The square root of the variance, providing a measure of spread in the same units as the data.
+	Convex and Non-convex
+ 
+Shape of Distribution:
+	Skewness: Measures the asymmetry of the data distribution. Positive skew means a tail on the right; negative skew means a tail on the left.
+	Kurtosis: Measures the "tailedness" of the distribution, indicating the presence of outliers. High kurtosis means more outliers.
+Position:
+	Percentiles: Values below which a certain percentage of data falls (e.g., the 25th percentile).
+	Quartiles: Specific percentiles that divide the data into four equal parts (Q1, Q2 (median), Q3).
+Correlation:
+	Measures the relationship between two variables. Can be positive, negative, or zero correlation.
+Data Types:
+	Quantitative: Numeric data, can be discrete (countable) or continuous (measurable).
+	Qualitative: Categorical data, which can be nominal (no order) or ordinal (ordered).
+Sample vs. Population:
+	Population: The entire group being studied.
+	Sample: A subset of the population used for analysis.
+Outliers:
+	Data points that differ significantly from other observations. They can skew results and affect measures of central tendency and dispersion.
+Frequency Distribution:
+	A summary of how often each value occurs in the data set, often represented in tables or histograms.
+Data Collection Method:
+	How the data was gathered (e.g., surveys, experiments, observational studies) can impact the properties and reliability of the data set.
+Missing Data:
+	Instances where data points are not available. Handling missing data is crucial for analysis and can affect results.
+Operations with set.
+Permutation of set.
+Combination of set.
+Derangement of set.
+Probability.
+Statistics.
+Data.
+Probability.
+Uncertainty.
+Game theory.
+Error propagation
+Absolute and Relative errors.
+Sequences of numbers (numbers are in order).
+Sequence Types.
+Arithmetic sequences(addition).
+2, 5, 8, 11, 14, 17 (D=3).
+Geometric sequences (multiplication).
+3, 6, 12, 24, 48, 96 (R =2).
+Fibonacci Sequences. Each term is the sum of the two preceding ones.
+Harmonic Sequences.
+Binominal Sequences.
+Factorial Sequences.
+Exponential Sequences.
+Regression values.
+Operations with sequences.
+Limit
+Sum of finite number of terms.
+Series
+Sum of infinite numbers of terms. 
+Definition: A series is the sum of the terms of a sequence. It represents the addition of terms of a sequence in a specific order.
+Notation: Series are often denoted using summation notation ∑.
+Series.
+Rings.
+Fields.
+Combinatorics.
+Tensors.
+Scalars.
+Vectors.
+Matrices.
+Basic Definitions
+Matrix: A 2D rectangular array of numbers arranged in rows and columns.
+Order: The dimensions of the matrix, expressed as m×n (rows × columns).
+Types of Matrices.
+Square Matrix: Number of rows equals the number of columns (m=nm = nm=n).
+Diagonal Matrix: A square matrix where all off-diagonal elements are zero.
+Identity Matrix: A diagonal matrix where all diagonal elements are 1.
+Zero Matrix: All elements are zero.
+Symmetric Matrix: A=ATA = A^TA=AT (equal to its transpose).
+Skew-Symmetric Matrix: A=−ATA = -A^TA=−AT (transpose is the negative of the matrix).
+Upper Triangular Matrix: All elements below the main diagonal are zero.
+Lower Triangular Matrix: All elements above the main diagonal are zero.
+Row Matrix: A matrix with only one row.
+Column Matrix: A matrix with only one column.
+Transpose Matrix: Obtained by swapping rows and columns (ATA^TAT).
+Operations with Matrices.
+Addition: Element-wise addition of matrices of the same dimension.
+Subtraction: Element-wise subtraction of matrices of the same dimension.
+Scalar Multiplication: Multiplying each element by a scalar.
+Matrix Multiplication: Dot product of rows and columns; requires inner dimensions to match.
+Hadamard Product: Element-wise multiplication of matrices of the same dimension.
+Matrix Powers: Raising a square matrix to an integer power.
+Special Properties
+Commutative Property: A+B=B+AA + B = B + AA+B=B+A
+Associative Property: (A+B)+C=A+(B+C)(A + B) + C = A + (B + C)(A+B)+C=A+(B+C)
+Distributive Property: A(B+C)=AB+ACA(B + C) = AB + ACA(B+C)=AB+AC
+Matrix Inversion: Finding A−1A^{-1}A−1 such that AA−1=IAA^{-1} = IAA−1=I; applicable only for square matrices.
+Determinant: Scalar value representing the volume scaling factor of the transformation described by the matrix; only defined for square matrices.
+Rank: The dimension of the vector space spanned by the rows or columns.
+Trace: Sum of the diagonal elements of a square matrix.
+Norm: Measure of the matrix size or length, such as Frobenius norm.
+Determinants
+Multiplicative: det(AB)=det(A)⋅det(B)\text{det}(AB) = \text{det}(A) \cdot \text{det}(B)det(AB)=det(A)⋅det(B)
+Transpose: det(AT)=det(A)\text{det}(A^T) = \text{det}(A)det(AT)=det(A)
+Inversion: det(A−1)=1det(A)\text{det}(A^{-1}) = \frac{1}{\text{det}(A)}det(A−1)=det(A)1
+Scaling: det(kA)=kn⋅det(A)\text{det}(kA) = k^n \cdot \text{det}(A)det(kA)=kn⋅det(A) for an n×nn \times nn×n matrix.
+Eigenvalues and Eigenvectors
+Eigenvector. The vector which only scale, not rotate by matrix multiplication.
+Eigenvalue: Svale or value of a vector change.
+Characteristic Polynomial: Polynomial obtained from det(A−λI)\text{det}(A - \lambda I)det(A−λI).
+Spectral Theorem: For symmetric matrices, they can be diagonalized by an orthogonal matrix.
+Matrix Decompositions
+LU Decomposition: A=LUA = LUA=LU, where LLL is lower triangular and UUU is upper triangular.
+QR Decomposition: A=QRA = QRA=QR, where QQQ is orthogonal and RRR is upper triangular.
+Singular Value Decomposition (SVD): A=UΣVTA = U\Sigma V^TA=UΣVT, where UUU and VVV are orthogonal, and Σ\SigmaΣ is diagonal.
+The Sum and Difference of Two Matrices.
+The Scalar Multiples of a Matrix.
+The Product of Two Matrices.
+The Determinant of a Matrix.
+its absolute value does represent the volume (or area in 2D) of a geometric shape (like a parallelepiped or parallelogram) in the corresponding dimension.
+|■(y1&z1@y2&z2)|i+|■(x1&z1@x2&z2)|j+■(y1&z1@y2&z2)|k=(y1+z2-z1-y2)i+⋯
+If Det|A|=0 then the matrix is singular.
+The Inverse of a Matrix.
+Solve a System of Linear Equations Using an Inverse Matrix.
+Diadic.
+Triadic.
+Expressions.
+An expression is an abstract object which has numbers, operations, variables.
+Simplify it
+Evaluate it for numbers
+Transform it (factor, expand, rewrite)
+Use it in equations/functions
+Differentiate or integrate
+Approximate or compute numerically
+
+Absolute value. 
+ 
+|3x|=18									
+  	3x=18	3x=-18							
+	x=6	x=-6							
+									
+|5x+7|=42				|2x-3|=9				|x+3|=-4	
+	5x+7=42	5x+7=-42			2x-3=9	2x-3=-9			No solution
+	5x=42-7	5x=-42-7			2x=12	2x=-6			
+	x=35/5	x=-49/5			X=6	X=-3			
+	x=7	x=-9 4/5							
+									
+|x| = x if x>0 ; -x if x<0
+|(4x+6)/5|=6				2|3x-4|+5=27	Remove numbers		
+	(4x+6)/5=6	(4x+6)/5=-6			|3x-4|=(27-5)/2		
+	4x+6=6*5	4x+6=-6*5			|3x-4|=11		
+	4x=30-6	4x=-30-6				3x-4=11	3x-4=-11
+	X=24/4	X=-36/4				3x=15	3x=-7
+	X=6	X=-9				X=5	X=-7/3
+
+ 
+|7x+2|=4x+11				|x+3|=|x-11|			
+	7x+2=4x+11	7x+2=-1(4x+11)			X+3=x-11	X+3=-1(x-11)	
+	7x-4x=11-2	7x+2=-4x-11			3=-11	X+3=-x+11	
+	3x=9	11x=-13			No solution	2x=8	
+	X=3	X=-13/11				X=4	
+						solution	
+							
+
+||2x-1|-3|=12				
+	|2x-1|-3=12	|2x-1|-3=-12		
+	|2x-1|=15	|2x-1|=-9 no solution		
+			2x-1=15	2x-1=-15
+			X=8	X=-7
+				
+||5x-7|+4|=10				
+	|5x-7|+4=10	|5x-7|+4=-10		
+	|5x-7|=10-4	|5x-7|=-10-4 no solution		
+			5x-7=6	5x-7=-6
+			X=13/5	X=1/5
+				
+|x+1|+|3x-7|=12				
+				
+				
+|2-√5|+|2+√5|=				
+				
+
+
+
+
+ 
+
+Equations.
+An equation is a statement of equality used to solve for unknowns.
+Equality y=x.
+Equations has = sign.
+Parametric equation.
+Set of numbers (t) which are define the x and y values.
+Polynomial equations.
+Linear equation or Line.
+ax+b=0,x=-b/a
+Basic Definitions
+Line: A one-dimensional figure extending infinitely in both directions.
+Line Segment or Interval: Part of a line bounded by two endpoints.
+Ray: A line extending infinitely in one direction from a starting point.
+Equation of a Line
+Slope-Intercept Form: y=ax+b.
+a is the slope.
+b is the y-intercept.
+Point-Slope Form: y−y1=a(x−x1).
+(x1, y1) is a point on the line.
+Standard Form: Ax+By=C.
+A, B, and C are constants.
+General Form: Ax+By+C=0.
+Parametric Form: r(t)=r0+td.
+r0 is a point on the line.
+d is the direction vector.
+t is a parameter.
+Slope
+Definition: Measures the steepness of the line.
+Formula: m=y2−y1 x2−x1.
+Slope Types:
+Positive Slope: Line rises from left to right.
+Negative Slope: Line falls from left to right.
+Zero Slope: Horizontal line.
+Undefined Slope: Vertical line.
+The Slope of a Line.
+y=rise/run x+offset
+y=slope(x)+offset
+
+Intercepts.
+Y-Intercept: The point where the line crosses the y-axis (x=0x = 0x=0).
+X-Intercept: The point where the line crosses the x-axis (y=0y = 0y=0).
+Parallel and Perpendicular Lines.
+Parallel Lines: Have the same slope. Different y-intercepts.
+Perpendicular Lines:
+Slopes are negative reciprocals (m1⋅m2=−1).
+Distance from a Point to a Line.
+Formula: Distance=∣Ax1+By1+C∣
+For a line Ax+By+C=0 and a point (x1, y1).
+Line Segment Properties.
+Length of the segment: The distance between two endpoints. 
+Length=(x2−x1)^2+(y2−y1)^2.
+Midpoint: The point equidistant from the endpoints. 
+Midpoint= (x1+x2)/2,(y1+y2)/2.
+Slope angle: Determine the angle of the segment with respect to the x-axis using the tangent of the angle:
+tan(θ)=(x2−x1)/(y2−y1)
+Equation of the segment: Write the equation of the line passing through the segment in general form or point-slope form.
+Parametric equation: Express the segment in parametric form:
+x=x1+t(x2−x1) , y=y1+t(y2−y1)(0≤t≤1)
+Perpendicular segment: Find the equation of a line segment perpendicular to the given segment from a specified point.
+Division of the segment: Find points that divide the segment in a specified ratio.
+Vector of the segment: Define the vector representing the segment:
+AB⃗=(x2−x1,y2−y1)
+Intersection check: Check if the given segment intersects with another segment.
+Geometric representation: Construct the segment on the coordinate plane.
+Distance to a point: Calculate the distance from a point to the segment.
+Intersection of Lines.
+Finding Intersection: Solve the system of linear equations.
+Special Cases: Parallel Lines: No intersection.
+Coincident Lines: Infinite intersections.
+Intersecting Lines: Single intersection point.
+Cartesian vector line format:
+rAB={(0-3t)i+(3-1t)j+(4-1t)k
+Symmetric equation of a line
+((x-x0))/a=((y-y0))/b=(z-z0)/c
+Parametric equation of a line
+x=x0+at,y=y0+bt,z=z0+ct
+a, b, c, - is vector size,
+t – is a parameter,
+x0, y0, z0 is point on a plane,
+x, y, z – is line’s points
+Graph Lines Given a Point and the Slope.
+Find the Equation of a Vertical Line.
+Test if the line is vertical.
+Use the Point-Slope Form of a Line; Identify Horizontal Lines.
+Use the Slope-Intercept Form of a Line.
+Find the Equation of a Line Given Two Points.
+Graph Lines Written in General Form Using Intercepts.
+Find Equations of Parallel Lines.
+Find Equations of Perpendicular Lines.
+Curve equation.
+Bernstein Spline.
+DeCasteleljau Spline.
+Polynomial Coefficients Spline.
+Matrix form Spline.
+Bezier Spline.
+Quadratic equation.
+Circle
+ x^2+y^2=1.
+Hyperbola
+ x^2-y^2=1.
+Quadratic equation formulas.
+Discriminant:
+ D=b^2-4ac
+ax^2+bx+c=0,x1,2=(-b±√(((b^2-4ac))/2a))
+Viete’s Formulas.
+
+If x^2+px+q=0,then
+{█(x1+x2=-p@x1x2=q)┤
+ax^2+bx=0,x1=0,x2=-b/a
+ax^2+c=0,x1,2=±√(-c/a)
+Simplification.
+x^2+18x+81=(x+9)(x+9) 	as 18=9+9; 81=9*9
+Addition / Subtraction.
+(4x^2+5x+7)+(3x^2-8x+12)
+7x^2-3x+19
+(9x^2-7x+13)-(5x^2-7x-4)
+9x^2-7+13-5x^2+7x+14
+4x^2+27
+(3x^3-5x+8)-(7x^2+6x-9)
+3x^3-5x+8-7x^2-6x+9
+3x^3-7x^2-11x+17
+4(3x^2+6x-8)-3(2x^2-5x+7)
+12x^2+24x-32-6x^2+15x-21
+6x^2+39x-53
+Multiply.
+(3x+5)(2x-3)
+6x^2-9x+10x-15
+6x^2+1x-15
+(2x-5)^2
+(2x-5)(2x-5)
+(2x-5)^2
+4x^2-10x-10x+25
+4x^2+25
+(4x-2)(x^2+3x-5)
+4x^3+12x^2-20x-2x^2-6x-10
+4x^3+10x^2-20x-10
+(3x^2-5x+7)(2x^2+6x-4)
+6x^4+18x^3-12x^2-10x^3-30x+20x+14x^2+42x-28
+6x^4+8x^3-28x^2+62x-28
+Cubic equation. Cardano’s formula.
+y^3+py+q=0,
+y1=u+v,y2,3=-1/2(u+v) ±√3/2(u+v)i
+where u=∛(-q/2+√((q/2)^2+(p/3)^2 )) ,v=∛(-q/2-√((q/2)^2+(p/3)^2 )) 
+Second-degree polynomial equations
+Factoring Equation.
+Modulus Equation.
+Diamant shape equation: |x|+|y|=1.
+Rational Equation.
+Strategy for solving equations with Fractions.
+Remove fraction
+
+x+2/3=0  =>  3x+2=0
+(x+1/2)(x-4/3)=0   =>    (2x+1)(3x-4)=0
+(2-3x)/4=5
+2-3x=4×5
+-3x=20-2
+x=-6
+
+Or Multiply by Lowest Common denominator
+
+4x/3=7/6-5x/2
+6/1×4x/3=6/1×7/6-6/1×5x/2
+8x=7-15x
+
+1/3=2/x-1/6
+6x×1/3=6x×2/x-6x/6
+2x=12-x
+
+Or Denominator expression	
+3/4+3=3/4+4/4×3/1=(3+4×3)/4=15/4
+(x-1)/12+6=(x-1)/12+6/1×12/12=(x-1+12×6)/12=(x-171)/12
+
+ 
+Simplification
+(49x^(2 ) y^7 z^4)/(35x^8 y^3 z^12 )=(49x^(2 ) y^7 z^4)/(35x^8 y^3 z^12 )*7/7=(7y^4)/(5x^6 z^8 )
+((9x^2 y^3)/(63x^3 y^3-45x^4 y^3 )=(9x^2 y^3)/(9x^3 y^3 (7y^2-5x))
+(3x+12)/(x^2+3x-4)=3(x+4)/(x+4)(x-1) =3/(x-1)
+(x-9)/(9-x)=(x-9)/(-(x-9) )=1/(-1)=-1
+(81-x^2)/(x^2+18x+81)=(9+x)(9-x)/(x+9)(x+9) =(9-x)/(x+9)	 
+(X^2+7x+15)/(x+3)=(x+3)(x+4)/(x+3)=x+4
+(x^3-8)/(3x^2-5x-2)=(x-2)(x^2+2x+4)/(x-2)(3x+1)   as 3*(-2)=-6=1*-(6) 
+3x^2-6x+1x-2=3x(x-2)+1(x-2)
+√(4x+1)/(x-2)=√(4x+1)/(x-2)*(√(4x+1)+3)/(√(4x+1)+3)=(4x+1-9/(x-2)(√(4x+1)+3) =4/(√(4x+1)+3)
+((24x/16)/32y)/48=24x/16*48/32y=((8*3x))/((8*2) )*((8*6))/((8*3y) )=6x/24=3x/y
+
+(3/x+2)/(5/x)=(3/x+2)/(5/x)*x/x=(3+2x)/5  	as	 3/x*x=3/x*x/1=3 
+(3/x-5)/(1/x+2)=(3/x-5)/(1/x+2)*x/x=(3-5x)/(1+2x)
+
+(4/x-2/y)/(3/y+2/x)=(4/x-2/y)/(3/y+2/x)*xy/xy=(4y-2x)/(3x+2y)
+
+(3/xy-4)/(5-1/y)=(3/xy-4)/(5-1/y)*xy/xy=(3-4xy)/(5xy-x)
+
+((x-(5+y)/4))/((3/x-2/y) )=((x-(5+y)/4))/((3/x-2/y) )*4xy/4xy=(4x^2y-(5+y)*4y)/(12y-8x)=(4x^2y-(4y)*(5+y))/(12y-8x)=(4x^2y-20y-4y^2)/(12y-8x)=
+=4y(x^2-5-y)/4(3y-2x) =y(x^2-5-y)/((3y-2x) )  
+
+((3x-7)xy)/((4/y-3/x)  xy)=(3x-7)/(4x-3y)
+
+(3x^(-1)+x^(-2))/(4x^(-1)-x^(-2) )=(3/x+1/x^2 )/(4/x-1/x^2 )=(3/x+1/x^2 )/(4/x-1/x^2 )*x^2/x^2 =(3x+1)/(4x-1)
+
+(3/(x-1)+4/(x+2))/(7/(x+2)-5/(x-1))=(3/(x-1)+4/(x+2))/(7/(x+2)-5/(x-1))*(2-1)(x+2)/(x-1)(x+2) =(3*(x+2)+4*(x-1))/(7(x-1)-5(x+2) )  =(3x+6+4x-4)/(7x-7-5x-10)=(7x+2)/(2x-17)
+
+
+√((75x^7 y^3 z^10)/(8x^3 y^9 z^4 ))=√(((25*3)〖*x〗^4 z^6)/((4*2)*y^6 ))=(5x^1 z∛3)/(2y∛2) 
+
+∛((16x^71 y^4 z^y)/(54x^2 y^9 z^15 ))= ∛((8x^5)/(27y^5 Z^6 ))=(2x^1 ∛(x^2 ))/(3y^1 z^2 ∛(y^2 ))   
+Divide by 2 
+(1/3+2/x)/(5/y+1/4)=(1/3+2/x)/(5/y+1/4)*12xy/12xy=(4xy+24y)/(60x+3xy)=4y(x+6)/3x(20+y) 
+
+Addition / Subtraction
+
+x+1/2=0
+2x+1=0
+x=(6x-15)/(x-2)
+x*(x-2)=6x-15
+x^2-2x+15=6x
+x^2-8x+15=0
+(x-5)(x-3)=0
+x-5=0 ;x-3=0
+x=5 ;x=3
+x-6/x=-1
+x^2/x-6/x=-1
+〖(x〗^2-6)/x=-1
+〖(x〗^2-6)=-x
+x^2+x-6=0
+(x-2)(x+3)=0
+x=2;x=-3
+(3x-2)/(x-7)=-5/(x-7)
+3x-2=-5
+3x=-3
+x=-1
+2x/(x-5)-(x^2+15x)/(x^2-25)=0 
+2x/(x-5)*((x-5))/1-(x^2+15x)/(x-5)(x+5) *(x-5)/1=0
+2x-(x^2+15x)/(x+5)=0
+2x(x+5)/(x+5)-x^2+15x=0
+2x(x+5)-(x^2+15x)=0
+2x^2+10x-(x^2+15x)=0
+2x^2+10x-x^2-15x=0
+x^2-5x=0
+(x-5)(x+0)=0
+x=5;x=0
+
+Multiplication 
+1/(x-2)*(x^2-4)/1=1/(x-2)*(x-2)(x+2)/1=x+2
+10/100*50+25/100 x=15/100(50+x) 
+1/10 50+1/4 x=15/100 (50+x)
+5+1/4 x=15/100 (50+x)
+(4*5)/4+x/4=15/2+15/100 x
+(20+x)/4=15/2+15/100x
+(20+x)/4=15/2*20/20+3/20x
+(20+x)/4=150/20+3x/20
+20/1*(20+x)/4=20/1*(3x+150)/20
+5*(20+x)=3x+150
+100+5x=3x+150
+2x=50
+x=25
+(x^2-9)/(x^2-16)*(x+4)/(x-3)=(x+3)(x-3)/(x+4)(x-4) *(x+4)/(x-3)=(x+3)/(x-4)
+
+(15y^4 x^3)/(9xy^2 )*12xy/(40y^3 x^2 )=(5*3*y*y*y*y*x*x*x)/(3*3*x*y*y)*(4*3*x*y)/(4*2*5*y*y*y*x*x)=x/2
+2x/(3x-6)*(5x-10)/(20x^2 )=2x/3(x-2) *5(x-2)/(5*2*2*x*x)=1/6x
+(x^2+8x+15)/(x^2+x-6)*(2x^2-3x-2)/(2x^2-50)=(x+3)(x+5)/(x+3)(x-2) *(((x-2)(2x+1)))/2(x+5)(x-5) 
+Division 
+(12x^4-9x^3+15x^2)/(3x^2 )=(12x^4)/(3x^2 )-(9x^3)/(-3x^2 )+(15x^2)/(3x^2 )=4x^2-3x^1+5
+(28x^6-36x^4+20x^3)/(4x^2 )=(28x^6)/(4x^2 )-(36x^4)/(4x^2 )+(20x^3)/(4x^2 )=7x^4-9x^2+5x
+(2x^2-x+6)/(x-2) use expression division or synthetic division.
+
+		(2x^2)/x=2x
+
+(x-2)      \   (2x^2-1x+6)
+		(x-2)*2x=2x^2-4x
+
+(2x^2-1x+6)-(2x^2-4x)=0-3x+6
+		-3x/x=-3
+
+-3x+6-(-3x+6)
+		
+0+0,Answer is 2x-3
+	
+
+((2x^3+8x^2-6x+10))/(x-2)
+
+	  2x^2+12x+18				
+x-2	(2x^3+8x^2-6x+10)		(2x^3)/2=2x^2		
+	-(2x^3-4x^2)				
+	0+12x^2-6x+10		(12x^2)/x=12x		
+	      -(12x^2-24x)				
+	                   0+18x+10		18x/x=18		
+	-(18x-36)				
+	0+46		Remainder 46/(x-2)		
+Ans.	2x^2+12x+18+46/(x-2)				
+(6x^4-9x^2+18)/(x-3)
+
+	6x^3+18x^2+45x+145+453/(x-3)		(6x^4)/x=6x^3
+x-3	6x^4+0x^3-9x^2+0x+18		
+	-(6x^4-18x^3)	=	6x^3 (x-3)=6x^3*x+6x^3*-3=6x^4-18x^3
+	           +18x^3-9x^2+0x+18		(18x^3)/x=+18x^2
+	-          (18x^3-54x^2)	=	18x^2 (x-3)=18x^2*x+18x^2*-3=18x^3-54x^2
+	                      0+45x^2+0x+18		(45x^2)/x=+45x
+	-                     (+45x^2-145x)	=	45x*(x-3)=45x*x+45x*-3
+	                                     0+145x+18		
+	-                                     (145x-435)	=	145x/x=145
+	453		
+			
+Ans.	6x^3+18x^2+45x+145+453/(x-3)		
+(7+1/x)/(3-1/y)=(7+1/x)/(3-1/y)*xy/xy=((7xy+y))/(3xy-x)=y(7x+1)/x(3y-1) 
+
+(8-1/x^2 )/(4+1/x)=(8-1/x^2 )/(4+1/x)*x^2/x^2 =(8x^2-1)/(4x^2+x)
+
+((x^2/(x-2))/3x)/(x^2-4)=x^2/(x-2):3x/(x^2-4)=x^2/(x-2)*(x^2-4)/3x=x(x+2)/3
+
+((x^2/(x-2))/3x)/((x^2-4) )=((x^2/(x-2))/3x)/(x+2)(x-2) *((x+2)(x-2)/(x+2)(x-2) )=(x^2 (x+2))/3x  
+
+(7+2/(x-2))/(5-1/(x+2))=(7+2/(x-2))/(5-1/(x+2))*(x+2)(x-2)/(x+2)(x-2) =(7(x^2-4)+2(x+2))/(5(x^2-4)-(x-2) )=(7x^2-28+2x+4)/(5x^2-20-x+2)=(7x^x+2x-24)/(5x^2-x-18)
+
+(7x^2+2x-24)/(5x^2-x-18)=(7x^2+14x-12x-24)/(5x^2-10x+9x-18)=(7x(x+2)-12(x+2))/(5x(x-2)+9(x-2) )  =(x+2)(7x-12)/(x-2)(5x+9) 
+
+Change numbers		
+7(-24) = -168
+24=8*3;   -168=4*-42
+24=6*4;   -168=6*-28
+24=12*2; -168=8*-21
+               ; -168=12*-14
+               ; -168=-12*14	5*(-18) = -90
+-90=-10*9	
+ 
+Conic Equation.
+Basic Definitions
+Conic Sections: Curves obtained by intersecting a cone with a plane.
+Types of Conic Sections: Circle, Ellipse, Parabola, Hyperbola.
+General Equation of Conics
+Standard Form: Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0
+Conic Type Determination: Based on discriminant Δ=B2−4AC\Delta = B^2 - 4ACΔ=B2−4AC:
+Circle: Δ<0\Delta < 0Δ<0 and A=CA = CA=C and B=0B = 0B=0
+Ellipse: Δ<0\Delta < 0Δ<0 and A≠CA \neq CA=C
+Parabola: Δ=0\Delta = 0Δ=0
+Hyperbola: Δ>0\Delta > 0Δ>0
+Circle
+Equation: (x - h)^2 + (y - k)^2 = r^2
+(h, k) is the center.
+r is the radius.
+Properties:
+All points are equidistant from the center.
+Symmetric about the center.
+Ellipse
+Equation: (x−h)2a2+(y−k)2b2=1\frac{(x - h)^2}{a^2} + \frac{(y - k)^2}{b^2} = 1a2(x−h)2+b2(y−k)2=1
+(h, k) is the center.
+a and b are the semi-major and semi-minor axes, respectively.
+Foci:
+Located at (h±c,k)(h \pm c, k)(h±c,k) or (h,k±c)(h, k \pm c)(h,k±c), where c=a2−b2c = \sqrt{a^2 - b^2}c=a2−b2.
+Eccentricity: e=cae = \frac{c}{a}e=ac
+Properties:
+Sum of distances from any point on the ellipse to the two foci is constant.
+Parabola
+Equation: y = a(x - h)^2 + k  x = a(y - k)^2 + h
+(h, k) is the vertex.
+a determines the direction and width.
+Focus:
+Located at (h,k+14a)(h, k + \frac{1}{4a})(h,k+4a1) for vertical parabolas.
+Directrix:
+Horizontal line y=k−14ay = k - \frac{1}{4a}y=k−4a1 for vertical parabolas.
+Properties:
+All points are equidistant from the focus and directrix.
+Hyperbola
+Equation: (x−h)2a2−(y−k)2b2=1\frac{(x - h)^2}{a^2} - \frac{(y - k)^2}{b^2} = 1a2(x−h)2−b2(y−k)2=1
+(h,k)(h, k)(h,k) is the center.
+aaa and bbb are distances related to the hyperbola’s shape.
+Foci:
+Located at (h±c,k)(h \pm c, k)(h±c,k) or (h,k±c)(h, k \pm c)(h,k±c), where c=a2+b2c = \sqrt{a^2 + b^2}c=a2+b2.
+Asymptotes:
+Lines passing through the center with slopes ±ba\pm \frac{b}{a}±ab for horizontal hyperbolas.
+Properties:
+Difference in distances from any point on the hyperbola to the two foci is constant.
+Eccentricity
+Circle: e=0e = 0e=0
+Ellipse: 0<e<10 < e < 10<e<1
+Parabola: e=1e = 1e=1
+Hyperbola: e>1e > 1e>1
+Conic Section Classification
+Ellipse:
+Degenerate Case: Two intersecting lines (when A=CA = CA=C and B2−4AC=0B^2 - 4AC = 0B2−4AC=0).
+Hyperbola:
+Degenerate Case: Two intersecting lines (when B2−4AC=0B^2 - 4AC = 0B2−4AC=0).
+
+Second-Degree Polynomial Equation:
+A general second-degree polynomial equation in two variables x and y is of the form:
+Ax2+Bxy+Cy2+Dx+Ey+F=0
+Here, the key terms that make this a second-degree equation are x^2, y^2, and potentially xy (which represents the interaction between the x and y variables). The constants A, B, C, D, E, and F determine the specific nature of the conic.
+Types of Conics:
+This general second-degree equation can describe different conic sections depending on the values of the coefficients. Let's look at the most common cases:
+	Circle: This occurs when A=CA = CA=C and B=0B = 0B=0, and no linear terms (DDD, EEE) are present. The equation simplifies to:
+A(x2+y2)=0A(x^2 + y^2) = 0A(x2+y2)=0
+A circle is a special case of an ellipse where both coefficients of x2x^2x2 and y2y^2y2 are equal.
+	Ellipse: If AAA and CCC are both positive (or both negative) and B=0B = 0B=0, the equation represents an ellipse. For example:
+Ax2+Cy2+Dx+Ey+F=0
+If A>0A > 0A>0 and C>0C > 0C>0, you get an ellipse.
+	Parabola: This occurs when either A= or C=0, but not both. The equation simplifies to something like:
+Ax2+Dx+Ey+F=0
+or
+Cy2+Dx+Ey+F=0
+A parabola has a single squared term, either x2x^2x2 or y2y^2y2.
+	Hyperbola: This happens when the signs of AAA and CCC are opposite (one is positive and the other is negative), and there might also be an xyxyxy term. An example would be:
+Ax2−Cy2+Dx+Ey+F=0Ax^2 - Cy^2 + Dx + Ey + F = 0Ax2−Cy2+Dx+Ey+F=0
+A hyperbola involves both positive and negative squared terms.
+	Degenerate Cases: Sometimes the conic may degenerate into a point, a line, or a pair of lines, depending on the specific values of the coefficients.
+
+Systems of Equations.
+Polygon (triangles, square, pentagon, hexagon).
+Polyhedral (tetrahedrons, cube, octahedron, dodecahedron, icosahedron), spheres, ellipsoid, paraboloid, hyperboloid, cylinder, cone. 
+
+Polar Equations.
+Circle : R=acosQ or R=asinQ
+Limacon 
+R=a±bsinQ
+R=a±ncosQ
+Limacon inner loop=A/b<1
+Cardiod A/B=1 
+Dimple 1<A/B<2
+almost circle A/B≥2
+
+Calculus.
+metadata:
+  category: Mathematics
+  level: Beginner
+  language: en
+
+description: "Calculus is a branch of mathematics that studies Functions and their properties."
+
+applications:
+  - "Physics (velocity, acceleration, motion)"
+  - "Engineering (optimization, system modeling)"
+  - "Economics (cost, revenue, marginal analysis)"
+  - "Biology (population growth, rates of change)"
+  - "Computer graphics and machine learning"
+
+topics:
+  - Limits
+  - Derivatives
+  - Integrals
+  - Differential Equations
+  - Multivariable Calculus
+
+concepts:
+  - limit: "The value a function approaches as the input approaches a certain point"
+  - derivative: "The rate of change of a function with respect to a variable"
+  - integral: "The accumulation of quantities, such as area under a curve"
+  - function: "A relation that assigns each input exactly one output"
+  - continuity: "A function without breaks, jumps, or holes"
+
+examples:
+  - expression: "f(x) = x²"
+    derivative: "f'(x) = 2x"
+  - expression: "∫ x dx"
+    solution: "x²/2 + C"
+  - expression: "lim (x→2) (x²)"
+    solution: "4"
+
+attributes:
+  - name: Linearity
+    description: Derivatives and integrals can be split across sums.
+    examples:
+      - "d/dx (a + b) = d/dx(a) + d/dx(b)"
+      - "∫(a + b) dx = ∫a dx + ∫b dx"
+
+  - name: Product Rule
+    description: Used to differentiate the product of two functions.
+    examples:
+      - "d/dx (uv) = u'v + uv'"
+
+  - name: Quotient Rule
+    description: Used to differentiate a quotient of two functions.
+    examples:
+      - "d/dx (u/v) = (u'v - uv') / v²"
+
+  - name: Chain Rule
+    description: Used to differentiate composite functions.
+    examples:
+      - "d/dx f(g(x)) = f'(g(x)) · g'(x)"
+
+  - name: Fundamental Theorem of Calculus
+    description: Connects differentiation and integration.
+    examples:
+      - "If F'(x) = f(x), then ∫f(x)dx = F(x) + C"
+
+methods:
+  - name: Differentiation
+    description: Finding the derivative of a function to determine its rate of change.
+    example: "d/dx (x²) = 2x"
+
+  - name: Integration
+    description: Finding the integral of a function to determine total accumulation.
+    example: "∫x dx = x²/2 + C"
+
+  - name: Substitution Method
+    description: Simplifies integrals by substituting variables.
+    example: "Let u = x², then ∫2x dx = ∫du"
+
+  - name: Integration by Parts
+    description: Used for products of functions in integration.
+    example: "∫uv dx = u∫v dx - ∫(u'∫v dx)"
+
+  - name: Limit Evaluation
+    description: Used to determine behavior of functions near a point.
+    example: "lim (x→0) (sin x / x) = 1"
+
+  - name: Graphical Interpretation
+    description: Understanding functions through slopes and areas on graphs.
+
+  - name: Numerical Methods
+    description: Approximating values when exact solutions are difficult.
+Functions.
+A function is a rule that relates inputs to outputs, is an action of an object.
+Functions f(x) or g (x, y) is a name of an expression and is used for transformation.
+Domain is all inputs of a function.
+Range is all outputs of a function.
+In math function could be one expression, system of equation and other.
+In programming language Function is broader and can be a set of instructions or algorithm.
+Function definition.
+Function Types.
+Explicit y=f(x);
+Implicit f(x,y)=0;
+Domain and Range Functions.
+Constant f(x)=1, Domain All real numbers, range y=1
+Linear f(x)=x, Domain All real numbers, Range all real numbers.
+Exponential Functions.
+f(x)=a+x^n.
+Polynomial Functions.
+Quadratic f(x)=x^2+x+c, Domain All real numbers, Range y>=0.
+Rational Function.
+Trigonometric Functions. 
+Sine f(x)=sin(x),
+The general form of a sine function is: y = sin (Bx-C) + D.
+Where:
+Amplitude: = |A|. The amplitude is the magnitude of the stretch or compression of the
+function from its parent function: y = sin x.
+Period: = 2π/B. The period of a trigonometric function is the horizontal distance over which the curve travels before it begins to repeat itself (i.e., begins a new cycle). For a sine or cosine function, this is the length of one complete wave; it can be measured from peak to peak or from trough to trough. Note that 2π is the period of y = sin x.
+Phase Shift: = C/B. The phase shift is the distance of the horizontal translation of the
+function. Note that the value of in the general form has a minus sign in front of it, just like it does in the vertex form of a quadratic equation: y = (x-h)2+k. So,
+A minus sign in front of the implies a translation to the right, and
+A plus sign in front of the implies a implies a translation to the left.
+Vertical Shift: = D. This is the distance of the vertical translation of the function. This is
+equivalent to k in the vertex form of a quadratic equation: y = (x-h)2+k.
+ 
+The General Equation for sine function: could be rewritten as
+y = Amplitude . Sin[(360/period)(x-phase shift)] + vertical shift working in degrees.
+y = Amplitude . Sin[(2π /period)(x-phase shift)] + vertical shift working in radians.
+    
+Download copy of above here for better clarity of images.
+
+Cosine f(x) = cos(x),
+Limacon function in Polar coordinates.
+R=a+bcosθ {0< θ <2pi}.
+R=a+bcosθ {0< θ <2pi}.
+Logarithm Functions.
+Polar Functions.
+Circle
+Spiral
+Limaçon
+Rose Curve
+Cardioid
+Inverse Functions.
+When you have y and you need to find x of a function.
+Modulus Functions. 
+Absolute Value function: f(x)=|x|, Domain All real numbers, Range y>=0.
+A piecewise function.
+f(x)={	f1(x) if x < a
+f2(x) if a ≤ x < b
+f3(x) if x ≥ b
+
+Function Properties and analysis.
+DOMAIN is all possible x values.
+RANGE is all possible y values.
+Even, Odd, or Neither.
+Convex or Non-Convex.
+ 
+INCREASING/ DECREASING is graph increasing till the x point {-9,0} 
+Slope or first derivative will identify the increasing or decreasing of a function.
+
+X/Y-INTERCEPT(S) – is the coordinates where the function touches or crosses the x/y-axis. Also called ROOTS, ZEROS, or SOLUTIONS. 
+left as x→-∞,f(x)→-∞
+right as x→-∞,f(x)→-∞
+END BEHAVIOR – what happens at the “end” of a function.
+SET NOTATION – a way of writing the domain and range using set marks {}.
+INTERVAL NOTATION – a way of writing domain and range using (…) or {…} when not included, [...]when included.
+CONTINUOUS/ DISCONTINUOUS – a function whose graph is single unbroken/broken curve (no jumps, or holes).
+LOCAL MAXIMUMS/ MINIMUM – is coordinates, where a function changes from increasing to decreasing or from decreasing to increasing..
+For Functions of One Variable
+	Find the Derivative:
+	Compute the first derivative f′(x) of the function f(x).
+	Solve for Critical Points:
+	Set the first derivative equal to zero: f′(x)=0.
+	Solve the equation to find the critical points x=cx = cx=c.
+	Determine the Nature of Critical Points:
+	Compute the second derivative f′′(x).
+	If f′′(c)>0, then x=cx = cx=c is a local minimum.
+	If f′′(c)<0, then x=cx = cx=c is a local maximum.
+	If f′′(c)=0, the test is inconclusive; further analysis or other methods are needed.
+	Check Boundary Points:
+	If the function is defined on a closed interval [a,b], evaluate the function at the endpoints f(a) and f(b).
+	Compare these values with the function values at critical points within the interval to find the global minimum.
+Example:
+For f(x)=x^2−4x+4:
+	First derivative: f′(x)=2x−4.
+	Set 2x−4=0  x=2.
+	Second derivative: f′′(x)=2, which is positive, so x=2  is a local minimum.
+	Evaluate f(2)=2^2−4⋅2+4=0.
+So, the minimum value is 0 at x=2.
+
+For Functions of Multiple Variables.
+Finding the Minimum Using Numerical Methods.
+ABSOLUTE MAXIMUM/ MINIMUM – is the largest/smallest overall value of a function over its entire range.
+LIMITS of the Function:
+Intersections of a functions.
+Lagrange constrains points.
+DIFFERENTIATION of the Function:
+DERIVATIVE of the Function (graph y/x):
+Derivative of Hall function.
+Partial derivative of a function.
+INTEGRAL of the Function (graph x*y):
+
+Function Operations.
+Ariphmetic operations on functions.
+addition, subtraction, multiplication, division
+Inverse of function.
+Absolute Value of Function
+Product Rule.
+Quotient Rule.
+Chain Rule.
+Combination of functions.
+Combinate Function.
+Composite Function.
+Function Transformations is like changing the coordinate system or perspective of view.
+Identity
+Translation
+is moving/shifting a function horizontally or vertically in the x, y plane.
+Vertical shifts
+g(x)=f(x)+k =>f(x) shifted k units up.
+g(x)=f(x)-k =>f(x) shifted k units down.
+Horizontal shifts.
+g(x)=f(x-h) =>f(x) shifted h units to the right.
+g(x)=f(x+h) =>f(x) shifted h units to the left.
+Rotation.
+Ptolemy’s Sum and Differences Formulas
+https://www.youtube.com/watch?v=Cb4aoihvh-o&list=TLPQMjEwNzIwMjS5oLPkzqQgSQ&index=2&pp=gAQBiAQB
+https://www.youtube.com/watch?v=G25aT8VFsNI&list=TLPQMjEwNzIwMjS5oLPkzqQgSQ&index=3&pp=gAQBiAQB
+Euler rotation.
+Quaternion rotation.
+In Complex number: A quaternion is a mathematical construct used to represent rotations in three-dimensional space. It extends complex numbers and is composed of one real part and three imaginary parts. A quaternion is typically written as:
+q=a+bi+cj+dk
+where: a is the real part,
+b, c, and d are the coefficients of the imaginary units i, j, and k, respectively.
+
+In matrix form: A quaternion q is typically defined as: q = (w, x, y, z) where www is the scalar part, and (x, y, z) are the vector parts.
+where:
+w is the scalar component,
+(x, y, z) are the vector components.
+Interpretation of w:
+	Magnitude: w contributes to the overall magnitude of the quaternion. For a unit quaternion (used for rotations), w can be calculated as:
+w=√(1-(x^2+y^2+z^2))
+for a normalized quaternion, ensuring it represents a valid rotation.
+	Rotation Representation: In the context of rotations, www represents the cosine of half the angle of rotation, while the vector part (x,y,z)(x, y, z)(x,y,z) is proportional to the sine of half the angle multiplied by the rotation axis.
+
+The rotation matrix R corresponding to the quaternion (w, x, y, z) is given by:
+R=■(1-2(x^2+z^2 )&2(xy-wz)&2(xz+wy)@2(xy+wz)&1-2(x^2+z^2)&x(yz-wx)@2(xz-wy)&x(yz+wx)&1-2(x^2+y^2))
+Multiply the Rotation Matrix by the vertecies: V’=R*V
+Reflection
+Reflection is flipping over a line of reflection (x-axis, y-axis, etc.)
+Reflection over the x-axis.
+g(x)=-f(x) =>f(x) flipped over the x-axis.
+Reflection over the y-axis.
+g(x)=f(-x) =>f(x) flipped over the y-axis.
+Scale
+Stretch / Shrink
+is changing a function’s shape and size by stretching or shrinking it in the horizontal or vertical direction.
+Vertical 
+g(x)=a*f(x)
+|a|>1 +> f(x) stretched vertically.
+|a|<1 +> f(x) shrunk vertical.
+Horizontal
+g(x)=f(a*x)
+|a|>1 +> f(x) stretched horizontally.
+|a|<1 +> f(x) shrunk horizontally.
+Shear
+Projection transformation.
+One-point perspective
+Two-point perspective
+Perspective projection
+Rodrigue’s Rotation Formula
+Projection of rotation. Replace x with:
+■(a&c@b&d)*■(x@y)=■(ax+cx@by+dy)
+new ■(x@y)=■(ax+cx@by+dy)
+Fourier transformation.
+Laplace transformation.
+Function Optimization.
+ 
+ 
+Lagrange multipliers.
+Lagrange multipliers are used to find the local maxima and minima of a function subject to one or more constraints. This is a method used in constrained optimization problems.
+Trigonometry.
+Straight and Inverse Trigonometric Functions: Cos, Sin, Tan, Cotan.
+Straight and inverse Hyperbolic Trigonometric Functions:
+ 
+Geometric objects.
+Points.
+Scalar part.
+Point representation in different coordinate systems varies based on how positions are defined. Here are the most common systems:
+Summary:
+Each coordinate system serves specific applications, such as navigation (polar), physics (spherical), or computer graphics (homogeneous). Understanding how to convert between these systems is essential for working in various fields, including mathematics, physics, and engineering.
+Positions (x, y).
+Complex number (x + yi).
+Cartesian coordinate system:
+Point format: A (x, y, z).
+2D: A point is represented as A = (x, y), where x is the horizontal distance from the origin and y is the vertical distance.
+3D: A point is represented as A = (x, y, z), adding a third dimension.
+Polar Coordinate System
+2D: A point is represented as (r, θ), where r is the radial distance from the origin and θ is the angle from the positive x-axis.
+Cylindrical Coordinate System:
+3D: A point is represented as (r,θ,z), combining polar coordinates for the horizontal plane with a vertical height z.
+Spherical Coordinate System:
+3D: A point is represented as (ρ,θ,ϕ), where ρ is the distance from the origin, θ is the azimuthal angle, and ϕ is the polar angle from the z-axis.
+Homogeneous Coordinates:
+Used in projective geometry, especially in computer graphics.
+A point in 2D is represented as (x, y, w) and in 3D as (x, y, z, w). The actual coordinates are obtained by dividing by w.
+Operations with scalar part.
+Conversion to Cartesian: x=r⋅cos(θ), y=r⋅sin(θ), z=z.
+Conversion to Cartesian: x=ρ⋅sin(ϕ)⋅cos(θ), y=ρ⋅sin(ϕ)⋅sin(θ), z=ρ⋅cos(ϕ).
+To convert to Cartesian: x=r⋅cos(θ), y=r⋅sin(θ).
+Addition / Subtraction of points.
+Multiplication / Division of points.
+Vector part.
+Unit vector
+Cartesian unit vector format:
+A:(0i+1j+1k)
+B:(0i+3j+4k)
+C:(3i+5j+0k)
+Convert to unit vector:
+Fx=150N 
+Fy=200N
+Fz=125N
+F={150i+200j+125k}
+Cartesian unit vector’s form is:
+w-scale, I, j, k-imaginary numbers for rotation.
+w*■(i@j@k)=1*■(1&0&0@0&1&0@0&0&1)
+
+Vector Operations
+Addition: Combining vectors component-wise.
+Subtraction: Difference between vectors component-wise.
+Visual Representation: Tip-to-tail method.
+Scalar Multiplication: Scaling a vector by multiplying with a scalar.
+Dot Product (Scalar Product): a⋅b=a1b1+a2b2+…+anbn.
+Length of vector is a dot product of itself.
+|□(→┬a )|=√(□(→┬a )*□(→┬a )) 
+Dot Product: of two position vectors is magnitude of both:
+ rAB*rAC=(i1*i2)+(j1*j2)+(k1*k2)=scalar/simple number
+Dot Product: is a direction of a vector.
+A*B = AB cosθ
+θ=〖cos〗^(-1) ((A*B)/AB)
+
+Cross Product (Vector Product): 
+For 3D vectors, gives a vector perpendicular to both. a×b=(a2b3−a3b2,a3b1−a1b3,a1b2−a2b1).
+I x J = K, J x K = I, K x I = J.
+ J x I = -K, K x J = -I, I x K = -J.
+Cross Product: or Normal Vector: is between two vectors. 
+n=A x B =■(i&j&k@x1&y1&z1@x2&y2&z2)=|■(y1&z1@y2&z2)|i+|■(x1&z1@x2&z2)|j+■(y1&z1@y2&z2)|k
+Vector Properties
+Commutative Property: 
+Associative Property: 
+Distributive Property:
+Zero Vector: A vector with all components equal to zero.
+Opposite Vector: −a is a vector with the same magnitude but opposite direction.
+Linear Combination: Any vector v in a vector space can be expressed as a combination of basis vectors.
+Orthogonality-compare direction of two vectors.
+Orthogonal Vectors: Two vectors are orthogonal if their dot product is zero.
+Orthogonal Basis: Basis where all vectors are mutually orthogonal.
+Orthogonal Projection: Projection of vector v.
+Orthogonally or Orthogonal vectors.
+Determine Whether Two Vectors Are Parallel (Orthogonal)
+If dot product is 0.
+Resolving a Vector into Orthogonal Vectors
+Decompose a Vector into Two Orthogonal Vectors
+Determine Whether Two Vectors Are Orthnormality
+If vectors are:
+1. magnitude equal 1
+□(→┬a )/|□(→┬a )| =□(□(→┴∆ )) *→┬a
+□(□(→┴∆ )) -new vector equal 1.
+2. orthogonal
+Example:
+If Fb=360N and Fc=700N, determine the magnitude and coordinate direction angles of the resultant force acting on the flag pole.
+1. Write position of all points.
+	A:(0i+0j+6k); m
+	B:(2i+-3j+0k); m
+	C:(3i+2j+0k); m
+2. Get Position Vector between two points by subtracting.
+	rAB={(2-0)i+(-3-0)j+(0-6)k}
+	rAB={2i-3j-6k}; m
+		rAC={(3-0)i+(2-0)j+(0-6)k}
+		rAC={3i+2j-6k}; m
+3. Find Magnitude of vectors.
+r_AB=√((2)^2+(-3)^2+(-6)^2 )=7m
+r_AC=√((3)^2+(2)^2+(-6)^2 )=7m
+4.Determine the Unit-Vectors.
+u_AB=(2/7 i-3/7 j-6/7 k)
+u_AC=(3/7 i-2/7 j-6/7 k)
+5.Find the Force
+F_B=560(2/7 i-3/7 j-6/7 k);            F_C=700(3/7 i-2/7 j-6/7 k)
+
+F_B={160i-240j-480k};N;    F_C={300i+200j-600k};N
+6. Resultant Force
+F_R={(160+300)i+(-240+200)j+(-480-600)k}
+F_R={460i-40j-1080k};N
+7.Magnitude of this Force
+F_R=√((460)^2+(-40)^2+(-1080)^2 )
+F_R=1174.56; N
+8.To find the angels between axies of vector.
+cosα=F_Rx/F_R ; cosβ=F_Ry/F_R ; cosγ=F_Rz/F_R 
+cosα=460/1174.56=66.94°; cosβ=(-40)/1174.56=91.95°; cosγ=(-1080)/1174.56=156.85°
+3 steps to find Force Vectors along a Line.
+Position Vector in format.
+ r=xi+yj+zk
+Magnitude of Vector.
+rAB or r or h=√((x)^2+(y)^2+(z)^2 )
+Unit Vector.
+u=(Position Vector)/Magnitude=(xi+yj+zk)/√((x)^2+(y)^2+(z)^2 )
+General equation of Force in Cartesian form is:
+F_AB=h*u
+{12i+9j-8k}=17((x-1)/4 i+y/4 j-z/4 k)
+Spaces: (2D or 3D) is space in which vectors exists.
+The distinction lies in how x, y, z function compared to i, j, k:
+	x, y, z are the coordinates that describe a specific position in 3D space. They are numerical values that tell you "where" a point is located along the xx-axis (horizontal), y-axis (vertical), and z-axis (depth).
+	i, j, k are unit vectors that represent the directions of the axes themselves. They don't specify a position but instead define the orientation of the coordinate system. They are building blocks for vectors, combining magnitude and direction.
+To tie it together: x, y, z specify positions, while i, j, k specify directions. Together, they help define vectors like v⃗=x⋅i+y⋅j+z⋅k, which has both magnitude and direction.
+
+Vector Field: is a function where for each point in space vector exist.
+Vector: A quantity with both magnitude and direction, often represented as an ordered pair (x, y) or triplet (x, y, z) in Cartesian coordinates.
+Magnitude of vector (Norm): Length of the vector. |v|=v12+v22+…+vn2.
+Magnitude between two points: 
+AB=(x1-x2) (y1-y2) (z1-z2);
+Magnitude of Cartesian vector is:
+F=√((Fx)^2+(Fy)^2+(Fz)^2 )
+
+Scalar of vector: A single number that can scale a vector.
+Unit Vector: is a vector with magnitude of 1. ||u||=1.
+Vectors.
+Rectangular Form.
+Addition and subtraction.
+Solving equations.
+Polar Form.
+Multiplication and division.
+Rotation
+Parametric Form.
+Direction cosines Form.
+Homogeneous coordinates.
+Unit-vector (direction + magnitude) Form.
+Complex Number - A number which can be written in the form (a + bi) where a & b are real numbers and ‘i’ is the square root of -1.
+Operations with Complex numbers.
+
+
+  
+
+
+Addition/Subtraction of Complex numbers.
+If complex number add to real number the number will move by imaginary axis. 
+a + bi
+Multiplication / Division / Exponent / Logarithm of Complex numbers.
+If number is multiplied on imaginary number the number will rotate about center of 0.
+a * bi
+E^(iQ)=cosQ + isinQ. (Euler’s function).
+Sine/ Cosine of Complex numbers.
+Conjugation of complex numbers. (Reflection of number).
+((a+bi)) ̅=(a+bi) (a-bi)
+Module of complex number. Pythagorean Theorem.
+Module of Complex number is the length or magnitude from 0 to number.
+Hyper complex Numbers – Extensions of complex numbers including quaternions, octonions, and more. Example: Quaternions 𝑞=𝑎+𝑏𝑖+𝑐𝑗+𝑑𝑘
+Lines.
+Length.
+Angles.
+Size.
+Intersection:
+Point of Intersection: Finding where lines, planes, or curves meet.
+Parallel Lines and Planes: Lines or planes that do not intersect.
+Perpendicular Lines and Planes: Lines or planes that intersect at right angles.
+Curves.
+Plenemetry of Shapes (2d).
+Circle.
+Points on a Circle
+Center (O)	The fixed middle point; all radii extend from here
+Point on Circle	Any point lying on the circumference (like A, B, etc.)
+Point of Tangency	The point where a tangent touches the circle
+Tangent.
+Circle Parts
+Parts of a Circle
+Center. The fixed point from which every point on the circle is equidistant. Usually labeled as O.
+Radius. A line segment from the center to any point on the circle. All radii in a circle are equal. Labeled as r.
+Radians.
+Angles.
+Diameter. A line segment that passes through the center, connecting two points on the circle. It is twice the radius: Diameter=2𝑟.
+Circumference. The perimeter or the complete boundary (curve) of the circle. Formula: C=2πr
+Arc. A part of the circumference of a circle. Can be: Minor Arc: less than 180° Major Arc: more than 180°.Semicircle: exactly 180°.
+Chord. A line segment connecting two points on the circle. A diameter is the longest chord.
+Secant. A line that intersects the circle at two points.
+Tangent. A line that touches the circle at exactly one point. It is perpendicular to the radius at the point of contact.
+Areas of a Circle. 
+Circle area.
+Segment area.
+Sector area.
+Inscribed Angle Theorem.
+The inscribed angle theorem states that an angle θ inscribed in a circle is half of the central angle 2θ that subtends the same arc on the circle. Therefore, the angle does not change as its vertex is moved to different positions on the circle.
+Triangle.
+ 
+Basic Parts of a Triangle
+Vertices (Corners)
+Points where two sides meet.
+Labeled with capital letters (e.g., A, B, C).
+Sides (Edges)
+Line segments between vertices.
+Opposite each vertex (e.g., side a is opposite vertex A).
+Angles
+Formed between two sides at a vertex (e.g., ∠A, ∠B, ∠C).
+Notable Points in a Triangle
+Point	Description
+Centroid	Intersection of medians; balance point
+Incenter	Intersection of angle bisectors; center of incircle
+Circumcenter	Intersection of perpendicular bisectors; center of circumcircle
+Orthocenter	Intersection of altitudes
+Notable Lines in a Triangle
+Median
+A line from a vertex to the midpoint of the opposite side.
+All three medians intersect at the centroid.
+Altitude (Height)
+A perpendicular line from a vertex to the opposite side (or its extension).
+All altitudes meet at the orthocenter.
+Angle Bisector
+Divides an angle into two equal parts.
+All bisectors intersect at the incenter.
+Perpendicular Bisector
+A line that cuts a side into two equal parts at 90°.
+All perpendicular bisectors meet at the circumcenter.
+Planes.
+To define a plane:
+1. Point on a plane.
+2. Normal vector from point which is perpendicular to a plane.
+3. “Normal vector” multiplies on subtraction of two vectors on plane.
+a(x2-x1)i+b(y2-y1)+c(z2-z1)=0
+Angle between the sides of the triangular plate
+θ=〖cos〗^(-1) ((rAB*rAC)/rABrAC)
+Determinant is the area of a plane which vectors are made.
+Hyperplanes: n−1n-1n−1 dimensional subspaces in n-dimensional space.
+Square.
+Basic Parts of a Square
+Vertices (Corners)
+The four corner points where two sides meet.
+Usually labeled A, B, C, D (in order around the square).
+Sides (Edges)
+The four equal-length straight lines between vertices.
+Opposite sides are parallel and equal.
+Angles
+Each interior angle is 90° (right angle).
+Total of four right angles.
+Notable Lines in a Square
+Diagonals
+Line segments connecting opposite corners (e.g., AC and BD).
+In a square:
+Diagonals are equal in length.
+Diagonals bisect each other at 90°.
+Diagonals bisect the angles of the square.
+Perpendicular Bisectors
+Lines that divide the sides into two equal parts at 90°.
+Also act as axes of symmetry.
+Lines of Symmetry
+A square has 4 lines of symmetry:
+Two diagonals.
+Two lines through midpoints of opposite sides.
+Notable Points in a Square
+Point	Description
+Center	The intersection point of the diagonals; it's equidistant from all corners.
+Midpoints	Each side has a midpoint; diagonals pass through these.
+Steriometry of Forms (3d).
+Cubes.
+Spheres.
+Spherical triangles.
+Pyramids.
+
+Fields.
+Scalar height map.
+Vector Field.
+Field Properties.
+Gradient.
+Divergence.
+Curl.
+
+Spaces.
+Types of Spaces.
+Euclidean Space: 
+Spaces with Cartesian coordinates, 90 degrees between axis.
+Non-Euclidean Space: Includes spaces with different geometric properties, such as spherical or hyperbolic space.
+Properties of spaces:
+Affine Space: Space that deals with points and vectors without a fixed origin.
+Projective Space: Space where parallel lines meet at a point at infinity.
+Polar and Spherical Spaces: Used to represent points in a non-Cartesian manner.
+Manifolds: Spaces that locally resemble Euclidean spaces but can have different global properties.
+Hilbert Space: An infinite-dimensional generalization of Euclidean space, used in functional analysis and quantum mechanics.
+Metric Space: A set where distances between points are defined, allowing for the study of convergence and continuity.
+Topological Space: A set of points with a topology (open sets), focusing on properties like continuity.
+Vector Space: Set of vectors with operations of addition and scalar multiplication.
+Coordinate Systems of Space.
+Cartesian Coordinates: 
+Describes points in space using (x, y, z).
+Polar Coordinates: 
+Uses radius and radian (r, θ) 2D space.
+(Cos θ) is the x-coordinate of the point corresponding to the angle θ {0< θ <pi} on the unit circle.
+(Sin θ) is the y-coordinate of the point corresponding to the angle θ {0< θ <pi} on the unit circle.
+ 
+
+Polar Functions:
+R=a
+R=Ɵ
+R=sec Ɵ and R=csc Ɵ
+R=a+bcos(n Ɵ^n), n – number of petals.
+Cylindrical Coordinates:
+ Extends polar coordinates to 3D space.
+Spherical Coordinates: 
+Extends polar coordinates to 3D space.
+Describes points with radius, polar angle, and azimuthal angle.
+Homogeneous Coordinates: 
+Used in projective spaces, where points are expressed in terms of an additional coordinate for transformations.
+Homogeneous coordinates are a way to represent points in projective space, often used in computer graphics and geometric transformations. They extend the usual Cartesian coordinates by adding an extra dimension, which allows for transformations like perspective projections and translations to be represented using matrix operations.
+In two dimensions, a point 
+(𝑥,) can be represented in homogeneous coordinates as (𝑥,,), where 𝑤 is a scaling factor. The Cartesian coordinates can be obtained by dividing by 𝑤, so the point corresponds to (𝑥/𝑤,/𝑤). Similarly, in three dimensions, a point (𝑥,,) is represented as (𝑥,𝑦,𝑧,𝑤).
+Homogeneous coordinates are a way to represent points in projective space, often used in computer graphics and geometric transformations. They extend the usual Cartesian coordinates by adding an extra dimension, which allows for transformations like perspective projections and translations to be represented using matrix operations.
+In two dimensions, a point (x, y) can be represented in homogeneous coordinates as (x, y, w), where w is a scaling factor. The Cartesian coordinates can be obtained by dividing by w, so the point corresponds to (x/w, y/w). Similarly, in three dimensions, a point (x, y, z) is represented as (x, y, z, w).
+The scaling factor in homogeneous coordinates is typically the w component. If you're given a point in homogeneous coordinates (x, y, w) in 2D or (x, y, z, w) in 3D, the scaling factor w determines how to convert the homogeneous coordinates back to Cartesian coordinates.
+To find the scaling factor:
+	If a point is already in homogeneous form, w is simply its last coordinate.
+	If you need to normalize the point, divide each coordinate by w to obtain the Cartesian coordinates:
+	In 2D: x′=x/w, y′=y/w
+	In 3D: x′=x/w, y′=y/w
+If you're working with transformation matrices (such as perspective transformations in computer graphics), w might be calculated as part of a matrix multiplication process.
+The scaling factor w in homogeneous coordinates affects the size of the object when transforming points back to Cartesian space.
+	If w>1, the point scales down, making the object appear smaller.
+	If w<1 but positive, the point scales up, making the object appear larger.
+	If w is negative, it can also introduce a reflection in some cases.
+	If w=1, the point stays the same size.
+This principle is especially important in computer graphics and perspective projections, where dividing by w simulates depth perception—objects further away have larger w-values, making them appear smaller.
+In perspective projections, the w value in homogeneous coordinates often depends on the distance of an object from the viewpoint.
+When applying a perspective transformation:
+	Objects farther away from the camera typically have larger w-values, causing their Cartesian coordinates to shrink after division by w. This makes them appear smaller.
+	Objects closer to the camera have smaller w-values, meaning after division, their Cartesian coordinates remain larger, making them appear bigger.
+This is fundamental in 3D computer graphics and rendering—it's how depth perception is simulated in a scene. The projection matrix computes w dynamically based on distance, ensuring correct scaling for depth.
+
+Normal and Tangential Coordinates.
+Space Properties in Coordinate systems.
+Angles, Arc Length, and Circular Motion.
+Angles and Degree Measure.
+Convert between Decimal and Degree, Minute, Second Measures for Angles.
+The Length of an Arc of a Circle.
+Convert from Degrees to Radians and from Radians to Degrees.
+The Area of a Sector of a Circle.
+The Linear Speed of an Object Traveling in Circular Motion.
+Convert coordinates.
+Convert from Polar Coordinates to Rectangular Coordinates.
+Convert from Rectangular Coordinates to Polar Coordinates.
+Transform Equations between Polar and Rectangular Forms.
+Space: A set of points or objects extending in multiple dimensions.
+Dimension: The number of independent directions in a space.
+Subspaces:
+Spans:
+Distance:
+Euclidean Distance: d=(x2−x1)2+(y2−y1)2+(z2−z1)
+Distance from a Point to a Plane: Distance=A2+B2+C2∣Ax1+By1+Cz1+D∣
+Angle:
+Between Vectors: cos(θ)=a⋅b.
+Between Lines and Planes.
+Topology.
+Closet set.
+Filter.
+Neighborhood.
+Net.
+Open set.
+Topological space.
+Homology group.
+Uniformity.
+Transformations in Space.
+Translation: Shifting all points by a vector.
+Rotation: Rotating points around an axis or origin.
+Scaling: Changing the size of objects in space.
+Reflection: Flipping points over a plane or line.
+Shear: Slanting points in a specified direction.
+Lorentz Transformation.
+Gaalilean Transformation
+Physics.
+Statics.
+
+Dynamics.
+Mechanics.
+Kinematics.
+Kinetics.
+Newtonian.
+Hamilton.
+Lagrange.
+
+Electromagnetism.
+Thermodynamics.
+Object’s / System’s properties.
+Time (second).
+Distance (meter). 
+Linear Distance.
+Angular Distance.
+Radians.
+Displacement (coordinate property).
+Direction.
+Magnitude.
+Speed.
+Linear speed, velocity and acceleration.
+Angular speed, velocity and acceleration (Radians / time.). 
+Scalar. W = VR.
+Vector. W = V x R.
+W=V/r
+W – Angular speed.
+V – Linear speed.
+R – Radius from point of rotation to point.
+Tangential speed, velocity, acceleration.
+Tangential acceleration is linear acceleration of rotating point.
+Tangential acceleration equal angular acceleration times radius.
+Relative Speed, Velocity, Acceleration, Instantaneous center of zero velocity.
+Velocity (vector property).
+Direction.
+Magnitude.
+Acceleration.
+a = α* r -ω^2 r 
+ 
+Acceleration of a system.
+Acceleration of a system: a=(∑▒F-∑▒f_k )/(∑▒m)=(Applied Force-coef.kinetic friction)/(Total mass of system)
+Fc=F-m_1 a-f_k
+m1-mass of the object.
+a – acceleration of the system.
+fk – friction.
+Density.
+Mass (Volume by density).
+Mass (gram).
+Mass is the measure of the amount of matter in an object.
+Mass = volume * density
+Mass is volume times density. 
+Weight.
+Volume(meter^2).
+Density.
+Momentum.
+Momentum is a vector.
+P=mv;(kg*m/s )
+P – Linear momentum.
+? - Angular momentum.
+M- Mass.
+V – Speed.
+Law of Conservation of Linear Momentums.
+Two objects have its momentum. 
+The sum of momentums is the same at the beginning and final state.
+Pa+Pb=Pa^'+Pb^';        maVa+mbVb=maVa^'+mbVb'
+Coefficient of Restitution (e).
+e = relative velocity after collision divide by relative velocity before collision. (0<=e<=1)
+1: Perfect elastic collision (no energy lost).
+0: Inelastic collision.
+Forces (Newtonian system).
+Definition of Force.
+Force is the cause of motion.
+Force is the time derivative of momentum.
+Force is equal Change of momentum in time. 
+F=∆p/∆t=m∆v/∆t=ma
+Force measured in Newtons.
+Force consists of:
+Point of application.
+Magnitude.
+Direction
+
+
+Centers of Forces.
+Center of Gravity.
+Center of Bouncy.
+Center of Flotation.
+Simplification of Forces.
+F1x=F1*cosQ=200*cos(30)=173.2N
+F1y=F1*sinQ=200*sin(30)=100N
+F1=173.2i+100j
+F2x=F2*cosQ=300*cos(135)=-212.1N
+F2y=F2*sinQ=300*sin(135)=+212.1N
+F2=-212.1i+212.1j
+F result=F1+F2=[173.2+(-212.1)]i+[100+212.1]j=-38.9i+312.1j; (i,j – unit vector)
+Fr√((-38.9)^2+(312.1)^2 )=314.5N
+
+Force types.
+Linear Force.
+Linear Force is a total mass over acceleration.
+ ∑▒〖F=∑▒m*a〗
+Weight (is Force by gravity) W= mg.
+Concentrated / Applied Force (F).
+F=ma
+Tension Force.
+T=√(Tx^2+Ty^2 )
+Tx=(mv^2)/R;Ty=mg
+tanQ=Ty/Tx
+Distributed Force (Pressure). 
+Pressure (Pascal).
+Pressure is a force multiplied by area. Measured in Pascal.
+P=F*d^2=N*m^2
+Gravitational Force (weight).
+Weight is the force, the mass of an object by gravity. 
+Weight=Mass *gravity
+F_g=mg*sinQ
+Q-angle of incline plane.
+Normal Force.
+Normal Force when not moving Fn=mg*cosQ
+Normal Force when moving  Fn=m*(g+a_y)  or Tention.
+Normal Force is perpendicular to surface. Normally up.
+
+∑▒〖Fy=+Fn-W〗
+〖ma〗_y=Fn-mg
+Fn=mg+〖ma〗_y
+
+Frictional Forces. 
+Static frictional force is the beginning of movement. Fs=μs*Fn
+Kinetic frictional force is the continues of movement. fk=μk*Fn
+Fn - Normal Force.
+µs - Static coefficient of surface.
+µk - Kinetic coefficient of surface.
+Lift Force.
+Hydrostatics Force.
+Contact Force.
+Rotational Force 
+Centrifugal Force 
+Centripetal Force.
+Fc=mAc=(mv^2)/r
+Ac=(4pi^2 r)/T^2 
+Ac=V^2/r;Centipital accelaration,vector to center.
+T-period of rotation,time per revolution.
+r-radius
+v-speed
+v=2pir/T
+T=(mv^2)/r
+Inertia Force.
+Inertia is resistance of an object to change of motion. 
+Inertia is like mass but in rotary motion.
+More mass = more inertia.
+D’Alembert’s Principle F-ma=0;(-ma is inertia).
+Impulse.
+Impulse is the integral of Force in time. 
+Impulse is the area under curve in Force vs. time graph.
+I=F∆t; (N*s)
+I – Impulse.
+F – Force.
+T – Time.
+                        Impulse (N*s) = difference in Momentum (kg*m/s)
+F∆t=(mv)f-(mv)o
+FΔt = Δp
+mvi - mvf – initial and final momentum.
+Moments (Hewtons*meters).
+Lever.
+Moment of Force (Torque).
+Torque is a measure of the rotational effect of a force applied at a distance from an axis or pivot point.
+T=Force*radius
+T=F*r*sinQ
+Q is angle between radius and Force.
++T is anticlockwise rotation.
+  -T is clockwise rotation.
+
+τ=I⋅α
+Where:
+τ\tau is torque,
+I is the moment of inertia (depends on mass and shape),
+α\alpha is angular acceleration.
+Torque works against rotational inertia to change an object's angular velocity.
+
+General Form is:
+ Mc=|■(i&j&k@rx&ry&rz@Fx&Fy&Fz)|
+Moment of inertia (I)
+Ring I=mr^2
+Solid rectangular plane I=1/12 m(h^2+w^2)
+Thin rod I=1/12m(L^2)
+Solid circular plane I=1/2 m(r^2)
+Radius of Gyration I=mk^2
+Moment of impulse.
+Definition: Moment of impulse (or angular impulse) refers to the change in angular momentum caused by a torque acting over a period of time.
+Formula:
+τ⋅Δt=ΔL 
+where:
+τ\tauτ = torque
+Δt = time interval
+ΔL = change in angular momentum
+Units: Newton-meter-seconds (N·m·s), or kg·m²/s (same as angular momentum).  
+Stress.
+Tensile Stress & Strain.
+Stress=F/area
+Strain=∆length/(initial length)=(final length-initial length)/(initial length)
+Compressive Stress & Shear Stress.
+Elastic=stress/strain
+Shear stress=(shear stress)/(shear strain)
+∆L=1/(Elastic or shear)*F/area*Lo
+Shear Force & Bending Moment.
+
+Energy (Joule).
+Energy is scalar, stored force in objects due to rotation, movement or other.
+Energy is isolated state of an object.
+Energy types.
+Mass at rest energy.
+E=mc^2
+E – energy.
+M – mass.
+C – speed of light.
+Kinetic energy of the particle.
+If you have a system made of multiple particles (say, molecules in a gas or atoms in a solid), the total kinetic energy is the sum of the kinetic energy of each particle:
+Total Kinetic energy=∑▒1/2 mv^2
+Each particle contributes based on its own mass m and velocity v.
+Kinetic energy of an object.
+For an extended object (like a rotating or moving rigid body), kinetic energy is divided into two parts:
+K=1/2 mv^2+1/2 Iω^2  
+Translational kinetic energy (center of mass motion)
+Rotational kinetic energy (spinning around the center of mass)
+
+Linear Kinetic energy (Ke).
+Ke=1/(2mv^2 )=1/(2mat^2 )
+Kinetic energy by momentum.
+Ke=p^2/2m
+
+Rotational Kinetic energy.
+Rotational Ke=1/2 Iw^2
+I – Inertia.
+W – Angular speed. W=v/r (v -speed, r – radius).
+Gravitational Potential energy (Pe).
+Pe=mgh
+h – Height.
+g - Gravitational constant (g=9.8 m/s^2).
+Elastic Potential Energy (Hooke’s Law).
+Pe=1/2 Kx^2
+K – Force of the spring (N*m).
+x – Ratio of compression of the spring from normal state.
+Chemical Potential energy.
+Thermal energy.
+Kinetic/Potential energy.
+Sound energy.
+Kinetic/Potential energy.
+Light kinetic energy.
+Kinetic energy.
+
+Work (Joules=m*a*d= 1N*1m).
+Hamiltonian motion system W=Ke+Pe is energy state of hall system.
+Lagrangian motion system W =Ke-Pe is a graph of dynamic state. 
+
+Work (Mechanical energy)is equal to Sum of all energies (Kinetic, Potential energy, Thermal energy, Elastic energy and friction energy).
+Work equal to Conservative work plus non-conservative work.
+Work equal Force time’s distance.
+Work plus Initial Kinetic Energy equal Kinetic energy final.
+
+Wnet=Wc+Wnc
+W=F*d
+Conservation Of Energy and Non-conservation of energy.
+Work at the initial state equal the work of the final state.
+(Ke+Pe) initial = (Ke+Pe) final 
+mgh=1/(2mv^2 )
+√2gh=√(v^2 )
+Vf=√2gh
+ 
+The conservative work is without loss of energy.
+The non-conservative work is energy lost by friction or heat.
+Wnc = Wnet-Wc 
+Wc = F*d = mad = (1N * m)
+Wc=∆Ke=Kef-Kei=1/2 mVf^2-1/2 mVi^2=m[(Vf^2-Vi^2)/2] 
+∆ - Change of something.
+D, d - Displacement of object (moved distance).
+T, t – Time.
+W- Work (Joules)
+Vf,Vi - Final / beginning kinetic energy. 
+Power (Watt).
+Power is speed of work. 
+Power=Work/Time = Joules per second.
+Motion equation.
+Newtonian equation.
+Lagrange equation (L=PE-KE).
+Hamilton equation (L=PE+KE).
+Energies of Hall system.
+Euler-Lagrange equation.
+Kinematic motion of the points.
+Kinematic motion is the motion of the points, rigid body and the groups of objects without Forces (considering the causes of its motion).
+Motion equation from:
+Position vs. Time.
+Velocity vs Time.
+Acceleration vs Time.
+Velocity vs. Position
+Acceleration vs. Position
+
+
+
+
+
+
+
+
+Kinematic	
+Scalar - Constant speed	Vector - Constant velocity, constant acceleration	Variable acceleration
+Linear motion	Angular motion	Linear motion	Angular motion	Linear motion
+Position
+Xf=Xo+Vt		Position
+Xf=Xo+Vot+1/2 at^2
+Yf=Yo+Vyot+1/2 at^2		V=dS/dt
+				
+Distance  
+d=v*t
+d=Xf-Xo	Angular Distance
+d=QR
+q- angle in radians;
+r-range;	Displacement
+d=∆v*∆t
+d=1/2 [Vo+Vf]t
+d=Vot+1/2 at^2	Angular disp.
+Q=wt
+w-angular speed rad/s
+Q=1/2 [Wo+Wf]t
+Q=Wot+1/2 αt^2	a=dV/dt
+				
+		Momentum  m*□(→┬v )
+Impulse - F∆t
+		Vdv=ads
+				
+		Velocity
+
+Displacement/(full time)=(Xf-Xo)/∆time		
+				
+		Acceleration
+a=(Vf-Vo)/t  ;(m/s^2 )
+ad=  (Vf^2-Vo^2)/2
+Vo, Vf - initial, final velocity.	Angular acceleration
+a=αR
+α=(Wf-Wo)/∆t;(rad/s^2 )
+Centripetal acceleration.
+Tangential and Radial acceleration.
+Anet=√(Ac^2+At^2 )	
+				
+Speed 
+
+v=d/t
+Vt=(Xf-Xo)/t
+Initial speed Vo
+Final speed Vf=Vo+at	Angular speed
+V=WR	Speed
+Vavr.=(Xf-Xo)/t
+Vf=Vo+at
+Vf^2=Vo^2+2ad	Angular speed: W
+Wf=Wo+αt
+Wf^2=Wo^2+2αQ	
+				
+Frequency f=Cycle/time				
+				
+Freq.Time T=1/f	W=2pi*freq.
+w=2pi/t			
+				
+Change ratio:
+Time (minutes to seconds)
+5min/1*60sec/1min=300s
+Radians to revolutions
+7200rad/1*1revolution/(2pi*rad)=1146rev			
+			
+
+ 
+
+Linear Motion (Translational Motion)
+Motion along a straight line.
+Uniform motion (constant velocity)
+Non-uniform motion (changing velocity)
+Uniform Linear Motion (ULM)
+Constant speed in a straight line.
+Acceleration = 0.
+Uniformly Accelerated Motion (UAM)
+Constant acceleration (e.g., free fall under gravity).
+Equations of motion apply:
+Rotational Motion.
+Motion around an axis.
+Analogous to linear motion but involves angular quantities:
+Angular displacement, velocity, and acceleration.
+Projectile Motion
+2D motion under gravity.
+Horizontal motion: constant velocity.
+Vertical motion: uniformly accelerated motion.
+Parabolic trajectory.
+
+ 
+ 
+Circular Motion.
+Motion along a circular path.
+Types:
+Uniform Circular Motion (constant speed)
+Non-uniform Circular Motion (changing speed)
+Centripetal acceleration:
+Oscillatory Motion.
+Repetitive back-and-forth motion (e.g., pendulum, spring).
+Example: Simple Harmonic Motion (SHM)
+Relative Motion.
+Motion of an object as observed from another moving frame.
+Kinetic motions of the objects.
+Is types of motion involving Forces (kinetic energy).
+Static Equilibrium.
+Sum of All Forces equal zero.
+Free Body Diagram.
+Shows Forces in their points of application.
+Represent all forces that act on the isolated body in their proper positions within the diagram.
+System of Coplanar and Non-Coplanar Forces. All forces on same plane or in different planes.
+Collinear System.
+Forces acts in same line.
+Concurrent System. 
+All the forces meet at a point.
+Lami’s Theorem.
+p1/sinA=p2/sinB=p3/sinC
+Varignon’s Theorem.
+The algebraic sum of moments of two or more forces about any point in their plane is equal to the moment of their resultant about the same point.
+Parallel System.
+Forces are parallel to each other.
+Non-concurrent and non-parallel.
+Parallelogram Law of Forces.
+Polygon Law of Forces.
+Static equilibrium of Coplanar Force Systems.
+Types of Supports and Reactions.
+Roller Support.
+Hinged support.
+Fixed Support.
+Cable / Rope / String Support.
+Types of Beams:
+Simply supported beam.
+Beam with one end hinged and the other on Roller Support.
+Over-hanging beam.
+Cantilever beam.
+Propped beam.
+Both ends hinged.
+Continuous beam.
+Types of Loads:
+Point load.
+Distributed load.
+Uniformly distributed load.
+Uniformly Varying load.
+Trapezoid load.
+Varying load.
+Linear motion.
+Rectilinear motion.
+Translational motion. 
+Curvilinear motion.
+Normal and Tangential components.
+Down Hill motion.
+Projectile motion.
+Object in motion under gravity; has both horizontal and vertical kinetic components.
+h=1/2at^2
+Incline motion:
+Fn=mgcosQ; Fy
+Fg=mgsinQ; Fx
+fk=ukFn -friction
+ax=g*sinQ-ukgcosQ; Q-incline angle, uk-friction
+Relative motion:
+Relative Acceleration a_B=a_A+α*r_(B/A)-ω^2 r_(B/A)
+Instantaneous Center of Zero velocity
+Reciprocating motion.
+Rotary motion.
+Rotational motion.
+Instantaneous center of rotation (I.C.R.).
+Circular motion.
+Rolling motion.
+Combination of translational + rotational motion (e.g., a rolling wheel).
+Total KE = Translational KE + Rotational KE
+Planetary motion (Kepler's Third Law).
+General Plane motion.
+General Plane Motion = Translation motion + Rotation motion.
+	Kinetic diagram=F.B.D.
+∑▒〖F_x=〗 〖m(a_g )〗_x
+∑▒〖F_y=〗 〖m(a_g )〗_y
+∑▒〖M_g=〗 (I_G )α
+
+Oscillatory motion.
+Rocking motion.
+Rattle back motion.
+Periodic motion.
+Vibratory motion.
+Involves both potential and kinetic energy components.
+Harmonic motion.
+Periodic motion (like springs or pendulums).
+KE and PE exchange periodically:
+𝐾𝐸=1/2𝑚𝑣2 (max in equilibrium position)
+Amplitude.
+Frequency
+Velocity.
+Random motion.
+Seen in gas molecules (Brownian motion).
+Microscopic kinetic energy contributes to temperature.
+Motion of particles at the microscopic level due to heat.
+Related to average kinetic energy:
+𝐾𝐸𝑎𝑣𝑔=32𝑘𝑇 (for ideal gases).
+Dependent and Independent motions.
+Pulleys.
+Impacts motion.
+Definitions:
+Central impact.
+Impact in center of masses.
+Oblique impact.
+Impact out of center of masses.
+Plane of contact.
+Line of impact.
+Relative motions.
+Kinetic energy depends on the frame of reference.
+KE is not invariant across different inertial frames.
+Kinetic motion of the system.
+A system’s kinetic energy includes both:
+	how the system moves as a whole, and
+	how parts move relative to each other.
+(a) Total kinetic energy of the system
+Add up the kinetic energies of all objects:
+Ksystem=∑1/2mivi^2 
+	Depends on how fast each part is moving
+	Depends on the reference frame
+________________________________________
+(b) Split into center-of-mass motion + internal motion
+The system’s total kinetic energy can be written as:
+Ksystem=12MVCM2  +  Kinternal: motion of the whole system as one object
+	Kinternal: motion within the system (objects moving relative to each other)
+This split is very useful in collisions and explosions.
+
+Dynamic of Fields.
+Motions of particles make Vector fields.
+Fields are tensors like Dyadic.
+Electric Fields.
+Magnetic Fields.
+Gravitational Fields.
+Quantum Fields.
+Fluid Fields.
+Aero-dynamic.
+Hydro-dynamic.
+Termo-dynamic.
+Language.
+Lexers.
+Tokens.
+Parsers.
+Programming Language.
+Compilers.
+C
+C++
+C#
+Java 
+Assembler.
+Delpy
+Pascal
+
+
+Interpreter.
+Javascript
+Python
+Lua.
+Ruby
+Basic
+HTML
+CSS
+
+
+
+
+Mechanic
+Machines Theory
+Детали машин и основы конструирования
+Cars
+Suspension
+Dumper
+Spring
+Wheels
+Camber
+Toe angels
+Scrub Radius
+King Pin Inclination
+Caster
+Continuum mechanics.
+Solid Mechanics
+Elasticity
+Plasticity
+Fluid Mechanics
+Non-Newtonian fluid
+Newtonian fluids
+Rheology
+Mechanical systems
+Lever
+Inclined plane
+Wheel and axle
+Wedge
+Pulley
+The screw
+Mechanical Principles
+Resistance
+Balance
+Streamlining
+Center of gravity
+Force 
+Transfer of weight
+Levers
+Propulsion
+
+
+
