@@ -8,9 +8,10 @@
        LINGVO UNIVERSAL OBJECT MODEL
        CORE IDEA
        Everything in Lingvo is an Object.
-        "What should a complete knowledge object contain?"
+       Everything that can be distinguished is an object; everything that can connect, constrain, transform, or compare objects is a relation or operation.
+       "What should a complete object contain?"
        An Object can have:
-         ├── Identity
+        ├── Identity
         ├── Type
         ├── Definition
         ├── Meaning
