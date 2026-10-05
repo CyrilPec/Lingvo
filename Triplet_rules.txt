@@ -20,13 +20,23 @@ NewtonSecondLaw depends_on Acceleration
 
 Mass has_unit Kilogram
 Acceleration has_unit "$m/s^2$"
+
 Example:
 import re
-with open("Triplets_physics.xml", encoding="utf-8") as f:
-    text = f.read()
-triples = re.findall(r"<([^ ]+)\s+([^ ]+)\s+([^>]+)/>",text)
+with open("Physics.md", encoding="utf-8") as f:
+    lines = f.readlines()
 print("```mermaid")
 print("graph LR")
-for subject, relation, object_ in triples:
-    print(f'    {subject} -->|{relation}| {object_}')
+for line in lines:
+    line = line.strip()
+    if not line or line.startswith("#"):
+        continue
+    subject, relation, object_ = re.match(
+        r'^(\S+)\s+(\S+)\s+(.+)$', line
+    ).groups()
+    object_ = object_.strip('"')
+    # Make Mermaid-safe node IDs
+    subject_id = re.sub(r'\W+', '_', subject)
+    object_id = re.sub(r'\W+', '_', object_)
+    print(f'    {subject_id} -->|{relation}| {object_id}["{object_}"]')
 print("```")
