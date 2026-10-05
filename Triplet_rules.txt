@@ -1,14 +1,25 @@
+Markdown + triples + LaTeX
+
 COMMENT  := # anything
 TRIPLE   := SUBJECT RELATION OBJECT
 MULTI-WORD OBJECTS :=  "" use quotes
 
 Example:
+Force is_a PhysicalQuantity
+Force is_a Vector
+Force has_unit Newton
+Force causes Acceleration
 Force causes Acceleration
 force has_unit Newton
 Force depend_on Mass
 Acceleration has_units m/s2
 Acceleration depend_on Time
+NewtonSecondLaw represented_by "$F = ma$"
+NewtonSecondLaw depends_on Mass
+NewtonSecondLaw depends_on Acceleration
 
+Mass has_unit Kilogram
+Acceleration has_unit "$m/s^2$"
 Example:
 import re
 with open("Triplets_physics.xml", encoding="utf-8") as f:
