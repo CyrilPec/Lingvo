@@ -27,4 +27,5 @@ graph LR
     Force -->|has_unit| Newton
     Force -->|depends_on| Mass
     Acceleration -->|depends_on| Time
+Acceleration -->|depends_on| Distance
 ```
