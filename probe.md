@@ -13,7 +13,7 @@ graph LR
     Force -->|causes| Acceleration
     Force -->|depends_on| Mass
 
-    Acceleration -->|has_unit| "m/s²"
+    Acceleration -->|has_unit| "m/s2"
     Acceleration -->|depends_on| Time
 
     NewtonSecondLaw -->|represented_by| "$F = ma$"
