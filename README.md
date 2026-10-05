@@ -30,3 +30,13 @@ graph LR
 Acceleration -->|depends_on| Distance
  Force -->|has_unit| mass*g
 ```
+
+```mermaid
+graph LR
+    Force causes Acceleration
+    Force has_unit Newton
+    Force depends_on Mass
+    Acceleration depends_on| Time
+Acceleration depends_on Distance
+ Force has_unit mass*g
+```
