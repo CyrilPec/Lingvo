@@ -25,8 +25,7 @@ Example:
 import re
 with open("Physics.md", encoding="utf-8") as f:
     lines = f.readlines()
-print("```mermaid")
-print("graph LR")
+triples = set()
 for line in lines:
     line = line.strip()
     if not line or line.startswith("#"):
@@ -35,8 +34,14 @@ for line in lines:
         r'^(\S+)\s+(\S+)\s+(.+)$', line
     ).groups()
     object_ = object_.strip('"')
-    # Make Mermaid-safe node IDs
+    triples.add((subject, relation, object_))
+print("```mermaid")
+print("graph LR")
+for subject, relation, object_ in triples:
     subject_id = re.sub(r'\W+', '_', subject)
     object_id = re.sub(r'\W+', '_', object_)
-    print(f'    {subject_id} -->|{relation}| {object_id}["{object_}"]')
+    print(
+        f'    {subject_id} -->|{relation}| '
+        f'{object_id}["{object_}"]'
+    )
 print("```")
