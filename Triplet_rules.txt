@@ -1,0 +1,3 @@
+COMMENT  := # anything
+TRIPLE   := SUBJECT RELATION OBJECT
+MULTI-WORD OBJECTS :=  "" use quotes
