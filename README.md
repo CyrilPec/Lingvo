@@ -20,3 +20,11 @@ Cat.xml  = actual object instance.
 5. Object Instances
 6. Relations between Instances
 7. Systems composed of Instances
+
+```mermaid
+graph LR
+    Force -->|causes| Acceleration
+    Force -->|has_unit| Newton
+    Force -->|depends_on| Mass
+    Acceleration -->|depends_on| Time
+```
