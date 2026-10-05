@@ -13,10 +13,10 @@ graph LR
     Force -->|causes| Acceleration
     Force -->|depends_on| Mass
 
-    Acceleration -->|has_unit| "m/s2"
+    Acceleration -->|has_unit| MPS2["m/s²"]
     Acceleration -->|depends_on| Time
 
-    NewtonSecondLaw -->|represented_by| "$F = ma$"
+    NewtonSecondLaw -->|represented_by| Formula["F = ma"]
     NewtonSecondLaw -->|depends_on| Mass
     NewtonSecondLaw -->|depends_on| Acceleration
 ```
