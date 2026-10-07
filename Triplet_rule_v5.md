@@ -1,4 +1,4 @@
-Lingvo Triplet Rule v5
+# Lingvo Triplet Rule v5
 1. Purpose
 Lingvo Triplet v5 extends v4 with semantic normalization of prepositions, conjunctions, and other linguistic connectors.
 The goal is to separate:
