@@ -1,5 +1,0 @@
-<Force causes Acceleration/>
-<force has_unit Newton/>
-<Force depend_on Mass/>
-<Acceleration has_units m/s2/>
-<Acceleration depend_on Time/>
