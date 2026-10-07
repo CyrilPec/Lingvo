@@ -24,9 +24,9 @@ Cat.xml  = actual object instance.
 ```mermaid
 graph LR
     Force -->|causes| Acceleration
-    Force -->|has| unit_Newton
+    Force -->|has| unit:Newton
     Force -->|depends| on_Mass
     Acceleration -->|depends| on_Time
     Acceleration -->|depends| on_Distance
-    Force -->|has| unit_mass*g
+    Force -->|has| unit:mass*g
 ```
