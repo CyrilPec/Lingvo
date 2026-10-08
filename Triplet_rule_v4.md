@@ -35,10 +35,10 @@ Free-form text MUST NOT replace the semantic core when the information can be re
 A triplet should express one primary assertion.
 Bad: Gold is dense and valuable and used in jewelry and electronics
 Good:
-Gold has_density 19.3_g_cm3 | type:physical_property
-Gold has_cultural_value Wealth | type:cultural_property
-Gold is_used_in Jewelry | type:application
-Gold is_used_in Electronics | type:application
+Gold has density:19.3_g_cm3 | type:physical_property
+Gold has cultural_value:Wealth | type:cultural_property
+Gold is_used in:Jewelry | type:application
+Gold is_used in:Electronics | type:application
 One line = one assertion.
 9. Relation Vocabulary
 Relations should preferably use normalized names.
@@ -107,12 +107,12 @@ definition
 observation
 prediction
 Example:
-Gold has_atomic_number 79 | type:identity | domain:chemistry
+Gold has atomic_number:79 | type:identity | domain:chemistry
 11. Context
 Context qualifies the assertion without changing the semantic core.
 Gold has density:19.3_g_cm3 | type:physical_property | condition:room_temperature
 Gold symbolizes Wealth | type:cultural_meaning | context:ancient_Egypt
-German_industrial_orders fell 10.6_percent | type:economic_indicator | period:2026-08 | comparison:month_on_month
+German_industrial_orders fell:10.6_percent | type:economic_indicator | period:2026-08 | comparison:month_on_month
 12. Time
 Time should be represented explicitly whenever relevant.
 Examples:
