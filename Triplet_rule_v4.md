@@ -1,4 +1,4 @@
-Lingvo Triplet v4
+# Lingvo Triplet v4
 1. Purpose
 Lingvo Triplet v4 is a universal representation for converting language and knowledge into atomic semantic statements.
 The same format can represent: (facts, events, properties, relationships, scientific knowledge, news, history, art, economics, people, places, objects, concepts, measurements, claims.
@@ -15,8 +15,8 @@ Formally:𝑇𝑐𝑜𝑟𝑒=(𝑆,𝑅,𝑂)
 Where: S = Subject, R = Relation, O = Object
 Example: Gold has atomic_number:79
 S = Gold
-R = has_atomic_number
-O = 79
+R = has 
+O = atomic_number:79
 The semantic core MUST remain identifiable independently of its metadata.
 5. Metadata
 Optional metadata follows the semantic core using |.
