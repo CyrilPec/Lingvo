@@ -1,11 +1,11 @@
-# Lingvo Triplet v4
+# Lingvo Triplet description.
 1. Purpose
-Lingvo Triplet v4 is a universal representation for converting language and knowledge into atomic semantic statements.
+Lingvo Triplet is a universal representation for converting language and knowledge into semantic statements.
 The same format can represent: (facts, events, properties, relationships, scientific knowledge, news, history, art, economics, people, places, objects, concepts, measurements, claims.
-The core principle is: SUBJECT RELATION OBJECT
+The core principle is: SUBJECT RELATION OBJECT.
 Everything beyond the three semantic elements is optional qualification.
 2. Fundamental Rule
-ONE TRIPLET = ONE LINE
+ONE TRIPLET = ONE LINE.
 A triplet MUST NOT span multiple lines.
 Canonical form: SUBJECT RELATION OBJECT | key:value | key:value | key:value
 Example: Gold has density:19.3_g_cm3 | type:physical_property | domain:materials_science | condition:room_temperature
