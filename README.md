@@ -85,7 +85,7 @@ classDiagram
     }
 
     Xenon --|> NobleGas : belongs to
-    Earth'sAtmosphere --> Xenon : contains
+    EarthsAtmosphere --> Xenon : contains
     Xenon --> PhysicalProperties : has
     Xenon --> LightSources : used in
     Xenon --> IonPropulsion : used as propellant
