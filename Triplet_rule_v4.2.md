@@ -7,7 +7,7 @@ One triplet = one atomic assertion.
 2. Basic Structure
 A Lingvo record consists of a subject, a predicate, and one or more arguments or contextual expressions.
 General form:
-SUBJECT PREDICATE(ARGUMENTS) CONTEXTS METADATA ID:101026114025
+[article, adjectives, number]SUBJECT PREDICATE(ARGUMENTS) CONTEXT() METADATA:
 Examples:
 Alice works for(Acme) id:1101026114120
 Alice lived in(Paris) in(1999) id:101026115425
