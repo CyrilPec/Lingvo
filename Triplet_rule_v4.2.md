@@ -112,19 +112,19 @@ When the syntax alone cannot resolve an attachment unambiguously, the parser sho
 The optional id(...) field records the creation time of a triplet.
 It is record metadata, not a semantic argument and not the time of the event described by the triplet.
 8.1. Format
-id(DD/MM/YY/HH/mm)
+id(DDMMYYHHmmss)
 Fields:
 DD — day of the month.
 MM — month.
 YY — two-digit year.
 HH — hour in 24-hour format.
 mm — minute.
+ss — second.
 Example:
-id(10/10/26/9/31)
-This represents a creation time of 09:31 on 10 October 2026.
+id(101026093101)
+This represents a creation time of 09:31:01 on 10 October 2026.
 8.2. Rules
 The ID records when the triplet was created.
-The ID is optional unless required by a particular application.
 The ID must not alter the semantic meaning of the triplet.
 The creation time is distinct from event time, which may be represented by expressions such as in(1999).
 The ID must be preserved during parsing, serialization, export, and import.
@@ -132,15 +132,15 @@ An existing ID must not be silently replaced when a triplet is edited.
 If a triplet is copied or split into new records, the application must define whether the original ID is retained as provenance or new IDs are assigned.
 If guaranteed uniqueness is required, a separate unique identifier or additional timestamp precision must be used. A timestamp accurate only to the minute cannot guarantee uniqueness.
 8.3. Example
-Alice lived in(Paris) in(1999) id(10/10/26/9/31)
+Alice lived in(Paris) in(1999) id(1010260931)
 Interpretation:
 Subject: Alice
 Predicate: lived
 Location: Paris
 Event time: 1999
-Record creation time: 10 October 2026, 09:31
+Record creation time: 10 October 2026, 09:31:00
 The ID describes the record, not the historical event.
-9. Metadata and Provenance
+10. Metadata and Provenance
 Metadata provides information about an assertion without changing its semantic core.
 In addition to the creation ID, an implementation may support named metadata fields such as:
 type
@@ -154,21 +154,21 @@ condition
 unit
 note
 For example:
-Gold has density:19.3_g_cm3 | type:physical_property | domain:materials_science | condition:room_temperature
+Gold has density:19.3_g_cm3  type:physical_property  domain:materials_science  condition:room_temperature
 The exact metadata serialization must be defined consistently by the implementation. The id(...) syntax is reserved for creation-time metadata and must not be confused with event-time expressions.
 Provenance describes the source of an assertion. It does not become a fourth semantic element.
-10. Atomicity
+11. Atomicity
 A triplet should express one primary assertion.
 Avoid combining unrelated assertions in one record.
 Instead of:
 Gold is_dense and_valuable and_used_in(jewelry, electronics)
 Use separate assertions:
-Gold has density:19.3_g_cm3 | type:physical_property
-Gold has cultural_value:Wealth | type:cultural_property
-Gold is_used in(Jewelry) | type:application
-Gold is_used in(Electronics) | type:application
+Gold has density:19.3_g_cm3  type:physical_property
+Gold has cultural_value:Wealth  type:cultural_property
+Gold is_used in(Jewelry)  type:application
+Gold is_used in(Electronics)  type:application
 Each line represents one assertion. Multiple triplets can describe the same entity.
-11. Types, Time, and Measurements
+12. Types, Time, and Measurements
 11.1. Types
 The optional type metadata field describes the nature of an assertion.
 Examples include:
@@ -184,13 +184,13 @@ claim
 observation
 prediction
 Example:
-Gold has atomic_number:79 | type:identity | domain:chemistry
+Gold has atomic_number:79  type:identity  domain:chemistry
 Types are descriptive metadata and do not replace the subject, predicate, or argument.
 11.2. Event Time
 Event time describes when an event occurred, not when its triplet was created.
 Examples:
-Leonardo_da_Vinci created(Mona_Lisa) | time:1503-1519
-German_industrial_orders fell(10.6_percent) | period:2026-08
+Leonardo_da_Vinci created(Mona_Lisa)  time:1503-1519
+German_industrial_orders fell(10.6_percent)  period:2026-08
 Approximate dates may use ~ where supported by the application.
 Prepositional time expressions may also be used:
 Alice lived in(Paris) in(1999)
@@ -198,18 +198,18 @@ Event-time conventions must remain distinct from the id(...) creation timestamp.
 11.3. Measurements
 Measurements should preserve numerical values and units.
 Examples:
-Gold has density:19.3_g_cm3 | type:measurement | condition:room_temperature
-Gold has melting_point:1064.18_C | type:measurement | pressure:1_atm
+Gold has density:19.3_g_cm3  type:measurement  condition:room_temperature
+Gold has melting_point:1064.18_C  type:measurement  pressure:1_atm
 The value and unit must remain interpretable during conversion.
-12. Negation, Uncertainty, and Status
+13. Negation, Uncertainty, and Status
 Negation must remain explicit.
 Examples:
-Gold does_not_contain(Iron) | type:claim
-Gold is_not(Magnetic) | type:physical_property
+Gold does_not_contain(Iron)  type:claim
+Gold is_not(Magnetic)  type:physical_property
 Uncertainty must not be silently converted into a confirmed fact.
 Examples:
-Company_X may_acquire(Company_Y) | type:claim | status:unconfirmed
-Company_X will_acquire(Company_Y) | type:claim | status:unknown
+Company_X may_acquire(Company_Y)  type:claim  status:unconfirmed
+Company_X will_acquire(Company_Y)  type:claim  status:unknown
 Possible status values include:
 confirmed
 probable
@@ -220,15 +220,15 @@ historical
 estimated
 predicted
 These values are conventions, not an exhaustive vocabulary.
-13. Events and Relationships Between Assertions
+14. Events and Relationships Between Assertions
 Events use the same basic subject–predicate–argument structure.
 Examples:
-Leonardo_da_Vinci created(Mona_Lisa) | type:event | time:1503-1519
-Mona_Lisa depicts(Lisa_Gherardini) | type:representation
-Mona_Lisa uses(Sfumato) | type:technique
+Leonardo_da_Vinci created(Mona_Lisa)  type:event  time:1503-1519
+Mona_Lisa depicts(Lisa_Gherardini)  type:representation
+Mona_Lisa uses(Sfumato)  type:technique
 Events may have participants, locations, times, causes, and consequences.
 Where an application requires explicit relationships between entire assertions, it should represent those relationships in a separate, well-defined structure. They must not be confused with ordinary entity arguments.
-14. Knowledge Graph Construction
+15. Knowledge Graph Construction
 Lingvo triplets can be transformed into a knowledge graph.
 For example:
 Alice lived in(Paris) in(1999)
@@ -239,7 +239,7 @@ Living_Event ──time──> 1999
 This representation distinguishes the event's location from its time.
 A graph builder may derive normalized relations such as lives_in, works_at, or has_profession. These derived relations must not silently replace the original Lingvo representation.
 Entity resolution is a separate process: identical names do not necessarily identify the same real-world entity.
-15. Parsing Requirements
+16. Parsing Requirements
 A conforming parser should:
 Recognize the subject and predicate.
 Recognize arguments enclosed in parentheses.
@@ -257,7 +257,7 @@ Avoid silently renaming predicates.
 Preserve the original record whenever exact reconstruction is required.
 Avoid inventing semantic interpretations when attachment is ambiguous.
 The exact grammar for ambiguous multiword predicates and contextual attachment should be defined by the parser implementation.
-16. Serialization and Round-Trip Conversion
+17. Serialization and Round-Trip Conversion
 Lingvo may be converted to JSON, XML, SML, or other formats.
 A lossless conversion must preserve:
 Subject, predicate, and arguments.
@@ -271,7 +271,7 @@ The central requirement is:
 decode(encode(original)) == original
 The equality means that all information covered by the serialization contract is preserved.
 If a target format cannot represent a distinction, the converter must preserve it through an explicit extension or report that the conversion is lossy.
-17. Canonical Examples
+18. Canonical Examples
 People and places
 Alice is a(doctor)
 Alice lived in(Paris) in(1999)
@@ -294,7 +294,7 @@ Andrew_Bailey warned about(market_instability) in(financial_markets)
 [private]landlords faced([higher]interest_rates, [increased]regulatory_costs)
 Creation metadata
 Alice lived in(Paris) in(1999) id(10/10/26/9/31)
-18. Core Design Principles
+19. Core Design Principles
 Lingvo v4 follows these principles:
 Atomicity: one triplet expresses one primary assertion.
 Preservation: original predicate wording and entity modifiers are retained.
