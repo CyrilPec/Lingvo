@@ -18,11 +18,14 @@ Examples:
 Alice works for(Acme) id:1101026114120
 Alice lived in(Paris) in(1999) id:101026115425
 Alice is([a]doctor) id:101026114336
+Hakan_Fidan raised(concerns{about(escalating Russian and Ukrainian attacks in the Black Sea)}) time:2026-10-08 source:Reuters id:101026125810
+[Russia, Ukraine]who are_increasing(military operations) in(the Black Sea) time:2026-10 source:Reuters id:101026125812
 Police arrested([two]people) at(airport) in(England) id:101026094236
+[Black_Sea]attacks threaten(the safety of commercial vessels) time:2026-10 source:Reuters id:101026094238
 Alice was(afraid{of(the_dark)}) id:101026120003
 Each record must occupy exactly one physical line. Line breaks separate records.
 The subject, predicate, and primary argument form the semantic core. Structural attachments, additional arguments, contexts, and metadata provide further information.
-3. Subjects and Entities
+4. Subjects and Entities
 An entity represents a person, organization, object, place, event, concept, measurement, or other identifiable subject of knowledge.
 Examples:
 Alice
@@ -31,7 +34,7 @@ financial_markets
 energy_storage
 Underscores may represent spaces within compound entity names.
 Original entity wording must be preserved unless an explicit transformation is requested.
-4. Entity Modifiers
+5. Entity Modifiers
 Square brackets represent modifiers associated with an entity.
 General form
 [MODIFIER]ENTITY
@@ -65,7 +68,7 @@ Examples:
 Police arrested([two]people)
 [three]students arrived
 When grammatical number and numerical quantity must be distinguished, implementations may use explicit descriptors such as grammatical_number:singular and quantity:3.
-5. Predicates
+6. Predicates
 A predicate expresses an action, state, property, or relationship. It may consist of one word or a multiword expression.
 Examples:
 Alice works for(Acme)
@@ -93,7 +96,7 @@ Alice looked at(Bob)
 The expressions works for, depends on, warned about, and looked at may be interpreted as multiword predicates when the preposition is integral to the expression.
 The parser must preserve the original wording. It must not automatically rewrite warned about as warned_about.
 When the distinction between a multiword predicate and a contextual preposition cannot be resolved reliably, the original expression must be preserved without imposing an unsupported interpretation.
-6. Arguments
+7. Arguments
 Arguments represent objects, entities, concepts, values, events, or other semantic elements directly associated with a predicate.
 General form
 PREDICATE(ARGUMENT)
@@ -116,7 +119,7 @@ Examples:
 LOGINK faced([legal]problems, [financial]problems)
 Alice gave([the]book, [the]student)
 The final example preserves argument order but does not independently specify semantic roles such as recipient. Applications may add those roles in a separate representation.
-7. Arguments versus contexts
+8. Arguments versus contexts
 Arguments and contexts must be distinguished by their syntactic structure and semantic function.
 7.1. Arguments
 Arguments represent objects or entities directly associated with a predicate and normally appear inside its parentheses.
@@ -140,7 +143,7 @@ In depends on([the]team), depends on is the multiword predicate and team is its 
 In Alice lived in(Paris) in(1999), the expressions in(Paris) and in(1999) represent location and time contexts.
 In Alice arrived at(noon), at(noon) represents the time context.
 The parser must preserve the original expression and distinguish predicate arguments from contextual expressions whenever the structure and semantic function permit reliable interpretation.
-8. Structural Attachments
+9. Structural Attachments
 Curly braces {...} indicate a subordinate expression structurally attached to the immediately preceding expression.
 Structural attachment makes the relationship between an expression and its complement explicit, rather than leaving the complement as a separate context.
 8.1. General form
@@ -184,7 +187,7 @@ Each attachment must preserve the original wording of the expression.
 Structural attachments must not be silently converted into independent contexts.
 An implementation must preserve attachment scope during parsing, serialization, and reconstruction.
 If attachment scope is ambiguous, the parser must preserve the original expression and avoid inventing a relationship.
-9. Record Creation Identifier
+10. Record Creation Identifier
 The optional id: field identifies the record's creation time. It is metadata, not a semantic argument or the time of the event described.
 9.1. Format
 id:DDMMYYHHmmss
@@ -205,7 +208,7 @@ The ID must be preserved during parsing, serialization, export, and import.
 An existing ID must not be silently replaced when a record is edited.
 Applications must define how IDs are handled when records are copied or split.
 A timestamp with one-second precision does not guarantee uniqueness. An additional identifier or greater precision is required when guaranteed uniqueness is needed.
-10. Metadata and Provenance
+11. Metadata and Provenance
 Metadata provides information about a record without changing its semantic core.
 The id: field is reserved for the record creation identifier.
 Additional metadata may include:
@@ -223,7 +226,7 @@ Example:
 Gold has_density(19.3_g_cm3) type:physical_property domain:materials_science condition:room_temperature
 Metadata keys and values must follow a consistent serialization convention.
 Provenance describes the source or origin of an assertion. It does not become an additional semantic element of the assertion.
-11. Atomicity
+12. Atomicity
 A Lingvo record should express one primary assertion. Independent assertions should normally be represented as separate records.
 Examples:
 Gold has_cultural_value(wealth) type:cultural_property
@@ -231,7 +234,7 @@ Gold is_used in(Jewelry) type:application
 Gold is_used in(Electronics) type:application
 Each line represents one primary assertion. Multiple records may describe the same entity.
 Structural attachments may express subordinate relationships within one assertion without requiring each subordinate expression to become an independent record.
-12. Types, Time, and Measurements
+13. Types, Time, and Measurements
 12.1. Types
 The optional type: metadata field describes the nature of an assertion.
 Examples include identity, classification, physical_property, measurement, event, historical_fact, scientific_fact, economic_indicator, claim, observation, and prediction.
@@ -252,7 +255,7 @@ Examples:
 Gold has_density(19.3_g_cm3) type:measurement condition:room_temperature
 Gold has_melting_point(1064.18_C) type:measurement pressure:1_atm
 Values and units must remain interpretable during conversion.
-13. Negation, Uncertainty, and Status
+14. Negation, Uncertainty, and Status
 Negation must remain explicit and must not be silently removed during processing.
 Examples:
 Gold does_not_contain(Iron) type:claim
@@ -261,7 +264,7 @@ Company_X may_acquire(Company_Y) type:claim status:unconfirmed
 Company_X will_acquire(Company_Y) type:claim status:unknown
 Possible status values include confirmed, probable, possible, unconfirmed, disputed, historical, estimated, and predicted.
 Uncertainty must not be silently converted into a confirmed fact.
-14. Events and Relationships Between Assertions
+15. Events and Relationships Between Assertions
 Events use the same subject–predicate–argument structure as other records.
 Examples:
 Leonardo_da_Vinci created(Mona_Lisa) type:event time:1503-1519
@@ -269,7 +272,7 @@ Mona_Lisa depicts(Lisa_Gherardini) type:representation
 Mona_Lisa uses(Sfumato) type:technique
 Events may have participants, locations, times, causes, and consequences.
 Structural attachments represent dependencies within an assertion. Relationships between independent assertions should be represented separately when an application requires them.
-15. Knowledge Graph Construction
+16. Knowledge Graph Construction
 Lingvo records can be transformed into knowledge graphs.
 Example:
 Alice was(afraid{of(the_dark)}) id:101026120003
@@ -279,7 +282,7 @@ afraid ──object_of_fear──> the_dark
 This graph is a derived semantic interpretation. It does not replace the original Lingvo record.
 A graph builder may derive normalized relations, but must preserve the original wording and attachment structure when lossless reconstruction is required.
 Entity resolution remains a separate process: identical names do not necessarily identify the same real-world entity.
-16. Parsing Requirements
+17. Parsing Requirements
 A conforming Lingvo parser should:
 Recognize the subject and predicate.
 Recognize arguments enclosed in parentheses.
@@ -298,7 +301,7 @@ Avoid automatic verb normalization or silent predicate renaming.
 Preserve attachment scope during conversion and reconstruction.
 Avoid inventing semantic interpretations when attachment is ambiguous.
 Curly braces must be parsed as structural operators, not as literal quotation marks or decorative punctuation.
-17. Serialization and Round-Trip Conversion
+18. Serialization and Round-Trip Conversion
 Lingvo may be converted to JSON, XML, SML, or other formats.
 A lossless conversion must preserve:
 Subject, predicate, and arguments.
@@ -314,7 +317,7 @@ The central requirement is:
 decode(encode(original)) == original
 Equality means that all information covered by the serialization contract is preserved.
 If a target format cannot represent a distinction, the converter must preserve it through an explicit extension or report that the conversion is lossy.
-18. Canonical Examples
+19. Canonical Examples
 People and places
 Alice is([a]doctor) id:101026120101
 Alice lived in(Paris) in(1999) id:101026120102
@@ -343,7 +346,7 @@ Alice became(tired{of(sitting)}) id:101026120201
 Alice was(afraid{of(the_dark)}) id:101026120202
 Alice was(interested{in(science)}) id:101026120203
 Alice became(tired{of(sitting{by([her]sister)}{on([the]bank)})}) id:101026120204
-19. Core Design Principles
+20. Core Design Principles
 Lingvo v4.4 follows these principles:
 Atomicity: one record expresses one primary assertion.
 Preservation: original wording and entity modifiers are retained.
