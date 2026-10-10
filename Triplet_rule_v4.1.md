@@ -199,6 +199,33 @@ This gives you a stable knowledge base without tying it to a particular LLM or c
 
 The real architectural question is whether Lingvo should be a universal semantic storage format or primarily a format for communicating knowledge to LLMs. Triplets are particularly attractive for the former; SML may be particularly useful for the latter.
 
+Triplet Creation ID
+Each triplet may include an id(...) metadata field indicating when the triplet was created.
+
+Format: id(DDMMYYHHMMSS)
+
+Where:
+
+DD — day
+MM — month
+YY — two-digit year
+HH — hour (24-hour format)
+mm — minute
+ss — second
+Example: id(101026093100)
+
+This indicates that the triplet was created on 10 October 2026 at 09:31:00.
+
+Rules:
+
+The ID represents the creation time of the triplet record.
+The ID is metadata and does not change the semantic meaning of the triplet.
+The creation ID is independent of event-time arguments such as in(1999).
+The ID should be generated when the triplet is created.
+The ID should be preserved during serialization, export, and subsequent processing.
+Example
+text
+Alice lived(Paris) in(1999) id(10/10/26/9/31)
 
 You said:
 
