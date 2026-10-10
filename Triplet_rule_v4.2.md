@@ -7,12 +7,12 @@ One triplet = one atomic assertion.
 2. Basic Structure
 A Lingvo record consists of a subject, a predicate, and one or more arguments or contextual expressions.
 General form:
-SUBJECT PREDICATE(ARGUMENTS) CONTEXTS METADATA
+SUBJECT PREDICATE(ARGUMENTS) CONTEXTS METADATA ID:101026114025
 Examples:
-Alice works for(Acme)
-Alice lived in(Paris) in(1999)
-Alice is a(doctor)
-Police arrested([two]people) at(airport) in(England)
+Alice works for(Acme) id:1101026114120
+Alice lived in(Paris) in(1999) id:101026115425
+Alice is a(doctor)id:101026114336
+Police arrested([two]people) at(airport) in(England) id:101026094236
 A triplet should occupy one physical line. Line breaks separate records.
 The subject, predicate, and primary argument form the semantic core. Additional expressions qualify the assertion or identify the record.
 3. Subjects and Entities
