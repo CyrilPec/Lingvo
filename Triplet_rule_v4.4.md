@@ -1,8 +1,8 @@
-Lingvo Triplet Rule v4.4
+#Lingvo Triplet Rule v4.4
 1. Purpose
 Lingvo Triplets provide a compact, readable representation of semantic information for machine processing, knowledge extraction, and knowledge graph construction.
 Lingvo preserves original wording while representing subjects, predicates, arguments, modifiers, subordinate expressions, contextual relations, and metadata.
-Core principle: One triplet represents one atomic assertion.
+Core principle: One triplet represents one assertion.
 2. Basic Structure
 A Lingvo record consists of a subject, a predicate, and one or more arguments or contextual expressions.
 General form
