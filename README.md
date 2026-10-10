@@ -37,7 +37,7 @@ classDiagram
         +classification noble_gas
     }
 
-    class Earth'sAtmosphere {
+    class EarthsAtmosphere {
         +contains Xenon
     }
 
