@@ -121,7 +121,7 @@ HH — hour in 24-hour format.
 mm — minute.
 ss — second.
 Example:
-id(101026093101)
+id:101026093101
 This represents a creation time of 09:31:01 on 10 October 2026.
 8.2. Rules
 The ID records when the triplet was created.
@@ -132,7 +132,7 @@ An existing ID must not be silently replaced when a triplet is edited.
 If a triplet is copied or split into new records, the application must define whether the original ID is retained as provenance or new IDs are assigned.
 If guaranteed uniqueness is required, a separate unique identifier or additional timestamp precision must be used. A timestamp accurate only to the minute cannot guarantee uniqueness.
 8.3. Example
-Alice lived in(Paris) in(1999) id(1010260931)
+Alice lived in(Paris) in(1999) id:1010260931
 Interpretation:
 Subject: Alice
 Predicate: lived
@@ -154,8 +154,8 @@ condition
 unit
 note
 For example:
-Gold has density:19.3_g_cm3  type:physical_property  domain:materials_science  condition:room_temperature
-The exact metadata serialization must be defined consistently by the implementation. The id(...) syntax is reserved for creation-time metadata and must not be confused with event-time expressions.
+Gold has density(19.3_g_cm3)  type:physical_property  domain:materials_science  condition:room_temperature
+The exact metadata serialization must be defined consistently by the implementation. The id:... syntax is reserved for creation-time metadata and must not be confused with event-time expressions.
 Provenance describes the source of an assertion. It does not become a fourth semantic element.
 11. Atomicity
 A triplet should express one primary assertion.
@@ -249,7 +249,7 @@ Preserve original entity and predicate wording.
 Preserve argument order and modifier order.
 Recognize prepositional expressions.
 Distinguish predicate wording from additional contextual expressions where possible.
-Recognize id(...) as creation-time metadata.
+Recognize id:... as creation-time metadata.
 Keep creation time distinct from event time.
 Preserve supported metadata during processing.
 Avoid automatic verb normalization.
@@ -260,7 +260,7 @@ The exact grammar for ambiguous multiword predicates and contextual attachment s
 17. Serialization and Round-Trip Conversion
 Lingvo may be converted to JSON, XML, SML, or other formats.
 A lossless conversion must preserve:
-Subject, predicate, and arguments.
+Subject, predicate, arguments.
 Entity modifiers and their ordering.
 Original predicate wording.
 Prepositions and contextual expressions.
@@ -293,9 +293,9 @@ Economy
 Andrew_Bailey warned about(market_instability) in(financial_markets)
 [private]landlords faced([higher]interest_rates, [increased]regulatory_costs)
 Creation metadata
-Alice lived in(Paris) in(1999) id(10/10/26/9/31)
+Alice lived in(Paris) in(1999) id:101026931
 19. Core Design Principles
-Lingvo v4 follows these principles:
+Lingvo follows these principles:
 Atomicity: one triplet expresses one primary assertion.
 Preservation: original predicate wording and entity modifiers are retained.
 Explicit structure: subjects, arguments, and contextual expressions remain identifiable.
@@ -304,37 +304,3 @@ Separate timestamps: event time and record creation time are distinct.
 Stable metadata: record IDs and supported metadata survive conversion.
 Graph compatibility: normalized knowledge graphs may be derived without destroying the original representation.
 Lossless conversion: serialization should preserve all information covered by its contract.
-Lingvo is the source representation of the extracted semantic information. Knowledge graphs and other output formats are derived representations.on
-TmbsController-->performs-->JogMotion
-DirectMotion-->includes-->AbsoluteMove
-DirectMotion-->includes-->IncrementalMove
-DirectMotion-->includes-->PointMove
-DirectMotion-->includes-->Jog
-PreparedMotion-->prepares-->AbsoluteMove
-PreparedMotion-->prepares-->IncrementalMove
-PreparedMotion-->requires-->SafetyCheck
-PreparedMotion-->executes-->MultipleAxes
-TmbsController-->waits_for-->MotionCompletion
-MotionCompletion-->depends_on-->AxisStatus
-AxisSafety-->depends_on-->Initialized
-AxisSafety-->depends_on-->Connected
-AxisSafety-->depends_on-->Servo
-AxisSafety-->depends_on-->Alarm
-AbsoluteMove-->changes-->AxisPosition
-IncrementalMove-->changes-->AxisPosition
-Jog-->changes-->AxisPosition
-TmbsController-->reads-->Position-->from-->PNOW
-PNOW-->has_address-->0x7400
-TmbsController-->reads-->Status
-TmbsController-->checks-->Servo
-TmbsController-->checks-->Run
-TmbsController-->checks-->Alarm
-TmbsController-->checks-->Origin
-TmbsController-->checks-->PFIN
-TmbsController-->uses-->COMPACK
-COMPACK-->contains-->Address
-COMPACK-->contains-->Data
-read_parameter-->returns-->COMPACK
-read_point-->returns-->COMPACK
-write_parameter-->accepts-->COMPACK
-write_point-->accepts-->COMPACK
